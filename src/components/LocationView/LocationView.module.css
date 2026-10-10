@@ -1,0 +1,99 @@
+.page {
+  padding: 1.5rem 0 3.5rem;
+}
+
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.crumbs a,
+.block a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: var(--teal);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.crumbs a:hover,
+.block a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.eyebrow {
+  color: var(--teal);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page h1 {
+  max-width: 16ch;
+  margin-top: 0.4rem;
+  font-size: clamp(2rem, 5vw, 3.3rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.lede {
+  max-width: 42rem;
+  margin-top: 0.9rem;
+  color: var(--muted);
+  font-size: 1.125rem;
+}
+
+.page > header a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: var(--teal);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.block {
+  margin-top: 2rem;
+}
+
+.block h2 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  letter-spacing: -0.03em;
+}
+
+.block ul {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.block li {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--bg-raised);
+}
+
+.block li span,
+.block > p {
+  color: var(--muted);
+}
+
+@media (min-width: 48rem) {
+  .block ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}

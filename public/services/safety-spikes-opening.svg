@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none" role="img" aria-label="safety-spikes">
+  <rect width="800" height="560" rx="28" fill="#E7F3F0"/>
+  <circle cx="650" cy="96" r="36" fill="#E39A1A"/>
+  <rect x="100" y="250" width="600" height="28" fill="#1B3D5C"/><path d="M130 250l12-56 12 56M190 250l12-56 12 56M250 250l12-56 12 56M310 250l12-56 12 56M370 250l12-56 12 56M430 250l12-56 12 56M490 250l12-56 12 56M550 250l12-56 12 56M610 250l12-56 12 56" fill="#F4E2B8"/>
+</svg>

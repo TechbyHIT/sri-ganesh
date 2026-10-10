@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none" role="img" aria-label="safety-spikes">
+  <rect width="800" height="560" rx="28" fill="#E7F3F0"/>
+  <circle cx="650" cy="96" r="36" fill="#E39A1A"/>
+  <rect x="80" y="300" width="640" height="36" rx="4" fill="#10283F"/><path d="M110 300l16-70 16 70M170 300l16-70 16 70M230 300l16-70 16 70M290 300l16-70 16 70M350 300l16-70 16 70M410 300l16-70 16 70M470 300l16-70 16 70M530 300l16-70 16 70M590 300l16-70 16 70M650 300l16-70 16 70" fill="#E39A1A"/>
+</svg>

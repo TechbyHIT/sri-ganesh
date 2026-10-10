@@ -1,0 +1,28 @@
+.section {
+  padding: 0 0 3.5rem;
+}
+
+.list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.item {
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--bg-raised);
+  padding: 0.2rem 1rem;
+}
+
+.item summary {
+  cursor: pointer;
+  min-height: 2.75rem;
+  padding: 0.85rem 0;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.item p {
+  padding-bottom: 1rem;
+  color: var(--muted);
+}

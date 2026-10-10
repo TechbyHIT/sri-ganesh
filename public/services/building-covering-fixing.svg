@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none" role="img" aria-label="building-covering">
+  <rect width="800" height="560" rx="28" fill="#E7F3F0"/>
+  <circle cx="650" cy="96" r="36" fill="#E39A1A"/>
+  <rect x="200" y="100" width="40" height="360" fill="#10283F"/><rect x="560" y="100" width="40" height="360" fill="#10283F"/><path d="M240 140h320M240 220h320M240 300h320M240 380h320" stroke="#E39A1A" stroke-width="6"/>
+</svg>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none" role="img" aria-label="invisible-grills">
+  <rect width="800" height="560" rx="28" fill="#E7F3F0"/>
+  <circle cx="650" cy="96" r="36" fill="#E39A1A"/>
+  <rect x="140" y="120" width="520" height="300" rx="8" fill="#F7F1E4"/><path d="M180 150v240M250 150v240M320 150v240M390 150v240M460 150v240M530 150v240M600 150v240" stroke="#10283F" stroke-width="4"/><rect x="140" y="400" width="520" height="16" fill="#10283F"/>
+</svg>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none" role="img" aria-label="duct-area-nets">
+  <rect width="800" height="560" rx="28" fill="#E7F3F0"/>
+  <circle cx="650" cy="96" r="36" fill="#E39A1A"/>
+  <rect x="180" y="80" width="440" height="400" fill="#10283F"/><rect x="220" y="120" width="360" height="320" fill="#E7F3F0"/><path d="M220 180h360M220 250h360M220 320h360M220 390h360M290 120v320M370 120v320M450 120v320M530 120v320" stroke="#1B3D5C" stroke-width="3"/>
+</svg>

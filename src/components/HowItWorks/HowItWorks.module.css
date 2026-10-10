@@ -1,0 +1,51 @@
+.section {
+  padding: 3.5rem 0;
+}
+
+.list {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+  counter-reset: step;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.9rem;
+  align-items: start;
+  padding: 1rem;
+  border-radius: var(--radius);
+  background: var(--teal-soft);
+}
+
+.number {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  background: var(--navy);
+  color: #fff;
+  font-weight: 800;
+}
+
+.title {
+  font-size: 1.1rem;
+  letter-spacing: -0.03em;
+}
+
+.text {
+  margin-top: 0.25rem;
+  color: var(--muted);
+}
+
+@media (min-width: 64rem) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .item {
+    grid-template-columns: 1fr;
+  }
+}

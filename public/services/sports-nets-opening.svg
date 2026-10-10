@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none" role="img" aria-label="sports-nets">
+  <rect width="800" height="560" rx="28" fill="#E7F3F0"/>
+  <circle cx="650" cy="96" r="36" fill="#E39A1A"/>
+  <rect x="140" y="100" width="520" height="340" fill="#E7F3F0"/><path d="M140 140h520M140 190h520M140 240h520M140 290h520M140 340h520M140 390h520M190 100v340M260 100v340M330 100v340M400 100v340M470 100v340M540 100v340M610 100v340" stroke="#10283F" stroke-width="3"/>
+</svg>

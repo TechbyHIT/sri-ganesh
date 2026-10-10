@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none" role="img" aria-label="cloth-hangers">
+  <rect width="800" height="560" rx="28" fill="#E7F3F0"/>
+  <circle cx="650" cy="96" r="36" fill="#E39A1A"/>
+  <rect x="80" y="120" width="640" height="16" fill="#10283F"/><path d="M160 136v70M320 136v70M480 136v70M640 136v70" stroke="#1B3D5C" stroke-width="6"/><path d="M120 206h560" stroke="#E39A1A" stroke-width="8" stroke-linecap="round"/><path d="M180 214v80M260 214v90M340 214v70M420 214v96M500 214v74M580 214v88" stroke="#0F6E62" stroke-width="4"/>
+</svg>

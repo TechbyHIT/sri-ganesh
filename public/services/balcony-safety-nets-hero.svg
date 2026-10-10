@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none" role="img" aria-label="balcony-safety-nets">
+  <rect width="800" height="560" rx="28" fill="#E7F3F0"/>
+  <circle cx="650" cy="96" r="36" fill="#E39A1A"/>
+  <rect x="90" y="140" width="620" height="280" fill="#F4E2B8"/><path d="M90 140h620M90 180h620M90 220h620M90 260h620M90 300h620M90 340h620M90 380h620M130 140v280M190 140v280M250 140v280M310 140v280M370 140v280M430 140v280M490 140v280M550 140v280M610 140v280M670 140v280" stroke="#0F6E62" stroke-width="3"/><rect x="70" y="420" width="660" height="18" fill="#10283F"/>
+</svg>

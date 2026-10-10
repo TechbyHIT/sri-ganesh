@@ -1,0 +1,62 @@
+import type { AdminLocation } from "@/data/types";
+
+const sourceUrl = "https://tirupati.ap.gov.in/mandals/";
+const verifiedAt = "2026-10-09";
+const districtId = "district-tirupati";
+
+const rows: { divisionId: string; name: string; slug: string; aliases?: string[] }[] = [
+  { divisionId: "division-srikalahasthi", name: "Srikalahasthi", slug: "srikalahasthi", aliases: ["Srikalahasti"] },
+  { divisionId: "division-srikalahasthi", name: "Thottambedu", slug: "thottambedu" },
+  { divisionId: "division-srikalahasthi", name: "Renigunta", slug: "renigunta" },
+  { divisionId: "division-srikalahasthi", name: "Yerpedu", slug: "yerpedu" },
+  { divisionId: "division-srikalahasthi", name: "Kumara Venkata Bhupala Puram", slug: "kumara-venkata-bhupala-puram" },
+  { divisionId: "division-srikalahasthi", name: "Nagalapuram", slug: "nagalapuram" },
+  { divisionId: "division-srikalahasthi", name: "Pitchatur", slug: "pitchatur" },
+  { divisionId: "division-srikalahasthi", name: "Narayanavanam", slug: "narayanavanam" },
+  { divisionId: "division-srikalahasthi", name: "Balayapalli", slug: "balayapalli" },
+  { divisionId: "division-srikalahasthi", name: "Venkatagiri", slug: "venkatagiri" },
+  { divisionId: "division-srikalahasthi", name: "Dakkili", slug: "dakkili" },
+  { divisionId: "division-sullurpet", name: "Ozili", slug: "ozili" },
+  { divisionId: "division-sullurpet", name: "Naidupeta", slug: "naidupeta" },
+  { divisionId: "division-sullurpet", name: "Pellakur", slug: "pellakur" },
+  { divisionId: "division-sullurpet", name: "Doravarisatram", slug: "doravarisatram" },
+  { divisionId: "division-sullurpet", name: "Sullurpet", slug: "sullurpet", aliases: ["Sullurpeta"] },
+  { divisionId: "division-sullurpet", name: "Tada", slug: "tada" },
+  { divisionId: "division-sullurpet", name: "Buchi Naidu Kandriga", slug: "buchi-naidu-kandriga" },
+  { divisionId: "division-sullurpet", name: "Varadaiahpalem", slug: "varadaiahpalem" },
+  { divisionId: "division-sullurpet", name: "Satyavedu", slug: "satyavedu" },
+  { divisionId: "division-sullurpet", name: "Vakadu", slug: "vakadu" },
+  { divisionId: "division-sullurpet", name: "Chittamur", slug: "chittamur" },
+  { divisionId: "division-tirupati", name: "Tirupati Urban", slug: "tirupati-urban" },
+  { divisionId: "division-tirupati", name: "Tirupati Rural", slug: "tirupati-rural" },
+  { divisionId: "division-tirupati", name: "Chandragiri", slug: "chandragiri" },
+  { divisionId: "division-tirupati", name: "Pakala", slug: "pakala" },
+  { divisionId: "division-tirupati", name: "Ramachandrapuram", slug: "ramachandrapuram" },
+  { divisionId: "division-tirupati", name: "Vadamalapeta", slug: "vadamalapeta" },
+  { divisionId: "division-tirupati", name: "Puttur", slug: "puttur" },
+  { divisionId: "division-tirupati", name: "Yerravaripalem", slug: "yerravaripalem" },
+  { divisionId: "division-tirupati", name: "Chinnagottigallu", slug: "chinnagottigallu" },
+  { divisionId: "division-tirupati", name: "Koduru", slug: "koduru" },
+  { divisionId: "division-tirupati", name: "Penagalur", slug: "penagalur" },
+  { divisionId: "division-tirupati", name: "Chitvel", slug: "chitvel" },
+  { divisionId: "division-tirupati", name: "Pullampeta", slug: "pullampeta" },
+  { divisionId: "division-tirupati", name: "Obulavaripalle", slug: "obulavaripalle" },
+];
+
+export const mandals: AdminLocation[] = rows.map((row) => ({
+  id: `mandal-${row.slug}`,
+  name: row.name,
+  slug: row.slug,
+  type: "mandal",
+  parentId: row.divisionId,
+  districtId,
+  mandalId: `mandal-${row.slug}`,
+  aliases: row.aliases ?? [],
+  languageNames: {},
+  sourceUrl,
+  verifiedAt,
+  active: true,
+  serviceAvailable: false,
+  indexable: false,
+  contentQualityStatus: "administrative-record",
+}));

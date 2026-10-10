@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none" role="img" aria-label="safety-spikes">
+  <rect width="800" height="560" rx="28" fill="#E7F3F0"/>
+  <circle cx="650" cy="96" r="36" fill="#E39A1A"/>
+  <rect x="140" y="280" width="520" height="20" fill="#10283F"/><path d="M180 280l10-48 10 48M250 280l10-48 10 48M320 280l10-48 10 48M390 280l10-48 10 48M460 280l10-48 10 48M530 280l10-48 10 48M600 280l10-48 10 48" fill="#0F6E62"/>
+</svg>

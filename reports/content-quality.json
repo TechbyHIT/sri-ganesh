@@ -1,0 +1,217 @@
+{
+  "records": 600,
+  "belowMinimum": 600,
+  "ready": 0,
+  "sample": [
+    {
+      "path": "/about",
+      "pageType": "core",
+      "words": 104,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/contact",
+      "pageType": "core",
+      "words": 55,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/gallery",
+      "pageType": "core",
+      "words": 31,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/projects",
+      "pageType": "core",
+      "words": 24,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/testimonials",
+      "pageType": "core",
+      "words": 26,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/faq",
+      "pageType": "core",
+      "words": 0,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/pricing-guide",
+      "pageType": "core",
+      "words": 56,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/materials-guide",
+      "pageType": "core",
+      "words": 71,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/installation-process",
+      "pageType": "core",
+      "words": 66,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/safety-guide",
+      "pageType": "core",
+      "words": 55,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/privacy-policy",
+      "pageType": "core",
+      "words": 57,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/terms-and-conditions",
+      "pageType": "core",
+      "words": 55,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/disclaimer",
+      "pageType": "core",
+      "words": 41,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/thank-you",
+      "pageType": "core",
+      "words": 27,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/guides",
+      "pageType": "core",
+      "words": 26,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/solutions",
+      "pageType": "core",
+      "words": 32,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/property-types",
+      "pageType": "core",
+      "words": 32,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/blog",
+      "pageType": "core",
+      "words": 25,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/services/invisible-grills",
+      "pageType": "service",
+      "words": 127,
+      "minimum": 1200,
+      "ready": false
+    },
+    {
+      "path": "/services/balcony-safety-nets",
+      "pageType": "service",
+      "words": 125,
+      "minimum": 1200,
+      "ready": false
+    },
+    {
+      "path": "/services/cloth-hangers",
+      "pageType": "service",
+      "words": 122,
+      "minimum": 1200,
+      "ready": false
+    },
+    {
+      "path": "/services/sports-nets",
+      "pageType": "service",
+      "words": 142,
+      "minimum": 1200,
+      "ready": false
+    },
+    {
+      "path": "/services/safety-spikes",
+      "pageType": "service",
+      "words": 120,
+      "minimum": 1200,
+      "ready": false
+    },
+    {
+      "path": "/services/duct-area-nets",
+      "pageType": "service",
+      "words": 122,
+      "minimum": 1200,
+      "ready": false
+    },
+    {
+      "path": "/services/building-covering",
+      "pageType": "service",
+      "words": 123,
+      "minimum": 1200,
+      "ready": false
+    },
+    {
+      "path": "/locations/vijayawada",
+      "pageType": "location",
+      "words": 64,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/locations/visakhapatnam",
+      "pageType": "location",
+      "words": 71,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/locations/guntur",
+      "pageType": "location",
+      "words": 55,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/locations/tirupati",
+      "pageType": "location",
+      "words": 52,
+      "minimum": 700,
+      "ready": false
+    },
+    {
+      "path": "/locations/rajahmundry",
+      "pageType": "location",
+      "words": 45,
+      "minimum": 700,
+      "ready": false
+    }
+  ]
+}

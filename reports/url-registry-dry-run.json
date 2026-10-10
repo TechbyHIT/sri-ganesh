@@ -1,0 +1,58 @@
+{
+  "dryRun": true,
+  "capacity": 50000,
+  "summary": {
+    "capacity": 50000,
+    "verifiedLocationsByType": {
+      "state": 1,
+      "district": 26,
+      "revenue-division": 72,
+      "mandal": 734,
+      "city": 6,
+      "town": 239,
+      "village": 16613,
+      "ward": 0,
+      "locality": 6
+    },
+    "activeServices": 7,
+    "confirmedServiceLocations": 14,
+    "candidateUrls": 17742,
+    "uniqueUrls": 17742,
+    "indexableUrls": 0,
+    "noindexUrls": 17742,
+    "invalidUrls": 0,
+    "duplicateUrls": 0,
+    "thinContentUrls": 17742,
+    "missingData": [
+      "Towns: the district-wise starter list is stored as unconfirmed towns under the listed district. They are not mandals, not service areas, and not indexable. Addanki, Atmakur, Ponnur, and Prathipadu were named under more than one district and were not imported. Markapuram and Polavaram were not imported.",
+      "Villages: 16,613 revenue villages from the Local Government Directory download of 9 October 2026 are stored for the 26 districts on the Andhra Pradesh District Portal. Markapuram (510 villages) and Polavaram (834 villages) were listed in that download and were not imported. Earlier district-site gram-panchayat rows were replaced by this list. These records are not service pages.",
+      "Mandals: district-site lists remain, and the 9 October 2026 Local Government Directory added the subdistricts those sites did not already name, including Alluri Sitharama Raju and YSR Kadapa. Markapuram (21 subdistricts) and Polavaram (12 subdistricts) were not imported. A mandal without a named revenue division is stored under its district.",
+      "Wards: no official urban-local-body ward list with stable parent mappings was imported.",
+      "Service coverage: a service and place are paired only when data/serviceLocations.ts confirms it. Unconfirmed pairs are not URLs."
+    ],
+    "orphanPages": 0,
+    "sitemapUrls": 53,
+    "gapToCapacity": 32258,
+    "draftsByType": {
+      "core": 18,
+      "service": 7,
+      "location": 6,
+      "area": 2,
+      "service-location": 12,
+      "service-area": 2,
+      "guide": 3,
+      "solution": 4
+    },
+    "serviceCatalog": {
+      "categories": 8,
+      "entries": 54,
+      "canonical": 4,
+      "merged": 47,
+      "unverified": 3
+    }
+  },
+  "batch": {
+    "size": 500,
+    "nextCursor": "/locations/alluri-sitharama-raju/araku-valley-alluri-sitharama-raju/totavalasa-583965"
+  }
+}
