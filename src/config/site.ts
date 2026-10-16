@@ -4,7 +4,7 @@ export const site = {
   tagline: "Invisible grills, safety nets and bird protection across Andhra Pradesh",
   description:
     "Sri Ganesha Home Safety Solutions measures and installs invisible grills, safety nets, pigeon nets, bird spikes, cloth hangers and sports nets for homes and buildings across Andhra Pradesh. Free site visit and a written quote.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:5124",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://sriganeshahomesafety.in",
   phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY || "9912811124",
   phoneTel: process.env.NEXT_PUBLIC_PHONE_TEL || "+919912811124",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || "919912811124",
