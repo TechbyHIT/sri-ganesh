@@ -4,12 +4,13 @@ import sharp from "sharp";
 
 const root = path.join(process.cwd(), "public", "gallery");
 const manifest = path.join(process.cwd(), "src", "data", "gallery-manifest.ts");
+const extraRoots = [path.join(process.cwd(), "images"), path.join(process.cwd(), "public", "brand")];
 
 async function filesIn(dir: string): Promise<string[]> {
   const entries = await readdir(dir, { withFileTypes: true });
   const nested = await Promise.all(
     entries
-      .filter((entry) => entry.isDirectory() && entry.name !== "thumbs" && entry.name !== "view")
+      .filter((entry) => entry.isDirectory() && entry.name !== "thumbs" && entry.name !== "view" && entry.name !== "hero")
       .map((entry) => filesIn(path.join(dir, entry.name))),
   );
   const here = entries
@@ -19,7 +20,7 @@ async function filesIn(dir: string): Promise<string[]> {
 }
 
 async function main() {
-  const files = await filesIn(root);
+  const files = [...(await filesIn(root)), ...(await Promise.all(extraRoots.map((dir) => filesIn(dir)))).flat()];
   let converted = 0;
   let failed = 0;
   for (const file of files) {

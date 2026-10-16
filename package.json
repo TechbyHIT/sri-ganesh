@@ -1,10 +1,13 @@
 {
   "name": "sri-ganesha-home-safety",
   "private": true,
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 5124",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 5124",
     "seo:generate": "tsx scripts/generate-seo.ts",
     "seo:check": "tsx scripts/generate-seo.ts --check",
     "seo:audit": "tsx scripts/seo-audit.ts",
