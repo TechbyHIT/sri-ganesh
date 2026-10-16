@@ -1,30 +1,72 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { StaticArticle } from "@/components/content/StaticArticle";
-import { QuoteForm } from "@/components/forms/QuoteForm";
-import { propertyTypes } from "@/data/property-types";
-import { getStaticPage, staticMetadata } from "@/lib/content/static-pages";
-import { getActiveCities } from "@/lib/locations";
-import { getAllServices } from "@/lib/services";
+import { absoluteUrl } from "@/seo/urls";
+import { site } from "@/config/site";
+import { InstallationGallery } from "@/components/InstallationGallery";
+import { SiteModules } from "@/components/SiteModules";
+import { QuotePanel } from "@/components/QuotePanel";
+import { galleryCards, heroImage } from "@/data/gallery";
+import { GoldLink, PageHero, Panel } from "@/components/ui";
 
-export function generateMetadata(): Metadata {
-  return staticMetadata("/contact");
-}
+export const metadata: Metadata = {
+  title: "Request a free site visit",
+  description:
+    "Book a measurement for invisible grills, safety nets, pigeon nets, cloth hangers or sports nets anywhere in Andhra Pradesh.",
+  alternates: { canonical: absoluteUrl("/contact") },
+};
 
-export default function ContactPage() {
-  const page = getStaticPage("/contact");
+type Search = { service?: string; city?: string; need?: string };
 
-  if (!page) {
-    notFound();
-  }
-
+export default async function ContactPage({ searchParams }: { searchParams: Promise<Search> }) {
+  const query = await searchParams;
   return (
-    <StaticArticle page={page}>
-      <QuoteForm
-        services={getAllServices().map((service) => ({ slug: service.slug, name: service.name }))}
-        cities={getActiveCities().map((city) => ({ slug: city.slug, name: city.name }))}
-        propertyTypes={propertyTypes.map((item) => ({ slug: item.slug, name: item.name }))}
+    <>
+      <PageHero
+        eyebrow="Contact"
+        title="Request your free quote"
+        text={
+          query.need === "photo"
+            ? "Send the city, a full photo of the opening, and closer photos of the top and side fixing surfaces. Width and height help. The written figure still follows a measurement."
+            : "Share the town, the opening and the service you have in mind. We confirm Andhra Pradesh coverage and arrange a measurement before any price is treated as final."
+        }
+        image={heroImage("contact", "balcony-safety-nets")}
+        crumbs={[{ href: "/", label: "Home" }, { label: "Contact" }]}
+        actions={<GoldLink href="#visit-form">Go to the form</GoldLink>}
       />
-    </StaticArticle>
+      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[0.85fr_1.15fr]">
+        <aside className="space-y-4 text-sm leading-7 text-brand-800/80">
+          <Panel eyebrow="Prepare" title="What helps a useful reply">
+            <ol className="space-y-3">
+              <li><span className="font-semibold text-brand-900">City or town.</span> Any place in the 26 districts is in scope. A remote hamlet is confirmed before a day is promised.</li>
+              <li><span className="font-semibold text-brand-900">The opening.</span> Balcony, window, duct, terrace, stairs, or a ground that actually exists for sport.</li>
+              <li><span className="font-semibold text-brand-900">Photographs.</span> One full frame, then closer shots of the top and side fixing surfaces. Width and height help if you have them.</li>
+              <li><span className="font-semibold text-brand-900">Who uses it.</span> Children, pets, pigeons, drying clothes, or a practice bay change the system.</li>
+            </ol>
+          </Panel>
+          <p className="rounded-3xl bg-white p-5 ring-1 ring-brand-100">
+            <span className="block font-semibold text-brand-900">Hours</span>
+            {site.hours}
+          </p>
+          <p className="rounded-3xl bg-white p-5 ring-1 ring-brand-100">
+            <span className="block font-semibold text-brand-900">Email</span>
+            <a href={`mailto:${site.email}`}>{site.email}</a>
+          </p>
+          <p className="rounded-3xl bg-white p-5 ring-1 ring-brand-100">
+            <span className="block font-semibold text-brand-900">Service area</span>
+            Entire Andhra Pradesh — all 26 districts. Phone and WhatsApp appear here once they are set for the business.
+          </p>
+          {site.phoneDisplay ? (
+            <p className="rounded-3xl bg-white p-5 ring-1 ring-brand-100">
+              <span className="block font-semibold text-brand-900">Phone</span>
+              {site.phoneDisplay}
+            </p>
+          ) : null}
+        </aside>
+        <div id="visit-form">
+          <QuotePanel service={query.service} city={query.city} need={query.need} />
+        </div>
+      </div>
+      <SiteModules />
+      <InstallationGallery photos={galleryCards("contact", 6)} compact title="Recent styles of work" text="The same balcony, window and duct systems we come to measure after you send the form." />
+    </>
   );
 }

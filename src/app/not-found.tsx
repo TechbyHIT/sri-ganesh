@@ -1,23 +1,23 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-import { getNotFoundMetadata } from "@/lib/seo";
 
-export const metadata = getNotFoundMetadata();
+export const metadata: Metadata = {
+  title: "Page not found",
+  robots: { index: false, follow: true },
+};
 
 export default function NotFound() {
   return (
-    <div className="container py-12 pb-16">
-      <p className="text-[0.82rem] font-extrabold tracking-[0.08em] text-teal uppercase">404</p>
-      <h1 className="mt-2 max-w-[16ch] text-[clamp(2rem,5vw,3.2rem)] leading-tight font-extrabold tracking-tight">That page is not on this site.</h1>
-      <p>The service or location may be unpublished. Start from the services list or the city index.</p>
-      <div className="mt-6 flex flex-wrap gap-3">
-        <Link className="button buttonPrimary" href="/">
-          Back to home
+    <div className="mx-auto max-w-xl px-4 py-24 text-center">
+      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cta-600">404</p>
+      <h1 className="mt-3 font-display text-4xl font-bold">That page is not on the Andhra Pradesh map</h1>
+      <p className="mt-3 text-sm leading-7 text-brand-800/75">Try a service, a city, or send the town name with a visit request.</p>
+      <div className="mt-6 flex justify-center gap-3">
+        <Link href="/locations" className="rounded-full bg-brand-900 px-5 py-3 text-sm font-semibold text-white">
+          Locations
         </Link>
-        <Link className="button buttonGhost" href="/services">
-          View services
-        </Link>
-        <Link className="button buttonGhost" href="/locations">
-          View locations
+        <Link href="/contact" className="rounded-full bg-cta-500 px-5 py-3 text-sm font-semibold text-brand-950">
+          Contact
         </Link>
       </div>
     </div>

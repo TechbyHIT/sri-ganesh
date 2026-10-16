@@ -1,611 +1,815 @@
-export type ServiceImage = {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-};
+export type Faq = { q: string; a: string };
 
-export type ServiceFaq = {
-  question: string;
-  answer: string;
-};
-
-export type InstallationStep = {
+export type Intent = {
+  slug: string;
   title: string;
-  detail: string;
+  angle: string;
 };
 
 export type Service = {
-  id: string;
-  name: string;
   slug: string;
-  shortDescription: string;
-  description: string;
+  name: string;
+  group: "Protection" | "Bird control" | "Utility";
+  summary: string;
+  lede: string;
+  problems: string[];
   benefits: string[];
-  features: string[];
-  applications: string[];
-  installationProcess: InstallationStep[];
-  faqs: ServiceFaq[];
-  seoTitle: string;
-  seoDescription: string;
-  heroImage: ServiceImage;
-  galleryImages: ServiceImage[];
-  relatedServices: string[];
-  active: boolean;
-  indexable: boolean;
+  where: string[];
+  materials: string[];
+  priceFactors: string[];
+  faqs: Faq[];
+  intents: Intent[];
 };
-
-function pictures(
-  slug: string,
-  heroAlt: string,
-  openingAlt: string,
-  fixingAlt: string,
-): { heroImage: ServiceImage; galleryImages: ServiceImage[] } {
-  const image = (kind: string, alt: string): ServiceImage => ({
-    src: `/services/${slug}-${kind}.svg`,
-    alt,
-    width: 800,
-    height: 560,
-  });
-
-  return {
-    heroImage: image("hero", heroAlt),
-    galleryImages: [image("opening", openingAlt), image("fixing", fixingAlt)],
-  };
-}
 
 export const services: Service[] = [
   {
-    id: "invisible-grills",
-    name: "Invisible Grills",
     slug: "invisible-grills",
-    shortDescription:
-      "Tensioned stainless-steel wire ropes in slim channels, so a balcony stays open while the wide gaps are closed.",
-    description:
-      "An invisible grill is not a mesh and it is not a row of thick bars. Stainless-steel wire rope is fixed between a top channel and a bottom channel, then tensioned so the lines stay straight. Light and air still pass. What changes is the gap a child, a pet, or a person leaning out can slip through. The channel line has to follow the real opening, including columns, sliding-door tracks, and corners that are not square. Spacing is chosen for who uses that balcony, not copied from the flat next door.",
+    name: "Invisible Grills",
+    group: "Protection",
+    summary:
+      "Tensioned stainless cables for balconies and windows that keep the outlook open while closing the fall gap.",
+    lede:
+      "An invisible grill is a run of stainless steel cable, tensioned between measured anchor points, so a balcony or window stays bright and ventilated. It is a fall barrier, not a welded iron frame, and it is planned around the opening you actually have.",
+    problems: [
+      "Open balconies in apartment towers are a real fall risk for children, older family members and pets.",
+      "Painted iron grills block breeze, darken the room and rust along the coast and in humid delta towns.",
+      "Builder-supplied railings often stop well below a safe height once a family starts using the balcony.",
+    ],
     benefits: [
-      "The view stays open because the barrier is wire, not a solid screen",
-      "Wide balcony gaps are reduced without rebuilding the railing",
-      "Each opening is cut to its own width, including odd corners",
-      "Stainless wire is a practical choice where salt air reaches the balcony",
+      "The view, daylight and airflow stay largely as they were.",
+      "Cable grade — SS304 or marine-leaning SS316 — is named in the written quote, not hidden behind a package name.",
+      "Spacing is set for the household: wider for general fall protection, closer where toddlers or small pets are the concern.",
+      "Anchor points are few compared with a full iron grill, and the finish is planned before drilling starts.",
     ],
-    features: [
-      "Stainless-steel wire rope, tensioned between top and bottom channels",
-      "Aluminium or stainless channels, fixed to the wall, slab, or frame that can hold them",
-      "Wire spacing set at measurement, tighter where small children use the balcony",
-      "End caps and corner turns so the run does not stop short of the opening",
-      "Wires that can be wiped, and a slack line that is re-tensioned at the end fittings",
+    where: [
+      "Apartment balconies and French windows",
+      "Villa decks and sit-outs",
+      "Staircase voids that need a transparent barrier",
+      "Commercial frontages where an iron grille would spoil the facade",
     ],
-    applications: [
-      "Apartment balconies where the railing has a climbable gap",
-      "French windows and large ventilators above a drop",
-      "Stair voids and internal courtyards",
-      "Duplex terraces that should stay visually open",
+    materials: [
+      "SS304 cable for inland and drier towns",
+      "SS316 cable where salt air and long monsoon humidity are part of the site",
+      "Stainless turnbuckles, ferrules and wall anchors matched to the substrate",
     ],
-    installationProcess: [
-      {
-        title: "Measure the clear opening",
-        detail:
-          "Width, height, and every break in the line are measured on site. A photo cannot show whether the slab edge is sound.",
-      },
-      {
-        title: "Agree the wire spacing",
-        detail:
-          "Spacing is confirmed before channels are cut. A balcony used by toddlers is not spaced like a balcony used only by adults.",
-      },
-      {
-        title: "Fix the channels",
-        detail:
-          "Top and bottom channels are drilled into the surface that can take the load. Brick, concrete, and aluminium frames are not fastened the same way.",
-      },
-      {
-        title: "Thread, tension, and finish",
-        detail:
-          "Wires are run through, tensioned so they do not sag, and closed with end fittings. The balcony is checked with you before the visit ends.",
-      },
+    priceFactors: [
+      "Running length and the number of cable lines",
+      "SS304 versus SS316",
+      "Wall or slab condition, and whether extra plates are needed",
+      "Floor height, society permission and access time",
+      "Bends around pillars, AC outdoor units and existing railings",
     ],
     faqs: [
       {
-        question: "Will the wires block the view?",
-        answer:
-          "You still see through the balcony. The wires are slim and spaced, so the opening does not become a solid wall. A safety net is the more visible option if you want a close mesh instead.",
+        q: "How much drilling does an invisible grill need?",
+        a: "Only the anchor points at each end of a cable run, plus intermediate supports on long spans. That is far less cutting than a welded iron grill. We mark the points after measurement so you can see them before work starts.",
       },
       {
-        question: "How is the gap between wires decided?",
-        answer:
-          "It is decided at measurement from the opening and from who uses it. Homes with small children need a tighter gap than a balcony that only needs a barrier against leaning too far.",
+        q: "Will the cables rust in coastal Andhra Pradesh?",
+        a: "Salt air around Visakhapatnam, Kakinada, Nellore and other Bay of Bengal towns is harder on metal than dry Rayalaseema heat. Where the balcony faces the sea breeze, we talk through SS316 and stainless fittings in the quote. Inland towns are often well served by SS304. The grade is a site decision, not a slogan.",
       },
       {
-        question: "Can an invisible grill be fixed to an old railing?",
-        answer:
-          "Sometimes the channels can share the opening with the railing, and sometimes the railing is too weak to carry them. The visit is where that is decided, before any drilling.",
+        q: "Can a child climb an invisible grill?",
+        a: "Cables reduce the chance of a fall through an open balcony. They are not a substitute for supervision. Spacing is tightened when the brief is child safety, and we say so during the visit if a net is the better barrier for that opening.",
       },
       {
-        question: "How is an invisible grill looked after?",
-        answer:
-          "Wipe the wires when dust or salt settles on them. If a line sags, the end fittings need a tension check. That maintains the run already installed. It is not a claim that the balcony will never need another visit.",
+        q: "How long does fitting take?",
+        a: "A single straight balcony is often completed in one planned visit after materials are ready. Multiple openings, high floors or awkward access can need a longer slot. The quote states the visit plan.",
       },
     ],
-    seoTitle: "Invisible Grills for Balconies in Andhra Pradesh",
-    seoDescription:
-      "Stainless-steel invisible grills measured to each balcony in Andhra Pradesh. Wire spacing, channels, and fixings are agreed before installation.",
-    ...pictures(
-      "invisible-grills",
-      "Balcony opening crossed by slim vertical invisible-grill wires",
-      "Diagram of an opening with evenly spaced invisible-grill wires",
-      "Top and bottom channels with tensioned grill wires between them",
-    ),
-    relatedServices: ["balcony-safety-nets", "cloth-hangers", "duct-area-nets"],
-    active: true,
-    indexable: true,
+    intents: [
+      {
+        slug: "invisible-grills-for-balcony",
+        title: "Invisible Grills for Balconies",
+        angle:
+          "Balcony work is planned from parapet to slab, including the gap above a low railing and the turns around columns.",
+      },
+      {
+        slug: "invisible-grills-for-windows",
+        title: "Invisible Grills for Windows",
+        angle:
+          "Window cables sit inside the reveal where possible so shutters, mosquito mesh and curtains still have room to move.",
+      },
+      {
+        slug: "invisible-grills-for-apartments",
+        title: "Invisible Grills for Apartments",
+        angle:
+          "Apartment jobs include society permission, service-lift timing and a finish that does not scar the common facade.",
+      },
+      {
+        slug: "invisible-grills-for-villas",
+        title: "Invisible Grills for Villas",
+        angle:
+          "Villas often mix wide sit-outs, stair voids and odd corner openings. Each run is measured instead of forcing one spacing everywhere.",
+      },
+      {
+        slug: "invisible-grills-for-child-safety",
+        title: "Invisible Grills for Child Safety",
+        angle:
+          "Closer cable spacing and a clear handover on what the grill does — and does not — do for a toddler.",
+      },
+      {
+        slug: "invisible-grills-for-pet-safety",
+        title: "Invisible Grills for Pet Safety",
+        angle:
+          "Cats and small dogs need tighter spacing than a general fall barrier. We confirm the pet and the gap before recommending cable or mesh.",
+      },
+    ],
   },
   {
-    id: "balcony-safety-nets",
-    name: "Balcony Safety Nets",
+    slug: "safety-nets",
+    name: "Safety Nets",
+    group: "Protection",
+    summary:
+      "Knotted, UV-stabilised mesh for wider openings where a soft barrier fits better than cable.",
+    lede:
+      "A safety net is a tensioned mesh panel anchored around an opening so people, pets and objects are far less likely to pass through. It suits wide balconies, terraces, ducts and stair voids where cable lines alone would leave too much gap.",
+    problems: [
+      "Large or irregular openings are awkward and costly to close with cable or iron.",
+      "Families want fall protection without turning the balcony into a dark cage.",
+      "Loose, untensioned net looks untidy and sags after the first monsoon.",
+    ],
+    benefits: [
+      "Mesh keeps light and air moving while closing the opening.",
+      "UV-stabilised HDPE or nylon is chosen for the sun load of that town.",
+      "Panels can be planned so a section is removable for painting or deep cleaning.",
+      "Edges are finished with a border rope so the net does not fray at the hooks.",
+    ],
+    where: [
+      "Balconies from railing to ceiling",
+      "Terrace edges and open staircases",
+      "Duct and utility shafts",
+      "School and apartment common areas",
+    ],
+    materials: [
+      "UV-stabilised HDPE mesh",
+      "Braided or twisted nylon where a softer hand-feel is preferred",
+      "Stainless or coated hooks sized to the wall",
+    ],
+    priceFactors: [
+      "Square area and mesh density",
+      "HDPE versus nylon, and whether a branded net is requested",
+      "Number of corners, pipes and level changes",
+      "Height and the time needed for safe access",
+    ],
+    faqs: [
+      {
+        q: "Do safety nets block air and light?",
+        a: "A correctly chosen mesh is see-through and lets breeze through. It is not a solid shutter. Very fine insect mesh is a different product — we do not sell mosquito net as fall protection.",
+      },
+      {
+        q: "Are mosquito nets the same as safety nets?",
+        a: "No. Mosquito mesh is an insect screen. Safety nets and invisible grills are planned as fall or exclusion barriers. The yarn, knot and fixing are different, and we name which system the quote is for.",
+      },
+      {
+        q: "Can the net be removed later?",
+        a: "Many balcony panels are planned with a release edge so the net can come down for painting or a function and go back up. We show you that edge at handover.",
+      },
+    ],
+    intents: [
+      {
+        slug: "balcony-safety-nets-for-high-rise-buildings",
+        title: "Safety Nets for High-Rise Buildings",
+        angle:
+          "High floors need society permission, a wind check on the fixing line, and a slot that respects other flats.",
+      },
+    ],
+  },
+  {
     slug: "balcony-safety-nets",
-    shortDescription:
-      "A taut UV-stable mesh across a balcony, window, or ventilator when a close cover matters more than a clear wire line.",
-    description:
-      "A balcony safety net closes the opening with mesh rather than wire rope. Families choose it when they want to stop small hands, pets, toys, and stored items from going through, or when a window sits above a shaft. The mesh is pulled tight and held at the frame, the wall, or the slab edge. A loose net that sags into a pocket is not a finished job. Invisible grills leave a clearer view. Nets are the better fit when the gap itself has to be covered, not only divided.",
+    name: "Balcony Safety Nets",
+    group: "Protection",
+    summary:
+      "Mesh from the balcony railing up to the slab, fitted to the shape of that balcony.",
+    lede:
+      "Balcony safety nets close the open band above the railing — the gap children, pets and falling objects actually use. The panel follows straight, L-shaped and slightly curved balconies instead of stopping at the easy rectangle.",
+    problems: [
+      "A railing at waist height does not stop a climbing child.",
+      "L-shaped and column-broken balconies are where generic nets gap.",
+      "Coastal wind loosens a net that was only hooked at the corners.",
+    ],
     benefits: [
-      "Closes the opening more fully than spaced wires",
-      "Helps keep children, pets, and loose objects on the balcony side",
-      "Can be planned around an existing railing instead of replacing it",
-      "Useful on windows and ventilators, not only on full-width balconies",
+      "The balcony stays usable for sitting, plants and drying.",
+      "Border finishing is planned so the mesh does not saw against the railing.",
+      "Tension is set so the panel looks even from the street and from inside.",
     ],
-    features: [
-      "HDPE or nylon mesh, UV stabilised for sun-facing balconies",
-      "Mesh grade chosen for the use: children and pets, or a lighter object barrier",
-      "Rope, hooks, or clamps fixed into a frame or wall that can hold them",
-      "Cut to irregular openings, including around pipes and column projections",
-    ],
-    applications: [
-      "Balconies used by young children or pets",
-      "Storage balconies where tools and pots sit near the edge",
-      "Windows and ventilators above a shaft or a street",
-      "Openings where a wire grill would leave too wide a gap for the household",
-    ],
-    installationProcess: [
-      {
-        title: "Measure the opening and the frame",
-        detail:
-          "The net follows the frame that is already there. We check what can take an anchor and what is only paint or a loose cover strip.",
-      },
-      {
-        title: "Choose the mesh",
-        detail:
-          "A closer mesh suits pets and small objects. A balcony that only needs a fall barrier may use a different grade. That choice is made before the net is cut.",
-      },
-      {
-        title: "Anchor and tension",
-        detail:
-          "Fixings are set around the opening, then the net is pulled taut so it does not belly out. Extra support is added where the span is long.",
-      },
-      {
-        title: "Trim and check the edges",
-        detail:
-          "Edges are closed so there is no leftover gap at the column or the floor. You can see the finished line before we leave.",
-      },
+    where: ["Apartment balconies", "Independent house sit-outs", "Duplex upper terraces"],
+    materials: ["UV-stabilised HDPE or nylon", "Border rope", "Weather-resistant hooks"],
+    priceFactors: [
+      "Railing-to-slab height and balcony length",
+      "Columns, planters and AC units inside the line",
+      "Mesh grade and coastal versus inland exposure",
     ],
     faqs: [
       {
-        question: "When is a net a better fit than an invisible grill?",
-        answer:
-          "Choose a net when you want mesh across the whole gap, for pets, small children, or objects. Choose an invisible grill when the clearer view matters more and spaced wires are enough.",
+        q: "Will the net spoil the building elevation?",
+        a: "A dark, even mesh read from a distance as a quiet shade, not as a patchwork. We align hooks and keep spare yarn off the facade. Society rules on colour are checked before the quote is locked.",
       },
       {
-        question: "Will the net sag after a few months?",
-        answer:
-          "A net that is only tied at the corners will sag. The installation spreads the anchors and tensions the mesh. Sun still ages plastic, which is why the mesh is UV stabilised, but the fixing pattern is what keeps it flat.",
-      },
-      {
-        question: "Can the net be taken down later?",
-        answer:
-          "Yes. It is a fitted cover, not a rebuilt wall. Removal means releasing the anchors. The visit will say whether those anchors are in the frame or in the wall.",
+        q: "Can this be fitted in a rented flat?",
+        a: "Yes, with the owner's and, where the rules require it, the association's permission. Fixings are kept as small as the substrate allows.",
       },
     ],
-    seoTitle: "Balcony Safety Nets for Homes in Andhra Pradesh",
-    seoDescription:
-      "Balcony safety nets for children, pets, and falling objects in Andhra Pradesh. Mesh and anchors are chosen after the opening is measured.",
-    ...pictures(
-      "balcony-safety-nets",
-      "Balcony covered by a taut safety-net mesh",
-      "Diagram of a rectangular opening filled with safety-net mesh",
-      "Corner anchors holding a balcony safety net in tension",
-    ),
-    relatedServices: ["invisible-grills", "duct-area-nets", "building-covering"],
-    active: true,
-    indexable: true,
+    intents: [
+      {
+        slug: "balcony-safety-nets-for-apartments",
+        title: "Balcony Safety Nets for Apartments",
+        angle:
+          "Apartment balconies are measured with the neighbour's line, the false ceiling and the sliding door track in mind.",
+      },
+    ],
   },
   {
-    id: "cloth-hangers",
-    name: "Cloth Hangers",
-    slug: "cloth-hangers",
-    shortDescription:
-      "Ceiling-mounted drying rods that lift clothes off the railing and use the height an apartment already has.",
-    description:
-      "Most apartments dry clothes on the balcony railing or on a stand that blocks the floor. A cloth hanger moves that load to the ceiling. Rods or a pulley run are fixed to the slab, clear of the fan and the light, so the railing can stay free for a grill or a net. The layout is drawn from the slab you have. A standard rod kit that crosses a fan or lands on a weak plaster patch is not installed just because it is the size in the brochure.",
+    slug: "children-safety-nets",
+    name: "Children Safety Nets",
+    group: "Protection",
+    summary:
+      "Soft, strong mesh planned around how children actually use balconies, windows and stairs.",
+    lede:
+      "Children safety nets are specified for pull, climb and lean — not just for covering a hole. The mesh is soft on contact and the anchors are placed where a child cannot work a hook loose.",
+    problems: [
+      "Toddlers treat railings as climbing frames.",
+      "Window sills at bed height are an easy step.",
+      "Open staircases in duplex houses have gaps adults stop noticing.",
+    ],
     benefits: [
-      "Frees the balcony railing for safety fittings or for simply walking past",
-      "Uses ceiling height instead of floor space in a narrow balcony",
-      "Keeps wet clothes off the parapet, where they stain and drip on the floor below",
-      "Can be planned in the same visit as a grill or a net so the fixings do not clash",
+      "Mesh density is discussed for the age of the child, not copied from a catalogue photo.",
+      "Contact surface stays soft compared with iron bars.",
+      "Parents get a short care note: what to check after monsoon and after festival cleaning.",
     ],
-    features: [
-      "Stainless or aluminium rods sized to the clear ceiling run, so daily wet clothes are not hung on a light indoor rail",
-      "Ceiling brackets placed away from fans, lights, and conduit",
-      "Pulley hardware where the ceiling is too high to reach a fixed rod comfortably",
-      "Load carried by the slab, not by the railing",
-    ],
-    applications: [
-      "Apartments with no separate utility yard",
-      "Balconies too narrow for a floor-standing dryer",
-      "Homes that want the railing kept clear",
-      "Covered terraces used for daily drying",
-    ],
-    installationProcess: [
-      {
-        title: "Read the ceiling",
-        detail:
-          "The slab, fan, light points, and any boxed conduit are marked before a bracket position is chosen.",
-      },
-      {
-        title: "Set the rod length",
-        detail:
-          "The run stops short of walls and sliding tracks. A rod that looks longer on paper often cannot pass the fan.",
-      },
-      {
-        title: "Fix the brackets",
-        detail:
-          "Brackets go into the slab where it can take them. If the ceiling build-up is only a weak false layer, the fixing method changes or the job stops.",
-      },
-      {
-        title: "Hang and test the travel",
-        detail:
-          "Rods or the pulley line are fitted and moved through their range so clothes will not hit the grill, the light, or the neighbour’s line.",
-      },
-    ],
+    where: ["Balconies", "Low windows", "Internal stair voids", "Play corners on a terrace"],
+    materials: ["Soft knotted nylon or HDPE", "Close mesh", "Tamper-resistant edge fixing"],
+    priceFactors: ["Number of openings", "Mesh closeness", "Stair geometry", "Access"],
     faqs: [
       {
-        question: "Can a cloth hanger share a balcony with an invisible grill?",
-        answer:
-          "Yes, and it is better to plan both together. The rod height has to clear the top channel, and the brackets should not land on the same line as the grill fixings.",
-      },
-      {
-        question: "What if the balcony already has a ceiling fan?",
-        answer:
-          "The rod layout is drawn around the fan. If there is no safe run left, we will say so instead of forcing a full-width kit under the blades.",
-      },
-      {
-        question: "How much weight can it take?",
-        answer:
-          "That depends on the slab and the bracket spacing, not on a single number for every balcony. The quote names the layout we measured. We do not publish a universal load that ignores the ceiling.",
+        q: "Is a net enough if my child climbs well?",
+        a: "A net lowers risk. It does not replace watching a young child on a balcony. If the opening is better closed with closer invisible-grill cables, we say that on site.",
       },
     ],
-    seoTitle: "Ceiling Cloth Hangers for Apartments in Andhra Pradesh",
-    seoDescription:
-      "Ceiling cloth hangers for Andhra Pradesh apartments. The rod layout is planned around the slab, fan, and lights before brackets are drilled.",
-    ...pictures(
-      "cloth-hangers",
-      "Ceiling-mounted cloth hanger rods above a balcony",
-      "Diagram of hanger rods suspended from a ceiling slab",
-      "Ceiling brackets carrying a drying rod",
-    ),
-    relatedServices: ["invisible-grills", "balcony-safety-nets"],
-    active: true,
-    indexable: true,
+    intents: [
+      {
+        slug: "children-safety-nets-for-balcony",
+        title: "Children Safety Nets for Balconies",
+        angle:
+          "The panel runs railing to slab, including the side returns a child can reach beside a column.",
+      },
+    ],
   },
   {
-    id: "sports-nets",
-    name: "Sports Nets",
-    slug: "sports-nets",
-    shortDescription:
-      "Practice enclosures for cricket and other games, sized to a terrace, a yard, or a small residential court.",
-    description:
-      "A sports net is a different product from a balcony safety net. The mesh, the poles, and the height are there to keep balls inside a playing bay. At a home this is often a short cricket net on a terrace or in a backyard. Football and badminton practice use the same enclosure when the measured bay has the width and height for that game. At a school or an apartment club it may be a longer bay with side and roof mesh. The ground under the bay, the way poles are anchored, and what sits beyond the net, including glass and neighbouring homes, decide whether the space is actually usable.",
+    slug: "pet-safety-nets",
+    name: "Pet Safety Nets",
+    group: "Protection",
+    summary:
+      "Tighter mesh so cats cannot slip through and dogs cannot push a sagging panel aside.",
+    lede:
+      "Pet safety nets use a smaller aperture and a tougher edge because cats test corners and dogs lean with their full weight. The balcony can stay open for them without becoming a fall risk.",
+    problems: [
+      "Standard balcony mesh can still pass a slim cat at the corner.",
+      "Dogs push the lower edge if the border is loose.",
+      "Chewing at a hook line frays a cheap yarn.",
+    ],
     benefits: [
-      "Keeps practice balls off glass, parked vehicles, and the next house",
-      "Sized to the bay you have, including short terrace runs",
-      "Side mesh and roof mesh can be planned as one enclosure",
-      "Separated from balcony nets so the mesh grade matches the sport",
+      "Aperture is chosen after you tell us the pet, not before.",
+      "Lower edge is tied so it cannot be nosed up.",
+      "The balcony remains a place the pet can use.",
     ],
-    features: [
-      "Sports-grade net, not the lighter mesh used on a balcony window",
-      "Poles or wall fixings set out from the measured bay",
-      "Roof mesh where balls would otherwise leave over the top",
-      "Height and length agreed before poles are planted",
-    ],
-    applications: [
-      "Cricket practice on a terrace, backyard, or short home bay",
-      "Football and badminton practice where the measured bay is wide enough",
-      "School corners used for practice",
-      "Residential courts and apartment clubhouses",
-      "Open lawns that sit too close to glass, a road, or the next house",
-    ],
-    installationProcess: [
-      {
-        title: "Measure the bay, not just the wish",
-        detail:
-          "Length, width, height, and what surrounds the space are measured. A terrace that cannot take poles safely is not a cricket net.",
-      },
-      {
-        title: "Place the anchors",
-        detail:
-          "Poles need a base or a wall that can hold them. The quote names that fixing. It is not assumed from a catalogue picture.",
-      },
-      {
-        title: "Hang the side and roof mesh",
-        detail:
-          "Sides go up first. Roof mesh is added where the sport needs it, tied so there is no open corner for a ball to leave.",
-      },
-      {
-        title: "Check the playing line",
-        detail:
-          "You can see the finished bay and the clearance around it before the job is called complete.",
-      },
-    ],
+    where: ["Balconies", "Windows", "Terrace pet corners"],
+    materials: ["Tighter HDPE or nylon", "Reinforced border", "Covered hooks where chewing is likely"],
+    priceFactors: ["Pet size and behaviour", "Aperture", "Length of chew-risk edge"],
     faqs: [
       {
-        question: "Can a sports net fit a home terrace?",
-        answer:
-          "Only if there is room for the poles and a safe way to anchor them. A home bay is shorter than a school net. If the terrace is too tight for the game, we will say that at the visit.",
-      },
-      {
-        question: "Is this the same mesh as a balcony safety net?",
-        answer:
-          "No. Balcony mesh is for people and small objects at a railing. Sports mesh is for balls in a practice bay, often with a roof. Using one in place of the other gives the wrong strength and the wrong shape.",
-      },
-      {
-        question: "Do you build full stadium enclosures?",
-        answer:
-          "The work we publish is practice bays for homes, schools, and residential courts. A competition ground is a different structure and is not what this service describes.",
+        q: "Will this hold a large dog leaning on it?",
+        a: "We look at the dog's weight and how the net is anchored. If the opening needs cable as well as mesh, the quote says so instead of overselling a light net.",
       },
     ],
-    seoTitle: "Sports Practice Nets in Andhra Pradesh",
-    seoDescription:
-      "Sports practice nets for terraces, yards, and small courts in Andhra Pradesh. Pole positions and mesh height follow the space you have.",
-    ...pictures(
-      "sports-nets",
-      "Practice bay enclosed by sports netting on the sides and overhead",
-      "Diagram of a sports-net grid across a practice opening",
-      "End poles carrying the lines of a sports net",
-    ),
-    relatedServices: ["safety-spikes", "building-covering"],
-    active: true,
-    indexable: true,
+    intents: [
+      {
+        slug: "pet-safety-nets-for-balcony",
+        title: "Pet Safety Nets for Balconies",
+        angle: "Corner gaps, planter ledges and the gap under a sliding shutter are part of the measure.",
+      },
+    ],
   },
   {
-    id: "safety-spikes",
-    name: "Safety Spikes",
-    slug: "safety-spikes",
-    shortDescription:
-      "Polycarbonate or stainless strips on ledges where birds settle or a wall is easy to climb, and nowhere people are meant to stand.",
-    description:
-      "Safety spikes are strips fixed along a ledge. They are used on parapets, outdoor AC platforms, signage edges, and the tops of compound walls. The point is to make a roost or a foothold uncomfortable, not to fence a balcony people use. They do not belong on a handrail, a stair, or any surface someone walks on. Where pigeons are entering through a shaft, spikes on the outer ledge are often paired with a duct net. One does not replace the other.",
+    slug: "pigeon-nets",
+    name: "Pigeon Nets",
+    group: "Bird control",
+    summary:
+      "A humane mesh barrier that stops pigeons nesting on balconies, ledges and ducts.",
+    lede:
+      "Pigeon nets close the volume birds actually occupy — the balcony box, the duct, the space above an AC unit — so they cannot land, nest or drop waste there. The birds are excluded, not harmed.",
+    problems: [
+      "Droppings stain floors, clog drains and make a balcony unusable.",
+      "Nesting returns within days if only one ledge was spiked and the balcony stayed open.",
+      "Fine debris and feathers aggravate asthma in small flats.",
+    ],
     benefits: [
-      "Discourages roosting on ledges without covering the whole balcony",
-      "Makes a low compound wall harder to climb",
-      "Follows the ledge, so the strip does not cross a walking path",
-      "Can sit alongside a duct net where birds use both the ledge and the shaft",
+      "Mesh size is chosen to stop pigeons without looking like a solid wall.",
+      "The balcony can be used again once the nest site is closed.",
+      "No poison, gel or loose spike in a place where children play.",
     ],
-    features: [
-      "Polycarbonate or stainless spike strips",
-      "Adhesive or screw fixing, chosen for the ledge material",
-      "Runs cut to corners, slopes, and breaks around AC brackets",
-      "Omitted from handrails and any surface people stand on",
-    ],
-    applications: [
-      "Parapet walls and sunshades",
-      "Outdoor air-conditioner ledges",
-      "Compound walls with an easy foothold",
-      "Beam edges and signage that collect nesting",
-    ],
-    installationProcess: [
-      {
-        title: "Walk the ledges",
-        detail:
-          "Every run is looked at. A ledge above a balcony door is not treated like a parapet nobody touches.",
-      },
-      {
-        title: "Leave walking surfaces clear",
-        detail:
-          "If a surface is a route for people, spikes are not fitted there. The quote says what is included and what is refused.",
-      },
-      {
-        title: "Fix the strips",
-        detail:
-          "The strip is screwed or bonded to a clean ledge. Paint that is peeling is not a fixing surface.",
-      },
-      {
-        title: "Close the ends",
-        detail:
-          "Corners and stops are finished so there is no open gap that simply moves the roost one foot along.",
-      },
-    ],
+    where: ["Balconies", "Utility ducts", "AC ledges opening into a balcony", "Stair headrooms"],
+    materials: ["UV-stabilised HDPE pigeon mesh", "Stainless hooks", "Border cord"],
+    priceFactors: ["Volume to be closed", "Pipes and beams inside the net line", "Access and cleaning of old droppings"],
     faqs: [
       {
-        question: "Are safety spikes a balcony railing?",
-        answer:
-          "No. They are ledge strips. A balcony that people use needs a grill, a net, or a proper railing. Spikes are not a handhold and they are not fitted where someone stands.",
+        q: "Will pigeons get trapped inside?",
+        a: "We clear birds before the last edge is closed, and we leave the sequence so a bird can leave. The point of the net is to stop a new nest, not to trap a flock.",
       },
       {
-        question: "Will spikes alone stop pigeons in a duct?",
-        answer:
-          "Not always. Birds that nest inside a shaft need the opening covered, which is a duct net. Spikes help on the outer ledge. Many buildings need both.",
-      },
-      {
-        question: "Which material is used?",
-        answer:
-          "Polycarbonate or stainless steel. The ledge, the weather, and whether the run is in full sun decide the choice at the visit. There is no single strip for every wall.",
+        q: "What is a sensible pigeon-net price?",
+        a: "Area, corners and height change the quote more than a single rate per square foot. We measure and write the figure down. We do not publish a statewide rate that would be wrong for your opening.",
       },
     ],
-    seoTitle: "Safety Spikes for Ledges and Parapets in Andhra Pradesh",
-    seoDescription:
-      "Safety spikes for parapets, AC ledges, and compound walls in Andhra Pradesh. Strips are fitted only where people do not stand or walk.",
-    ...pictures(
-      "safety-spikes",
-      "Spike strips mounted along a parapet ledge",
-      "Diagram of a ledge with a continuous run of safety spikes",
-      "Short spike row fixed to the top of a wall",
-    ),
-    relatedServices: ["duct-area-nets", "balcony-safety-nets"],
-    active: true,
-    indexable: true,
+    intents: [
+      {
+        slug: "pigeon-nets-for-balcony",
+        title: "Pigeon Nets for Balconies",
+        angle: "The full balcony volume is closed, including the return beside the drying area.",
+      },
+      {
+        slug: "pigeon-nets-for-duct-area",
+        title: "Pigeon Nets for Duct Areas",
+        angle: "Shaft nets are planned so maintenance crews can still open a documented access flap.",
+      },
+    ],
   },
   {
-    id: "duct-area-nets",
-    name: "Duct Area Nets",
+    slug: "bird-nets",
+    name: "Bird Nets",
+    group: "Bird control",
+    summary:
+      "Exclusion nets for pigeons and other perch birds on balconies, sheds and shafts.",
+    lede:
+      "Bird nets are the broader exclusion job: pigeons on homes, and mixed birds on sheds, warehouses and service shafts. The mesh and the fixing follow the species and the structure, after we see where they sit.",
+    problems: [
+      "Birds use the same beam every evening and foul the floor below.",
+      "A net with the wrong aperture stops nothing or traps smaller birds.",
+      "Industrial sheds need a different span plan than a flat balcony.",
+    ],
+    benefits: [
+      "Aperture and colour are chosen for the site.",
+      "Fixing respects sheet roofs, trusses and concrete alike.",
+      "The method stays physical and humane.",
+    ],
+    where: ["Homes", "Apartment shafts", "Parking sheds", "Small commercial roofs"],
+    materials: ["HDPE bird mesh", "Cable supports on longer spans", "Edge ties"],
+    priceFactors: ["Span", "Roof type", "Working height", "Mesh specification"],
+    faqs: [
+      {
+        q: "When should I choose spikes instead?",
+        a: "Spikes suit a narrow ledge where birds only perch. Nets suit a volume they enter. Many buildings need both. We recommend after looking, not from the phone.",
+      },
+    ],
+    intents: [
+      {
+        slug: "bird-nets-for-duct-area",
+        title: "Bird Nets for Duct Areas",
+        angle: "Duct nets include a way for the plumber or AC technician to open the shaft later.",
+      },
+    ],
+  },
+  {
+    slug: "anti-bird-spikes",
+    name: "Anti Bird Spikes",
+    group: "Bird control",
+    summary:
+      "Stainless spike strips that stop birds landing on ledges, parapets and signboards.",
+    lede:
+      "Anti bird spikes are a row of blunt stainless pins on a base strip. Birds cannot settle comfortably, so they move on. The pins are a deterrent, not a trap, and they suit edges where a net would be the wrong tool.",
+    problems: [
+      "Parapet walls and sunshades become night roosts.",
+      "Droppings streak the elevation and the signboard.",
+      "Netting a thin ledge looks heavy and still leaves the wall top open.",
+    ],
+    benefits: [
+      "Low visual bulk on a parapet or ledge.",
+      "Stainless strips cope better with rain than plastic pins in the sun.",
+      "No poison and no sticky gel to smear in summer heat.",
+    ],
+    where: ["Parapets", "Window ledges", "AC trays", "Signboards and beams"],
+    materials: ["Stainless steel spike strips", "UV-stable adhesive or mechanical fix"],
+    priceFactors: ["Running metres", "Strip density", "Surface (concrete, metal, stone)", "Access"],
+    faqs: [
+      {
+        q: "Do spikes hurt the birds?",
+        a: "They are spaced so a bird cannot get a grip. They are not designed to impale. We do not fit spikes where a child can grab them at hand height inside a home.",
+      },
+    ],
+    intents: [
+      {
+        slug: "anti-bird-spikes-for-pigeon-control",
+        title: "Anti Bird Spikes for Pigeon Control",
+        angle: "Spikes on the landing strip, and a net only if pigeons are entering a whole balcony.",
+      },
+    ],
+  },
+  {
     slug: "duct-area-nets",
-    shortDescription:
-      "Nets across plumbing ducts, AC shafts, and utility recesses that railings never cover.",
-    description:
-      "The dangerous gap in many apartment blocks is not the balcony. It is the plumbing duct or AC shaft beside the kitchen or the bathroom, open at each floor. Objects drop between floors. Pigeons treat the ledges as shelves. A duct area net is cut to that opening, including around the pipes that already cross it, and anchored to the surrounding wall or frame. It is not a balcony net stretched over a shaft and hoped into shape. If the outer ledge is also a roost, safety spikes are a separate run.",
+    name: "Duct Area Nets",
+    group: "Bird control",
+    summary:
+      "Shaft and service-duct nets that stop birds without blocking the technician's access.",
+    lede:
+      "Service ducts in apartment blocks collect pigeons, waste and smell. A duct net closes the open face at the right floors and keeps a planned opening for the people who service pipes and AC lines.",
+    problems: [
+      "Open ducts become nesting towers.",
+      "A fully sealed net blocks the plumber on the next leak.",
+      "Smell and mites travel into adjacent kitchens.",
+    ],
     benefits: [
-      "Closes a fall gap that the balcony railing does not cover",
-      "Reduces the shelf pigeons use inside a shaft",
-      "Cut around pipes instead of leaving a hole beside them",
-      "Planned per floor, because shafts are rarely the same from one landing to the next",
+      "Birds stay out of the shaft.",
+      "An access flap is marked and explained to the association.",
+      "Mesh is chosen for dust and weather, not only for looks.",
     ],
-    features: [
-      "UV-stable net sized to the measured shaft",
-      "Anchors into the wall or frame around the opening",
-      "Shaped around soil pipes, water lines, and AC trunks",
-      "Separate from balcony mesh so the fixing suits a vertical shaft",
-    ],
-    applications: [
-      "Plumbing and drainage ducts",
-      "AC and ventilation shafts",
-      "Utility recesses open on each floor",
-      "Gaps above common stair landings",
-    ],
-    installationProcess: [
-      {
-        title: "Measure the shaft, floor by floor",
-        detail:
-          "Width, height, and the pipes inside are measured. A drawing of a typical duct is not the opening in front of us.",
-      },
-      {
-        title: "Check the anchor line",
-        detail:
-          "The wall around the shaft has to hold the fixings. Loose tiles or hollow plaster are not ignored.",
-      },
-      {
-        title: "Cut and fit the net",
-        detail:
-          "The mesh is shaped around the services in the shaft and pulled tight so it does not hang into the duct.",
-      },
-      {
-        title: "Close the leftover gaps",
-        detail:
-          "Edges beside pipes are finished. If the outer ledge still needs spikes, that is quoted as its own item.",
-      },
-    ],
+    where: ["Plumbing ducts", "AC service shafts", "Light wells"],
+    materials: ["HDPE shaft mesh", "Framed or roped edges", "Labelled access opening"],
+    priceFactors: ["Number of floors covered", "Shaft size", "Existing clutter", "Permission to work in common area"],
     faqs: [
       {
-        question: "Can one net pattern be repeated on every floor?",
-        answer:
-          "Only when the openings match. Pipes shift, and some floors have a smaller recess. Each opening we are asked to cover is measured.",
-      },
-      {
-        question: "Will the net block plumbers later?",
-        answer:
-          "The net is a fitted cover, so a future repair may need it released at that opening. We place anchors so the panel can be understood, not buried in a knot of rope with no edge.",
-      },
-      {
-        question: "Is this the same as a balcony safety net?",
-        answer:
-          "The mesh family is similar. The opening is not. A duct net is cut for a shaft, often with pipes through it. A balcony net covers a railing line people stand behind.",
+        q: "Who has to approve duct work?",
+        a: "In most apartments the association does, because the shaft is common. We can explain the access flap in writing so the committee has something clear to approve.",
       },
     ],
-    seoTitle: "Duct Area Nets for Shafts in Andhra Pradesh",
-    seoDescription:
-      "Duct area nets for plumbing shafts, AC ducts, and utility openings in Andhra Pradesh. Each shaft is measured, including pipes that cross the gap.",
-    ...pictures(
-      "duct-area-nets",
-      "Utility shaft covered by a duct area net, with a pipe passing through",
-      "Diagram of a tall duct opening filled with netting",
-      "Anchors at the corners of a duct net",
-    ),
-    relatedServices: ["safety-spikes", "balcony-safety-nets", "invisible-grills"],
-    active: true,
-    indexable: true,
+    intents: [
+      {
+        slug: "duct-area-nets-for-duct-area",
+        title: "Duct Nets for Service Shafts",
+        angle: "Each shaft is measured for pipes, not estimated from the corridor width.",
+      },
+    ],
   },
   {
-    id: "building-covering",
-    name: "Building Covering",
-    slug: "building-covering",
-    shortDescription:
-      "Debris and shade nets hung for a stage of construction or repair, then taken down when that stage ends.",
-    description:
-      "Building covering is temporary. It screens a block while plaster, tile, painting, or other external work is underway. Debris net is there to catch material before it reaches the ground or a neighbouring roof. Shade and green net reduce dust and sun on the working face. The sheet is tied to scaffold or to anchors that can hold it, and it comes down when that stage is finished. It is not a permanent balcony product. A home that needs lasting protection at a railing needs a grill, a net, or both.",
+    slug: "terrace-safety-nets",
+    name: "Terrace Safety Nets",
+    group: "Protection",
+    summary:
+      "Overhead and edge nets for open terraces used by children or exposed to birds.",
+    lede:
+      "Terrace safety nets cover open edges and, where needed, the overhead span so a terrace can be used for play or drying without an open fall or a bird problem. The pole or cable layout follows the terrace you have.",
+    problems: [
+      "Open terrace edges on independent houses are rarely at a safe height.",
+      "Overhead bird soiling makes the terrace unusable in the evening.",
+      "A net without a proper edge rope fails at the first storm wind.",
+    ],
     benefits: [
-      "Catches falling debris during plaster, tile, and similar work",
-      "Screens dust from homes beside the site",
-      "Can shade the working face while that stage is open",
-      "Removed when the stage ends, instead of being left as a torn sheet",
+      "Edge and overhead needs are quoted separately so you do not buy both by default.",
+      "UV load in Rayalaseema and wind on the coast are part of the material talk.",
+      "The terrace remains open to air.",
     ],
-    features: [
-      "Debris net, shade net, or green covering, chosen for the work underway",
-      "Ties to scaffold or structural anchor points, not to a loose railing",
-      "Coverage planned around the face that is actually being worked on",
-      "A removal point agreed with the stage of construction",
-    ],
-    applications: [
-      "Apartments under renovation",
-      "New blocks before handover, while external work continues",
-      "Painting and external plaster",
-      "Sites beside an occupied neighbouring building",
-    ],
-    installationProcess: [
-      {
-        title: "Walk the face that needs cover",
-        detail:
-          "Height, width, and how the scaffold or slab edge can take ties are checked. The whole building is not wrapped by default.",
-      },
-      {
-        title: "Choose the net for the stage",
-        detail:
-          "Debris control and shade are different cloths. The quote names which one is being hung and why.",
-      },
-      {
-        title: "Tie it off",
-        detail:
-          "The sheet is fixed so a gust does not turn it into a sail. Loose corners are the usual failure, so the edges are part of the job.",
-      },
-      {
-        title: "Plan the take-down",
-        detail:
-          "Covering stays for the stage it was hung for. When that work ends, it is removed rather than left to fray.",
-      },
-    ],
+    where: ["House terraces", "Apartment roof decks", "Play corners"],
+    materials: ["UV HDPE", "Support cable or light poles where the span needs them"],
+    priceFactors: ["Edge length versus overhead area", "Span", "Parapet condition", "Wind exposure"],
     faqs: [
       {
-        question: "Is building covering permanent?",
-        answer:
-          "No. It stays up for the construction or repair stage it was hung for, then it is taken down. Lasting balcony protection is a grill, a safety net, or both.",
-      },
-      {
-        question: "Can it be tied to the balcony railing?",
-        answer:
-          "Only if that railing can hold the load, which many cannot. The usual tie is scaffold or a structural anchor. The visit is where that is decided.",
-      },
-      {
-        question: "Do you leave the net after painting is finished?",
-        answer:
-          "Not as a completed job. If the net is still needed for a later stage, that is a separate instruction. Otherwise it comes down.",
+        q: "Do I need a full overhead cage?",
+        a: "Only if birds or falling objects from above are the problem. Many terraces only need the open edge closed. We separate those two quotes.",
       },
     ],
-    seoTitle: "Building Covering Nets for Construction in Andhra Pradesh",
-    seoDescription:
-      "Temporary building covering for construction, plaster, and painting in Andhra Pradesh. Debris and shade nets are hung for that stage, then removed.",
-    ...pictures(
-      "building-covering",
-      "Building face screened by construction covering net",
-      "Diagram of a facade with a covering net across the work area",
-      "Vertical ties holding building covering between scaffold lines",
-    ),
-    relatedServices: ["sports-nets", "duct-area-nets"],
-    active: true,
-    indexable: true,
+    intents: [
+      {
+        slug: "terrace-safety-nets-for-terrace",
+        title: "Terrace Safety Nets for Open Terraces",
+        angle: "Parapet height, water tanks and solar frames are measured before the net line is drawn.",
+      },
+      {
+        slug: "terrace-safety-nets-for-fall-protection",
+        title: "Terrace Nets for Fall Protection",
+        angle: "Fall protection focuses on the open edge and stair head, not on covering the whole sky.",
+      },
+    ],
+  },
+  {
+    slug: "staircase-safety-nets",
+    name: "Staircase Safety Nets",
+    group: "Protection",
+    summary:
+      "Mesh for open stair wells and duplex voids so a gap beside the flight is closed.",
+    lede:
+      "Open staircases look light and leave a dangerous void. Staircase safety nets follow the rake of the flight and the landing, with tension that does not pull the handrail out of line.",
+    problems: [
+      "Children slide toward the open side of a stair.",
+      "A vertical gap beside a floating tread is wider than it looks.",
+      "Iron infill would make a duplex stair feel closed in.",
+    ],
+    benefits: [
+      "The stair stays visually open.",
+      "The net follows the slope instead of leaving triangular holes.",
+      "Fixings avoid the structural screws of the handrail where we can.",
+    ],
+    where: ["Duplex stairs", "Apartment fire-stair landings where permitted", "Lofts"],
+    materials: ["Soft strong mesh", "Closely spaced anchors along the rake"],
+    priceFactors: ["Number of flights", "Void width", "Handrail material", "Working room"],
+    faqs: [
+      {
+        q: "Can you net a staircase without removing the handrail?",
+        a: "Usually yes. We anchor to the adjacent wall or stringer and keep the handrail's own fixings intact. If the rail itself is loose, we tell you before we load it.",
+      },
+    ],
+    intents: [
+      {
+        slug: "staircase-safety-nets-for-child-safety",
+        title: "Staircase Nets for Child Safety",
+        angle: "Landings and the triangular gap under the first flight are included, not only the pretty mid-span.",
+      },
+      {
+        slug: "staircase-safety-nets-for-staircase",
+        title: "Open Staircase Nets",
+        angle: "Each flight is measured on the rake so the panel does not wrinkle or gap at the turn.",
+      },
+    ],
+  },
+  {
+    slug: "cloth-hangers",
+    name: "Cloth Hangers",
+    group: "Utility",
+    summary:
+      "Ceiling and wall drying systems that free the balcony floor.",
+    lede:
+      "Cloth hangers lift drying off the floor. Ceiling units with a pulley suit a balcony with clear height. Wall-mounted rods suit a utility corner. The span, drop and rod count are taken from your slab and your wash load, not from a showroom photo.",
+    problems: [
+      "Drying racks eat the only outdoor space in a small flat.",
+      "Mild-steel rods rust and stain clothes in humid towns.",
+      "A hanger that is too long for the slab sags in the middle.",
+    ],
+    benefits: [
+      "Floor space comes back for a chair or a child.",
+      "Aluminium or stainless rods are chosen for coastal humidity.",
+      "Pulley travel is checked so the rack clears the fan and the light.",
+    ],
+    where: ["Balconies", "Utility areas", "Service balconies behind the kitchen"],
+    materials: ["Aluminium or stainless rods", "Pulley and cord rated for a wet load", "Ceiling anchors"],
+    priceFactors: ["Rod length and count", "Ceiling versus wall", "Slab condition", "Pulley type"],
+    faqs: [
+      {
+        q: "Will a ceiling hanger hold bedsheets?",
+        a: "Wet cotton is heavy. We size the rod count and anchors for a normal family wash and tell you the limit in plain language at fitting.",
+      },
+    ],
+    intents: [
+      {
+        slug: "cloth-hangers-for-balcony",
+        title: "Cloth Hangers for Balconies",
+        angle: "We check ceiling height, the fan sweep and the door head before the rods are cut.",
+      },
+    ],
+  },
+  {
+    slug: "sports-nets",
+    name: "Sports Nets",
+    group: "Utility",
+    summary:
+      "Practice and perimeter nets sized to the ground, terrace or academy bay.",
+    lede:
+      "Sports nets are built to the bay you have: a terrace cricket strip, a school side court, or a perimeter that keeps balls inside a ground. Pole spacing, net strength and height come from the sport and the site, after a measure.",
+    problems: [
+      "A light balcony net fails on the first hard shot.",
+      "Wrong height sends balls into the next house.",
+      "Poles planted without a footing lean after rain.",
+    ],
+    benefits: [
+      "Net specification matches impact, not just shade.",
+      "Layout is drawn to the actual ground size.",
+      "Schools and academies get a written scope before work.",
+    ],
+    where: ["School grounds", "Apartment terraces", "Coaching camps", "Backyards"],
+    materials: ["Heavy knotted sports net", "Poles and footing suited to the soil or slab"],
+    priceFactors: ["Sport", "Bay size", "Height", "Pole foundation", "Overhead need"],
+    faqs: [
+      {
+        q: "Can a terrace take a practice net?",
+        a: "Sometimes. We look at slab load, waterproofing and where poles can land. If the terrace is wrong for poles, we say so before anyone drills.",
+      },
+    ],
+    intents: [],
+  },
+  {
+    slug: "cricket-nets",
+    name: "Cricket Nets",
+    group: "Utility",
+    summary:
+      "Practice lanes with side and, where needed, top netting for coaching and house terraces.",
+    lede:
+      "Cricket practice nets take repeated impact. Lane width, height behind the bowler and the back net are set for the level of play — backyard practice is not a district academy, and the quote should not pretend it is.",
+    problems: [
+      "Short side nets let catches and throws leave the lane.",
+      "A single back sheet wears through at the batsman's arc.",
+      "Neighbour complaints start when height is guessed.",
+    ],
+    benefits: [
+      "Lane size is agreed on site.",
+      "Heavier net is used on the hitting face.",
+      "Indoor and outdoor jobs are specified differently.",
+    ],
+    where: ["Academies", "School grounds", "Society grounds", "Large terraces after a slab check"],
+    materials: ["Heavy cricket netting", "Supported poles", "Ground anchors or base plates"],
+    priceFactors: ["Number of lanes", "Height and top net", "Surface", "Usage level"],
+    faqs: [
+      {
+        q: "Do you build multi-lane nets?",
+        a: "Yes, when the ground allows. Each lane is measured. We do not stretch one price across a guess.",
+      },
+    ],
+    intents: [
+      {
+        slug: "cricket-nets-for-practice-grounds",
+        title: "Cricket Nets for Practice Grounds",
+        angle: "Lane width, bowler run-up and the neighbour line are marked before poles are ordered.",
+      },
+    ],
+  },
+  {
+    slug: "mosquito-nets",
+    name: "Mosquito Nets",
+    group: "Utility",
+    summary:
+      "Insect screens for windows and balconies — a different system from fall-safety nets.",
+    lede:
+      "Mosquito nets are fine insect screens on a stitched or framed panel. They keep mosquitoes out of a room. They are not a child fall barrier. If you need both, we quote them as two systems that can share a balcony without being confused for each other.",
+    problems: [
+      "Delta and coastal evenings bring heavy mosquito pressure.",
+      "A safety net's apertures still let insects through.",
+      "Poorly fitted screens leave a gap at the track.",
+    ],
+    benefits: [
+      "We say clearly when a job is insect control.",
+      "Window and balcony screens are measured to the shutter.",
+      "You can add fall protection as a separate line if the opening needs it.",
+    ],
+    where: ["Bedroom windows", "Balcony doors", "Utility windows"],
+    materials: ["Fine HDPE or fibreglass insect mesh", "Velcro, magnetic or framed fixing"],
+    priceFactors: ["Opening count", "Frame style", "Door traffic", "Colour"],
+    faqs: [
+      {
+        q: "Can one net stop mosquitoes and stop a fall?",
+        a: "Not well. Fall mesh is too open for mosquitoes, and insect mesh is not specified as a fall barrier. We quote the one you need, or both, as separate lines.",
+      },
+    ],
+    intents: [
+      {
+        slug: "mosquito-nets-for-windows",
+        title: "Mosquito Nets for Windows",
+        angle: "Screens follow the shutter type — sliding, openable or fixed — so the gap at the frame is closed.",
+      },
+      {
+        slug: "mosquito-nets-for-balcony",
+        title: "Mosquito Nets for Balconies",
+        angle: "A balcony insect screen is planned so the door still opens and the safety system, if any, stays independent.",
+      },
+    ],
+  },
+  {
+    slug: "cat-safety-nets",
+    name: "Cat Safety Nets",
+    group: "Protection",
+    summary:
+      "Tight-aperture balcony and window mesh planned around how cats sit on railings and slip through corners.",
+    lede:
+      "A cat safety net is a closer mesh than a general pet panel. It is measured around sills, planter ledges and the gap under a sliding shutter — the places a cat actually tests — not only the pretty mid-rail.",
+    problems: [
+      "A slim cat can pass a corner that looks closed to an adult.",
+      "Standard balcony mesh is often still too open at the return beside a column.",
+      "Window sills at sofa height become a step.",
+    ],
+    benefits: [
+      "Aperture is chosen after we know the cat, not from a generic pet photo.",
+      "Corners and shutter gaps are part of the measure.",
+      "The balcony can stay a place the cat uses.",
+    ],
+    where: ["Apartment balconies", "Window sills", "Planter ledges", "Sliding balcony doors"],
+    materials: ["Tight HDPE or nylon mesh", "Reinforced border", "Covered hooks on chew-risk edges"],
+    priceFactors: ["Aperture", "Number of corners", "Shutter gap", "Floor height"],
+    faqs: [
+      {
+        q: "Is a pigeon net enough for a cat?",
+        a: "Usually not. Bird mesh can still pass a slim cat at a corner. We quote a cat-specific aperture or closer cable if that is the better barrier.",
+      },
+    ],
+    intents: [
+      {
+        slug: "cat-safety-nets-for-balcony",
+        title: "Cat Safety Nets for Balconies",
+        angle: "The panel includes the return beside a column and the gap under the sliding door, not only the open rail.",
+      },
+    ],
+  },
+  {
+    slug: "monkey-safety-nets",
+    name: "Monkey Safety Nets",
+    group: "Protection",
+    summary:
+      "Tougher outdoor mesh for hill-edge and foothill openings where monkeys, not only pigeons, use the terrace.",
+    lede:
+      "Monkey safety nets are specified for pull and climb on openings that actually see monkeys — foothill houses, fruit trees beside a terrace, agency-edge compounds. A pigeon net is the wrong product here, and we say so when the site has never seen a troop.",
+    problems: [
+      "Pigeon mesh tears when pulled by a larger animal.",
+      "Open terraces beside trees become a bridge.",
+      "Hill towns are sold a coastal pigeon package that does not fit.",
+    ],
+    benefits: [
+      "Yarn and fixing are assessed for the site, not copied from a balcony pigeon page.",
+      "We only recommend this category where the geography makes sense.",
+      "Access for people using the terrace is planned before the last edge is closed.",
+    ],
+    where: ["Foothill terraces", "Hill-edge houses", "School compounds in agency towns", "Fruit-tree sit-outs"],
+    materials: ["Heavier knotted outdoor mesh", "Closer hook lines", "Support cable on longer spans"],
+    priceFactors: ["Opening size", "Tree cover", "Yarn grade", "Access"],
+    faqs: [
+      {
+        q: "Do you fit this in a delta apartment?",
+        a: "Only if there is a real wildlife brief. We do not advertise monkeys on a Kakinada flat that has a pigeon problem.",
+      },
+    ],
+    intents: [
+      {
+        slug: "monkey-safety-nets-for-terrace",
+        title: "Monkey Safety Nets for Terraces",
+        angle: "Tree lines, parapet height and how people use the terrace are marked before the mesh is specified.",
+      },
+    ],
+  },
+  {
+    slug: "building-covering-nets",
+    name: "Building Covering Nets",
+    group: "Protection",
+    summary:
+      "Project mesh for elevations, work faces and temporary enclosures — scoped as site work, not a house balcony package.",
+    lede:
+      "Building-covering nets close or shelter a facade, a work area or a temporary enclosure. Overlap, fixing and who walks behind the mesh are the brief. This is not a priced-per-balcony product.",
+    problems: [
+      "A house balcony quote does not scale to a tower face.",
+      "Wind on a tall elevation is ignored when the net is sold as shade cloth.",
+      "Trades cut an unplanned hole and leave the cover useless.",
+    ],
+    benefits: [
+      "Scope is written after a walk with the association or contractor.",
+      "Access openings are labelled.",
+      "We refuse a light net sold as a cyclone screen.",
+    ],
+    where: ["Apartment elevations under work", "School or hospital faces", "Temporary work enclosures", "Long facade runs"],
+    materials: ["Project-grade mesh", "Overlap plan", "Fixings suited to the elevation"],
+    priceFactors: ["Area", "Height", "Duration", "Wind exposure", "Access control"],
+    faqs: [
+      {
+        q: "Is this the same as a balcony safety net?",
+        a: "No. A balcony net is a household fall panel. Building cover is project mesh with a different yarn, overlap and permission path.",
+      },
+    ],
+    intents: [
+      {
+        slug: "building-covering-nets-for-apartments",
+        title: "Building Covering Nets for Apartments",
+        angle: "Society permission, lift timing and the trade using the face are part of the measure.",
+      },
+    ],
+  },
+  {
+    slug: "transparent-balcony-nets",
+    name: "Transparent Balcony Nets",
+    group: "Protection",
+    summary:
+      "Lower-visibility balcony mesh that still works as a fall panel, planned for light and a quieter elevation.",
+    lede:
+      "Transparent balcony nets use a finer or quieter mesh so the outlook and daylight stay part of the plan. Strength and even tension remain first. If the family wants almost no visual weight, invisible cable may be the cleaner brief.",
+    problems: [
+      "A thick dark patchwork net spoils a view-led balcony.",
+      "Society rules on colour are discovered after the yarn is ordered.",
+      "Fine mesh is sold as fall safety when it is only an insect screen.",
+    ],
+    benefits: [
+      "Colour and aperture are agreed before cutting.",
+      "The panel can be planned with a release edge for painting.",
+      "We will say when cable is the better view-led system.",
+    ],
+    where: ["View-led apartment balconies", "High-rise sit-outs", "Society-sensitive facades"],
+    materials: ["Lower-visibility UV mesh", "Even border rope", "Colour checked with the association"],
+    priceFactors: ["Aperture", "Colour", "Run length", "Release-edge need"],
+    faqs: [
+      {
+        q: "Will this look invisible?",
+        a: "It looks quieter than a heavy sports mesh. It does not vanish. For a near-transparent line, ask about invisible grills.",
+      },
+    ],
+    intents: [
+      {
+        slug: "transparent-balcony-nets-for-apartments",
+        title: "Transparent Balcony Nets for Apartments",
+        angle: "Elevation colour, railing-to-slab height and whether the panel must unhook are decided on site.",
+      },
+    ],
   },
 ];
+
+export const serviceGroups = ["Protection", "Bird control", "Utility"] as const;
+
+export function getService(slug: string) {
+  return services.find((service) => service.slug === slug);
+}
+
+export function getIntent(slug: string) {
+  for (const service of services) {
+    const intent = service.intents.find((item) => item.slug === slug);
+    if (intent) return { service, intent };
+  }
+  return undefined;
+}

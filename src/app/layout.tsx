@@ -1,61 +1,56 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
-import { Manrope } from "next/font/google";
-import { Analytics } from "@/components/analytics/Analytics";
-import { Cta } from "@/components/Cta/Cta";
-import { Footer } from "@/components/Footer/Footer";
-import { Header } from "@/components/Header/Header";
-import { FloatingActions } from "@/components/home/FloatingActions";
-import { JsonLd } from "@/components/seo/JsonLd";
-import { site } from "@/data/site";
-import { organizationSchema } from "@/lib/schema";
-import "@/lib/validate-seo";
+import { Inter, Poppins } from "next/font/google";
+import { site } from "@/config/site";
+import { SiteChrome } from "@/components/SiteChrome";
+import { ServiceGrid } from "@/components/ServiceGrid";
+import { Footer } from "@/components/Footer";
 import "./globals.css";
 
-const manrope = Manrope({
-  subsets: ["latin"],
-  display: "swap",
-  preload: true,
-  adjustFontFallback: true,
-  fallback: ["Segoe UI", "sans-serif"],
-  variable: "--font-manrope",
-});
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+const poppins = Poppins({ subsets: ["latin"], weight: ["600", "700", "800"], variable: "--font-poppins", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: site.name,
-    template: `%s | ${site.name}`,
+    default: "Invisible Grills & Safety Nets in Andhra Pradesh | Sri Ganesha",
+    template: "%s | Sri Ganesha Home Safety",
   },
   description: site.description,
-  applicationName: site.name,
   openGraph: {
+    title: "Invisible Grills & Safety Nets in Andhra Pradesh",
+    description: site.description,
+    locale: "en_IN",
     type: "website",
-    locale: site.locale,
-    siteName: site.name,
   },
-  twitter: {
-    card: "summary",
-  },
-  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
-    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
-    : undefined,
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  name: site.name,
+  description: site.description,
+  email: site.email,
+  areaServed: { "@type": "State", name: "Andhra Pradesh" },
+  address: {
+    "@type": "PostalAddress",
+    addressRegion: "Andhra Pradesh",
+    addressCountry: "IN",
+  },
+  url: site.url,
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang={site.language} className={manrope.variable}>
-      <body>
-        <JsonLd data={organizationSchema()} />
-        <a className="skip" href="#main">
+    <html lang="en">
+      <body id="top" className={`${inter.variable} ${poppins.variable} font-sans antialiased`}>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2">
           Skip to content
         </a>
-        <Header />
-        <main id="main">{children}</main>
-        <Cta />
+        <SiteChrome />
+        <main id="content">{children}</main>
+        <ServiceGrid />
         <Footer />
-        <FloatingActions />
-        <Analytics />
       </body>
     </html>
   );

@@ -1,33 +1,23 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { ServiceDetail } from "@/components/ServiceDetail/ServiceDetail";
-import { getAllServices, getServiceBySlug } from "@/lib/services";
-import { generateServiceMetadata } from "@/lib/seo";
+import { SeoScreen } from "@/components/SeoPage";
+import { metadataFor } from "@/seo/metadata";
+import { services } from "@/data/services";
+import { servicePath } from "@/seo/urls";
+
+type Params = { service: string };
 
 export function generateStaticParams() {
-  return getAllServices().map((service) => ({ service: service.slug }));
+  return services.map((service) => ({ service: service.slug }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ service: string }>;
-}): Promise<Metadata> {
-  const { service: slug } = await params;
-  return generateServiceMetadata(slug);
+export const dynamicParams = false;
+
+export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
+  const { service } = await params;
+  return metadataFor(servicePath(service));
 }
 
-export default async function ServicePage({
-  params,
-}: {
-  params: Promise<{ service: string }>;
-}) {
-  const { service: slug } = await params;
-  const service = getServiceBySlug(slug);
-
-  if (!service?.active) {
-    notFound();
-  }
-
-  return <ServiceDetail service={service} />;
+export default async function ServiceSeoPage({ params }: { params: Promise<Params> }) {
+  const { service } = await params;
+  return <SeoScreen path={servicePath(service)} />;
 }

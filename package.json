@@ -1,64 +1,34 @@
 {
-  "name": "sri-ganesha-home-safety-solutions",
-  "version": "0.1.0",
+  "name": "sri-ganesha-home-safety",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint",
-    "typecheck": "tsc --noEmit",
-    "test": "vitest run",
-    "test:e2e": "playwright test",
-    "seo:audit": "tsx scripts/seo-audit.ts",
-    "content:audit": "tsx scripts/content-audit.ts",
-    "duplicates:audit": "tsx scripts/duplicate-audit.ts",
-    "links:audit": "tsx scripts/internal-link-audit.ts",
-    "schema:audit": "tsx scripts/schema-audit.ts",
-    "placeholders:audit": "tsx scripts/placeholder-audit.ts",
-    "sitemaps:generate": "tsx scripts/generate-sitemaps.ts",
-    "pages:count": "tsx scripts/page-count.ts",
-    "urls:dry-run": "tsx scripts/url-registry.ts",
-    "pages:create": "tsx scripts/create-page-records.ts",
-    "pages:audit": "tsx scripts/pages-audit.ts",
-    "pages:publish": "tsx scripts/publish-pages.ts",
-    "pages:noindex": "tsx scripts/pages-noindex.ts",
-    "import:locations": "tsx scripts/import-locations.ts",
-    "import:lgd": "python scripts/import-lgd-villages.py",
-    "validate:locations": "tsx scripts/url-matrix.ts validate-locations",
-    "validate:services": "tsx scripts/url-matrix.ts validate-services",
-    "generate:urls": "tsx scripts/url-matrix.ts generate",
-    "audit:duplicates": "tsx scripts/url-matrix.ts audit-duplicates",
-    "audit:content": "tsx scripts/url-matrix.ts audit-content",
-    "audit:coverage": "tsx scripts/url-matrix.ts audit-coverage",
-    "audit:internal-links": "tsx scripts/url-matrix.ts audit-links",
-    "generate:sitemaps": "tsx scripts/url-matrix.ts sitemaps",
-    "export:url-registry": "tsx scripts/url-matrix.ts export"
+  "engines": {
+    "node": ">=20"
   },
-  "prisma": {
-    "seed": "tsx prisma/seed.ts"
+  "scripts": {
+    "dev": "next dev -p 5124",
+    "build": "next build",
+    "start": "next start -p 5124",
+    "seo:generate": "tsx scripts/generate-seo.ts",
+    "seo:check": "tsx scripts/generate-seo.ts --check",
+    "seo:audit": "tsx scripts/seo-audit.ts",
+    "gallery:ingest": "tsx scripts/ingest-gallery.ts",
+    "gallery:optimize": "tsx scripts/optimize-gallery.ts",
+    "gallery:webp": "tsx scripts/convert-webp.ts"
   },
   "dependencies": {
-    "@prisma/client": "^6.16.2",
-    "next": "16.4.0",
-    "react": "19.3.0",
-    "react-dom": "19.3.0",
-    "zod": "^3.25.76"
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "@playwright/test": "^1.56.1",
-    "@tailwindcss/postcss": "^4.1.14",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.4.0",
+    "@types/node": "^22.15.30",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
-    "prettier": "^3.6.2",
-    "prisma": "^6.16.2",
-    "tailwindcss": "^4.1.14",
-    "tsx": "^4.20.6",
-    "typescript": "^5",
-    "vitest": "^3.2.4"
+    "sharp": "^0.35.5",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.23.15",
+    "typescript": "^5.8.3"
   }
 }
