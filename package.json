@@ -11,6 +11,10 @@
     "seo:generate": "tsx scripts/generate-seo.ts",
     "seo:check": "tsx scripts/generate-seo.ts --check",
     "seo:audit": "tsx scripts/seo-audit.ts",
+    "locations:build": "tsx scripts/build-locations.ts",
+    "locations:check": "tsx scripts/build-locations.ts --check",
+    "locations:import": "tsx scripts/import-localities.ts",
+    "db:export": "tsx scripts/export-sql.ts",
     "gallery:ingest": "tsx scripts/ingest-gallery.ts",
     "gallery:optimize": "tsx scripts/optimize-gallery.ts",
     "gallery:webp": "tsx scripts/convert-webp.ts"

@@ -3,6 +3,7 @@ import { site } from "@/config/site";
 import { featuredPhoto, viewSrc } from "@/data/gallery";
 import type { Area, City } from "@/data/cities";
 import { districts } from "@/data/cities";
+import { districtByName, districtPath } from "@/data/geo";
 import {
   popularSearchPhrases,
   wikiAreaModules,
@@ -26,7 +27,11 @@ import {
   statePath,
 } from "./urls";
 
-const frames: Record<City["region"], Record<ReturnType<typeof serviceFamily>, string>> = {
+export function placeHref(city: City) {
+  return city.pagePath ?? cityPath(city.slug);
+}
+
+export const frames: Record<City["region"], Record<ReturnType<typeof serviceFamily>, string>> = {
   Uttarandhra: {
     cable: "On this part of the Bay, salt air reaches open balconies. SS316 is a real discussion for sea-facing and ridge flats. Sheltered walls in the same town are often specified in SS304. The visit is what decides, not a package name.",
     mesh: "Coastal wind and monsoon wetting are the mesh problems here. A net that is only hooked at the corners sags after the first wet spell. Edge rope, UV stabiliser and stainless hooks are the specification, written down before fitting.",
@@ -47,20 +52,21 @@ const frames: Record<City["region"], Record<ReturnType<typeof serviceFamily>, st
   },
 };
 
-function hash(value: unknown) {
+export function hash(value: unknown) {
   return createHash("sha1").update(`${TEMPLATE_VERSION}:${JSON.stringify(value)}`).digest("hex").slice(0, 16);
 }
 
-function shot(seed: string, service?: string) {
+export function shot(seed: string, service?: string, own?: City["photos"]) {
+  if (own?.length) return { image: own[0].src, imageAlt: own[0].alt };
   const photo = featuredPhoto(seed, service);
   return { image: viewSrc(photo.src), imageAlt: photo.alt };
 }
 
-function crumb(...items: LinkItem[]): LinkItem[] {
+export function crumb(...items: LinkItem[]): LinkItem[] {
   return [{ href: "/", label: "Home" }, ...items];
 }
 
-function base(partial: Omit<PageDocument, "status" | "index" | "score" | "reasons" | "skeleton" | "keywordHits" | "canonical" | "ogTitle" | "ogDescription" | "jsonLd"> & { jsonLd?: PageDocument["jsonLd"] }): PageDocument {
+export function base(partial: Omit<PageDocument, "status" | "index" | "score" | "reasons" | "skeleton" | "keywordHits" | "canonical" | "ogTitle" | "ogDescription" | "jsonLd"> & { jsonLd?: PageDocument["jsonLd"] }): PageDocument {
   const canonical = absoluteUrl(partial.path);
   const document: PageDocument = {
     ...partial,
@@ -79,7 +85,7 @@ function base(partial: Omit<PageDocument, "status" | "index" | "score" | "reason
   return document;
 }
 
-function structuredData(page: Pick<PageDocument, "path" | "title" | "description" | "breadcrumb" | "kind" | "h1">) {
+function structuredData(page: Pick<PageDocument, "path" | "title" | "description" | "breadcrumb" | "kind" | "h1" | "quote">) {
   const canonical = absoluteUrl(page.path);
   const crumbs = {
     "@context": "https://schema.org",
@@ -97,10 +103,11 @@ function structuredData(page: Pick<PageDocument, "path" | "title" | "description
     name: page.h1,
     description: page.description,
     url: canonical,
-    provider: { "@type": "Organization", name: site.name },
-    areaServed: page.kind === "service" || page.kind === "state" || page.kind === "guide"
-      ? { "@type": "State", name: "Andhra Pradesh" }
-      : { "@type": "AdministrativeArea", name: "Andhra Pradesh" },
+    ...(page.quote.service ? { serviceType: page.quote.service } : {}),
+    provider: { "@type": "Organization", name: site.name, url: site.url },
+    areaServed: page.quote.city
+      ? { "@type": "Place", name: `${page.quote.city}, Andhra Pradesh` }
+      : { "@type": "State", name: "Andhra Pradesh" },
   };
   return [crumbs, service];
 }
@@ -110,7 +117,7 @@ function neighbors(city: City, regionCities: City[]) {
   const links: LinkItem[] = [];
   for (let step = 1; links.length < 5 && step < regionCities.length; step += 1) {
     const next = regionCities[(index + step) % regionCities.length];
-    links.push({ href: cityPath(next.slug), label: next.name });
+    links.push({ href: placeHref(next), label: next.name });
   }
   return links;
 }
@@ -161,7 +168,7 @@ export function composeState(cities: City[]): PageDocument {
     kind: "state",
     path: statePath(),
     title: "Invisible Grills and Safety Nets in Andhra Pradesh",
-    description: "Measurement-led invisible grills, safety nets, pigeon protection, cloth hangers and sports nets in all 26 districts of Andhra Pradesh. Book a free visit.",
+    description: "Measurement-led invisible grills, safety nets, pigeon protection, cloth hangers and sports nets in all 28 districts of Andhra Pradesh. Book a free visit.",
     h1: "Invisible grills and safety nets in Andhra Pradesh",
     eyebrow: "Entire state",
     hero: "Sri Ganesha measures and fits balcony, window, duct and ground systems across Andhra Pradesh. Coverage is the state. A city page is published only where we hold verified local notes on climate, housing and how the visit is scheduled.",
@@ -176,7 +183,7 @@ export function composeState(cities: City[]): PageDocument {
         title: "The state as a service map",
         paragraphs: [
           "Andhra Pradesh is one coverage promise and several fitting climates. The Bay edge from Srikakulam and Visakhapatnam through Kakinada, Machilipatnam, Chirala and Nellore puts humidity and, in places, salt on metal. Rayalaseema — Kurnool, Nandyal, Anantapur, Kadapa, Chittoor and the Tirupati foothills — puts ultraviolet light and dust on mesh. The Godavari and Krishna deltas sit between those stories: close-built towns, pigeon roosts, and mosquito evenings that must not be sold as fall safety.",
-          "There is no branch office claimed for every mandal. Each of the 26 districts has a hub. Smaller towns — Samalkot, Tanuku, Palakollu, Bobbili, Palasa, Kavali, Adoni, Paderu and the rest of the city list — are measured when the drive and a useful slot are confirmed.",
+          "There is no branch office claimed for every mandal. Each of the 28 districts — including Markapuram and Polavaram, created on 31 December 2025 — has a hub. Smaller towns — Samalkot, Tanuku, Palakollu, Bobbili, Palasa, Kavali, Adoni, Paderu and the rest of the city list — are measured when the drive and a useful slot are confirmed.",
           "Categories on this site follow use, not a single net sold under every name. Protection covers cable grills, balcony and children nets, pet and cat panels, stairs, terraces, monkey-prone openings and building-cover project mesh. Bird control covers pigeon nets, bird nets, spikes and ducts. Utility covers hangers, sports, cricket and insect screens.",
         ],
       },
@@ -184,6 +191,14 @@ export function composeState(cities: City[]): PageDocument {
         type: "list",
         title: "Districts and the hub we schedule from",
         items: districts.map((district) => `${district.name} — via ${district.hub}`),
+      },
+      {
+        type: "links",
+        title: "District pages",
+        links: districts.flatMap((district) => {
+          const official = districtByName(district.name);
+          return official ? [{ href: districtPath(official.slug), label: `${official.name} district` }] : [];
+        }),
       },
       {
         type: "links",
@@ -291,10 +306,10 @@ export function composeServiceCity(service: Service, city: City, regionCities: C
     h1: `${service.name} in ${city.name}`,
     eyebrow: `${city.region} · ${city.district}`,
     hero: `${city.intro} ${service.summary}`,
-    ...shot(`service-city:${service.slug}:${city.slug}`, service.slug),
+    ...shot(`service-city:${service.slug}:${city.slug}`, service.slug, city.photos),
     breadcrumb: crumb(
       { href: servicePath(service.slug), label: service.name },
-      { href: cityPath(city.slug), label: city.name },
+      { href: placeHref(city), label: city.name },
       { label: `${service.name} in ${city.name}` },
     ),
     params: { service: service.slug, state: STATE.slug, city: city.slug },
@@ -341,7 +356,7 @@ export function composeServiceCity(service: Service, city: City, regionCities: C
             title: `${city.name} neighbourhoods`,
             links: city.areas.map((area) => ({ href: serviceAreaPath(service.slug, city.slug, area.slug), label: `${service.name} in ${area.name}` })),
           }
-        : { type: "links", title: "City overview", links: [{ href: cityPath(city.slug), label: city.name }] },
+        : { type: "links", title: "Place overview", links: [{ href: placeHref(city), label: city.name }] },
     ],
   });
 }

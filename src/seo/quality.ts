@@ -18,14 +18,45 @@ export function pageText(page: PageDocument) {
   ].join(" ");
 }
 
-export function skeletonOf(text: string, names: string[]) {
-  let value = text.toLowerCase();
-  const ordered = [...names].sort((a, b) => b.length - a.length);
-  for (const name of ordered) {
+type NameIndex = Map<string, string[][]>;
+
+const indexes = new WeakMap<string[], NameIndex>();
+
+function tokens(value: string) {
+  return value.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+}
+
+function nameIndex(names: string[]) {
+  const cached = indexes.get(names);
+  if (cached) return cached;
+  const index: NameIndex = new Map();
+  for (const name of names) {
     if (name.length < 3) continue;
-    value = value.split(name.toLowerCase()).join(" ");
+    const parts = tokens(name);
+    if (!parts.length) continue;
+    const bucket = index.get(parts[0]) ?? [];
+    if (!bucket.some((existing) => existing.join(" ") === parts.join(" "))) bucket.push(parts);
+    index.set(parts[0], bucket);
   }
-  return value.replace(/[^a-z0-9]+/g, " ").replace(/\s+/g, " ").trim();
+  for (const bucket of index.values()) bucket.sort((a, b) => b.length - a.length);
+  indexes.set(names, index);
+  return index;
+}
+
+export function skeletonOf(text: string, names: string[]) {
+  const index = nameIndex(names);
+  const words = tokens(text);
+  const kept: string[] = [];
+  for (let position = 0; position < words.length; ) {
+    const match = index.get(words[position])?.find((parts) => parts.every((part, offset) => words[position + offset] === part));
+    if (match) {
+      position += match.length;
+      continue;
+    }
+    kept.push(words[position]);
+    position += 1;
+  }
+  return kept.join(" ");
 }
 
 export function keywordHits(text: string, terms: string[]) {
@@ -116,7 +147,7 @@ export function dropUnpublishedLinks(page: PageDocument, indexable: Set<string>)
   const always = new Set(["/", "/services", "/locations", "/contact", "/faq", "/blog", "/about", "/gallery"]);
   page.modules = page.modules
     .map((module) => {
-      if (module.type !== "links") return module;
+      if (module.type !== "links" || module.keep) return module;
       return { ...module, links: module.links.filter((link) => link.href && (always.has(link.href) || indexable.has(link.href))) };
     })
     .filter((module) => module.type !== "links" || module.links.length > 0);

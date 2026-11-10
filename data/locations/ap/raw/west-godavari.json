@@ -1,0 +1,41 @@
+{
+  "name": "West Godavari",
+  "slug": "west-godavari",
+  "headquarters": "Bhimavaram",
+  "officialSite": "https://westgodavari.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Narsapuram",
+      "mandals": ["Narasapuram", "Mogalthur", "Palacole", "Poduru", "Yelamanchili", "Achanta", "Penugonda", "Penumantra"]
+    },
+    {
+      "name": "Bhimavaram",
+      "mandals": ["Bhimavaram", "Ganapavaram", "Veeravasaram", "Undi", "Kalla", "Palacoduru", "Akividu"]
+    },
+    {
+      "name": "Tadepalligudem",
+      "mandals": ["Pentapadu", "Tanuku", "Attili", "Tadepalligudem", "Iragavaram"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Bhimavaram", "type": "municipality" },
+    { "name": "Tadepalligudem", "type": "municipality" },
+    { "name": "Tanuku", "type": "municipality" },
+    { "name": "Narasapuram", "type": "municipality" },
+    { "name": "Palacole", "type": "municipality" },
+    { "name": "Akividu", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://westgodavari.ap.gov.in/revenue-division/", "title": "Revenue Division | West Godavari District (division-wise mandal list)", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://westgodavari.ap.gov.in/", "title": "West Godavari District home page (20 mandals, 5 municipalities)", "accessed": "2026-11-10", "covers": ["mandals", "ulbs"] },
+    { "url": "https://westgodavari.ap.gov.in/district-officers/", "title": "District Officers | West Godavari District (RDOs Bhimavaram, Tadepalligudem, Narsapuram)", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://westgodavari.ap.gov.in/public-utility-category/municipality/", "title": "Municipalities | West Godavari District", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.952/", "title": "G.O.Ms.No.521, Revenue (Lands-IV), 30 Dec 2025 - Renaming of village Penugonda as Vasavi Penugonda - West Godavari district - Final Notification (AP Gazette Extraordinary No. 952)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://lgdirectory.gov.in/globalviewVillageDetail.do?globalvillageId=588681", "title": "LGD village detail 588681 - Vasavi Penugonda (G.O.Ms No.521, 30/12/2025)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece", "title": "A.P. Cabinet clears district reorganisation, mandal realignment (The Hindu, 29 Dec 2025)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY 2.0 (MoHUA)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "The only Dec 2025 change in this district is G.O.Ms.No.521 (30 Dec 2025), which renames the village Penugonda as Vasavi Penugonda; the gazette title and LGD record refer to the village, and no official source was found confirming that the mandal itself was renamed, so the mandal is kept as 'Penugonda' as on the district revenue division page (consider aliasing it as Vasavi Penugonda). The division page spells one mandal 'Veervasaram'; the district Agriculture page spells it 'Veeravasaram', which is used here. Division and mandal totals (3 divisions, 8 + 7 + 5 = 20 mandals) match the home page count of 20 mandals. ULB names follow mandal spellings; the district utility page calls two of them 'Narasapur Municipality' and 'Palacole Municipality', and PMAY 2.0 lists Akiveedu as a town panchayat (spelt Akiveedu).",
+  "verified": true
+}

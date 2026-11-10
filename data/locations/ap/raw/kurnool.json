@@ -1,0 +1,39 @@
+{
+  "name": "Kurnool",
+  "slug": "kurnool",
+  "headquarters": "Kurnool",
+  "officialSite": "https://kurnool.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Adoni",
+      "mandals": ["Adoni-1", "Adoni-2", "Gonegandla", "Holagonda", "Kosigi", "Kowthalam", "Mantralayam", "Nandavaram", "Peddakadubur", "Yemmiganur"]
+    },
+    {
+      "name": "Pattikonda",
+      "mandals": ["Alur", "Aspari", "Chippagiri", "Devanakonda", "Halaharvi", "Maddikera", "Pattikonda", "Tuggali", "Krishnagiri"]
+    },
+    {
+      "name": "Kurnool",
+      "mandals": ["C Belagal", "Gudur", "Kallur", "Kodumur", "Kurnool", "Kurnool Urban", "Orvakal", "Veldurthi"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Kurnool", "type": "municipal-corporation" },
+    { "name": "Adoni", "type": "municipality" },
+    { "name": "Yemmiganur", "type": "municipality" },
+    { "name": "Gudur", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://kurnool.ap.gov.in/mandal/", "title": "Mandal | District Kurnool, Government of Andhra Pradesh (last updated 02.01.2026)", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://kurnool.ap.gov.in/subdivision-blocks/", "title": "Revenue Division | District Kurnool, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://kurnool.ap.gov.in/municipal-corporation/", "title": "Municipal Corporation | District Kurnool, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://kurnool.ap.gov.in/public-utility-category/municipality/", "title": "Municipalities | District Kurnool, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.962/", "title": "AP Gazette Extraordinary No. 962: Bifurcation of Adoni mandal, Kurnool district into two mandals - Final Notification (G.O.Ms.No.531, Revenue (Lands-IV), 30 Dec 2025)", "accessed": "2026-11-10", "covers": ["reorganisation", "mandals"] },
+    { "url": "https://dtcp.ap.gov.in/admin/upload_files/gos_circular/Aug2026/24Aug2026/MFeF2ThV.pdf", "title": "G.O.Ms.No.188, MA&UD, 17-08-2026 - reorganisation of KUDA development area (lists 27 Kurnool mandals and 4 ULBs)", "accessed": "2026-11-10", "covers": ["mandals", "ulbs", "reorganisation"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece", "title": "A.P. Cabinet clears district reorganisation, mandal realignment (The Hindu)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "The official mandal page (updated 02.01.2026) lists 27 mandals in 3 divisions, including the Adoni split from G.O.Ms.531 of 30 Dec 2025. The site writes 'Adoni 1' and 'Adoni 2'; the hyphenated 'Adoni-1' and 'Adoni-2' used by The Hindu and DTCP G.O.Ms.188 (2026) are used here. The Nov 2025 preliminary notification proposed naming the second mandal 'Pedda Harivanam' with HQ at Pedda Harivanam (Andhra Prabha, ETV Bharat); the final name is Adoni-2. G.O.Ms.188 independently lists the same 27 mandals, writing 'Kurnool rural' for the mandal the site calls 'Kurnool' and 'Holagunda' for 'Holagonda'. The site's '/mandals/' page and the about-district text (26 mandals) are stale; /mandals/ still includes Nandyal-district mandals. ULBs follow the district municipal-corporation page: 1 corporation, 2 municipalities, 1 nagar panchayat. The PMAY-U list also shows 'Mantralayam, Municipal Corporation' (code 993766), which no state or district source confirms, so it is excluded.",
+  "verified": true
+}

@@ -1,0 +1,7201 @@
+{
+ "state": {
+  "slug": "andhra-pradesh",
+  "name": "Andhra Pradesh"
+ },
+ "generatedAt": "2026-11-10T02:54:20.129Z",
+ "reorganisation": "Andhra Pradesh G.O.Ms. No. 517 and related Revenue (Lands-IV) notifications of 30 December 2025, effective 31 December 2025 (28 districts).",
+ "districts": [
+  {
+   "slug": "alluri-sitharama-raju",
+   "name": "Alluri Sitharama Raju",
+   "headquarters": "Paderu",
+   "region": "Uttarandhra",
+   "hubCity": "narsipatnam",
+   "officialSite": "https://allurisitharamaraju.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "paderu",
+     "name": "Paderu",
+     "mandals": [
+      "ananthagiri",
+      "araku-valley",
+      "dumbriguda",
+      "hukumpeta",
+      "munchingput",
+      "pedabayalu",
+      "paderu",
+      "g-madugula",
+      "chinthapalli",
+      "g-k-veedhi",
+      "koyyuru"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "ananthagiri",
+     "name": "Ananthagiri",
+     "division": "paderu"
+    },
+    {
+     "slug": "araku-valley",
+     "name": "Araku Valley",
+     "division": "paderu"
+    },
+    {
+     "slug": "dumbriguda",
+     "name": "Dumbriguda",
+     "division": "paderu"
+    },
+    {
+     "slug": "hukumpeta",
+     "name": "Hukumpeta",
+     "division": "paderu"
+    },
+    {
+     "slug": "munchingput",
+     "name": "Munchingput",
+     "division": "paderu"
+    },
+    {
+     "slug": "pedabayalu",
+     "name": "Pedabayalu",
+     "division": "paderu"
+    },
+    {
+     "slug": "paderu",
+     "name": "Paderu",
+     "division": "paderu"
+    },
+    {
+     "slug": "g-madugula",
+     "name": "G.Madugula",
+     "division": "paderu"
+    },
+    {
+     "slug": "chinthapalli",
+     "name": "Chinthapalli",
+     "division": "paderu"
+    },
+    {
+     "slug": "g-k-veedhi",
+     "name": "G.K.Veedhi",
+     "division": "paderu"
+    },
+    {
+     "slug": "koyyuru",
+     "name": "Koyyuru",
+     "division": "paderu"
+    }
+   ],
+   "ulbs": [],
+   "sources": [
+    {
+     "url": "https://allurisitharamaraju.ap.gov.in/history/",
+     "title": "History | Alluri Sitharamaraju District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://allurisitharamaraju.ap.gov.in/",
+     "title": "Alluri Sitharamaraju District (home page: 1 revenue division, 11 mandals, 0 municipalities)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions",
+      "mandals",
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://allurisitharamaraju.ap.gov.in/mandals/",
+     "title": "MANDALS | Alluri Sitharamaraju District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/sources/andhra_extraordinary/?page=2&year=2025",
+     "title": "Andhra Pradesh Extraordinary Gazette index 2025 (G.O.Ms.No.516, Revenue (Lands-IV), 30 Dec 2025: re-structuring of ASR district, HQ at Paderu)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/two-new-districts-polavaram-and-markapuram-come-into-force/article70461053.ece",
+     "title": "Two new districts, Polavaram and Markapuram, come into force - The Hindu",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    }
+   ],
+   "notes": "After Polavaram district was carved out on 31 Dec 2025, the official site shows 11 mandals, 1 revenue division and 0 municipalities. The 11 mandal names come from the official history page, because the official mandals page states the count but has no table. The official site does not name the single division explicitly; it is recorded as Paderu (the pre-existing Paderu RDO, which is also the district HQ under G.O.Ms.No.516), and secondary sources agree. Official short forms are kept: Munchingput (also written Munchingiputtu), G.Madugula (Ganagaraju Madugula) and G.K.Veedhi (Gudem Kotha Veedhi). No urban local bodies exist; the home page shows Municipality 0.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "anakapalli",
+   "name": "Anakapalli",
+   "headquarters": "Anakapalli",
+   "region": "Uttarandhra",
+   "hubCity": "anakapalle",
+   "officialSite": "https://anakapalli.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "anakapalli",
+     "name": "Anakapalli",
+     "mandals": [
+      "anakapalli",
+      "butchiahpeta",
+      "kasimkota",
+      "chodavaram",
+      "devarapalli",
+      "k-kotapadu",
+      "munagapaka",
+      "parawada",
+      "sabbavaram",
+      "cheedikada"
+     ]
+    },
+    {
+     "slug": "narsipatnam",
+     "name": "Narsipatnam",
+     "mandals": [
+      "madugula",
+      "golugonda",
+      "makavarapalem",
+      "narsipatnam",
+      "nathavaram",
+      "ravikamatham",
+      "rolugunta"
+     ]
+    },
+    {
+     "slug": "adduroad-junction",
+     "name": "Adduroad Junction",
+     "mandals": [
+      "yelamanchili",
+      "rambilli",
+      "atchuthapuram",
+      "nakkapalli",
+      "payakaraopeta",
+      "kotauratla",
+      "s-rayavaram"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "anakapalli",
+     "name": "Anakapalli",
+     "division": "anakapalli"
+    },
+    {
+     "slug": "butchiahpeta",
+     "name": "Butchiahpeta",
+     "division": "anakapalli"
+    },
+    {
+     "slug": "kasimkota",
+     "name": "Kasimkota",
+     "division": "anakapalli"
+    },
+    {
+     "slug": "chodavaram",
+     "name": "Chodavaram",
+     "division": "anakapalli"
+    },
+    {
+     "slug": "devarapalli",
+     "name": "Devarapalli",
+     "division": "anakapalli"
+    },
+    {
+     "slug": "k-kotapadu",
+     "name": "K.Kotapadu",
+     "division": "anakapalli"
+    },
+    {
+     "slug": "munagapaka",
+     "name": "Munagapaka",
+     "division": "anakapalli"
+    },
+    {
+     "slug": "parawada",
+     "name": "Parawada",
+     "division": "anakapalli"
+    },
+    {
+     "slug": "sabbavaram",
+     "name": "Sabbavaram",
+     "division": "anakapalli"
+    },
+    {
+     "slug": "cheedikada",
+     "name": "Cheedikada",
+     "division": "anakapalli"
+    },
+    {
+     "slug": "madugula",
+     "name": "Madugula",
+     "division": "narsipatnam"
+    },
+    {
+     "slug": "golugonda",
+     "name": "Golugonda",
+     "division": "narsipatnam"
+    },
+    {
+     "slug": "makavarapalem",
+     "name": "Makavarapalem",
+     "division": "narsipatnam"
+    },
+    {
+     "slug": "narsipatnam",
+     "name": "Narsipatnam",
+     "division": "narsipatnam"
+    },
+    {
+     "slug": "nathavaram",
+     "name": "Nathavaram",
+     "division": "narsipatnam"
+    },
+    {
+     "slug": "ravikamatham",
+     "name": "Ravikamatham",
+     "division": "narsipatnam"
+    },
+    {
+     "slug": "rolugunta",
+     "name": "Rolugunta",
+     "division": "narsipatnam"
+    },
+    {
+     "slug": "yelamanchili",
+     "name": "Yelamanchili",
+     "division": "adduroad-junction"
+    },
+    {
+     "slug": "rambilli",
+     "name": "Rambilli",
+     "division": "adduroad-junction"
+    },
+    {
+     "slug": "atchuthapuram",
+     "name": "Atchuthapuram",
+     "division": "adduroad-junction"
+    },
+    {
+     "slug": "nakkapalli",
+     "name": "Nakkapalli",
+     "division": "adduroad-junction"
+    },
+    {
+     "slug": "payakaraopeta",
+     "name": "Payakaraopeta",
+     "division": "adduroad-junction"
+    },
+    {
+     "slug": "kotauratla",
+     "name": "Kotauratla",
+     "division": "adduroad-junction"
+    },
+    {
+     "slug": "s-rayavaram",
+     "name": "S.Rayavaram",
+     "division": "adduroad-junction"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "narsipatnam",
+     "name": "Narsipatnam",
+     "type": "municipality"
+    },
+    {
+     "slug": "yelamanchili",
+     "name": "Yelamanchili",
+     "type": "municipality"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://anakapalli.ap.gov.in/mandals/",
+     "title": "Mandals | Anakapalli District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://anakapalli.ap.gov.in/",
+     "title": "Anakapalli District (home page: 24 mandals, 2 municipalities)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/sources/andhra_extraordinary/?page=2&year=2025",
+     "title": "Andhra Pradesh Extraordinary Gazette index 2025 (G.O.Ms.No.515, Revenue (Lands-IV), 30 Dec 2025: creation of new revenue division at Adduroad Junction)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/todays-paper/tp-national/tp-andhrapradesh/gos-issued-on-merger-of-two-civic-bodies-10-panchayats/article4972926.ece",
+     "title": "GOs issued on merger of two civic bodies, 10 panchayats - The Hindu",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "The official mandals page already shows the new Adduroad Junction division (marked 'NEW') with 7 mandals, consistent with G.O.Ms.No.515 (30 Dec 2025). The district now has 24 mandals in 3 divisions. The official site writes the names in upper case; they are converted to title case here. The division is spelled 'Adduroad Junction' as in the G.O. and site; the brief calls it 'Adda Road'. The MoHUA PMAY-U 2.0 list also shows an 'Anakapalle, Municipal Corporation' with a new code (802949). It is excluded because the official district site says Anakapalle municipality was merged into Greater Visakhapatnam Municipal Corporation (G.O.Ms.No.373), the home page shows only 2 municipalities, and no de-merger notification was found. Parts of Anakapalli district, including Anakapalli town, are governed by GVMC, which is recorded under Visakhapatnam.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "ananthapuramu",
+   "name": "Ananthapuramu",
+   "headquarters": "Anantapur",
+   "region": "Rayalaseema",
+   "hubCity": "anantapur",
+   "officialSite": "https://ananthapuramu.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "anantapuramu",
+     "name": "Anantapuramu",
+     "mandals": [
+      "anantapur-urban",
+      "anantapur-rural",
+      "atmakur",
+      "bk-samudram",
+      "garladinne",
+      "kudair",
+      "narpala",
+      "peddapappur",
+      "putluru",
+      "raptadu",
+      "singanamala",
+      "tadpatri",
+      "yadiki",
+      "yellanur"
+     ]
+    },
+    {
+     "slug": "guntakal",
+     "name": "Guntakal",
+     "mandals": [
+      "gooty",
+      "guntakal",
+      "pamidi",
+      "peddavadugur",
+      "uravakonda",
+      "vajrakarur",
+      "vidapanakal"
+     ]
+    },
+    {
+     "slug": "kalyandurg",
+     "name": "Kalyandurg",
+     "mandals": [
+      "beluguppa",
+      "bommanahal",
+      "brahmasamudram",
+      "d-hirehal",
+      "gummagatta",
+      "kalyandurg",
+      "kambadur",
+      "kanekal",
+      "kundurpi",
+      "rayadurg",
+      "settur"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "anantapur-urban",
+     "name": "Anantapur Urban",
+     "division": "anantapuramu"
+    },
+    {
+     "slug": "anantapur-rural",
+     "name": "Anantapur Rural",
+     "division": "anantapuramu"
+    },
+    {
+     "slug": "atmakur",
+     "name": "Atmakur",
+     "division": "anantapuramu"
+    },
+    {
+     "slug": "bk-samudram",
+     "name": "BK Samudram",
+     "division": "anantapuramu"
+    },
+    {
+     "slug": "garladinne",
+     "name": "Garladinne",
+     "division": "anantapuramu"
+    },
+    {
+     "slug": "kudair",
+     "name": "Kudair",
+     "division": "anantapuramu"
+    },
+    {
+     "slug": "narpala",
+     "name": "Narpala",
+     "division": "anantapuramu"
+    },
+    {
+     "slug": "peddapappur",
+     "name": "Peddapappur",
+     "division": "anantapuramu"
+    },
+    {
+     "slug": "putluru",
+     "name": "Putluru",
+     "division": "anantapuramu"
+    },
+    {
+     "slug": "raptadu",
+     "name": "Raptadu",
+     "division": "anantapuramu"
+    },
+    {
+     "slug": "singanamala",
+     "name": "Singanamala",
+     "division": "anantapuramu"
+    },
+    {
+     "slug": "tadpatri",
+     "name": "Tadpatri",
+     "division": "anantapuramu"
+    },
+    {
+     "slug": "yadiki",
+     "name": "Yadiki",
+     "division": "anantapuramu"
+    },
+    {
+     "slug": "yellanur",
+     "name": "Yellanur",
+     "division": "anantapuramu"
+    },
+    {
+     "slug": "gooty",
+     "name": "Gooty",
+     "division": "guntakal"
+    },
+    {
+     "slug": "guntakal",
+     "name": "Guntakal",
+     "division": "guntakal"
+    },
+    {
+     "slug": "pamidi",
+     "name": "Pamidi",
+     "division": "guntakal"
+    },
+    {
+     "slug": "peddavadugur",
+     "name": "Peddavadugur",
+     "division": "guntakal"
+    },
+    {
+     "slug": "uravakonda",
+     "name": "Uravakonda",
+     "division": "guntakal"
+    },
+    {
+     "slug": "vajrakarur",
+     "name": "Vajrakarur",
+     "division": "guntakal"
+    },
+    {
+     "slug": "vidapanakal",
+     "name": "Vidapanakal",
+     "division": "guntakal"
+    },
+    {
+     "slug": "beluguppa",
+     "name": "Beluguppa",
+     "division": "kalyandurg"
+    },
+    {
+     "slug": "bommanahal",
+     "name": "Bommanahal",
+     "division": "kalyandurg"
+    },
+    {
+     "slug": "brahmasamudram",
+     "name": "Brahmasamudram",
+     "division": "kalyandurg"
+    },
+    {
+     "slug": "d-hirehal",
+     "name": "D.Hirehal",
+     "division": "kalyandurg"
+    },
+    {
+     "slug": "gummagatta",
+     "name": "Gummagatta",
+     "division": "kalyandurg"
+    },
+    {
+     "slug": "kalyandurg",
+     "name": "Kalyandurg",
+     "division": "kalyandurg"
+    },
+    {
+     "slug": "kambadur",
+     "name": "Kambadur",
+     "division": "kalyandurg"
+    },
+    {
+     "slug": "kanekal",
+     "name": "Kanekal",
+     "division": "kalyandurg"
+    },
+    {
+     "slug": "kundurpi",
+     "name": "Kundurpi",
+     "division": "kalyandurg"
+    },
+    {
+     "slug": "rayadurg",
+     "name": "Rayadurg",
+     "division": "kalyandurg"
+    },
+    {
+     "slug": "settur",
+     "name": "Settur",
+     "division": "kalyandurg"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "anantapuramu",
+     "name": "Anantapuramu",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "gooty",
+     "name": "Gooty",
+     "type": "municipality"
+    },
+    {
+     "slug": "guntakal",
+     "name": "Guntakal",
+     "type": "municipality"
+    },
+    {
+     "slug": "kalyandurg",
+     "name": "Kalyandurg",
+     "type": "municipality"
+    },
+    {
+     "slug": "rayadurg",
+     "name": "Rayadurg",
+     "type": "municipality"
+    },
+    {
+     "slug": "tadipatri",
+     "name": "Tadipatri",
+     "type": "municipality"
+    },
+    {
+     "slug": "pamidi",
+     "name": "Pamidi",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://ananthapuramu.ap.gov.in/mandals/",
+     "title": "Mandals | Ananthapuramu District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals"
+     ]
+    },
+    {
+     "url": "https://ananthapuramu.ap.gov.in/mandal/",
+     "title": "Mandal | Ananthapuramu District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals"
+     ]
+    },
+    {
+     "url": "https://ananthapuramu.ap.gov.in/gram-panchayats/",
+     "title": "Gram Panchayats (division / mandal / GP) | Ananthapuramu District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://ananthapuramu.ap.gov.in/divisions/",
+     "title": "Divisions | Ananthapuramu District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://ananthapuramu.ap.gov.in/public-utility-category/municipality/",
+     "title": "Municipalities | Ananthapuramu District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://web.archive.org/web/20210510190534/http:/dtcp.ap.gov.in/dtcpweb/ULBS.html",
+     "title": "DTCP Andhra Pradesh - List of Urban Local Bodies (archived May 2021)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/sources/andhra/?page=2",
+     "title": "AP Gazette index: Bifurcation of Anantapur mandal into Anantapur Urban and Anantapur Rural mandals - Final Notification (G.O.Ms.No.206, Revenue (Lands-IV), 8 May 2023)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "reorganisation"
+     ]
+    }
+   ],
+   "notes": "This district was unchanged in the Dec 2025 reorganisation, per the task brief; no Dec 2025 notification mentioning Ananthapuramu mandals was found. The official mandal pages list 32 mandals, though the /mandal/ page text says '31 Mandals'. Division mapping comes from the official gram-panchayats page, which uses 3 divisions: Ananthapuramu 13, Guntakal 7, Kalyandurg 11. Anantapur Urban has no gram panchayats, so it is absent from that page. It is placed in Anantapuramu division because G.O.Ms.206 (2023) created it by bifurcating Anantapur mandal of that division; the gazette body text was not readable, only the title. The official '/anantapur/' division page is stale (pre-2022): it places Gooty, Guntakal, Pamidi, Peddavadugur, Uravakonda, Vajrakarur and Vidapanakal in Anantapur division. It was not used. Mandal spellings follow /mandals/. Alternate official spellings: Ananthapuramu Rural, B.K.Samudram, Garladdine, Rapthadu, Tadipatri (mandal), Peddavadaguru, Bramhasamudram, Kambaduru, Kundupi, Rayadurgam, Setturu. Pamidi is labelled 'pamidi municipality' on the district site, but the PMAY-U list ('Town Panchayat') and DTCP-2021 ('N.P') both classify it as a nagar panchayat, which is used here.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "annamayya",
+   "name": "Annamayya",
+   "headquarters": "Madanapalle",
+   "region": "Rayalaseema",
+   "hubCity": "madanapalle",
+   "officialSite": "https://annamayya.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "madanapalle",
+     "name": "Madanapalle",
+     "mandals": [
+      "madanapalle",
+      "nimmanapalle",
+      "ramasamudram",
+      "thamballapalle",
+      "mulakalacheruvu",
+      "peddamandyam",
+      "kurabalakota",
+      "peddathippasamudram",
+      "b-kothakota",
+      "chowdepalle",
+      "punganur"
+     ]
+    },
+    {
+     "slug": "pileru",
+     "name": "Pileru",
+     "mandals": [
+      "kalikiri",
+      "valmikipuram",
+      "pileru",
+      "gurramkonda",
+      "kalakada",
+      "kambhavaripalle",
+      "sodam",
+      "somala"
+     ]
+    },
+    {
+     "slug": "rayachoti",
+     "name": "Rayachoti",
+     "mandals": [
+      "rayachoti",
+      "sambepalli",
+      "chinnamandem",
+      "galiveedu",
+      "lakkireddypalli",
+      "ramapuram"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "madanapalle",
+     "name": "Madanapalle",
+     "division": "madanapalle"
+    },
+    {
+     "slug": "nimmanapalle",
+     "name": "Nimmanapalle",
+     "division": "madanapalle"
+    },
+    {
+     "slug": "ramasamudram",
+     "name": "Ramasamudram",
+     "division": "madanapalle"
+    },
+    {
+     "slug": "thamballapalle",
+     "name": "Thamballapalle",
+     "division": "madanapalle"
+    },
+    {
+     "slug": "mulakalacheruvu",
+     "name": "Mulakalacheruvu",
+     "division": "madanapalle"
+    },
+    {
+     "slug": "peddamandyam",
+     "name": "Peddamandyam",
+     "division": "madanapalle"
+    },
+    {
+     "slug": "kurabalakota",
+     "name": "Kurabalakota",
+     "division": "madanapalle"
+    },
+    {
+     "slug": "peddathippasamudram",
+     "name": "Peddathippasamudram",
+     "division": "madanapalle"
+    },
+    {
+     "slug": "b-kothakota",
+     "name": "B.Kothakota",
+     "division": "madanapalle"
+    },
+    {
+     "slug": "chowdepalle",
+     "name": "Chowdepalle",
+     "division": "madanapalle"
+    },
+    {
+     "slug": "punganur",
+     "name": "Punganur",
+     "division": "madanapalle"
+    },
+    {
+     "slug": "kalikiri",
+     "name": "Kalikiri",
+     "division": "pileru"
+    },
+    {
+     "slug": "valmikipuram",
+     "name": "Valmikipuram",
+     "division": "pileru"
+    },
+    {
+     "slug": "pileru",
+     "name": "Pileru",
+     "division": "pileru"
+    },
+    {
+     "slug": "gurramkonda",
+     "name": "Gurramkonda",
+     "division": "pileru"
+    },
+    {
+     "slug": "kalakada",
+     "name": "Kalakada",
+     "division": "pileru"
+    },
+    {
+     "slug": "kambhavaripalle",
+     "name": "Kambhavaripalle",
+     "division": "pileru"
+    },
+    {
+     "slug": "sodam",
+     "name": "Sodam",
+     "division": "pileru"
+    },
+    {
+     "slug": "somala",
+     "name": "Somala",
+     "division": "pileru"
+    },
+    {
+     "slug": "rayachoti",
+     "name": "Rayachoti",
+     "division": "rayachoti"
+    },
+    {
+     "slug": "sambepalli",
+     "name": "Sambepalli",
+     "division": "rayachoti"
+    },
+    {
+     "slug": "chinnamandem",
+     "name": "Chinnamandem",
+     "division": "rayachoti"
+    },
+    {
+     "slug": "galiveedu",
+     "name": "Galiveedu",
+     "division": "rayachoti"
+    },
+    {
+     "slug": "lakkireddypalli",
+     "name": "Lakkireddypalli",
+     "division": "rayachoti"
+    },
+    {
+     "slug": "ramapuram",
+     "name": "Ramapuram",
+     "division": "rayachoti"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "madanapalle",
+     "name": "Madanapalle",
+     "type": "municipality"
+    },
+    {
+     "slug": "punganur",
+     "name": "Punganur",
+     "type": "municipality"
+    },
+    {
+     "slug": "rayachoty",
+     "name": "Rayachoty",
+     "type": "municipality"
+    },
+    {
+     "slug": "b-kothakota",
+     "name": "B.Kothakota",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://annamayya.ap.gov.in/revenue-mandals/",
+     "title": "Revenue Mandals | Annamayya District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://annamayya.ap.gov.in/public-utility-category/municipality/",
+     "title": "Municipalities | Annamayya District, Government of Andhra Pradesh (pages 1-2)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.959/",
+     "title": "AP Gazette Extraordinary No. 959: Re-structuring of Annamayya District - headquarters at Madanapalle and creation of new revenue division - Final Notification (G.O.Ms.No.528, Revenue (Lands-IV), 30 Dec 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://www.newindianexpress.com/states/andhra-pradesh/2025/Dec/31/two-new-districts-come-into-existence-in-andhra-pradesh",
+     "title": "Two new districts come into existence in Andhra Pradesh (New Indian Express, 31 Dec 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://www.sakshi.com/telugu-news/annamayya/2665828",
+     "title": "Madanapalle district headquarters from today (Sakshi, 31 Dec 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation",
+      "mandals",
+      "divisions",
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/a-sense-of-joy-and-loss-grips-annamayya-district/article70460439.ece",
+     "title": "A sense of joy and loss grips Annamayya district (The Hindu)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    }
+   ],
+   "notes": "The official revenue-mandals page lists 25 mandals (Madanapalle 11, Pileru 8, Rayachoti 6), which matches G.O.Ms.528 as reported by NIE, Sakshi and The Hindu. The headquarters moved from Rayachoti to Madanapalle with effect from 31 Dec 2025. Rajampet division went to YSR Kadapa, and the Railway Kodur mandals went to Tirupati. The site writes 'B[dot]Kothakota', rendered here as 'B.Kothakota'. Sakshi calls the Madanapalle mandal 'Madanapalle Rural'; the official page says 'Madanapalle'. Sakshi writes 'K.V. Palli' for the mandal the site calls 'Kambhavaripalle'. The site lists all four ULBs under 'Municipalities', but B.Kothakota is a nagar panchayat per Sakshi, the PMAY-U list ('Town Panchayat') and the 2021 DTCP ULB list ('N.P'). The site spells 'Rayachoty' for the ULB and 'Rayachoti' for the mandal. Rajampet municipality is now in YSR Kadapa.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "bapatla",
+   "name": "Bapatla",
+   "headquarters": "Bapatla",
+   "region": "Coastal Andhra",
+   "hubCity": "chirala",
+   "officialSite": "https://bapatla.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "bapatla",
+     "name": "Bapatla",
+     "mandals": [
+      "bapatla",
+      "karlapalem",
+      "pittalavanipalem"
+     ]
+    },
+    {
+     "slug": "repalle",
+     "name": "Repalle",
+     "mandals": [
+      "tsundur",
+      "amruthalur",
+      "vemuru",
+      "kollur",
+      "bhattiprolu",
+      "cherukupalle",
+      "nizampatnam",
+      "nagaram",
+      "repalle"
+     ]
+    },
+    {
+     "slug": "chirala",
+     "name": "Chirala",
+     "mandals": [
+      "chirala",
+      "vetapalem",
+      "chinaganjam",
+      "inkollu",
+      "karamchedu"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "bapatla",
+     "name": "Bapatla",
+     "division": "bapatla"
+    },
+    {
+     "slug": "karlapalem",
+     "name": "Karlapalem",
+     "division": "bapatla"
+    },
+    {
+     "slug": "pittalavanipalem",
+     "name": "Pittalavanipalem",
+     "division": "bapatla"
+    },
+    {
+     "slug": "tsundur",
+     "name": "Tsundur",
+     "division": "repalle"
+    },
+    {
+     "slug": "amruthalur",
+     "name": "Amruthalur",
+     "division": "repalle"
+    },
+    {
+     "slug": "vemuru",
+     "name": "Vemuru",
+     "division": "repalle"
+    },
+    {
+     "slug": "kollur",
+     "name": "Kollur",
+     "division": "repalle"
+    },
+    {
+     "slug": "bhattiprolu",
+     "name": "Bhattiprolu",
+     "division": "repalle"
+    },
+    {
+     "slug": "cherukupalle",
+     "name": "Cherukupalle",
+     "division": "repalle"
+    },
+    {
+     "slug": "nizampatnam",
+     "name": "Nizampatnam",
+     "division": "repalle"
+    },
+    {
+     "slug": "nagaram",
+     "name": "Nagaram",
+     "division": "repalle"
+    },
+    {
+     "slug": "repalle",
+     "name": "Repalle",
+     "division": "repalle"
+    },
+    {
+     "slug": "chirala",
+     "name": "Chirala",
+     "division": "chirala"
+    },
+    {
+     "slug": "vetapalem",
+     "name": "Vetapalem",
+     "division": "chirala"
+    },
+    {
+     "slug": "chinaganjam",
+     "name": "Chinaganjam",
+     "division": "chirala"
+    },
+    {
+     "slug": "inkollu",
+     "name": "Inkollu",
+     "division": "chirala"
+    },
+    {
+     "slug": "karamchedu",
+     "name": "Karamchedu",
+     "division": "chirala"
+    },
+    {
+     "slug": "martur",
+     "name": "Martur",
+     "division": null
+    },
+    {
+     "slug": "parchur",
+     "name": "Parchur",
+     "division": null
+    },
+    {
+     "slug": "yeddanapudi",
+     "name": "Yeddanapudi",
+     "division": null
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "bapatla",
+     "name": "Bapatla",
+     "type": "municipality"
+    },
+    {
+     "slug": "chirala",
+     "name": "Chirala",
+     "type": "municipality"
+    },
+    {
+     "slug": "repalle",
+     "name": "Repalle",
+     "type": "municipality"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://bapatla.ap.gov.in/tehsil/",
+     "title": "Mandals | Bapatla District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://bapatla.ap.gov.in/revenue-divisions/",
+     "title": "Revenue Divisions | Bapatla District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://timesofindia.indiatimes.com/city/vijayawada/andhra-pradesh-gets-76th-revenue-division-bapatlas-repalle-is-headquarters/articleshow/93491442.cms",
+     "title": "Andhra Pradesh gets 76th revenue division, Bapatla's Repalle is headquarters - Times of India",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/prakasam-district-expanded-to-28-mandals-after-reorganisation-1927251",
+     "title": "Prakasam District Expanded to 28 Mandals After Reorganisation - Deccan Chronicle",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/primacy-to-public-feedback-on-district-reorganisation-says-andhra-pradesh-chief-minister-chandrababu-naidu/article70443197.ece",
+     "title": "Primacy to public feedback on district reorganisation - The Hindu",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://apcmms.ap.gov.in/apiv1/public/web/ulbdetails/ulbprofiles",
+     "title": "CDMA ULB profiles data (feeds https://cdma.ap.gov.in/district-web-directory/)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "Mandal list (20) is from the official Bapatla site, which already excludes the five Addanki constituency mandals (Addanki, Ballikurava, Santhamaguluru, Janakavarampanguluru, Korisapadu) moved to Prakasam on 31 Dec 2025 (G.O.Ms.No.523). The official site's division mapping is stale: it shows only Bapatla and Chirala divisions and puts the Repalle/Vemuru mandals in Bapatla division, but Repalle revenue division was created in August 2022 from nine Bapatla-division mandals (Times of India); those nine are placed under Repalle here. Martur, Parchur and Yeddanapudi are listed under Chirala division on the official site but Wikipedia places them in Bapatla division; no official order or reliable news confirming either assignment was found, so they are left unassigned. The official 'Organisation Chart' and 'Village & Panchayats' pages still show the pre-2025 25-mandal layout. CDMA lists only three ULBs for Bapatla (Bapatla and Chirala Grade I, Repalle Grade II); Martur, Inkollu and Parchur nagar panchayats claimed on Wikipedia are not in the CDMA list and are omitted.",
+   "verified": false,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "chittoor",
+   "name": "Chittoor",
+   "headquarters": "Chittoor",
+   "region": "Rayalaseema",
+   "hubCity": "chittoor",
+   "officialSite": "https://chittoor.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "chittoor",
+     "name": "Chittoor",
+     "mandals": [
+      "chittoor-urban",
+      "chittoor-rural",
+      "gudipala",
+      "yadamarri",
+      "gangadharanellore",
+      "puthalapattu",
+      "penumuru",
+      "thavanampalle",
+      "irala",
+      "pulicherla",
+      "rompicherla",
+      "srirangarajapuram",
+      "vedurukuppam",
+      "bangarupalem"
+     ]
+    },
+    {
+     "slug": "nagari",
+     "name": "Nagari",
+     "mandals": [
+      "palasamudram",
+      "karvetinagar",
+      "nagari",
+      "nindra",
+      "vijayapuram"
+     ]
+    },
+    {
+     "slug": "palamaneru",
+     "name": "Palamaneru",
+     "mandals": [
+      "palamaner",
+      "gangavaram",
+      "peddapanjani",
+      "baireddipalle",
+      "venkatagiri-kota"
+     ]
+    },
+    {
+     "slug": "kuppam",
+     "name": "Kuppam",
+     "mandals": [
+      "kuppam",
+      "santhipuram",
+      "gudupalle",
+      "ramakuppam"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "chittoor-urban",
+     "name": "Chittoor Urban",
+     "division": "chittoor"
+    },
+    {
+     "slug": "chittoor-rural",
+     "name": "Chittoor Rural",
+     "division": "chittoor"
+    },
+    {
+     "slug": "gudipala",
+     "name": "Gudipala",
+     "division": "chittoor"
+    },
+    {
+     "slug": "yadamarri",
+     "name": "Yadamarri",
+     "division": "chittoor"
+    },
+    {
+     "slug": "gangadharanellore",
+     "name": "Gangadharanellore",
+     "division": "chittoor"
+    },
+    {
+     "slug": "puthalapattu",
+     "name": "Puthalapattu",
+     "division": "chittoor"
+    },
+    {
+     "slug": "penumuru",
+     "name": "Penumuru",
+     "division": "chittoor"
+    },
+    {
+     "slug": "thavanampalle",
+     "name": "Thavanampalle",
+     "division": "chittoor"
+    },
+    {
+     "slug": "irala",
+     "name": "Irala",
+     "division": "chittoor"
+    },
+    {
+     "slug": "pulicherla",
+     "name": "Pulicherla",
+     "division": "chittoor"
+    },
+    {
+     "slug": "rompicherla",
+     "name": "Rompicherla",
+     "division": "chittoor"
+    },
+    {
+     "slug": "srirangarajapuram",
+     "name": "Srirangarajapuram",
+     "division": "chittoor"
+    },
+    {
+     "slug": "vedurukuppam",
+     "name": "Vedurukuppam",
+     "division": "chittoor"
+    },
+    {
+     "slug": "bangarupalem",
+     "name": "Bangarupalem",
+     "division": "chittoor"
+    },
+    {
+     "slug": "palasamudram",
+     "name": "Palasamudram",
+     "division": "nagari"
+    },
+    {
+     "slug": "karvetinagar",
+     "name": "Karvetinagar",
+     "division": "nagari"
+    },
+    {
+     "slug": "nagari",
+     "name": "Nagari",
+     "division": "nagari"
+    },
+    {
+     "slug": "nindra",
+     "name": "Nindra",
+     "division": "nagari"
+    },
+    {
+     "slug": "vijayapuram",
+     "name": "Vijayapuram",
+     "division": "nagari"
+    },
+    {
+     "slug": "palamaner",
+     "name": "Palamaner",
+     "division": "palamaneru"
+    },
+    {
+     "slug": "gangavaram",
+     "name": "Gangavaram",
+     "division": "palamaneru"
+    },
+    {
+     "slug": "peddapanjani",
+     "name": "Peddapanjani",
+     "division": "palamaneru"
+    },
+    {
+     "slug": "baireddipalle",
+     "name": "Baireddipalle",
+     "division": "palamaneru"
+    },
+    {
+     "slug": "venkatagiri-kota",
+     "name": "Venkatagiri Kota",
+     "division": "palamaneru"
+    },
+    {
+     "slug": "kuppam",
+     "name": "Kuppam",
+     "division": "kuppam"
+    },
+    {
+     "slug": "santhipuram",
+     "name": "Santhipuram",
+     "division": "kuppam"
+    },
+    {
+     "slug": "gudupalle",
+     "name": "Gudupalle",
+     "division": "kuppam"
+    },
+    {
+     "slug": "ramakuppam",
+     "name": "Ramakuppam",
+     "division": "kuppam"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "chittoor",
+     "name": "Chittoor",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "kuppam",
+     "name": "Kuppam",
+     "type": "municipality"
+    },
+    {
+     "slug": "nagari",
+     "name": "Nagari",
+     "type": "municipality"
+    },
+    {
+     "slug": "palamaner",
+     "name": "Palamaner",
+     "type": "municipality"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://chittoor.ap.gov.in/mandal/",
+     "title": "Mandal | Chittoor District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://chittoor.ap.gov.in/revenue-division/",
+     "title": "Revenue Division | Chittoor District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://chittoor.ap.gov.in/demography/",
+     "title": "Demography | Chittoor District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions",
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://chittoor.ap.gov.in/public-utility-category/municipality/",
+     "title": "Municipalities | Chittoor District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.958/",
+     "title": "AP Gazette Extraordinary No. 958: Restructuring of Chittoor District - shifting of Bangarupalem mandal from Palamaneru to Chittoor revenue division - Final Notification (G.O.Ms.No.527, Revenue (Lands-IV), 30 Dec 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/primacy-to-public-feedback-on-district-reorganisation-says-andhra-pradesh-chief-minister-chandrababu-naidu/article70443197.ece",
+     "title": "Primacy to public feedback on district reorganisation (The Hindu, 27 Dec 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.sakshi.com/telugu-news/annamayya/2665828",
+     "title": "Madanapalle district headquarters from today (Sakshi, 31 Dec 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    }
+   ],
+   "notes": "The official mandal page lists 28 mandals in 4 divisions, matching the district demography page (4 divisions, 28 mandals, 1 corporation, 3 municipalities). It reflects the Dec 2025 changes: Bangarupalem is in Chittoor division (G.O.Ms.527), Punganur, Chowdepalle, Sodam and Somala have left for Annamayya, and Pulicherla and Rompicherla stay in Chittoor (Sakshi, The Hindu). Srirangarajapuram and Vedurukuppam are in Chittoor division on the official page, although 2022 news put them in Nagari; I could not find the notification that moved them, so the official page was followed. The gazette body text (mandal schedule) was not machine-readable; only its title was verified. The site spells the Nagari ULB as 'Nagiri Municipality'; 'Nagari' is used here as on the mandal page and PMAY-U list. The district 'Municipal Corporations' page still lists Tirupati Municipal Corporation, which is stale (Tirupati is in Tirupati district). Puttur municipality is in Tirupati district per PMAY-U and is not included.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "konaseema",
+   "name": "Dr. B. R. Ambedkar Konaseema",
+   "headquarters": "Amalapuram",
+   "region": "Coastal Andhra",
+   "hubCity": "amalapuram",
+   "officialSite": "https://konaseema.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "amalapuram",
+     "name": "Amalapuram",
+     "mandals": [
+      "allavaram",
+      "amalapuram",
+      "i-polavaram",
+      "katrenikona",
+      "malikipuram",
+      "mamidikuduru",
+      "mummidivaram",
+      "razole",
+      "sakhinetipalle",
+      "uppalaguptam"
+     ]
+    },
+    {
+     "slug": "kothapeta",
+     "name": "Kothapeta",
+     "mandals": [
+      "ainavilli",
+      "alamuru",
+      "ambajipeta",
+      "atreyapuram",
+      "kothapeta",
+      "p-gannavaram",
+      "ravulapalem"
+     ]
+    },
+    {
+     "slug": "ramachandrapuram",
+     "name": "Ramachandrapuram",
+     "mandals": [
+      "ramachandrapuram",
+      "k-gangavaram"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "allavaram",
+     "name": "Allavaram",
+     "division": "amalapuram"
+    },
+    {
+     "slug": "amalapuram",
+     "name": "Amalapuram",
+     "division": "amalapuram"
+    },
+    {
+     "slug": "i-polavaram",
+     "name": "I. Polavaram",
+     "division": "amalapuram"
+    },
+    {
+     "slug": "katrenikona",
+     "name": "Katrenikona",
+     "division": "amalapuram"
+    },
+    {
+     "slug": "malikipuram",
+     "name": "Malikipuram",
+     "division": "amalapuram"
+    },
+    {
+     "slug": "mamidikuduru",
+     "name": "Mamidikuduru",
+     "division": "amalapuram"
+    },
+    {
+     "slug": "mummidivaram",
+     "name": "Mummidivaram",
+     "division": "amalapuram"
+    },
+    {
+     "slug": "razole",
+     "name": "Razole",
+     "division": "amalapuram"
+    },
+    {
+     "slug": "sakhinetipalle",
+     "name": "Sakhinetipalle",
+     "division": "amalapuram"
+    },
+    {
+     "slug": "uppalaguptam",
+     "name": "Uppalaguptam",
+     "division": "amalapuram"
+    },
+    {
+     "slug": "ainavilli",
+     "name": "Ainavilli",
+     "division": "kothapeta"
+    },
+    {
+     "slug": "alamuru",
+     "name": "Alamuru",
+     "division": "kothapeta"
+    },
+    {
+     "slug": "ambajipeta",
+     "name": "Ambajipeta",
+     "division": "kothapeta"
+    },
+    {
+     "slug": "atreyapuram",
+     "name": "Atreyapuram",
+     "division": "kothapeta"
+    },
+    {
+     "slug": "kothapeta",
+     "name": "Kothapeta",
+     "division": "kothapeta"
+    },
+    {
+     "slug": "p-gannavaram",
+     "name": "P. Gannavaram",
+     "division": "kothapeta"
+    },
+    {
+     "slug": "ravulapalem",
+     "name": "Ravulapalem",
+     "division": "kothapeta"
+    },
+    {
+     "slug": "ramachandrapuram",
+     "name": "Ramachandrapuram",
+     "division": "ramachandrapuram"
+    },
+    {
+     "slug": "k-gangavaram",
+     "name": "K. Gangavaram",
+     "division": "ramachandrapuram"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "amalapuram",
+     "name": "Amalapuram",
+     "type": "municipality"
+    },
+    {
+     "slug": "ramachandrapuram",
+     "name": "Ramachandrapuram",
+     "type": "municipality"
+    },
+    {
+     "slug": "mummidivaram",
+     "name": "Mummidivaram",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://konaseema.ap.gov.in/mandals/",
+     "title": "MANDALS | Dr. B. R. Ambedkar Konaseema District (19 mandals, division-wise Tahsildar table)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://konaseema.ap.gov.in/about-district/",
+     "title": "About District | Dr. B. R. Ambedkar Konaseema District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.951/",
+     "title": "G.O.Ms.No.520, Revenue (Lands-IV), 30 Dec 2025 - Restructuring of East Godavari and Dr. B.R. Ambedkar Konaseema districts - Shifting of mandals - Final Notification (AP Gazette Extraordinary No. 951)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://eastgodavari.ap.gov.in/notice/restructuring-of-east-godavari-and-dr-b-r-ambedkar-konaseema-districts-shifting-of-mandals-from-one-district-to-another-district-final-notification/",
+     "title": "East Godavari district notice - Restructuring of East Godavari and Dr. B.R. Ambedkar Konaseema districts - Final Notification",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://newsmeter.in/regional/andhra-pradesh/andhra-creates-two-new-districts-five-revenue-divisions-check-details-760643",
+     "title": "Andhra creates two new districts, five revenue divisions; check details (NewsMeter, 31 Dec 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.metroindia.net/news/articlenews/minister-succeeds-in-creating-revenue-division-33646",
+     "title": "Minister succeeds in creating revenue division (Metro India, 31 Dec 2025) - Ramachandrapuram division retained with Ramachandrapuram and K Gangavaram mandals",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation",
+      "divisions",
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY 2.0 (MoHUA)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "Under G.O.Ms.No.520 dated 30 Dec 2025, Mandapeta, Rayavaram and Kapileswarapuram mandals moved from Ramachandrapuram division of this district to Rajamahendravaram division of East Godavari district, leaving 19 mandals. The district mandal page already lists the 19 remaining mandals in three divisions (Amalapuram 10, Kothapeta 7, Ramachandrapuram 2), and news reports confirm the Ramachandrapuram division was retained with only Ramachandrapuram and K. Gangavaram mandals. The district home page and about page are stale: they still say 22 mandals, 2 revenue divisions and 3 municipalities including Mandapeta. Mandapeta municipality now belongs to East Godavari and is excluded here; the PMAY 2.0 list also shows only Amalapuram, Ramachandrapuram and Mummidivaram under Konaseema. Mandal spellings follow the district mandal page.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "east-godavari",
+   "name": "East Godavari",
+   "headquarters": "Rajamahendravaram",
+   "region": "Coastal Andhra",
+   "hubCity": "rajahmundry",
+   "officialSite": "https://eastgodavari.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "rajamahendravaram",
+     "name": "Rajamahendravaram",
+     "mandals": [
+      "seethanagram",
+      "korukonda",
+      "gokavaram",
+      "rajanagaram",
+      "rajahmundry-rural",
+      "rajahmundry-urban",
+      "kadiam",
+      "rangampeta",
+      "anaparthi",
+      "biccavole",
+      "mandapeta",
+      "rayavaram",
+      "kapileswarapuram"
+     ]
+    },
+    {
+     "slug": "kovvur",
+     "name": "Kovvur",
+     "mandals": [
+      "kovvur",
+      "chagallu",
+      "tallapudi",
+      "nidadavole",
+      "undrajavaram",
+      "peravali",
+      "devarapalle",
+      "gopalapuram",
+      "nallajerla"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "seethanagram",
+     "name": "Seethanagram",
+     "division": "rajamahendravaram"
+    },
+    {
+     "slug": "korukonda",
+     "name": "Korukonda",
+     "division": "rajamahendravaram"
+    },
+    {
+     "slug": "gokavaram",
+     "name": "Gokavaram",
+     "division": "rajamahendravaram"
+    },
+    {
+     "slug": "rajanagaram",
+     "name": "Rajanagaram",
+     "division": "rajamahendravaram"
+    },
+    {
+     "slug": "rajahmundry-rural",
+     "name": "Rajahmundry Rural",
+     "division": "rajamahendravaram"
+    },
+    {
+     "slug": "rajahmundry-urban",
+     "name": "Rajahmundry Urban",
+     "division": "rajamahendravaram"
+    },
+    {
+     "slug": "kadiam",
+     "name": "Kadiam",
+     "division": "rajamahendravaram"
+    },
+    {
+     "slug": "rangampeta",
+     "name": "Rangampeta",
+     "division": "rajamahendravaram"
+    },
+    {
+     "slug": "anaparthi",
+     "name": "Anaparthi",
+     "division": "rajamahendravaram"
+    },
+    {
+     "slug": "biccavole",
+     "name": "Biccavole",
+     "division": "rajamahendravaram"
+    },
+    {
+     "slug": "mandapeta",
+     "name": "Mandapeta",
+     "division": "rajamahendravaram"
+    },
+    {
+     "slug": "rayavaram",
+     "name": "Rayavaram",
+     "division": "rajamahendravaram"
+    },
+    {
+     "slug": "kapileswarapuram",
+     "name": "Kapileswarapuram",
+     "division": "rajamahendravaram"
+    },
+    {
+     "slug": "kovvur",
+     "name": "Kovvur",
+     "division": "kovvur"
+    },
+    {
+     "slug": "chagallu",
+     "name": "Chagallu",
+     "division": "kovvur"
+    },
+    {
+     "slug": "tallapudi",
+     "name": "Tallapudi",
+     "division": "kovvur"
+    },
+    {
+     "slug": "nidadavole",
+     "name": "Nidadavole",
+     "division": "kovvur"
+    },
+    {
+     "slug": "undrajavaram",
+     "name": "Undrajavaram",
+     "division": "kovvur"
+    },
+    {
+     "slug": "peravali",
+     "name": "Peravali",
+     "division": "kovvur"
+    },
+    {
+     "slug": "devarapalle",
+     "name": "Devarapalle",
+     "division": "kovvur"
+    },
+    {
+     "slug": "gopalapuram",
+     "name": "Gopalapuram",
+     "division": "kovvur"
+    },
+    {
+     "slug": "nallajerla",
+     "name": "Nallajerla",
+     "division": "kovvur"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "rajamahendravaram",
+     "name": "Rajamahendravaram",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "mandapeta",
+     "name": "Mandapeta",
+     "type": "municipality"
+    },
+    {
+     "slug": "kovvur",
+     "name": "Kovvur",
+     "type": "municipality"
+    },
+    {
+     "slug": "nidadavole",
+     "name": "Nidadavole",
+     "type": "municipality"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://eastgodavari.ap.gov.in/mandals/",
+     "title": "Mandals | District East Godavari (division-wise list, 22 mandals)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://eastgodavari.ap.gov.in/about-district/",
+     "title": "About District | District East Godavari (2 revenue divisions, 22 mandals after 3 mandals added from Konaseema)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions",
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://eastgodavari.ap.gov.in/",
+     "title": "District East Godavari home page (2 divisions, 22 mandals, 3 municipalities)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions",
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://eastgodavari.ap.gov.in/notice/restructuring-of-east-godavari-and-dr-b-r-ambedkar-konaseema-districts-shifting-of-mandals-from-one-district-to-another-district-final-notification/",
+     "title": "Restructuring of East Godavari and Dr. B.R. Ambedkar Konaseema districts - Shifting of mandals - Final Notification",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.951/",
+     "title": "G.O.Ms.No.520, Revenue (Lands-IV), 30 Dec 2025 (AP Gazette Extraordinary No. 951)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.thehansindia.com/andhra-pradesh/eg-to-see-geographic-change-with-addition-of-3-mandals-1027082",
+     "title": "EG to see geographic change with addition of 3 mandals (The Hans India, 29 Nov 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://eastgodavari.ap.gov.in/public-utility/rajamahendravaram-municipal-corporation/",
+     "title": "Rajamahendravaram Municipal Corporation | District East Godavari",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://eastgodavari.ap.gov.in/public-utility/mandapeta-municipality/",
+     "title": "MANDAPETA MUNICIPALITY | District East Godavari",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY 2.0 (MoHUA)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "The district mandal page already reflects G.O.Ms.No.520 dated 30 Dec 2025: Mandapeta, Rayavaram and Kapileswarapuram (moved from Konaseema) are listed under Rajamahendravaram division, giving 13 + 9 = 22 mandals, matching the about page and home page. Mandal names keep the site's spellings Rajahmundry Rural and Rajahmundry Urban, while the division and the corporation use Rajamahendravaram. The district's public-utility municipality listing is stale (it still shows ULBs of the undivided pre-2022 district such as Kakinada and Amalapuram), so ULBs were taken from the home page count of 3 municipalities plus the PMAY 2.0 district-wise list (Rajahmundry MC, Mandapeta, Kovvur, Nidadavole); Kovvur and Nidadavole also have official municipal sites at kovvur.cdma.ap.gov.in and nidadavole.cdma.ap.gov.in.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "eluru",
+   "name": "Eluru",
+   "headquarters": "Eluru",
+   "region": "Coastal Andhra",
+   "hubCity": "eluru",
+   "officialSite": "https://eluru.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "eluru",
+     "name": "Eluru",
+     "mandals": [
+      "denduluru",
+      "pedavegi",
+      "pedapadu",
+      "unguturu",
+      "bhimadole",
+      "nidamarru",
+      "kaikaluru",
+      "mandavalli",
+      "kalidindi",
+      "mudinepalle"
+     ]
+    },
+    {
+     "slug": "nuzvid",
+     "name": "Nuzvid",
+     "mandals": [
+      "nuziveedu",
+      "agiripalli",
+      "chatrai",
+      "musunuru",
+      "chintalapudi",
+      "lingapalem"
+     ]
+    },
+    {
+     "slug": "jangareddygudem",
+     "name": "Jangareddygudem",
+     "mandals": [
+      "kamavarapukota",
+      "t-narasapuram",
+      "jangareddygudem",
+      "polavaram",
+      "buttaigudem",
+      "jeelugumilli",
+      "koyyalagudem",
+      "kukunoor",
+      "velairpad"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "denduluru",
+     "name": "Denduluru",
+     "division": "eluru"
+    },
+    {
+     "slug": "pedavegi",
+     "name": "Pedavegi",
+     "division": "eluru"
+    },
+    {
+     "slug": "pedapadu",
+     "name": "Pedapadu",
+     "division": "eluru"
+    },
+    {
+     "slug": "unguturu",
+     "name": "Unguturu",
+     "division": "eluru"
+    },
+    {
+     "slug": "bhimadole",
+     "name": "Bhimadole",
+     "division": "eluru"
+    },
+    {
+     "slug": "nidamarru",
+     "name": "Nidamarru",
+     "division": "eluru"
+    },
+    {
+     "slug": "kaikaluru",
+     "name": "Kaikaluru",
+     "division": "eluru"
+    },
+    {
+     "slug": "mandavalli",
+     "name": "Mandavalli",
+     "division": "eluru"
+    },
+    {
+     "slug": "kalidindi",
+     "name": "Kalidindi",
+     "division": "eluru"
+    },
+    {
+     "slug": "mudinepalle",
+     "name": "Mudinepalle",
+     "division": "eluru"
+    },
+    {
+     "slug": "nuziveedu",
+     "name": "Nuziveedu",
+     "division": "nuzvid"
+    },
+    {
+     "slug": "agiripalli",
+     "name": "Agiripalli",
+     "division": "nuzvid"
+    },
+    {
+     "slug": "chatrai",
+     "name": "Chatrai",
+     "division": "nuzvid"
+    },
+    {
+     "slug": "musunuru",
+     "name": "Musunuru",
+     "division": "nuzvid"
+    },
+    {
+     "slug": "chintalapudi",
+     "name": "Chintalapudi",
+     "division": "nuzvid"
+    },
+    {
+     "slug": "lingapalem",
+     "name": "Lingapalem",
+     "division": "nuzvid"
+    },
+    {
+     "slug": "kamavarapukota",
+     "name": "Kamavarapukota",
+     "division": "jangareddygudem"
+    },
+    {
+     "slug": "t-narasapuram",
+     "name": "T. Narasapuram",
+     "division": "jangareddygudem"
+    },
+    {
+     "slug": "jangareddygudem",
+     "name": "Jangareddygudem",
+     "division": "jangareddygudem"
+    },
+    {
+     "slug": "polavaram",
+     "name": "Polavaram",
+     "division": "jangareddygudem"
+    },
+    {
+     "slug": "buttaigudem",
+     "name": "Buttaigudem",
+     "division": "jangareddygudem"
+    },
+    {
+     "slug": "jeelugumilli",
+     "name": "Jeelugumilli",
+     "division": "jangareddygudem"
+    },
+    {
+     "slug": "koyyalagudem",
+     "name": "Koyyalagudem",
+     "division": "jangareddygudem"
+    },
+    {
+     "slug": "kukunoor",
+     "name": "Kukunoor",
+     "division": "jangareddygudem"
+    },
+    {
+     "slug": "velairpad",
+     "name": "Velairpad",
+     "division": "jangareddygudem"
+    },
+    {
+     "slug": "eluru-rural",
+     "name": "Eluru Rural",
+     "division": null
+    },
+    {
+     "slug": "eluru-urban",
+     "name": "Eluru Urban",
+     "division": null
+    },
+    {
+     "slug": "dwaraka-tirumala",
+     "name": "Dwaraka Tirumala",
+     "division": null
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "eluru",
+     "name": "Eluru",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "nuzvid",
+     "name": "Nuzvid",
+     "type": "municipality"
+    },
+    {
+     "slug": "jangareddygudem",
+     "name": "Jangareddygudem",
+     "type": "municipality"
+    },
+    {
+     "slug": "chintalapudi",
+     "name": "Chintalapudi",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://eluru.ap.gov.in/tehsil/",
+     "title": "Revenue Division | Eluru District (division-wise mandal list)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://eluru.ap.gov.in/subdivision-blocks/",
+     "title": "Mandals | Eluru District (28 mandals)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals"
+     ]
+    },
+    {
+     "url": "https://eluru.ap.gov.in/mandal-revenue-officers/",
+     "title": "Mandal Revenue Officers | Eluru District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals"
+     ]
+    },
+    {
+     "url": "https://eluru.ap.gov.in/history/",
+     "title": "History | Eluru District (3 divisions; ULBs)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions",
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://www.dishadaily.com/andhrapradesh/west-godavari/elur-mandal-is-divided-into-two-eluru-rural-mandal-is-one-eluru-urban-mandal-is-the-second-one-222560",
+     "title": "Eluru mandal divided into Eluru Rural and Eluru Urban - final notification (Disha Daily, 15 Jun 2023)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece",
+     "title": "A.P. Cabinet clears district reorganisation, mandal realignment (The Hindu, 29 Dec 2025) - Eluru listed as unchanged",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY 2.0 (MoHUA)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "Eluru district was not changed by the Dec 2025 reorganisation (The Hindu). The official mandal and MRO pages list 28 mandals, but the official revenue division page is outdated and inconsistent with them: it still shows the single Eluru mandal (split into Eluru Rural and Eluru Urban by a June 2023 final notification), it lists Ganapavaram (a West Godavari mandal, not in Eluru's mandal list) under Eluru division, and it omits Dwaraka Tirumala. Ganapavaram has therefore been left out. Eluru Rural, Eluru Urban and Dwaraka Tirumala are confirmed mandals of the district but no official page maps them to a division, so they are in unassignedMandals; they are very likely in Eluru division (Eluru Rural and Urban were carved from Eluru mandal, and Wikipedia places Dwaraka Tirumala in Eluru division), which would give Eluru division 13 mandals. The division page spells the division 'Nuzivid'; the history page uses 'Nuzvid', which is used here. ULBs follow the history page and the PMAY 2.0 list. Note that Polavaram mandal stays in Eluru district; the new Polavaram district (HQ Rampachodavaram) was carved from Alluri Sitharama Raju.",
+   "verified": false,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "guntur",
+   "name": "Guntur",
+   "headquarters": "Guntur",
+   "region": "Coastal Andhra",
+   "hubCity": "guntur",
+   "officialSite": "https://guntur.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "guntur",
+     "name": "Guntur",
+     "mandals": [
+      "guntur-east",
+      "guntur-west",
+      "medikonduru",
+      "pedakakani",
+      "pedanandipadu",
+      "phirangipuram",
+      "prathipadu",
+      "tadikonda",
+      "thullur",
+      "vatticherukuru"
+     ]
+    },
+    {
+     "slug": "tenali",
+     "name": "Tenali",
+     "mandals": [
+      "mangalagiri",
+      "tadepalle",
+      "duggirala",
+      "kollipara",
+      "chebrolu",
+      "kakumanu",
+      "ponnur",
+      "tenali"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "guntur-east",
+     "name": "Guntur East",
+     "division": "guntur"
+    },
+    {
+     "slug": "guntur-west",
+     "name": "Guntur West",
+     "division": "guntur"
+    },
+    {
+     "slug": "medikonduru",
+     "name": "Medikonduru",
+     "division": "guntur"
+    },
+    {
+     "slug": "pedakakani",
+     "name": "Pedakakani",
+     "division": "guntur"
+    },
+    {
+     "slug": "pedanandipadu",
+     "name": "Pedanandipadu",
+     "division": "guntur"
+    },
+    {
+     "slug": "phirangipuram",
+     "name": "Phirangipuram",
+     "division": "guntur"
+    },
+    {
+     "slug": "prathipadu",
+     "name": "Prathipadu",
+     "division": "guntur"
+    },
+    {
+     "slug": "tadikonda",
+     "name": "Tadikonda",
+     "division": "guntur"
+    },
+    {
+     "slug": "thullur",
+     "name": "Thullur",
+     "division": "guntur"
+    },
+    {
+     "slug": "vatticherukuru",
+     "name": "Vatticherukuru",
+     "division": "guntur"
+    },
+    {
+     "slug": "mangalagiri",
+     "name": "Mangalagiri",
+     "division": "tenali"
+    },
+    {
+     "slug": "tadepalle",
+     "name": "Tadepalle",
+     "division": "tenali"
+    },
+    {
+     "slug": "duggirala",
+     "name": "Duggirala",
+     "division": "tenali"
+    },
+    {
+     "slug": "kollipara",
+     "name": "Kollipara",
+     "division": "tenali"
+    },
+    {
+     "slug": "chebrolu",
+     "name": "Chebrolu",
+     "division": "tenali"
+    },
+    {
+     "slug": "kakumanu",
+     "name": "Kakumanu",
+     "division": "tenali"
+    },
+    {
+     "slug": "ponnur",
+     "name": "Ponnur",
+     "division": "tenali"
+    },
+    {
+     "slug": "tenali",
+     "name": "Tenali",
+     "division": "tenali"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "guntur",
+     "name": "Guntur",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "mangalagiri-tadepalli",
+     "name": "Mangalagiri Tadepalli",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "tenali",
+     "name": "Tenali",
+     "type": "municipality"
+    },
+    {
+     "slug": "ponnur",
+     "name": "Ponnur",
+     "type": "municipality"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://guntur.ap.gov.in/mandals/",
+     "title": "Mandals | Guntur District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece",
+     "title": "A.P. Cabinet clears district reorganisation, mandal realignment - The Hindu",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://apcmms.ap.gov.in/apiv1/public/web/ulbdetails/ulbprofiles",
+     "title": "CDMA ULB profiles data (feeds https://cdma.ap.gov.in/district-web-directory/)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "Guntur is one of the nine districts left unchanged by the December 2025 reorganisation (The Hindu, Cabinet decision). The official mandals page shows 'Last Updated 27.04.2022' but this is consistent with no change. ULB names and grades come from the CDMA ULB profiles feed behind the CDMA district web directory (grade 'Corp' mapped to municipal-corporation; Special/Selection/I/II/III grades mapped to municipality). CDMA lists Tenali as Special grade and Ponnur as Grade II.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "kakinada",
+   "name": "Kakinada",
+   "headquarters": "Kakinada",
+   "region": "Coastal Andhra",
+   "hubCity": "kakinada",
+   "officialSite": "https://kakinada.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "kakinada",
+     "name": "Kakinada",
+     "mandals": [
+      "gollaprolu",
+      "pithapuram",
+      "u-kotapalli",
+      "kakinada-rural",
+      "kakinada-urban",
+      "karapa",
+      "pedapudi",
+      "kajuluru",
+      "thallarevu"
+     ]
+    },
+    {
+     "slug": "peddapuram",
+     "name": "Peddapuram",
+     "mandals": [
+      "kotananduru",
+      "tuni",
+      "thondangi",
+      "shankhavaram",
+      "prathipadu",
+      "yeleswaram",
+      "jaggampeta",
+      "kirlampudi",
+      "peddapuram",
+      "gandepalli",
+      "rowtulapudi",
+      "samalkota"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "gollaprolu",
+     "name": "Gollaprolu",
+     "division": "kakinada"
+    },
+    {
+     "slug": "pithapuram",
+     "name": "Pithapuram",
+     "division": "kakinada"
+    },
+    {
+     "slug": "u-kotapalli",
+     "name": "U.Kotapalli",
+     "division": "kakinada"
+    },
+    {
+     "slug": "kakinada-rural",
+     "name": "Kakinada Rural",
+     "division": "kakinada"
+    },
+    {
+     "slug": "kakinada-urban",
+     "name": "Kakinada Urban",
+     "division": "kakinada"
+    },
+    {
+     "slug": "karapa",
+     "name": "Karapa",
+     "division": "kakinada"
+    },
+    {
+     "slug": "pedapudi",
+     "name": "Pedapudi",
+     "division": "kakinada"
+    },
+    {
+     "slug": "kajuluru",
+     "name": "Kajuluru",
+     "division": "kakinada"
+    },
+    {
+     "slug": "thallarevu",
+     "name": "Thallarevu",
+     "division": "kakinada"
+    },
+    {
+     "slug": "kotananduru",
+     "name": "Kotananduru",
+     "division": "peddapuram"
+    },
+    {
+     "slug": "tuni",
+     "name": "Tuni",
+     "division": "peddapuram"
+    },
+    {
+     "slug": "thondangi",
+     "name": "Thondangi",
+     "division": "peddapuram"
+    },
+    {
+     "slug": "shankhavaram",
+     "name": "Shankhavaram",
+     "division": "peddapuram"
+    },
+    {
+     "slug": "prathipadu",
+     "name": "Prathipadu",
+     "division": "peddapuram"
+    },
+    {
+     "slug": "yeleswaram",
+     "name": "Yeleswaram",
+     "division": "peddapuram"
+    },
+    {
+     "slug": "jaggampeta",
+     "name": "Jaggampeta",
+     "division": "peddapuram"
+    },
+    {
+     "slug": "kirlampudi",
+     "name": "Kirlampudi",
+     "division": "peddapuram"
+    },
+    {
+     "slug": "peddapuram",
+     "name": "Peddapuram",
+     "division": "peddapuram"
+    },
+    {
+     "slug": "gandepalli",
+     "name": "Gandepalli",
+     "division": "peddapuram"
+    },
+    {
+     "slug": "rowtulapudi",
+     "name": "Rowtulapudi",
+     "division": "peddapuram"
+    },
+    {
+     "slug": "samalkota",
+     "name": "Samalkota",
+     "division": "peddapuram"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "kakinada",
+     "name": "Kakinada",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "pithapuram",
+     "name": "Pithapuram",
+     "type": "municipality"
+    },
+    {
+     "slug": "samalkot",
+     "name": "Samalkot",
+     "type": "municipality"
+    },
+    {
+     "slug": "peddapuram",
+     "name": "Peddapuram",
+     "type": "municipality"
+    },
+    {
+     "slug": "tuni",
+     "name": "Tuni",
+     "type": "municipality"
+    },
+    {
+     "slug": "gollaprolu",
+     "name": "Gollaprolu",
+     "type": "nagar-panchayat"
+    },
+    {
+     "slug": "yeleswaram",
+     "name": "Yeleswaram",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://kakinada.ap.gov.in/mandal/",
+     "title": "Mandal | Kakinada District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://kakinada.ap.gov.in/revenue-divisions/",
+     "title": "Revenue Divisions | Kakinada District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://kakinada.ap.gov.in/",
+     "title": "Kakinada District home page (21 mandals, 2 divisions, 1 corporation, 4 municipalities)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions",
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://kakinada.ap.gov.in/about-district/",
+     "title": "ABOUT DISTRICT | Kakinada District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.949/",
+     "title": "G.O.Ms.No.518, Revenue (Lands-IV), 30 Dec 2025 - Shifting of Samalkota mandal from Kakinada to Peddapuram revenue division - Final Notification (AP Gazette Extraordinary No. 949)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.thehansindia.com/andhra-pradesh/2-new-districts-created-in-state-total-rises-to-28-1035168",
+     "title": "2 new districts created in state; total rises to 28 (The Hans India, 31 Dec 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY 2.0 (MoHUA)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "The district mandal page already places Samalkota in Peddapuram division, consistent with G.O.Ms.No.518 dated 30 Dec 2025, giving Kakinada division 9 mandals and Peddapuram division 12 mandals (21 total, matching the home page). The mandal page writes Kakinada (R) and Kakinada (U); these are expanded to Kakinada Rural and Kakinada Urban here. The mandal is spelt Samalkota on the mandal page while the municipality is spelt Samalkot on the about page; both spellings are kept as the government site uses them. Gollaprolu and Yeleswaram are listed as Nagar Panchayats on the district site and as town panchayats in the PMAY 2.0 list; a third-party 2026 municipal election listing shows them as municipalities, which could not be confirmed from an official source, so the official nagar panchayat classification is kept.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "krishna",
+   "name": "Krishna",
+   "headquarters": "Machilipatnam",
+   "region": "Coastal Andhra",
+   "hubCity": "machilipatnam",
+   "officialSite": "https://krishna.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "machilipatnam",
+     "name": "Machilipatnam",
+     "mandals": [
+      "avanigadda",
+      "bantumilli",
+      "challapalli",
+      "ghantasala",
+      "guduru",
+      "koduru",
+      "kruthivennu",
+      "machilipatnam-north",
+      "machilipatnam-south",
+      "mopidevi",
+      "nagayalanka",
+      "pedana"
+     ]
+    },
+    {
+     "slug": "gudivada",
+     "name": "Gudivada",
+     "mandals": [
+      "bapulapadu",
+      "gannavaram",
+      "gudivada",
+      "gudlavalleru",
+      "nandivada",
+      "pedaparupudi",
+      "unguturu"
+     ]
+    },
+    {
+     "slug": "vuyyuru",
+     "name": "Vuyyuru",
+     "mandals": [
+      "kankipadu",
+      "movva",
+      "pamarru",
+      "pamidimukkala",
+      "penamaluru",
+      "thotlavalluru",
+      "vuyyuru"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "avanigadda",
+     "name": "Avanigadda",
+     "division": "machilipatnam"
+    },
+    {
+     "slug": "bantumilli",
+     "name": "Bantumilli",
+     "division": "machilipatnam"
+    },
+    {
+     "slug": "challapalli",
+     "name": "Challapalli",
+     "division": "machilipatnam"
+    },
+    {
+     "slug": "ghantasala",
+     "name": "Ghantasala",
+     "division": "machilipatnam"
+    },
+    {
+     "slug": "guduru",
+     "name": "Guduru",
+     "division": "machilipatnam"
+    },
+    {
+     "slug": "koduru",
+     "name": "Koduru",
+     "division": "machilipatnam"
+    },
+    {
+     "slug": "kruthivennu",
+     "name": "Kruthivennu",
+     "division": "machilipatnam"
+    },
+    {
+     "slug": "machilipatnam-north",
+     "name": "Machilipatnam North",
+     "division": "machilipatnam"
+    },
+    {
+     "slug": "machilipatnam-south",
+     "name": "Machilipatnam South",
+     "division": "machilipatnam"
+    },
+    {
+     "slug": "mopidevi",
+     "name": "Mopidevi",
+     "division": "machilipatnam"
+    },
+    {
+     "slug": "nagayalanka",
+     "name": "Nagayalanka",
+     "division": "machilipatnam"
+    },
+    {
+     "slug": "pedana",
+     "name": "Pedana",
+     "division": "machilipatnam"
+    },
+    {
+     "slug": "bapulapadu",
+     "name": "Bapulapadu",
+     "division": "gudivada"
+    },
+    {
+     "slug": "gannavaram",
+     "name": "Gannavaram",
+     "division": "gudivada"
+    },
+    {
+     "slug": "gudivada",
+     "name": "Gudivada",
+     "division": "gudivada"
+    },
+    {
+     "slug": "gudlavalleru",
+     "name": "Gudlavalleru",
+     "division": "gudivada"
+    },
+    {
+     "slug": "nandivada",
+     "name": "Nandivada",
+     "division": "gudivada"
+    },
+    {
+     "slug": "pedaparupudi",
+     "name": "Pedaparupudi",
+     "division": "gudivada"
+    },
+    {
+     "slug": "unguturu",
+     "name": "Unguturu",
+     "division": "gudivada"
+    },
+    {
+     "slug": "kankipadu",
+     "name": "Kankipadu",
+     "division": "vuyyuru"
+    },
+    {
+     "slug": "movva",
+     "name": "Movva",
+     "division": "vuyyuru"
+    },
+    {
+     "slug": "pamarru",
+     "name": "Pamarru",
+     "division": "vuyyuru"
+    },
+    {
+     "slug": "pamidimukkala",
+     "name": "Pamidimukkala",
+     "division": "vuyyuru"
+    },
+    {
+     "slug": "penamaluru",
+     "name": "Penamaluru",
+     "division": "vuyyuru"
+    },
+    {
+     "slug": "thotlavalluru",
+     "name": "Thotlavalluru",
+     "division": "vuyyuru"
+    },
+    {
+     "slug": "vuyyuru",
+     "name": "Vuyyuru",
+     "division": "vuyyuru"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "machilipatnam",
+     "name": "Machilipatnam",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "gudivada",
+     "name": "Gudivada",
+     "type": "municipality"
+    },
+    {
+     "slug": "pedana",
+     "name": "Pedana",
+     "type": "municipality"
+    },
+    {
+     "slug": "vuyyuru",
+     "name": "Vuyyuru",
+     "type": "municipality"
+    },
+    {
+     "slug": "ysr-tadigadapa",
+     "name": "YSR Tadigadapa",
+     "type": "municipality"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://krishna.ap.gov.in/about_district/administrative-setup/new_mandals/",
+     "title": "MANDALS | Krishna District (division-wise mandals list, 26 mandals)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://krishna.ap.gov.in/about_district/administrative-setup/new_revenue_divisions/",
+     "title": "REVENUE DIVISIONS | Krishna District (Gudivada, Machilipatnam, Vuyyuru)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://krishna.ap.gov.in/",
+     "title": "Krishna District home page (26 mandals, 1 municipal corporation, 4 municipalities)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://krishna.ap.gov.in/about_district/",
+     "title": "About District | Krishna District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://krishna.ap.gov.in/public-utility-category/municipality/",
+     "title": "Municipalities | Krishna District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece",
+     "title": "A.P. Cabinet clears district reorganisation, mandal realignment (The Hindu, 29 Dec 2025) - Krishna listed as unchanged",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY 2.0 (MoHUA)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "Krishna district was not changed by the Dec 2025 reorganisation (The Hindu). The current division-wise list comes from the 'new_mandals' page (12 + 7 + 7 = 26 mandals, matching the home page count of 26), which shows Machilipatnam mandal split into Machilipatnam North and Machilipatnam South. Other pages on the same site are stale and should be ignored: /mandals/ and /revenue-divisions/ show the pre-2022 undivided district (53 mandals, 4 divisions), and /revenue-land-administration/ has a mixed list that places Gannavaram, Bapulapadu and Unguturu under Vuyyuru and still includes Tiruvuru (now in NTR). The about page says 25 mandals and 3 municipalities, which predates the Machilipatnam split and the Tadigadapa municipality. Machilipatnam division is also called Bandar. Vuyyuru is a municipality per the district site but appears as a town panchayat in the PMAY 2.0 list; the district classification is used. The district site names the fifth ULB 'Y S R Tadigadapa' (Grade-1 municipality); a third-party 2026 election listing shows it as 'Tadigadapa', and any official rename was not verified. The district site labels Machilipatnam as a municipality, but PMAY 2.0 lists it as a municipal corporation, which is used here.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "kurnool",
+   "name": "Kurnool",
+   "headquarters": "Kurnool",
+   "region": "Rayalaseema",
+   "hubCity": "kurnool",
+   "officialSite": "https://kurnool.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "adoni",
+     "name": "Adoni",
+     "mandals": [
+      "adoni-1",
+      "adoni-2",
+      "gonegandla",
+      "holagonda",
+      "kosigi",
+      "kowthalam",
+      "mantralayam",
+      "nandavaram",
+      "peddakadubur",
+      "yemmiganur"
+     ]
+    },
+    {
+     "slug": "pattikonda",
+     "name": "Pattikonda",
+     "mandals": [
+      "alur",
+      "aspari",
+      "chippagiri",
+      "devanakonda",
+      "halaharvi",
+      "maddikera",
+      "pattikonda",
+      "tuggali",
+      "krishnagiri"
+     ]
+    },
+    {
+     "slug": "kurnool",
+     "name": "Kurnool",
+     "mandals": [
+      "c-belagal",
+      "gudur",
+      "kallur",
+      "kodumur",
+      "kurnool",
+      "kurnool-urban",
+      "orvakal",
+      "veldurthi"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "adoni-1",
+     "name": "Adoni-1",
+     "division": "adoni"
+    },
+    {
+     "slug": "adoni-2",
+     "name": "Adoni-2",
+     "division": "adoni"
+    },
+    {
+     "slug": "gonegandla",
+     "name": "Gonegandla",
+     "division": "adoni"
+    },
+    {
+     "slug": "holagonda",
+     "name": "Holagonda",
+     "division": "adoni"
+    },
+    {
+     "slug": "kosigi",
+     "name": "Kosigi",
+     "division": "adoni"
+    },
+    {
+     "slug": "kowthalam",
+     "name": "Kowthalam",
+     "division": "adoni"
+    },
+    {
+     "slug": "mantralayam",
+     "name": "Mantralayam",
+     "division": "adoni"
+    },
+    {
+     "slug": "nandavaram",
+     "name": "Nandavaram",
+     "division": "adoni"
+    },
+    {
+     "slug": "peddakadubur",
+     "name": "Peddakadubur",
+     "division": "adoni"
+    },
+    {
+     "slug": "yemmiganur",
+     "name": "Yemmiganur",
+     "division": "adoni"
+    },
+    {
+     "slug": "alur",
+     "name": "Alur",
+     "division": "pattikonda"
+    },
+    {
+     "slug": "aspari",
+     "name": "Aspari",
+     "division": "pattikonda"
+    },
+    {
+     "slug": "chippagiri",
+     "name": "Chippagiri",
+     "division": "pattikonda"
+    },
+    {
+     "slug": "devanakonda",
+     "name": "Devanakonda",
+     "division": "pattikonda"
+    },
+    {
+     "slug": "halaharvi",
+     "name": "Halaharvi",
+     "division": "pattikonda"
+    },
+    {
+     "slug": "maddikera",
+     "name": "Maddikera",
+     "division": "pattikonda"
+    },
+    {
+     "slug": "pattikonda",
+     "name": "Pattikonda",
+     "division": "pattikonda"
+    },
+    {
+     "slug": "tuggali",
+     "name": "Tuggali",
+     "division": "pattikonda"
+    },
+    {
+     "slug": "krishnagiri",
+     "name": "Krishnagiri",
+     "division": "pattikonda"
+    },
+    {
+     "slug": "c-belagal",
+     "name": "C Belagal",
+     "division": "kurnool"
+    },
+    {
+     "slug": "gudur",
+     "name": "Gudur",
+     "division": "kurnool"
+    },
+    {
+     "slug": "kallur",
+     "name": "Kallur",
+     "division": "kurnool"
+    },
+    {
+     "slug": "kodumur",
+     "name": "Kodumur",
+     "division": "kurnool"
+    },
+    {
+     "slug": "kurnool",
+     "name": "Kurnool",
+     "division": "kurnool"
+    },
+    {
+     "slug": "kurnool-urban",
+     "name": "Kurnool Urban",
+     "division": "kurnool"
+    },
+    {
+     "slug": "orvakal",
+     "name": "Orvakal",
+     "division": "kurnool"
+    },
+    {
+     "slug": "veldurthi",
+     "name": "Veldurthi",
+     "division": "kurnool"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "kurnool",
+     "name": "Kurnool",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "adoni",
+     "name": "Adoni",
+     "type": "municipality"
+    },
+    {
+     "slug": "yemmiganur",
+     "name": "Yemmiganur",
+     "type": "municipality"
+    },
+    {
+     "slug": "gudur",
+     "name": "Gudur",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://kurnool.ap.gov.in/mandal/",
+     "title": "Mandal | District Kurnool, Government of Andhra Pradesh (last updated 02.01.2026)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://kurnool.ap.gov.in/subdivision-blocks/",
+     "title": "Revenue Division | District Kurnool, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://kurnool.ap.gov.in/municipal-corporation/",
+     "title": "Municipal Corporation | District Kurnool, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://kurnool.ap.gov.in/public-utility-category/municipality/",
+     "title": "Municipalities | District Kurnool, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.962/",
+     "title": "AP Gazette Extraordinary No. 962: Bifurcation of Adoni mandal, Kurnool district into two mandals - Final Notification (G.O.Ms.No.531, Revenue (Lands-IV), 30 Dec 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation",
+      "mandals"
+     ]
+    },
+    {
+     "url": "https://dtcp.ap.gov.in/admin/upload_files/gos_circular/Aug2026/24Aug2026/MFeF2ThV.pdf",
+     "title": "G.O.Ms.No.188, MA&UD, 17-08-2026 - reorganisation of KUDA development area (lists 27 Kurnool mandals and 4 ULBs)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "ulbs",
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece",
+     "title": "A.P. Cabinet clears district reorganisation, mandal realignment (The Hindu)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "The official mandal page (updated 02.01.2026) lists 27 mandals in 3 divisions, including the Adoni split from G.O.Ms.531 of 30 Dec 2025. The site writes 'Adoni 1' and 'Adoni 2'; the hyphenated 'Adoni-1' and 'Adoni-2' used by The Hindu and DTCP G.O.Ms.188 (2026) are used here. The Nov 2025 preliminary notification proposed naming the second mandal 'Pedda Harivanam' with HQ at Pedda Harivanam (Andhra Prabha, ETV Bharat); the final name is Adoni-2. G.O.Ms.188 independently lists the same 27 mandals, writing 'Kurnool rural' for the mandal the site calls 'Kurnool' and 'Holagunda' for 'Holagonda'. The site's '/mandals/' page and the about-district text (26 mandals) are stale; /mandals/ still includes Nandyal-district mandals. ULBs follow the district municipal-corporation page: 1 corporation, 2 municipalities, 1 nagar panchayat. The PMAY-U list also shows 'Mantralayam, Municipal Corporation' (code 993766), which no state or district source confirms, so it is excluded.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "markapuram",
+   "name": "Markapuram",
+   "headquarters": "Markapuram",
+   "region": "Coastal Andhra",
+   "hubCity": "ongole",
+   "officialSite": "https://markapuram.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "markapuram",
+     "name": "Markapuram",
+     "mandals": [
+      "giddalur",
+      "bestavaripeta",
+      "racherla",
+      "komarolu",
+      "cumbum",
+      "ardhaveedu",
+      "markapuram",
+      "tarlupadu",
+      "yerragondapalem",
+      "pullalacheruvu",
+      "tripuranthakam",
+      "dornala",
+      "peddaaraveedu",
+      "podili",
+      "konakanamitla"
+     ]
+    },
+    {
+     "slug": "kanigiri",
+     "name": "Kanigiri",
+     "mandals": [
+      "hanumanthunipadu",
+      "veligandla",
+      "kanigiri",
+      "pamur",
+      "pedacherlopalle",
+      "chandrasekharapuram"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "giddalur",
+     "name": "Giddalur",
+     "division": "markapuram"
+    },
+    {
+     "slug": "bestavaripeta",
+     "name": "Bestavaripeta",
+     "division": "markapuram"
+    },
+    {
+     "slug": "racherla",
+     "name": "Racherla",
+     "division": "markapuram"
+    },
+    {
+     "slug": "komarolu",
+     "name": "Komarolu",
+     "division": "markapuram"
+    },
+    {
+     "slug": "cumbum",
+     "name": "Cumbum",
+     "division": "markapuram"
+    },
+    {
+     "slug": "ardhaveedu",
+     "name": "Ardhaveedu",
+     "division": "markapuram"
+    },
+    {
+     "slug": "markapuram",
+     "name": "Markapuram",
+     "division": "markapuram"
+    },
+    {
+     "slug": "tarlupadu",
+     "name": "Tarlupadu",
+     "division": "markapuram"
+    },
+    {
+     "slug": "yerragondapalem",
+     "name": "Yerragondapalem",
+     "division": "markapuram"
+    },
+    {
+     "slug": "pullalacheruvu",
+     "name": "Pullalacheruvu",
+     "division": "markapuram"
+    },
+    {
+     "slug": "tripuranthakam",
+     "name": "Tripuranthakam",
+     "division": "markapuram"
+    },
+    {
+     "slug": "dornala",
+     "name": "Dornala",
+     "division": "markapuram"
+    },
+    {
+     "slug": "peddaaraveedu",
+     "name": "Peddaaraveedu",
+     "division": "markapuram"
+    },
+    {
+     "slug": "podili",
+     "name": "Podili",
+     "division": "markapuram"
+    },
+    {
+     "slug": "konakanamitla",
+     "name": "Konakanamitla",
+     "division": "markapuram"
+    },
+    {
+     "slug": "hanumanthunipadu",
+     "name": "Hanumanthunipadu",
+     "division": "kanigiri"
+    },
+    {
+     "slug": "veligandla",
+     "name": "Veligandla",
+     "division": "kanigiri"
+    },
+    {
+     "slug": "kanigiri",
+     "name": "Kanigiri",
+     "division": "kanigiri"
+    },
+    {
+     "slug": "pamur",
+     "name": "Pamur",
+     "division": "kanigiri"
+    },
+    {
+     "slug": "pedacherlopalle",
+     "name": "Pedacherlopalle",
+     "division": "kanigiri"
+    },
+    {
+     "slug": "chandrasekharapuram",
+     "name": "Chandrasekharapuram",
+     "division": "kanigiri"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "markapur",
+     "name": "Markapur",
+     "type": "municipality"
+    },
+    {
+     "slug": "giddalur",
+     "name": "Giddalur",
+     "type": "nagar-panchayat"
+    },
+    {
+     "slug": "kanigiri",
+     "name": "Kanigiri",
+     "type": "nagar-panchayat"
+    },
+    {
+     "slug": "podili",
+     "name": "Podili",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://markapuram.ap.gov.in/mandals/",
+     "title": "Mandals | Markapuram District, Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals"
+     ]
+    },
+    {
+     "url": "https://markapuram.ap.gov.in/revenue-divisions/",
+     "title": "Revenue Divisons | Markapuram District, Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.955/",
+     "title": "Formation of new district Markapuram - Final Notification [G.O.Ms.No.524, Revenue (Lands-IV), 30 Dec 2025] (AP Gazette Extraordinary No. 955)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.sakshi.com/telugu-news/prakasam/2665601",
+     "title": "స్వరూపం మారనున్న ఉమ్మడి జిల్లా.. - Sakshi, 31 Dec 2025",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions",
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.newindianexpress.com/states/andhra-pradesh/2025/Dec/31/two-new-districts-come-into-existence-in-andhra-pradesh",
+     "title": "Two new districts come into existence in Andhra Pradesh - New Indian Express",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://apcmms.ap.gov.in/apiv1/public/web/ulbdetails/ulbprofiles",
+     "title": "CDMA ULB profiles data (feeds https://cdma.ap.gov.in/district-web-directory/)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "New district formed 31 Dec 2025 under G.O.Ms.No.524. The official site (last updated 31.01.2026) lists the 21 mandals and the two divisions (Markapuram, Kanigiri) but does not show which mandal belongs to which division. The division mapping (Markapuram 15, Kanigiri 6) comes from Sakshi's 31 Dec 2025 report on the G.O., which notes Konakanamitla moved from Kanigiri to Markapuram division; Wikipedia agrees. The gazette text could not be extracted (scanned pages). The November 2025 draft (Hans India) had put Giddalur, Bestavaripeta, Racherla, Komarolu, Cumbum and Ardhaveedu in Kanigiri division; this was superseded by the final notification. Mandal spellings follow the official mandals page (e.g. Cumbum, not Kambham). The CDMA feed names the municipality 'Markapur' (Grade II), and lists Giddalur, Kanigiri and Podili as NP (nagar panchayat). verified=false only because the division-to-mandal mapping is not on an official page.",
+   "verified": false,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "nandyal",
+   "name": "Nandyal",
+   "headquarters": "Nandyal",
+   "region": "Rayalaseema",
+   "hubCity": "nandyal",
+   "officialSite": "https://nandyal.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "nandyal",
+     "name": "Nandyal",
+     "mandals": [
+      "allagadda",
+      "chagalamari",
+      "dornipadu",
+      "gospadu",
+      "mahanandi",
+      "nandyal",
+      "rudravaram",
+      "sirvel",
+      "uyyalawada",
+      "panyam",
+      "gadivemula"
+     ]
+    },
+    {
+     "slug": "atmakur",
+     "name": "Atmakur",
+     "mandals": [
+      "atmakur",
+      "bandiatmakur",
+      "jupadubunglow",
+      "kothapalli",
+      "midthur",
+      "nandikotkur",
+      "pagidyala",
+      "pamulapadu",
+      "srisailam",
+      "velgodu"
+     ]
+    },
+    {
+     "slug": "dhone",
+     "name": "Dhone",
+     "mandals": [
+      "betamcherla",
+      "dhone",
+      "peapully"
+     ]
+    },
+    {
+     "slug": "banaganapalli",
+     "name": "Banaganapalli",
+     "mandals": [
+      "banaganapalli",
+      "koilkuntla",
+      "kolimigundla",
+      "owk",
+      "sanjamala"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "allagadda",
+     "name": "Allagadda",
+     "division": "nandyal"
+    },
+    {
+     "slug": "chagalamari",
+     "name": "Chagalamari",
+     "division": "nandyal"
+    },
+    {
+     "slug": "dornipadu",
+     "name": "Dornipadu",
+     "division": "nandyal"
+    },
+    {
+     "slug": "gospadu",
+     "name": "Gospadu",
+     "division": "nandyal"
+    },
+    {
+     "slug": "mahanandi",
+     "name": "Mahanandi",
+     "division": "nandyal"
+    },
+    {
+     "slug": "nandyal",
+     "name": "Nandyal",
+     "division": "nandyal"
+    },
+    {
+     "slug": "rudravaram",
+     "name": "Rudravaram",
+     "division": "nandyal"
+    },
+    {
+     "slug": "sirvel",
+     "name": "Sirvel",
+     "division": "nandyal"
+    },
+    {
+     "slug": "uyyalawada",
+     "name": "Uyyalawada",
+     "division": "nandyal"
+    },
+    {
+     "slug": "panyam",
+     "name": "Panyam",
+     "division": "nandyal"
+    },
+    {
+     "slug": "gadivemula",
+     "name": "Gadivemula",
+     "division": "nandyal"
+    },
+    {
+     "slug": "atmakur",
+     "name": "Atmakur",
+     "division": "atmakur"
+    },
+    {
+     "slug": "bandiatmakur",
+     "name": "Bandiatmakur",
+     "division": "atmakur"
+    },
+    {
+     "slug": "jupadubunglow",
+     "name": "JupaduBunglow",
+     "division": "atmakur"
+    },
+    {
+     "slug": "kothapalli",
+     "name": "Kothapalli",
+     "division": "atmakur"
+    },
+    {
+     "slug": "midthur",
+     "name": "Midthur",
+     "division": "atmakur"
+    },
+    {
+     "slug": "nandikotkur",
+     "name": "Nandikotkur",
+     "division": "atmakur"
+    },
+    {
+     "slug": "pagidyala",
+     "name": "Pagidyala",
+     "division": "atmakur"
+    },
+    {
+     "slug": "pamulapadu",
+     "name": "Pamulapadu",
+     "division": "atmakur"
+    },
+    {
+     "slug": "srisailam",
+     "name": "Srisailam",
+     "division": "atmakur"
+    },
+    {
+     "slug": "velgodu",
+     "name": "Velgodu",
+     "division": "atmakur"
+    },
+    {
+     "slug": "betamcherla",
+     "name": "Betamcherla",
+     "division": "dhone"
+    },
+    {
+     "slug": "dhone",
+     "name": "Dhone",
+     "division": "dhone"
+    },
+    {
+     "slug": "peapully",
+     "name": "Peapully",
+     "division": "dhone"
+    },
+    {
+     "slug": "banaganapalli",
+     "name": "Banaganapalli",
+     "division": "banaganapalli"
+    },
+    {
+     "slug": "koilkuntla",
+     "name": "Koilkuntla",
+     "division": "banaganapalli"
+    },
+    {
+     "slug": "kolimigundla",
+     "name": "Kolimigundla",
+     "division": "banaganapalli"
+    },
+    {
+     "slug": "owk",
+     "name": "Owk",
+     "division": "banaganapalli"
+    },
+    {
+     "slug": "sanjamala",
+     "name": "Sanjamala",
+     "division": "banaganapalli"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "nandyal",
+     "name": "Nandyal",
+     "type": "municipality"
+    },
+    {
+     "slug": "allagadda",
+     "name": "Allagadda",
+     "type": "municipality"
+    },
+    {
+     "slug": "atmakur",
+     "name": "Atmakur",
+     "type": "municipality"
+    },
+    {
+     "slug": "dhone",
+     "name": "Dhone",
+     "type": "municipality"
+    },
+    {
+     "slug": "nandikotkur",
+     "name": "Nandikotkur",
+     "type": "municipality"
+    },
+    {
+     "slug": "bethamcherla",
+     "name": "Bethamcherla",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://nandyal.ap.gov.in/mandal/",
+     "title": "Mandal | Nandyal District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://nandyal.ap.gov.in/revenue-divisions/",
+     "title": "Revenue Divisions | Nandyal District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://nandyal.ap.gov.in/municipalities/",
+     "title": "Municipalities | Nandyal District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://nandyal.ap.gov.in/public-utility-category/municipality/",
+     "title": "Municipalities (public utilities) | Nandyal District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.963/",
+     "title": "AP Gazette Extraordinary No. 963: Re-structuring of Nandyal District - formation of new revenue division Banaganapalli - Final Notification (G.O.Ms.No.532, Revenue (Lands-IV), 30 Dec 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://www.etvbharat.com/te/state/ap-government-notification-relesed-3-new-districts-and-5-revenue-divisions-andhra-pradesh-news-aps25112800543",
+     "title": "Preliminary notification: 3 new districts, 5 revenue divisions (ETV Bharat, 28 Nov 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://prabhanews.com/banaganapalli-green-signal-for-revenue-division/",
+     "title": "Banaganapalli revenue division gets green signal (Andhra Prabha, 27 Nov 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "The official mandal page lists 29 mandals in 4 divisions, including the new Banaganapalli division (Banaganapalli, Koilkuntla, Kolimigundla, Owk, Sanjamala). That matches G.O.Ms.532 of 30 Dec 2025 (title verified) and the ETV Bharat table. Koilkuntla and Owk came from Dhone division, and Kolimigundla and Sanjamala from Nandyal division. Andhra Prabha reported a proposal to also add Betamcherla to Banaganapalli, but the official page keeps it in Dhone. The about-district and Telugu history pages are stale, saying 3 divisions and 27 or 29 mandals. Mandal spellings follow the official page as written, for example 'JupaduBunglow' and 'Bandiatmakur'. Other official pages also use Banaganapalle, Koilakuntla, Chagalamarri, Velugode, Kottapalle, Jupadu Banglow and Bandi Atmakur. ULBs follow the district municipalities page: 5 municipalities plus Bethamcherla Nagarapanchayat. The PMAY-U list also shows 'Srisailam, Municipality' (code 593976), which no district or state source confirms, so it is excluded. Nandyal has no municipal corporation.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "ntr",
+   "name": "NTR",
+   "headquarters": "Vijayawada",
+   "region": "Coastal Andhra",
+   "hubCity": "vijayawada",
+   "officialSite": "https://ntr.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "vijayawada",
+     "name": "Vijayawada",
+     "mandals": [
+      "ibrahimpatnam",
+      "vijayawada-rural",
+      "vijayawada-central",
+      "vijayawada-east",
+      "vijayawada-north",
+      "vijayawada-west"
+     ]
+    },
+    {
+     "slug": "nandigama",
+     "name": "Nandigama",
+     "mandals": [
+      "chandarlapadu",
+      "jaggaiahpeta",
+      "kanchikacherla",
+      "nandigama",
+      "penuganchiprolu",
+      "vatsavai",
+      "veerullapadu"
+     ]
+    },
+    {
+     "slug": "tiruvuru",
+     "name": "Tiruvuru",
+     "mandals": [
+      "a-konduru",
+      "gampalagudem",
+      "g-konduru",
+      "mylavaram",
+      "reddigudem",
+      "tiruvuru",
+      "vissannapeta"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "ibrahimpatnam",
+     "name": "Ibrahimpatnam",
+     "division": "vijayawada"
+    },
+    {
+     "slug": "vijayawada-rural",
+     "name": "Vijayawada Rural",
+     "division": "vijayawada"
+    },
+    {
+     "slug": "vijayawada-central",
+     "name": "Vijayawada Central",
+     "division": "vijayawada"
+    },
+    {
+     "slug": "vijayawada-east",
+     "name": "Vijayawada East",
+     "division": "vijayawada"
+    },
+    {
+     "slug": "vijayawada-north",
+     "name": "Vijayawada North",
+     "division": "vijayawada"
+    },
+    {
+     "slug": "vijayawada-west",
+     "name": "Vijayawada West",
+     "division": "vijayawada"
+    },
+    {
+     "slug": "chandarlapadu",
+     "name": "Chandarlapadu",
+     "division": "nandigama"
+    },
+    {
+     "slug": "jaggaiahpeta",
+     "name": "Jaggaiahpeta",
+     "division": "nandigama"
+    },
+    {
+     "slug": "kanchikacherla",
+     "name": "Kanchikacherla",
+     "division": "nandigama"
+    },
+    {
+     "slug": "nandigama",
+     "name": "Nandigama",
+     "division": "nandigama"
+    },
+    {
+     "slug": "penuganchiprolu",
+     "name": "Penuganchiprolu",
+     "division": "nandigama"
+    },
+    {
+     "slug": "vatsavai",
+     "name": "Vatsavai",
+     "division": "nandigama"
+    },
+    {
+     "slug": "veerullapadu",
+     "name": "Veerullapadu",
+     "division": "nandigama"
+    },
+    {
+     "slug": "a-konduru",
+     "name": "A Konduru",
+     "division": "tiruvuru"
+    },
+    {
+     "slug": "gampalagudem",
+     "name": "Gampalagudem",
+     "division": "tiruvuru"
+    },
+    {
+     "slug": "g-konduru",
+     "name": "G Konduru",
+     "division": "tiruvuru"
+    },
+    {
+     "slug": "mylavaram",
+     "name": "Mylavaram",
+     "division": "tiruvuru"
+    },
+    {
+     "slug": "reddigudem",
+     "name": "Reddigudem",
+     "division": "tiruvuru"
+    },
+    {
+     "slug": "tiruvuru",
+     "name": "Tiruvuru",
+     "division": "tiruvuru"
+    },
+    {
+     "slug": "vissannapeta",
+     "name": "Vissannapeta",
+     "division": "tiruvuru"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "vijayawada",
+     "name": "Vijayawada",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "jaggaiahpet",
+     "name": "Jaggaiahpet",
+     "type": "municipality"
+    },
+    {
+     "slug": "nandigama",
+     "name": "Nandigama",
+     "type": "municipality"
+    },
+    {
+     "slug": "kondapalli",
+     "name": "Kondapalli",
+     "type": "municipality"
+    },
+    {
+     "slug": "tiruvuru",
+     "name": "Tiruvuru",
+     "type": "municipality"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://ntr.ap.gov.in/mandals/",
+     "title": "Mandals | NTR District (20 mandals with division)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://ntr.ap.gov.in/district-profile/",
+     "title": "District Profile | NTR District (20 mandals, 3 divisions, 4 municipalities, 1 corporation)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions",
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://ntr.ap.gov.in/public-utility-category/municipality/",
+     "title": "Municipalities | NTR District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://ntr.ap.gov.in/public-utility/vijayawada-municipal-corporation/",
+     "title": "Vijayawada Municipal Corporation | NTR District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://ntr.ap.gov.in/public-utility/nandigama-municipality/",
+     "title": "Nandigama Municipality | NTR District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece",
+     "title": "A.P. Cabinet clears district reorganisation, mandal realignment (The Hindu, 29 Dec 2025) - NTR listed as unchanged",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY 2.0 (MoHUA)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "NTR district was not changed by the Dec 2025 reorganisation (The Hindu). The mandal-to-division mapping comes from the official mandals page (6 + 7 + 7 = 20 mandals), consistent with the district profile. The /revenue-divisions/ URL returns 404 on this site. The district profile lists the four municipalities as Tiruvuru, Nandigama, Jaggayyapeta and Ibrahimpatnam; the municipality located in Ibrahimpatnam mandal is Kondapalli Municipality per the district utility page and PMAY 2.0, so 'Kondapalli' is used. The municipality is spelt 'Jaggaiahpet' on the district utility page and the mandal 'Jaggaiahpeta'. Tiruvuru is a municipality per the district profile but a town panchayat per the PMAY 2.0 list; the district classification is used.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "palnadu",
+   "name": "Palnadu",
+   "headquarters": "Narasaraopet",
+   "region": "Coastal Andhra",
+   "hubCity": "narasaraopet",
+   "officialSite": "https://palnadu.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "narasaraopet",
+     "name": "Narasaraopet",
+     "mandals": [
+      "chilakaluripet",
+      "edlapadu",
+      "ipur",
+      "nadendla",
+      "narasaraopet",
+      "nuzendla",
+      "rompicherla",
+      "savalyapuram",
+      "vinukonda"
+     ]
+    },
+    {
+     "slug": "sattenapalli",
+     "name": "Sattenapalli",
+     "mandals": [
+      "amaravathi",
+      "atchampet",
+      "bellamkonda",
+      "krosuru",
+      "muppalla",
+      "nekarikallu",
+      "pedakurapadu",
+      "rajupalem",
+      "sattenapalli"
+     ]
+    },
+    {
+     "slug": "gurazala",
+     "name": "Gurazala",
+     "mandals": [
+      "bollapalli",
+      "dachepalli",
+      "durgi",
+      "gurazala",
+      "karempudi",
+      "machavaram",
+      "macherla",
+      "piduguralla",
+      "rentachintala",
+      "veldurthi"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "chilakaluripet",
+     "name": "Chilakaluripet",
+     "division": "narasaraopet"
+    },
+    {
+     "slug": "edlapadu",
+     "name": "Edlapadu",
+     "division": "narasaraopet"
+    },
+    {
+     "slug": "ipur",
+     "name": "Ipur",
+     "division": "narasaraopet"
+    },
+    {
+     "slug": "nadendla",
+     "name": "Nadendla",
+     "division": "narasaraopet"
+    },
+    {
+     "slug": "narasaraopet",
+     "name": "Narasaraopet",
+     "division": "narasaraopet"
+    },
+    {
+     "slug": "nuzendla",
+     "name": "Nuzendla",
+     "division": "narasaraopet"
+    },
+    {
+     "slug": "rompicherla",
+     "name": "Rompicherla",
+     "division": "narasaraopet"
+    },
+    {
+     "slug": "savalyapuram",
+     "name": "Savalyapuram",
+     "division": "narasaraopet"
+    },
+    {
+     "slug": "vinukonda",
+     "name": "Vinukonda",
+     "division": "narasaraopet"
+    },
+    {
+     "slug": "amaravathi",
+     "name": "Amaravathi",
+     "division": "sattenapalli"
+    },
+    {
+     "slug": "atchampet",
+     "name": "Atchampet",
+     "division": "sattenapalli"
+    },
+    {
+     "slug": "bellamkonda",
+     "name": "Bellamkonda",
+     "division": "sattenapalli"
+    },
+    {
+     "slug": "krosuru",
+     "name": "Krosuru",
+     "division": "sattenapalli"
+    },
+    {
+     "slug": "muppalla",
+     "name": "Muppalla",
+     "division": "sattenapalli"
+    },
+    {
+     "slug": "nekarikallu",
+     "name": "Nekarikallu",
+     "division": "sattenapalli"
+    },
+    {
+     "slug": "pedakurapadu",
+     "name": "Pedakurapadu",
+     "division": "sattenapalli"
+    },
+    {
+     "slug": "rajupalem",
+     "name": "Rajupalem",
+     "division": "sattenapalli"
+    },
+    {
+     "slug": "sattenapalli",
+     "name": "Sattenapalli",
+     "division": "sattenapalli"
+    },
+    {
+     "slug": "bollapalli",
+     "name": "Bollapalli",
+     "division": "gurazala"
+    },
+    {
+     "slug": "dachepalli",
+     "name": "Dachepalli",
+     "division": "gurazala"
+    },
+    {
+     "slug": "durgi",
+     "name": "Durgi",
+     "division": "gurazala"
+    },
+    {
+     "slug": "gurazala",
+     "name": "Gurazala",
+     "division": "gurazala"
+    },
+    {
+     "slug": "karempudi",
+     "name": "Karempudi",
+     "division": "gurazala"
+    },
+    {
+     "slug": "machavaram",
+     "name": "Machavaram",
+     "division": "gurazala"
+    },
+    {
+     "slug": "macherla",
+     "name": "Macherla",
+     "division": "gurazala"
+    },
+    {
+     "slug": "piduguralla",
+     "name": "Piduguralla",
+     "division": "gurazala"
+    },
+    {
+     "slug": "rentachintala",
+     "name": "Rentachintala",
+     "division": "gurazala"
+    },
+    {
+     "slug": "veldurthi",
+     "name": "Veldurthi",
+     "division": "gurazala"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "narasaraopet",
+     "name": "Narasaraopet",
+     "type": "municipality"
+    },
+    {
+     "slug": "chilakaluripet",
+     "name": "Chilakaluripet",
+     "type": "municipality"
+    },
+    {
+     "slug": "macherla",
+     "name": "Macherla",
+     "type": "municipality"
+    },
+    {
+     "slug": "piduguralla",
+     "name": "Piduguralla",
+     "type": "municipality"
+    },
+    {
+     "slug": "sattenapalle",
+     "name": "Sattenapalle",
+     "type": "municipality"
+    },
+    {
+     "slug": "vinukonda",
+     "name": "Vinukonda",
+     "type": "municipality"
+    },
+    {
+     "slug": "dachepalli",
+     "name": "Dachepalli",
+     "type": "nagar-panchayat"
+    },
+    {
+     "slug": "gurazala",
+     "name": "Gurazala",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://palnadu.ap.gov.in/subdivision-blocks/",
+     "title": "Mandals | Palnadu District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://palnadu.ap.gov.in/tehsil/",
+     "title": "Revenue Divisions | Palnadu District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece",
+     "title": "A.P. Cabinet clears district reorganisation, mandal realignment - The Hindu",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://apcmms.ap.gov.in/apiv1/public/web/ulbdetails/ulbprofiles",
+     "title": "CDMA ULB profiles data (feeds https://cdma.ap.gov.in/district-web-directory/)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "Palnadu is one of the nine districts left unchanged by the December 2025 reorganisation (The Hindu). The official site lists 3 divisions and 28 mandals. The official site places Bollapalli in Gurazala division, whereas Wikipedia places it in Narasaraopet division; the official site is followed. The official site spells the division 'Sattenapalli' while CDMA spells the municipality 'Sattenapalle'; each is kept as spelled by its source. CDMA grades Narasaraopet and Chilakaluripet as Grade I, Macherla, Piduguralla, Sattenapalle and Vinukonda as Grade II, and Dachepalli and Gurazala as NP (nagar panchayat).",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "parvathipuram-manyam",
+   "name": "Parvathipuram Manyam",
+   "headquarters": "Parvathipuram",
+   "region": "Uttarandhra",
+   "hubCity": "parvathipuram",
+   "officialSite": "https://parvathipurammanyam.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "parvathipuram",
+     "name": "Parvathipuram",
+     "mandals": [
+      "komarada",
+      "parvathipuram",
+      "makkuva",
+      "seethanagaram",
+      "balijipeta",
+      "salur",
+      "pachipenta"
+     ]
+    },
+    {
+     "slug": "palakonda",
+     "name": "Palakonda",
+     "mandals": [
+      "gummalakshmipuram",
+      "kurupam",
+      "jiyammavalasa",
+      "garugubilli",
+      "palakonda",
+      "seethampeta",
+      "bhamini",
+      "veeraghattam"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "komarada",
+     "name": "Komarada",
+     "division": "parvathipuram"
+    },
+    {
+     "slug": "parvathipuram",
+     "name": "Parvathipuram",
+     "division": "parvathipuram"
+    },
+    {
+     "slug": "makkuva",
+     "name": "Makkuva",
+     "division": "parvathipuram"
+    },
+    {
+     "slug": "seethanagaram",
+     "name": "Seethanagaram",
+     "division": "parvathipuram"
+    },
+    {
+     "slug": "balijipeta",
+     "name": "Balijipeta",
+     "division": "parvathipuram"
+    },
+    {
+     "slug": "salur",
+     "name": "Salur",
+     "division": "parvathipuram"
+    },
+    {
+     "slug": "pachipenta",
+     "name": "Pachipenta",
+     "division": "parvathipuram"
+    },
+    {
+     "slug": "gummalakshmipuram",
+     "name": "Gummalakshmipuram",
+     "division": "palakonda"
+    },
+    {
+     "slug": "kurupam",
+     "name": "Kurupam",
+     "division": "palakonda"
+    },
+    {
+     "slug": "jiyammavalasa",
+     "name": "Jiyammavalasa",
+     "division": "palakonda"
+    },
+    {
+     "slug": "garugubilli",
+     "name": "Garugubilli",
+     "division": "palakonda"
+    },
+    {
+     "slug": "palakonda",
+     "name": "Palakonda",
+     "division": "palakonda"
+    },
+    {
+     "slug": "seethampeta",
+     "name": "Seethampeta",
+     "division": "palakonda"
+    },
+    {
+     "slug": "bhamini",
+     "name": "Bhamini",
+     "division": "palakonda"
+    },
+    {
+     "slug": "veeraghattam",
+     "name": "Veeraghattam",
+     "division": "palakonda"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "parvathipuram",
+     "name": "Parvathipuram",
+     "type": "municipality"
+    },
+    {
+     "slug": "salur",
+     "name": "Salur",
+     "type": "municipality"
+    },
+    {
+     "slug": "palakonda",
+     "name": "Palakonda",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://parvathipurammanyam.ap.gov.in/tehsil/",
+     "title": "Divisions | Parvathipuram Manyam District Web Site",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://parvathipurammanyam.ap.gov.in/",
+     "title": "Parvathipuram Manyam District (home page: 2 divisions, 15 mandals, 3 towns)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://parvathipurammanyam.ap.gov.in/constituencies/",
+     "title": "Constituencies | Parvathipuram Manyam District Web Site",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece",
+     "title": "A.P. Cabinet clears district reorganisation, mandal realignment - The Hindu",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "The district was unchanged in the December 2025 reorganisation (The Hindu). The official Divisions page (last updated 19.04.2022) lists 15 mandals in 2 divisions, matching the home page counts (updated 15.10.2026). The Divisions table spells 'Seetampeta', while the constituencies page and mandal maps use 'Seethampeta'; 'Seethampeta' is used here. The ULB list (2 municipalities and 1 nagar panchayat) comes from the MoHUA PMAY-U 2.0 list and matches the '3 Towns' on the district home page. The district Municipalities page timed out and could not be read.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "polavaram",
+   "name": "Polavaram",
+   "headquarters": "Rampachodavaram",
+   "region": "Coastal Andhra",
+   "hubCity": "rajahmundry",
+   "officialSite": "https://polavaram.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "rampachodavaram",
+     "name": "Rampachodavaram",
+     "mandals": [
+      "rampachodavaram",
+      "devipatnam",
+      "y-ramavaram",
+      "gurtedu",
+      "addateegala",
+      "gangavaram",
+      "maredumilli",
+      "rajavommangi"
+     ]
+    },
+    {
+     "slug": "chinturu",
+     "name": "Chinturu",
+     "mandals": [
+      "yetapaka",
+      "chinturu",
+      "kunavaram",
+      "vara-ramachandrapuram"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "rampachodavaram",
+     "name": "Rampachodavaram",
+     "division": "rampachodavaram"
+    },
+    {
+     "slug": "devipatnam",
+     "name": "Devipatnam",
+     "division": "rampachodavaram"
+    },
+    {
+     "slug": "y-ramavaram",
+     "name": "Y. Ramavaram",
+     "division": "rampachodavaram"
+    },
+    {
+     "slug": "gurtedu",
+     "name": "Gurtedu",
+     "division": "rampachodavaram"
+    },
+    {
+     "slug": "addateegala",
+     "name": "Addateegala",
+     "division": "rampachodavaram"
+    },
+    {
+     "slug": "gangavaram",
+     "name": "Gangavaram",
+     "division": "rampachodavaram"
+    },
+    {
+     "slug": "maredumilli",
+     "name": "Maredumilli",
+     "division": "rampachodavaram"
+    },
+    {
+     "slug": "rajavommangi",
+     "name": "Rajavommangi",
+     "division": "rampachodavaram"
+    },
+    {
+     "slug": "yetapaka",
+     "name": "Yetapaka",
+     "division": "chinturu"
+    },
+    {
+     "slug": "chinturu",
+     "name": "Chinturu",
+     "division": "chinturu"
+    },
+    {
+     "slug": "kunavaram",
+     "name": "Kunavaram",
+     "division": "chinturu"
+    },
+    {
+     "slug": "vara-ramachandrapuram",
+     "name": "Vara Ramachandrapuram",
+     "division": "chinturu"
+    }
+   ],
+   "ulbs": [],
+   "sources": [
+    {
+     "url": "https://polavaram.ap.gov.in/about-district/administrative-setup/mandal-tahsil/",
+     "title": "Mandal/Tahsil | Polavaram District, Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://polavaram.ap.gov.in/about-district/administrative-setup/revenue-divisions/",
+     "title": "Revenue Divisions | Polavaram District, Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/ap-issues-go-creating-polavaram-district-with-rampachodavaram-as-headquarters-1927331",
+     "title": "AP Issues GO Creating Polavaram District With Rampachodavaram as Headquarters - Deccan Chronicle (G.O.Ms.No.517, 30 Dec 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation",
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://www.scribd.com/document/935556507/Gazette-Copy-of-g-o-Ms-No-377-Bifurcation-of-y-Ramavaram-Mandal",
+     "title": "AP Gazette Extraordinary No.693, 15 Oct 2025 - G.O.Ms.No.377: bifurcation of Y.Ramavaram mandal into Gurthedu and Y.Ramavaram mandals",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/two-new-districts-polavaram-and-markapuram-come-into-force/article70461053.ece",
+     "title": "Two new districts, Polavaram and Markapuram, come into force - The Hindu",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    }
+   ],
+   "notes": "The official site lists 12 mandals (8 in Rampachodavaram division, 4 in Chinturu), which differs from the brief's figure of 11 mandals. The 12th is Gurtedu, carved out of Y. Ramavaram mandal by G.O.Ms.No.377 (15 Oct 2025). The Deccan Chronicle report on G.O.Ms.No.517 and G.O.Ms.No.403 (5 Jul 2026, sanctioning posts for the new Gurthedu mandal) both confirm it. The Hindu and New Indian Express gave 11, apparently counting before Gurtedu was operational. Spellings vary between 'Gurtedu' (official site), 'Gurthedu' (G.O.) and 'Gutheredu' (press); the official-site spelling is used. Rampachodavaram is the HQ. No municipality or nagar panchayat could be verified in the district: the official home page's 'Muncipality' field is blank and none appears in the PMAY-U 2.0 ULB list. The official home page still has placeholder text copied from another district.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "prakasam",
+   "name": "Prakasam",
+   "headquarters": "Ongole",
+   "region": "Coastal Andhra",
+   "hubCity": "ongole",
+   "officialSite": "https://prakasam.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "ongole",
+     "name": "Ongole",
+     "mandals": [
+      "chimakurthi",
+      "kothapatnam",
+      "maddipadu",
+      "naguluppalapadu",
+      "ongole-urban",
+      "tanguturu",
+      "santhanuthalapadu",
+      "kondapi",
+      "ongole-rural",
+      "singarayakonda",
+      "zarugumalli"
+     ]
+    },
+    {
+     "slug": "addanki",
+     "name": "Addanki",
+     "mandals": [
+      "darsi",
+      "donakonda",
+      "thallur",
+      "mundlamuru",
+      "santhamaguluru",
+      "kurichedu",
+      "ballikurava",
+      "addanki",
+      "janakavarampanguluru",
+      "korisapadu"
+     ]
+    },
+    {
+     "slug": "kandukuru",
+     "name": "Kandukuru",
+     "mandals": [
+      "marripudi",
+      "kandukuru",
+      "gudluru",
+      "ulavapadu",
+      "ponnaluru",
+      "voletivaripalem",
+      "lingasamudram"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "chimakurthi",
+     "name": "Chimakurthi",
+     "division": "ongole"
+    },
+    {
+     "slug": "kothapatnam",
+     "name": "Kothapatnam",
+     "division": "ongole"
+    },
+    {
+     "slug": "maddipadu",
+     "name": "Maddipadu",
+     "division": "ongole"
+    },
+    {
+     "slug": "naguluppalapadu",
+     "name": "Naguluppalapadu",
+     "division": "ongole"
+    },
+    {
+     "slug": "ongole-urban",
+     "name": "Ongole Urban",
+     "division": "ongole"
+    },
+    {
+     "slug": "tanguturu",
+     "name": "Tanguturu",
+     "division": "ongole"
+    },
+    {
+     "slug": "santhanuthalapadu",
+     "name": "Santhanuthalapadu",
+     "division": "ongole"
+    },
+    {
+     "slug": "kondapi",
+     "name": "Kondapi",
+     "division": "ongole"
+    },
+    {
+     "slug": "ongole-rural",
+     "name": "Ongole Rural",
+     "division": "ongole"
+    },
+    {
+     "slug": "singarayakonda",
+     "name": "Singarayakonda",
+     "division": "ongole"
+    },
+    {
+     "slug": "zarugumalli",
+     "name": "Zarugumalli",
+     "division": "ongole"
+    },
+    {
+     "slug": "darsi",
+     "name": "Darsi",
+     "division": "addanki"
+    },
+    {
+     "slug": "donakonda",
+     "name": "Donakonda",
+     "division": "addanki"
+    },
+    {
+     "slug": "thallur",
+     "name": "Thallur",
+     "division": "addanki"
+    },
+    {
+     "slug": "mundlamuru",
+     "name": "Mundlamuru",
+     "division": "addanki"
+    },
+    {
+     "slug": "santhamaguluru",
+     "name": "Santhamaguluru",
+     "division": "addanki"
+    },
+    {
+     "slug": "kurichedu",
+     "name": "Kurichedu",
+     "division": "addanki"
+    },
+    {
+     "slug": "ballikurava",
+     "name": "Ballikurava",
+     "division": "addanki"
+    },
+    {
+     "slug": "addanki",
+     "name": "Addanki",
+     "division": "addanki"
+    },
+    {
+     "slug": "janakavarampanguluru",
+     "name": "Janakavarampanguluru",
+     "division": "addanki"
+    },
+    {
+     "slug": "korisapadu",
+     "name": "Korisapadu",
+     "division": "addanki"
+    },
+    {
+     "slug": "marripudi",
+     "name": "Marripudi",
+     "division": "kandukuru"
+    },
+    {
+     "slug": "kandukuru",
+     "name": "Kandukuru",
+     "division": "kandukuru"
+    },
+    {
+     "slug": "gudluru",
+     "name": "Gudluru",
+     "division": "kandukuru"
+    },
+    {
+     "slug": "ulavapadu",
+     "name": "Ulavapadu",
+     "division": "kandukuru"
+    },
+    {
+     "slug": "ponnaluru",
+     "name": "Ponnaluru",
+     "division": "kandukuru"
+    },
+    {
+     "slug": "voletivaripalem",
+     "name": "Voletivaripalem",
+     "division": "kandukuru"
+    },
+    {
+     "slug": "lingasamudram",
+     "name": "Lingasamudram",
+     "division": "kandukuru"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "ongole",
+     "name": "Ongole",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "kandukur",
+     "name": "Kandukur",
+     "type": "municipality"
+    },
+    {
+     "slug": "addanki",
+     "name": "Addanki",
+     "type": "nagar-panchayat"
+    },
+    {
+     "slug": "chimakurthy",
+     "name": "Chimakurthy",
+     "type": "nagar-panchayat"
+    },
+    {
+     "slug": "darsi",
+     "name": "Darsi",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://prakasam.ap.gov.in/tehsil/",
+     "title": "DIVISION WISE MANDALS LIST | Prakasam District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://prakasam.ap.gov.in/subdivision-blocks/",
+     "title": "Revenue Divisions | Prakasam District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://prakasam.ap.gov.in/",
+     "title": "Prakasam District, Government of Andhra Pradesh (District at a Glance: Mandals 28)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals"
+     ]
+    },
+    {
+     "url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/prakasam-district-expanded-to-28-mandals-after-reorganisation-1927251",
+     "title": "Prakasam District Expanded to 28 Mandals After Reorganisation - Deccan Chronicle",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://www.sakshi.com/telugu-news/prakasam/2665601",
+     "title": "స్వరూపం మారనున్న ఉమ్మడి జిల్లా.. - Sakshi (G.O.Ms.No.523/524)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://apcmms.ap.gov.in/apiv1/public/web/ulbdetails/ulbprofiles",
+     "title": "CDMA ULB profiles data (feeds https://cdma.ap.gov.in/district-web-directory/)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "Restructured on 31 Dec 2025 by G.O.Ms.No.523: western mandals went to the new Markapuram district; the Addanki constituency (from Bapatla) and Kandukur constituency (from SPSR Nellore) were added, along with Marripudi and Ponnaluru. The official division-wise list (28 mandals across Ongole 11, Addanki 10, Kandukuru 7) matches the Deccan Chronicle and Sakshi reports of the G.O. Official page spellings are used, with only internal spaces removed where the site splits a single name (site shows 'Kotha patnam', 'Maddi padu', 'Naguluppala padu', 'Santha Nuthalapadu', 'Singaraya konda', 'DonaKonda'). News reports spell some names differently (e.g. Jarugumalli, Tangutur, Tallur, J. Panguluru, Valetivaripalem); the official site's spellings are kept. CDMA grades Addanki, Chimakurthy and Darsi as NP (nagar panchayat), Kandukur as Grade II and Ongole as Corp; Wikipedia's grade table disagrees for Addanki/Chimakurthy/Darsi, and CDMA is followed.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "nellore",
+   "name": "Sri Potti Sriramulu Nellore",
+   "headquarters": "Nellore",
+   "region": "Coastal Andhra",
+   "hubCity": "nellore",
+   "officialSite": "https://spsnellore.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "nellore",
+     "name": "Nellore",
+     "mandals": [
+      "nellore-urban",
+      "nellore-rural",
+      "indukurpet",
+      "thotapalli-gudur",
+      "muthukur",
+      "venkatachalam",
+      "podalakur",
+      "rapur",
+      "kovur",
+      "buchireddypalem",
+      "manubolu",
+      "sydapuram"
+     ]
+    },
+    {
+     "slug": "atmakur",
+     "name": "Atmakur",
+     "mandals": [
+      "atmakur",
+      "kaluvoya",
+      "chejerla",
+      "ananthasagaram",
+      "anumasamudrampeta",
+      "sangam",
+      "seetharamapuram",
+      "udayagiri",
+      "marripadu"
+     ]
+    },
+    {
+     "slug": "kavali",
+     "name": "Kavali",
+     "mandals": [
+      "kavali",
+      "allur",
+      "kodavalur",
+      "vidavalur",
+      "vinjamur",
+      "dagadarthi",
+      "bogole",
+      "jaladanki",
+      "duttalur",
+      "varikuntapadu",
+      "kondapuram",
+      "kaligiri"
+     ]
+    },
+    {
+     "slug": "gudur",
+     "name": "Gudur",
+     "mandals": [
+      "gudur",
+      "chillakur",
+      "kota"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "nellore-urban",
+     "name": "Nellore Urban",
+     "division": "nellore"
+    },
+    {
+     "slug": "nellore-rural",
+     "name": "Nellore Rural",
+     "division": "nellore"
+    },
+    {
+     "slug": "indukurpet",
+     "name": "Indukurpet",
+     "division": "nellore"
+    },
+    {
+     "slug": "thotapalli-gudur",
+     "name": "Thotapalli Gudur",
+     "division": "nellore"
+    },
+    {
+     "slug": "muthukur",
+     "name": "Muthukur",
+     "division": "nellore"
+    },
+    {
+     "slug": "venkatachalam",
+     "name": "Venkatachalam",
+     "division": "nellore"
+    },
+    {
+     "slug": "podalakur",
+     "name": "Podalakur",
+     "division": "nellore"
+    },
+    {
+     "slug": "rapur",
+     "name": "Rapur",
+     "division": "nellore"
+    },
+    {
+     "slug": "kovur",
+     "name": "Kovur",
+     "division": "nellore"
+    },
+    {
+     "slug": "buchireddypalem",
+     "name": "Buchireddypalem",
+     "division": "nellore"
+    },
+    {
+     "slug": "manubolu",
+     "name": "Manubolu",
+     "division": "nellore"
+    },
+    {
+     "slug": "sydapuram",
+     "name": "Sydapuram",
+     "division": "nellore"
+    },
+    {
+     "slug": "atmakur",
+     "name": "Atmakur",
+     "division": "atmakur"
+    },
+    {
+     "slug": "kaluvoya",
+     "name": "Kaluvoya",
+     "division": "atmakur"
+    },
+    {
+     "slug": "chejerla",
+     "name": "Chejerla",
+     "division": "atmakur"
+    },
+    {
+     "slug": "ananthasagaram",
+     "name": "Ananthasagaram",
+     "division": "atmakur"
+    },
+    {
+     "slug": "anumasamudrampeta",
+     "name": "Anumasamudrampeta",
+     "division": "atmakur"
+    },
+    {
+     "slug": "sangam",
+     "name": "Sangam",
+     "division": "atmakur"
+    },
+    {
+     "slug": "seetharamapuram",
+     "name": "Seetharamapuram",
+     "division": "atmakur"
+    },
+    {
+     "slug": "udayagiri",
+     "name": "Udayagiri",
+     "division": "atmakur"
+    },
+    {
+     "slug": "marripadu",
+     "name": "Marripadu",
+     "division": "atmakur"
+    },
+    {
+     "slug": "kavali",
+     "name": "Kavali",
+     "division": "kavali"
+    },
+    {
+     "slug": "allur",
+     "name": "Allur",
+     "division": "kavali"
+    },
+    {
+     "slug": "kodavalur",
+     "name": "Kodavalur",
+     "division": "kavali"
+    },
+    {
+     "slug": "vidavalur",
+     "name": "Vidavalur",
+     "division": "kavali"
+    },
+    {
+     "slug": "vinjamur",
+     "name": "Vinjamur",
+     "division": "kavali"
+    },
+    {
+     "slug": "dagadarthi",
+     "name": "Dagadarthi",
+     "division": "kavali"
+    },
+    {
+     "slug": "bogole",
+     "name": "Bogole",
+     "division": "kavali"
+    },
+    {
+     "slug": "jaladanki",
+     "name": "Jaladanki",
+     "division": "kavali"
+    },
+    {
+     "slug": "duttalur",
+     "name": "Duttalur",
+     "division": "kavali"
+    },
+    {
+     "slug": "varikuntapadu",
+     "name": "Varikuntapadu",
+     "division": "kavali"
+    },
+    {
+     "slug": "kondapuram",
+     "name": "Kondapuram",
+     "division": "kavali"
+    },
+    {
+     "slug": "kaligiri",
+     "name": "Kaligiri",
+     "division": "kavali"
+    },
+    {
+     "slug": "gudur",
+     "name": "Gudur",
+     "division": "gudur"
+    },
+    {
+     "slug": "chillakur",
+     "name": "Chillakur",
+     "division": "gudur"
+    },
+    {
+     "slug": "kota",
+     "name": "Kota",
+     "division": "gudur"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "nellore",
+     "name": "Nellore",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "kavali",
+     "name": "Kavali",
+     "type": "municipality"
+    },
+    {
+     "slug": "gudur",
+     "name": "Gudur",
+     "type": "municipality"
+    },
+    {
+     "slug": "atmakur",
+     "name": "Atmakur",
+     "type": "municipality"
+    },
+    {
+     "slug": "alluru",
+     "name": "Alluru",
+     "type": "nagar-panchayat"
+    },
+    {
+     "slug": "buchireddypalem",
+     "name": "Buchireddypalem",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://spsnellore.ap.gov.in/mandals/",
+     "title": "Mandals | SPSR Nellore District, Government of Andhra Pradesh (Division wise mandals - Tahsildars)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.956/",
+     "title": "Restructuring of SPSR Nellore District and Tirupati District - Final Notification [G.O.Ms.No.525, Revenue (Lands-IV), 30 Dec 2025] (AP Gazette Extraordinary No. 956)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/tirupati-sheds-gudur-and-embraces-kodur-while-kadapa-gets-back-rajampeta/article70457470.ece",
+     "title": "Tirupati sheds Gudur and embraces Kodur, while Kadapa gets back Rajampeta - The Hindu",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/naidu-orders-certain-changes-in-reorganisation-of-districts-based-on-feedback-1926651",
+     "title": "Naidu Orders Certain Changes In Reorganisation Of Districts Based On Feedback - Deccan Chronicle",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://apcmms.ap.gov.in/apiv1/public/web/ulbdetails/ulbprofiles",
+     "title": "CDMA ULB profiles data (feeds https://cdma.ap.gov.in/district-web-directory/)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "The official site is spsnellore.ap.gov.in (nellore.ap.gov.in timed out). Its mandals page (last updated 07.04.2026) shows the current 36-mandal layout above two 'erstwhile' tables; only the current table is used. This matches the documented Dec 2025 changes (G.O.Ms.No.525 and related): the Kandukur division mandals moved to Prakasam; Varikuntapadu and Kondapuram moved to Kavali division; Gudur, Chillakur and Kota returned from Tirupati as a Gudur division; Rapur, Kaluvoya and Sydapuram (Saidapuram) stay in Nellore, which reverses the draft proposal to move them to Tirupati. Mandal spellings follow the official page (e.g. Sydapuram, Thotapalli Gudur). In the CDMA feed, 'ATMAKUR(NLR)' (Grade III) and 'GUDUR(Nellore)' (Grade I) are recorded here as Atmakur and Gudur; Kavali is Grade I; Alluru and Buchireddypalem are NP (nagar panchayat).",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "sri-sathya-sai",
+   "name": "Sri Sathya Sai",
+   "headquarters": "Puttaparthi",
+   "region": "Rayalaseema",
+   "hubCity": "hindupur",
+   "officialSite": "https://srisathyasai.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "madakasira",
+     "name": "Madakasira",
+     "mandals": [
+      "madakasira",
+      "amarapuram",
+      "gudibanda",
+      "rolla",
+      "agali"
+     ]
+    },
+    {
+     "slug": "penukonda",
+     "name": "Penukonda",
+     "mandals": [
+      "penukonda",
+      "roddam",
+      "parigi",
+      "gorantla",
+      "sommandepalli",
+      "hindupur",
+      "lepakshi",
+      "chilamuthur"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "madakasira",
+     "name": "Madakasira",
+     "division": "madakasira"
+    },
+    {
+     "slug": "amarapuram",
+     "name": "Amarapuram",
+     "division": "madakasira"
+    },
+    {
+     "slug": "gudibanda",
+     "name": "Gudibanda",
+     "division": "madakasira"
+    },
+    {
+     "slug": "rolla",
+     "name": "Rolla",
+     "division": "madakasira"
+    },
+    {
+     "slug": "agali",
+     "name": "Agali",
+     "division": "madakasira"
+    },
+    {
+     "slug": "penukonda",
+     "name": "Penukonda",
+     "division": "penukonda"
+    },
+    {
+     "slug": "roddam",
+     "name": "Roddam",
+     "division": "penukonda"
+    },
+    {
+     "slug": "parigi",
+     "name": "Parigi",
+     "division": "penukonda"
+    },
+    {
+     "slug": "gorantla",
+     "name": "Gorantla",
+     "division": "penukonda"
+    },
+    {
+     "slug": "sommandepalli",
+     "name": "Sommandepalli",
+     "division": "penukonda"
+    },
+    {
+     "slug": "hindupur",
+     "name": "Hindupur",
+     "division": "penukonda"
+    },
+    {
+     "slug": "lepakshi",
+     "name": "Lepakshi",
+     "division": "penukonda"
+    },
+    {
+     "slug": "chilamuthur",
+     "name": "Chilamuthur",
+     "division": "penukonda"
+    },
+    {
+     "slug": "puttaparthi",
+     "name": "Puttaparthi",
+     "division": null
+    },
+    {
+     "slug": "bukkapatnam",
+     "name": "Bukkapatnam",
+     "division": null
+    },
+    {
+     "slug": "kothacheruvu",
+     "name": "Kothacheruvu",
+     "division": null
+    },
+    {
+     "slug": "nallamada",
+     "name": "Nallamada",
+     "division": null
+    },
+    {
+     "slug": "dharmavaram",
+     "name": "Dharmavaram",
+     "division": null
+    },
+    {
+     "slug": "bathalapalle",
+     "name": "Bathalapalle",
+     "division": null
+    },
+    {
+     "slug": "tadimarri",
+     "name": "Tadimarri",
+     "division": null
+    },
+    {
+     "slug": "mudigubba",
+     "name": "Mudigubba",
+     "division": null
+    },
+    {
+     "slug": "ramagiri",
+     "name": "Ramagiri",
+     "division": null
+    },
+    {
+     "slug": "kanagapalli",
+     "name": "Kanagapalli",
+     "division": null
+    },
+    {
+     "slug": "chennekothapalli",
+     "name": "Chennekothapalli",
+     "division": null
+    },
+    {
+     "slug": "talupula",
+     "name": "Talupula",
+     "division": null
+    },
+    {
+     "slug": "nambulapulakunta",
+     "name": "Nambulapulakunta",
+     "division": null
+    },
+    {
+     "slug": "gandlapenta",
+     "name": "Gandlapenta",
+     "division": null
+    },
+    {
+     "slug": "kadiri",
+     "name": "Kadiri",
+     "division": null
+    },
+    {
+     "slug": "oubuladevaracheruvu",
+     "name": "Oubuladevaracheruvu",
+     "division": null
+    },
+    {
+     "slug": "nallacheruvu",
+     "name": "Nallacheruvu",
+     "division": null
+    },
+    {
+     "slug": "tanakal",
+     "name": "Tanakal",
+     "division": null
+    },
+    {
+     "slug": "amadagur",
+     "name": "Amadagur",
+     "division": null
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "dharmavaram",
+     "name": "Dharmavaram",
+     "type": "municipality"
+    },
+    {
+     "slug": "hindupur",
+     "name": "Hindupur",
+     "type": "municipality"
+    },
+    {
+     "slug": "kadiri",
+     "name": "Kadiri",
+     "type": "municipality"
+    },
+    {
+     "slug": "puttaparthi",
+     "name": "Puttaparthi",
+     "type": "municipality"
+    },
+    {
+     "slug": "madakasira",
+     "name": "Madakasira",
+     "type": "nagar-panchayat"
+    },
+    {
+     "slug": "penukonda",
+     "name": "Penukonda",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://srisathyasai.ap.gov.in/mandal/",
+     "title": "Mandal (Tahsildars contact details) | Sri Sathyasai District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals"
+     ]
+    },
+    {
+     "url": "https://srisathyasai.ap.gov.in/revenue-divisions/",
+     "title": "Revenue divisions | Sri Sathyasai District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://srisathyasai.ap.gov.in/village-panchayats/",
+     "title": "Village & Panchayats (division / mandal / GP) | Sri Sathyasai District - pre-2025 layout",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://srisathyasai.ap.gov.in/public-utility-category/municipality/",
+     "title": "Municipalities | Sri Sathyasai District (pages 1-3)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://web.archive.org/web/20210510190534/http:/dtcp.ap.gov.in/dtcpweb/ULBS.html",
+     "title": "DTCP Andhra Pradesh - List of Urban Local Bodies (archived May 2021)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.961/",
+     "title": "AP Gazette Extraordinary No. 961: Re-structuring of Sri Sathya Sai District - formation of new revenue division Madakasira - Final Notification (G.O.Ms.No.530, Revenue (Lands-IV), 30 Dec 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/primacy-to-public-feedback-on-district-reorganisation-says-andhra-pradesh-chief-minister-chandrababu-naidu/article70443197.ece",
+     "title": "Primacy to public feedback on district reorganisation (The Hindu, 27 Dec 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.etvbharat.com/te/state/ap-government-notification-relesed-3-new-districts-and-5-revenue-divisions-andhra-pradesh-news-aps25112800543",
+     "title": "Preliminary notification: 3 new districts, 5 revenue divisions (ETV Bharat, 28 Nov 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation",
+      "divisions"
+     ]
+    }
+   ],
+   "notes": "Not verified. The district now has 5 divisions per the official revenue-divisions page: Puttaparthi, Penukonda, Kadiri, Dharmavaram and Madakasira. However, no current official division-wise mandal list was found. The official mandal page lists 32 tahsildars (its text still says '29 Mandals'), and these are used as the mandal list. The official village-panchayats page is a stale 2022 layout: 3 divisions, 29 mandals, no Dharmavaram division, and Ramagiri, Kanagapalli and Chennekothapalli missing. Madakasira division (Madakasira, Gudibanda, Rolla, Amarapuram, Agali) is confirmed by G.O.Ms.530 (title only; body not readable), ETV Bharat and The Hindu, which say these five came from Penukonda division. Penukonda division is derived from the official 2022 page's Penukonda list minus those five mandals. That matches The Hindu (27 Dec 2025), which says Gorantla goes into Penukonda division in the final layout. The Hindu also says Amadagur was moved from Kadiri to Puttaparthi division. The other memberships of Puttaparthi, Kadiri and Dharmavaram divisions could not be confirmed from an official source, so 19 mandals are left unassigned. Unofficial Wikipedia mapping, not used: Dharmavaram = Bathalapalle, Chennekothapalle, Dharmavaram, Kanaganapalle, Mudigubba, Ramagiri, Tadimarri; Kadiri = Gandlapenta, Kadiri, Nallacheruvu, Nambulapulakunta, Talupula, Tanakal; Puttaparthi = Amadagur, Bukkapatnam, Kothacheruvu, Nallamada, Obuladevaracheruvu, Puttaparthi. Mandal spellings follow the official tahsildar page. Common alternates: Somandepalle, Chilamathur, Kanaganapalle, Chennekothapalle, Obuladevaracheruvu. The district site lists all six ULBs under 'Municipalities'. Madakasira and Penukonda are recorded as nagar panchayats because the PMAY-U list and DTCP-2021 both say NP, and Penukonda's listed email is 'mdksnagarapanchayat'. Puttaparthi was an NP in DTCP-2021 but is a municipality per PMAY-U and the district site ('Puttaparthy Municipality').",
+   "verified": false,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "srikakulam",
+   "name": "Srikakulam",
+   "headquarters": "Srikakulam",
+   "region": "Uttarandhra",
+   "hubCity": "srikakulam",
+   "officialSite": "https://srikakulam.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "srikakulam",
+     "name": "Srikakulam",
+     "mandals": [
+      "srikakulam",
+      "gara",
+      "polaki",
+      "narasannapeta",
+      "amadalavalasa",
+      "sarubujjili",
+      "burja",
+      "ponduru",
+      "etcherla",
+      "laveru",
+      "ranasthalam",
+      "g-sigadam",
+      "jalumuru"
+     ]
+    },
+    {
+     "slug": "tekkali",
+     "name": "Tekkali",
+     "mandals": [
+      "tekkali",
+      "kotabommali",
+      "santabommali",
+      "saravakota",
+      "pathapatnam",
+      "meliaputti",
+      "hiramandalam",
+      "kotturu",
+      "l-n-peta",
+      "nandigam"
+     ]
+    },
+    {
+     "slug": "palasa",
+     "name": "Palasa",
+     "mandals": [
+      "palasa",
+      "sompeta",
+      "kavity",
+      "kanchili",
+      "ichapuram",
+      "vajrapukotturu",
+      "mandasa"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "srikakulam",
+     "name": "Srikakulam",
+     "division": "srikakulam"
+    },
+    {
+     "slug": "gara",
+     "name": "Gara",
+     "division": "srikakulam"
+    },
+    {
+     "slug": "polaki",
+     "name": "Polaki",
+     "division": "srikakulam"
+    },
+    {
+     "slug": "narasannapeta",
+     "name": "Narasannapeta",
+     "division": "srikakulam"
+    },
+    {
+     "slug": "amadalavalasa",
+     "name": "Amadalavalasa",
+     "division": "srikakulam"
+    },
+    {
+     "slug": "sarubujjili",
+     "name": "Sarubujjili",
+     "division": "srikakulam"
+    },
+    {
+     "slug": "burja",
+     "name": "Burja",
+     "division": "srikakulam"
+    },
+    {
+     "slug": "ponduru",
+     "name": "Ponduru",
+     "division": "srikakulam"
+    },
+    {
+     "slug": "etcherla",
+     "name": "Etcherla",
+     "division": "srikakulam"
+    },
+    {
+     "slug": "laveru",
+     "name": "Laveru",
+     "division": "srikakulam"
+    },
+    {
+     "slug": "ranasthalam",
+     "name": "Ranasthalam",
+     "division": "srikakulam"
+    },
+    {
+     "slug": "g-sigadam",
+     "name": "G.Sigadam",
+     "division": "srikakulam"
+    },
+    {
+     "slug": "jalumuru",
+     "name": "Jalumuru",
+     "division": "srikakulam"
+    },
+    {
+     "slug": "tekkali",
+     "name": "Tekkali",
+     "division": "tekkali"
+    },
+    {
+     "slug": "kotabommali",
+     "name": "Kotabommali",
+     "division": "tekkali"
+    },
+    {
+     "slug": "santabommali",
+     "name": "Santabommali",
+     "division": "tekkali"
+    },
+    {
+     "slug": "saravakota",
+     "name": "Saravakota",
+     "division": "tekkali"
+    },
+    {
+     "slug": "pathapatnam",
+     "name": "Pathapatnam",
+     "division": "tekkali"
+    },
+    {
+     "slug": "meliaputti",
+     "name": "Meliaputti",
+     "division": "tekkali"
+    },
+    {
+     "slug": "hiramandalam",
+     "name": "Hiramandalam",
+     "division": "tekkali"
+    },
+    {
+     "slug": "kotturu",
+     "name": "Kotturu",
+     "division": "tekkali"
+    },
+    {
+     "slug": "l-n-peta",
+     "name": "L.N.Peta",
+     "division": "tekkali"
+    },
+    {
+     "slug": "nandigam",
+     "name": "Nandigam",
+     "division": "tekkali"
+    },
+    {
+     "slug": "palasa",
+     "name": "Palasa",
+     "division": "palasa"
+    },
+    {
+     "slug": "sompeta",
+     "name": "Sompeta",
+     "division": "palasa"
+    },
+    {
+     "slug": "kavity",
+     "name": "Kavity",
+     "division": "palasa"
+    },
+    {
+     "slug": "kanchili",
+     "name": "Kanchili",
+     "division": "palasa"
+    },
+    {
+     "slug": "ichapuram",
+     "name": "Ichapuram",
+     "division": "palasa"
+    },
+    {
+     "slug": "vajrapukotturu",
+     "name": "Vajrapukotturu",
+     "division": "palasa"
+    },
+    {
+     "slug": "mandasa",
+     "name": "Mandasa",
+     "division": "palasa"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "srikakulam",
+     "name": "Srikakulam",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "amadalavalasa",
+     "name": "Amadalavalasa",
+     "type": "municipality"
+    },
+    {
+     "slug": "ichchapuram",
+     "name": "Ichchapuram",
+     "type": "municipality"
+    },
+    {
+     "slug": "palasa-kasibugga",
+     "name": "Palasa Kasibugga",
+     "type": "municipality"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://srikakulam.ap.gov.in/mandals/",
+     "title": "Mandals | Srikakulam District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://srikakulam.ap.gov.in/revenue-divisions/",
+     "title": "Revenue Divisions | Srikakulam District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/sources/andhra_extraordinary/?page=2&year=2025",
+     "title": "Andhra Pradesh Extraordinary Gazette index 2025 (G.O.Ms.No.514, Revenue (Lands-IV), 30 Dec 2025: shifting of Nandigama mandal from Palasa to Tekkali revenue division)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "The official mandals page lists 30 mandals by division and already shows Nandigam under Tekkali division marked 'w.e.f 31/12/2025', consistent with G.O.Ms.No.514. The same page's introductory text still says '38 Mandals', which is stale pre-2022 text; the table has 30. The official site spells the mandal 'Nandigam' while the G.O. title uses 'Nandigama'; the site spelling is used. ULBs are taken from the MoHUA PMAY-U 2.0 ULB list because the CDMA site loads its ULB directory by JavaScript and could not be read; Palakonda and Rajam ULBs are listed there under Parvathipuram Manyam and Vizianagaram respectively and are excluded here.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "tirupati",
+   "name": "Tirupati",
+   "headquarters": "Tirupati",
+   "region": "Rayalaseema",
+   "hubCity": "tirupati",
+   "officialSite": "https://tirupati.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "srikalahasthi",
+     "name": "Srikalahasthi",
+     "mandals": [
+      "srikalahasthi",
+      "thottambedu",
+      "renigunta",
+      "yerpedu",
+      "kumara-venkata-bhupala-puram",
+      "nagalapuram",
+      "pitchatur",
+      "narayanavanam",
+      "balayapalli",
+      "venkatagiri",
+      "dakkili"
+     ]
+    },
+    {
+     "slug": "sullurpet",
+     "name": "Sullurpet",
+     "mandals": [
+      "ozili",
+      "naidupeta",
+      "pellakur",
+      "doravarisatram",
+      "sullurpet",
+      "tada",
+      "buchi-naidu-kandriga",
+      "varadaiahpalem",
+      "satyavedu",
+      "vakadu",
+      "chittamur"
+     ]
+    },
+    {
+     "slug": "tirupati",
+     "name": "Tirupati",
+     "mandals": [
+      "tirupati-urban",
+      "tirupati-rural",
+      "chandragiri",
+      "pakala",
+      "ramachandrapuram",
+      "vadamalapeta",
+      "puttur",
+      "yerravaripalem",
+      "chinnagottigallu",
+      "koduru",
+      "penagalur",
+      "chitvel",
+      "pullampeta",
+      "obulavaripalle"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "srikalahasthi",
+     "name": "Srikalahasthi",
+     "division": "srikalahasthi"
+    },
+    {
+     "slug": "thottambedu",
+     "name": "Thottambedu",
+     "division": "srikalahasthi"
+    },
+    {
+     "slug": "renigunta",
+     "name": "Renigunta",
+     "division": "srikalahasthi"
+    },
+    {
+     "slug": "yerpedu",
+     "name": "Yerpedu",
+     "division": "srikalahasthi"
+    },
+    {
+     "slug": "kumara-venkata-bhupala-puram",
+     "name": "Kumara Venkata Bhupala Puram",
+     "division": "srikalahasthi"
+    },
+    {
+     "slug": "nagalapuram",
+     "name": "Nagalapuram",
+     "division": "srikalahasthi"
+    },
+    {
+     "slug": "pitchatur",
+     "name": "Pitchatur",
+     "division": "srikalahasthi"
+    },
+    {
+     "slug": "narayanavanam",
+     "name": "Narayanavanam",
+     "division": "srikalahasthi"
+    },
+    {
+     "slug": "balayapalli",
+     "name": "Balayapalli",
+     "division": "srikalahasthi"
+    },
+    {
+     "slug": "venkatagiri",
+     "name": "Venkatagiri",
+     "division": "srikalahasthi"
+    },
+    {
+     "slug": "dakkili",
+     "name": "Dakkili",
+     "division": "srikalahasthi"
+    },
+    {
+     "slug": "ozili",
+     "name": "Ozili",
+     "division": "sullurpet"
+    },
+    {
+     "slug": "naidupeta",
+     "name": "Naidupeta",
+     "division": "sullurpet"
+    },
+    {
+     "slug": "pellakur",
+     "name": "Pellakur",
+     "division": "sullurpet"
+    },
+    {
+     "slug": "doravarisatram",
+     "name": "Doravarisatram",
+     "division": "sullurpet"
+    },
+    {
+     "slug": "sullurpet",
+     "name": "Sullurpet",
+     "division": "sullurpet"
+    },
+    {
+     "slug": "tada",
+     "name": "Tada",
+     "division": "sullurpet"
+    },
+    {
+     "slug": "buchi-naidu-kandriga",
+     "name": "Buchi Naidu Kandriga",
+     "division": "sullurpet"
+    },
+    {
+     "slug": "varadaiahpalem",
+     "name": "Varadaiahpalem",
+     "division": "sullurpet"
+    },
+    {
+     "slug": "satyavedu",
+     "name": "Satyavedu",
+     "division": "sullurpet"
+    },
+    {
+     "slug": "vakadu",
+     "name": "Vakadu",
+     "division": "sullurpet"
+    },
+    {
+     "slug": "chittamur",
+     "name": "Chittamur",
+     "division": "sullurpet"
+    },
+    {
+     "slug": "tirupati-urban",
+     "name": "Tirupati Urban",
+     "division": "tirupati"
+    },
+    {
+     "slug": "tirupati-rural",
+     "name": "Tirupati Rural",
+     "division": "tirupati"
+    },
+    {
+     "slug": "chandragiri",
+     "name": "Chandragiri",
+     "division": "tirupati"
+    },
+    {
+     "slug": "pakala",
+     "name": "Pakala",
+     "division": "tirupati"
+    },
+    {
+     "slug": "ramachandrapuram",
+     "name": "Ramachandrapuram",
+     "division": "tirupati"
+    },
+    {
+     "slug": "vadamalapeta",
+     "name": "Vadamalapeta",
+     "division": "tirupati"
+    },
+    {
+     "slug": "puttur",
+     "name": "Puttur",
+     "division": "tirupati"
+    },
+    {
+     "slug": "yerravaripalem",
+     "name": "Yerravaripalem",
+     "division": "tirupati"
+    },
+    {
+     "slug": "chinnagottigallu",
+     "name": "Chinnagottigallu",
+     "division": "tirupati"
+    },
+    {
+     "slug": "koduru",
+     "name": "Koduru",
+     "division": "tirupati"
+    },
+    {
+     "slug": "penagalur",
+     "name": "Penagalur",
+     "division": "tirupati"
+    },
+    {
+     "slug": "chitvel",
+     "name": "Chitvel",
+     "division": "tirupati"
+    },
+    {
+     "slug": "pullampeta",
+     "name": "Pullampeta",
+     "division": "tirupati"
+    },
+    {
+     "slug": "obulavaripalle",
+     "name": "Obulavaripalle",
+     "division": "tirupati"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "tirupati",
+     "name": "Tirupati",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "srikalahasti",
+     "name": "Srikalahasti",
+     "type": "municipality"
+    },
+    {
+     "slug": "naidupeta",
+     "name": "Naidupeta",
+     "type": "municipality"
+    },
+    {
+     "slug": "puttur",
+     "name": "Puttur",
+     "type": "municipality"
+    },
+    {
+     "slug": "sullurupeta",
+     "name": "Sullurupeta",
+     "type": "municipality"
+    },
+    {
+     "slug": "venkatagiri",
+     "name": "Venkatagiri",
+     "type": "municipality"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://tirupati.ap.gov.in/mandals/",
+     "title": "Mandals | TIRUPATI DISTRICT, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.956/",
+     "title": "Restructuring of SPSR Nellore District and Tirupati District - Final Notification [G.O.Ms.No.525, Revenue (Lands-IV), 30 Dec 2025] (AP Gazette Extraordinary No. 956)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/tirupati-sheds-gudur-and-embraces-kodur-while-kadapa-gets-back-rajampeta/article70457470.ece",
+     "title": "Tirupati sheds Gudur and embraces Kodur, while Kadapa gets back Rajampeta - The Hindu",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece",
+     "title": "A.P. Cabinet clears district reorganisation, mandal realignment - The Hindu",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://apcmms.ap.gov.in/apiv1/public/web/ulbdetails/ulbprofiles",
+     "title": "CDMA ULB profiles data (feeds https://cdma.ap.gov.in/district-web-directory/)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "The official mandals page (36 mandals, 3 divisions) already reflects the Dec 2025 changes: the Railway Kodur constituency mandals (Koduru, Penagalur, Chitvel, Pullampeta, Obulavaripalle) were added from Annamayya into Tirupati division; Gudur, Chillakur and Kota went back to SPSR Nellore; Vakadu and Chittamur now sit in Sullurpet division. This matches The Hindu (31 Dec 2025) and the SPSR Nellore official page. The page has no 'last updated' date, and /revenue-divisions/ returned 404, so the divisions come from the Divison column of the mandals table. Mandal and division spellings follow the official page (e.g. 'Srikalahasthi', 'Sullurpet'); ULB names follow CDMA ('Srikalahasti', 'Sullurupeta'). CDMA grades Srikalahasti as Grade I and Naidupeta, Puttur, Sullurupeta and Venkatagiri as Grade III. Koduru is not listed as a ULB by CDMA.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "visakhapatnam",
+   "name": "Visakhapatnam",
+   "headquarters": "Visakhapatnam",
+   "region": "Uttarandhra",
+   "hubCity": "visakhapatnam",
+   "officialSite": "https://visakhapatnam.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "bheemunipatnam",
+     "name": "Bheemunipatnam",
+     "mandals": [
+      "anandapuram",
+      "bheemunipatnam",
+      "visakhapatnam-rural",
+      "seethammadhara",
+      "padmanabham"
+     ]
+    },
+    {
+     "slug": "visakhapatnam",
+     "name": "Visakhapatnam",
+     "mandals": [
+      "mulagada",
+      "maharanipeta",
+      "gopalpatnam",
+      "gajuwaka",
+      "pedagantyada",
+      "pendurthi"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "anandapuram",
+     "name": "Anandapuram",
+     "division": "bheemunipatnam"
+    },
+    {
+     "slug": "bheemunipatnam",
+     "name": "Bheemunipatnam",
+     "division": "bheemunipatnam"
+    },
+    {
+     "slug": "visakhapatnam-rural",
+     "name": "Visakhapatnam (Rural)",
+     "division": "bheemunipatnam"
+    },
+    {
+     "slug": "seethammadhara",
+     "name": "Seethammadhara",
+     "division": "bheemunipatnam"
+    },
+    {
+     "slug": "padmanabham",
+     "name": "Padmanabham",
+     "division": "bheemunipatnam"
+    },
+    {
+     "slug": "mulagada",
+     "name": "Mulagada",
+     "division": "visakhapatnam"
+    },
+    {
+     "slug": "maharanipeta",
+     "name": "Maharanipeta",
+     "division": "visakhapatnam"
+    },
+    {
+     "slug": "gopalpatnam",
+     "name": "Gopalpatnam",
+     "division": "visakhapatnam"
+    },
+    {
+     "slug": "gajuwaka",
+     "name": "Gajuwaka",
+     "division": "visakhapatnam"
+    },
+    {
+     "slug": "pedagantyada",
+     "name": "Pedagantyada",
+     "division": "visakhapatnam"
+    },
+    {
+     "slug": "pendurthi",
+     "name": "Pendurthi",
+     "division": "visakhapatnam"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "greater-visakhapatnam",
+     "name": "Greater Visakhapatnam",
+     "type": "municipal-corporation"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://visakhapatnam.ap.gov.in/mandals/",
+     "title": "Mandals | Visakhapatnam District, Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://visakhapatnam.ap.gov.in/",
+     "title": "Visakhapatnam District (home page: 11 mandals, 1 municipal corporation)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece",
+     "title": "A.P. Cabinet clears district reorganisation, mandal realignment - The Hindu",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/todays-paper/tp-national/tp-andhrapradesh/gos-issued-on-merger-of-two-civic-bodies-10-panchayats/article4972926.ece",
+     "title": "GOs issued on merger of two civic bodies, 10 panchayats - The Hindu",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "Visakhapatnam was unchanged in the December 2025 reorganisation (The Hindu). The official mandals page lists 11 mandals in 2 divisions, in upper case; they are converted to title case here. 'VISAKHAPATNAM(R)' is written as 'Visakhapatnam (Rural)'. The only ULB is the Greater Visakhapatnam Municipal Corporation (GVMC), matching the home page's 'Municipal Corporations 1'. The MoHUA PMAY-U 2.0 list separately shows a 'Bheemunipatnam, Municipality' with a new code (802948). It is excluded because Bheemunipatnam municipality was abolished and merged into GVMC (G.O.Ms.No.374), and no de-merger notification was found.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "vizianagaram",
+   "name": "Vizianagaram",
+   "headquarters": "Vizianagaram",
+   "region": "Uttarandhra",
+   "hubCity": "vizianagaram",
+   "officialSite": "https://vizianagaram.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "vizianagaram",
+     "name": "Vizianagaram",
+     "mandals": [
+      "vizianagaram",
+      "gantyada",
+      "pusapatirega",
+      "denkada",
+      "bhogapuram",
+      "srungavarapukota",
+      "jami",
+      "vepada",
+      "lakkavarapukota",
+      "kothavalasa",
+      "nellimarla"
+     ]
+    },
+    {
+     "slug": "cheepurupalli",
+     "name": "Cheepurupalli",
+     "mandals": [
+      "cheepurupalli",
+      "garividi",
+      "gurla",
+      "merakamudidam",
+      "rajam",
+      "vangara",
+      "regidi-amadalavalasa",
+      "santhakaviti"
+     ]
+    },
+    {
+     "slug": "bobbili",
+     "name": "Bobbili",
+     "mandals": [
+      "bobbili",
+      "ramabhadrapuram",
+      "badangi",
+      "therlam",
+      "mentada",
+      "gajapathinagaram",
+      "dattirajeru",
+      "bondapalli"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "vizianagaram",
+     "name": "Vizianagaram",
+     "division": "vizianagaram"
+    },
+    {
+     "slug": "gantyada",
+     "name": "Gantyada",
+     "division": "vizianagaram"
+    },
+    {
+     "slug": "pusapatirega",
+     "name": "Pusapatirega",
+     "division": "vizianagaram"
+    },
+    {
+     "slug": "denkada",
+     "name": "Denkada",
+     "division": "vizianagaram"
+    },
+    {
+     "slug": "bhogapuram",
+     "name": "Bhogapuram",
+     "division": "vizianagaram"
+    },
+    {
+     "slug": "srungavarapukota",
+     "name": "Srungavarapukota",
+     "division": "vizianagaram"
+    },
+    {
+     "slug": "jami",
+     "name": "Jami",
+     "division": "vizianagaram"
+    },
+    {
+     "slug": "vepada",
+     "name": "Vepada",
+     "division": "vizianagaram"
+    },
+    {
+     "slug": "lakkavarapukota",
+     "name": "Lakkavarapukota",
+     "division": "vizianagaram"
+    },
+    {
+     "slug": "kothavalasa",
+     "name": "Kothavalasa",
+     "division": "vizianagaram"
+    },
+    {
+     "slug": "nellimarla",
+     "name": "Nellimarla",
+     "division": "vizianagaram"
+    },
+    {
+     "slug": "cheepurupalli",
+     "name": "Cheepurupalli",
+     "division": "cheepurupalli"
+    },
+    {
+     "slug": "garividi",
+     "name": "Garividi",
+     "division": "cheepurupalli"
+    },
+    {
+     "slug": "gurla",
+     "name": "Gurla",
+     "division": "cheepurupalli"
+    },
+    {
+     "slug": "merakamudidam",
+     "name": "Merakamudidam",
+     "division": "cheepurupalli"
+    },
+    {
+     "slug": "rajam",
+     "name": "Rajam",
+     "division": "cheepurupalli"
+    },
+    {
+     "slug": "vangara",
+     "name": "Vangara",
+     "division": "cheepurupalli"
+    },
+    {
+     "slug": "regidi-amadalavalasa",
+     "name": "Regidi Amadalavalasa",
+     "division": "cheepurupalli"
+    },
+    {
+     "slug": "santhakaviti",
+     "name": "Santhakaviti",
+     "division": "cheepurupalli"
+    },
+    {
+     "slug": "bobbili",
+     "name": "Bobbili",
+     "division": "bobbili"
+    },
+    {
+     "slug": "ramabhadrapuram",
+     "name": "Ramabhadrapuram",
+     "division": "bobbili"
+    },
+    {
+     "slug": "badangi",
+     "name": "Badangi",
+     "division": "bobbili"
+    },
+    {
+     "slug": "therlam",
+     "name": "Therlam",
+     "division": "bobbili"
+    },
+    {
+     "slug": "mentada",
+     "name": "Mentada",
+     "division": "bobbili"
+    },
+    {
+     "slug": "gajapathinagaram",
+     "name": "Gajapathinagaram",
+     "division": "bobbili"
+    },
+    {
+     "slug": "dattirajeru",
+     "name": "Dattirajeru",
+     "division": "bobbili"
+    },
+    {
+     "slug": "bondapalli",
+     "name": "Bondapalli",
+     "division": "bobbili"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "vizianagaram",
+     "name": "Vizianagaram",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "bobbili",
+     "name": "Bobbili",
+     "type": "municipality"
+    },
+    {
+     "slug": "rajam",
+     "name": "Rajam",
+     "type": "municipality"
+    },
+    {
+     "slug": "nellimarla",
+     "name": "Nellimarla",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://vizianagaram.ap.gov.in/divisions-and-mandals/",
+     "title": "Divisions and Mandals | Vizianagaram District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://vizianagaram.ap.gov.in/mandal-wise-villages/",
+     "title": "Mandal wise Villages | Vizianagaram District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece",
+     "title": "A.P. Cabinet clears district reorganisation, mandal realignment - The Hindu",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "Vizianagaram was left unchanged by the December 2025 reorganisation (The Hindu), so the official division-wise list (3 divisions, 27 mandals) is current. The official 'Divisions and Mandals' table has typos: 'MERAKAMUDIAM' and 'REGIDLAMANDALAVALASA'. The spellings 'Merakamudidam' (from the official mandal-wise villages page) and 'Regidi Amadalavalasa' (the standard form of the name) are used instead; that villages page itself shows the truncated 'Regidiamadalavalas'. ULBs are taken from the MoHUA PMAY-U 2.0 ULB list. The district demography page still shows Census 2011 counts (2 municipalities, 2 nagar panchayats) from before Parvathipuram and Salur moved to Parvathipuram Manyam, so it was not used for ULBs. Rajam is listed as a municipality in PMAY-U 2.0; older DTCP lists show it as a nagar panchayat.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "west-godavari",
+   "name": "West Godavari",
+   "headquarters": "Bhimavaram",
+   "region": "Coastal Andhra",
+   "hubCity": "bhimavaram",
+   "officialSite": "https://westgodavari.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "narsapuram",
+     "name": "Narsapuram",
+     "mandals": [
+      "narasapuram",
+      "mogalthur",
+      "palacole",
+      "poduru",
+      "yelamanchili",
+      "achanta",
+      "penugonda",
+      "penumantra"
+     ]
+    },
+    {
+     "slug": "bhimavaram",
+     "name": "Bhimavaram",
+     "mandals": [
+      "bhimavaram",
+      "ganapavaram",
+      "veeravasaram",
+      "undi",
+      "kalla",
+      "palacoduru",
+      "akividu"
+     ]
+    },
+    {
+     "slug": "tadepalligudem",
+     "name": "Tadepalligudem",
+     "mandals": [
+      "pentapadu",
+      "tanuku",
+      "attili",
+      "tadepalligudem",
+      "iragavaram"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "narasapuram",
+     "name": "Narasapuram",
+     "division": "narsapuram"
+    },
+    {
+     "slug": "mogalthur",
+     "name": "Mogalthur",
+     "division": "narsapuram"
+    },
+    {
+     "slug": "palacole",
+     "name": "Palacole",
+     "division": "narsapuram"
+    },
+    {
+     "slug": "poduru",
+     "name": "Poduru",
+     "division": "narsapuram"
+    },
+    {
+     "slug": "yelamanchili",
+     "name": "Yelamanchili",
+     "division": "narsapuram"
+    },
+    {
+     "slug": "achanta",
+     "name": "Achanta",
+     "division": "narsapuram"
+    },
+    {
+     "slug": "penugonda",
+     "name": "Penugonda",
+     "division": "narsapuram"
+    },
+    {
+     "slug": "penumantra",
+     "name": "Penumantra",
+     "division": "narsapuram"
+    },
+    {
+     "slug": "bhimavaram",
+     "name": "Bhimavaram",
+     "division": "bhimavaram"
+    },
+    {
+     "slug": "ganapavaram",
+     "name": "Ganapavaram",
+     "division": "bhimavaram"
+    },
+    {
+     "slug": "veeravasaram",
+     "name": "Veeravasaram",
+     "division": "bhimavaram"
+    },
+    {
+     "slug": "undi",
+     "name": "Undi",
+     "division": "bhimavaram"
+    },
+    {
+     "slug": "kalla",
+     "name": "Kalla",
+     "division": "bhimavaram"
+    },
+    {
+     "slug": "palacoduru",
+     "name": "Palacoduru",
+     "division": "bhimavaram"
+    },
+    {
+     "slug": "akividu",
+     "name": "Akividu",
+     "division": "bhimavaram"
+    },
+    {
+     "slug": "pentapadu",
+     "name": "Pentapadu",
+     "division": "tadepalligudem"
+    },
+    {
+     "slug": "tanuku",
+     "name": "Tanuku",
+     "division": "tadepalligudem"
+    },
+    {
+     "slug": "attili",
+     "name": "Attili",
+     "division": "tadepalligudem"
+    },
+    {
+     "slug": "tadepalligudem",
+     "name": "Tadepalligudem",
+     "division": "tadepalligudem"
+    },
+    {
+     "slug": "iragavaram",
+     "name": "Iragavaram",
+     "division": "tadepalligudem"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "bhimavaram",
+     "name": "Bhimavaram",
+     "type": "municipality"
+    },
+    {
+     "slug": "tadepalligudem",
+     "name": "Tadepalligudem",
+     "type": "municipality"
+    },
+    {
+     "slug": "tanuku",
+     "name": "Tanuku",
+     "type": "municipality"
+    },
+    {
+     "slug": "narasapuram",
+     "name": "Narasapuram",
+     "type": "municipality"
+    },
+    {
+     "slug": "palacole",
+     "name": "Palacole",
+     "type": "municipality"
+    },
+    {
+     "slug": "akividu",
+     "name": "Akividu",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://westgodavari.ap.gov.in/revenue-division/",
+     "title": "Revenue Division | West Godavari District (division-wise mandal list)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://westgodavari.ap.gov.in/",
+     "title": "West Godavari District home page (20 mandals, 5 municipalities)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://westgodavari.ap.gov.in/district-officers/",
+     "title": "District Officers | West Godavari District (RDOs Bhimavaram, Tadepalligudem, Narsapuram)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://westgodavari.ap.gov.in/public-utility-category/municipality/",
+     "title": "Municipalities | West Godavari District",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.952/",
+     "title": "G.O.Ms.No.521, Revenue (Lands-IV), 30 Dec 2025 - Renaming of village Penugonda as Vasavi Penugonda - West Godavari district - Final Notification (AP Gazette Extraordinary No. 952)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://lgdirectory.gov.in/globalviewVillageDetail.do?globalvillageId=588681",
+     "title": "LGD village detail 588681 - Vasavi Penugonda (G.O.Ms No.521, 30/12/2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece",
+     "title": "A.P. Cabinet clears district reorganisation, mandal realignment (The Hindu, 29 Dec 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY 2.0 (MoHUA)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    }
+   ],
+   "notes": "The only Dec 2025 change in this district is G.O.Ms.No.521 (30 Dec 2025), which renames the village Penugonda as Vasavi Penugonda; the gazette title and LGD record refer to the village, and no official source was found confirming that the mandal itself was renamed, so the mandal is kept as 'Penugonda' as on the district revenue division page (consider aliasing it as Vasavi Penugonda). The division page spells one mandal 'Veervasaram'; the district Agriculture page spells it 'Veeravasaram', which is used here. Division and mandal totals (3 divisions, 8 + 7 + 5 = 20 mandals) match the home page count of 20 mandals. ULB names follow mandal spellings; the district utility page calls two of them 'Narasapur Municipality' and 'Palacole Municipality', and PMAY 2.0 lists Akiveedu as a town panchayat (spelt Akiveedu).",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  },
+  {
+   "slug": "ysr-kadapa",
+   "name": "YSR Kadapa",
+   "headquarters": "Kadapa",
+   "region": "Rayalaseema",
+   "hubCity": "kadapa",
+   "officialSite": "https://kadapa.ap.gov.in/",
+   "divisions": [
+    {
+     "slug": "kadapa",
+     "name": "Kadapa",
+     "mandals": [
+      "kadapa",
+      "chennur",
+      "kamalapuram",
+      "pendlimarri",
+      "vallur",
+      "c-k-dinne",
+      "vontimitta",
+      "sidhout",
+      "khajipet"
+     ]
+    },
+    {
+     "slug": "jammalamadugu",
+     "name": "Jammalamadugu",
+     "mandals": [
+      "jammalamadugu",
+      "kondapuram",
+      "yerraguntla",
+      "muddanur",
+      "mylavaram",
+      "rajupalem",
+      "proddatur",
+      "peddamudium",
+      "chapad",
+      "duvvur"
+     ]
+    },
+    {
+     "slug": "badvel",
+     "name": "Badvel",
+     "mandals": [
+      "badvel",
+      "mydukur",
+      "atloor",
+      "b-kodur",
+      "b-mattam",
+      "sakn",
+      "gopavaram",
+      "kalasapadu",
+      "porumamilla"
+     ]
+    },
+    {
+     "slug": "pulivendula",
+     "name": "Pulivendula",
+     "mandals": [
+      "chakrayapet",
+      "lingala",
+      "pulivendula",
+      "simhadripuram",
+      "thondur",
+      "vempalli",
+      "vemula",
+      "veerapunayunipalle"
+     ]
+    },
+    {
+     "slug": "rajampet",
+     "name": "Rajampet",
+     "mandals": [
+      "tsundupalli",
+      "veeraballi",
+      "nandalur",
+      "rajampet"
+     ]
+    }
+   ],
+   "mandals": [
+    {
+     "slug": "kadapa",
+     "name": "Kadapa",
+     "division": "kadapa"
+    },
+    {
+     "slug": "chennur",
+     "name": "Chennur",
+     "division": "kadapa"
+    },
+    {
+     "slug": "kamalapuram",
+     "name": "Kamalapuram",
+     "division": "kadapa"
+    },
+    {
+     "slug": "pendlimarri",
+     "name": "Pendlimarri",
+     "division": "kadapa"
+    },
+    {
+     "slug": "vallur",
+     "name": "Vallur",
+     "division": "kadapa"
+    },
+    {
+     "slug": "c-k-dinne",
+     "name": "C.K. Dinne",
+     "division": "kadapa"
+    },
+    {
+     "slug": "vontimitta",
+     "name": "Vontimitta",
+     "division": "kadapa"
+    },
+    {
+     "slug": "sidhout",
+     "name": "Sidhout",
+     "division": "kadapa"
+    },
+    {
+     "slug": "khajipet",
+     "name": "Khajipet",
+     "division": "kadapa"
+    },
+    {
+     "slug": "jammalamadugu",
+     "name": "Jammalamadugu",
+     "division": "jammalamadugu"
+    },
+    {
+     "slug": "kondapuram",
+     "name": "Kondapuram",
+     "division": "jammalamadugu"
+    },
+    {
+     "slug": "yerraguntla",
+     "name": "Yerraguntla",
+     "division": "jammalamadugu"
+    },
+    {
+     "slug": "muddanur",
+     "name": "Muddanur",
+     "division": "jammalamadugu"
+    },
+    {
+     "slug": "mylavaram",
+     "name": "Mylavaram",
+     "division": "jammalamadugu"
+    },
+    {
+     "slug": "rajupalem",
+     "name": "Rajupalem",
+     "division": "jammalamadugu"
+    },
+    {
+     "slug": "proddatur",
+     "name": "Proddatur",
+     "division": "jammalamadugu"
+    },
+    {
+     "slug": "peddamudium",
+     "name": "Peddamudium",
+     "division": "jammalamadugu"
+    },
+    {
+     "slug": "chapad",
+     "name": "Chapad",
+     "division": "jammalamadugu"
+    },
+    {
+     "slug": "duvvur",
+     "name": "Duvvur",
+     "division": "jammalamadugu"
+    },
+    {
+     "slug": "badvel",
+     "name": "Badvel",
+     "division": "badvel"
+    },
+    {
+     "slug": "mydukur",
+     "name": "Mydukur",
+     "division": "badvel"
+    },
+    {
+     "slug": "atloor",
+     "name": "Atloor",
+     "division": "badvel"
+    },
+    {
+     "slug": "b-kodur",
+     "name": "B.Kodur",
+     "division": "badvel"
+    },
+    {
+     "slug": "b-mattam",
+     "name": "B. Mattam",
+     "division": "badvel"
+    },
+    {
+     "slug": "sakn",
+     "name": "SAKN",
+     "division": "badvel"
+    },
+    {
+     "slug": "gopavaram",
+     "name": "Gopavaram",
+     "division": "badvel"
+    },
+    {
+     "slug": "kalasapadu",
+     "name": "Kalasapadu",
+     "division": "badvel"
+    },
+    {
+     "slug": "porumamilla",
+     "name": "Porumamilla",
+     "division": "badvel"
+    },
+    {
+     "slug": "chakrayapet",
+     "name": "Chakrayapet",
+     "division": "pulivendula"
+    },
+    {
+     "slug": "lingala",
+     "name": "Lingala",
+     "division": "pulivendula"
+    },
+    {
+     "slug": "pulivendula",
+     "name": "Pulivendula",
+     "division": "pulivendula"
+    },
+    {
+     "slug": "simhadripuram",
+     "name": "Simhadripuram",
+     "division": "pulivendula"
+    },
+    {
+     "slug": "thondur",
+     "name": "Thondur",
+     "division": "pulivendula"
+    },
+    {
+     "slug": "vempalli",
+     "name": "Vempalli",
+     "division": "pulivendula"
+    },
+    {
+     "slug": "vemula",
+     "name": "Vemula",
+     "division": "pulivendula"
+    },
+    {
+     "slug": "veerapunayunipalle",
+     "name": "Veerapunayunipalle",
+     "division": "pulivendula"
+    },
+    {
+     "slug": "tsundupalli",
+     "name": "Tsundupalli",
+     "division": "rajampet"
+    },
+    {
+     "slug": "veeraballi",
+     "name": "Veeraballi",
+     "division": "rajampet"
+    },
+    {
+     "slug": "nandalur",
+     "name": "Nandalur",
+     "division": "rajampet"
+    },
+    {
+     "slug": "rajampet",
+     "name": "Rajampet",
+     "division": "rajampet"
+    }
+   ],
+   "ulbs": [
+    {
+     "slug": "kadapa",
+     "name": "Kadapa",
+     "type": "municipal-corporation"
+    },
+    {
+     "slug": "badvel",
+     "name": "Badvel",
+     "type": "municipality"
+    },
+    {
+     "slug": "mydukur",
+     "name": "Mydukur",
+     "type": "municipality"
+    },
+    {
+     "slug": "proddatur",
+     "name": "Proddatur",
+     "type": "municipality"
+    },
+    {
+     "slug": "pulivendula",
+     "name": "Pulivendula",
+     "type": "municipality"
+    },
+    {
+     "slug": "rajampet",
+     "name": "Rajampet",
+     "type": "municipality"
+    },
+    {
+     "slug": "yerraguntla",
+     "name": "Yerraguntla",
+     "type": "municipality"
+    },
+    {
+     "slug": "jammalamadugu",
+     "name": "Jammalamadugu",
+     "type": "nagar-panchayat"
+    },
+    {
+     "slug": "kamalapuram",
+     "name": "Kamalapuram",
+     "type": "nagar-panchayat"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://kadapa.ap.gov.in/revenue-mandals/",
+     "title": "Revenue Mandals | District YSR(Kadapa), Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://kadapa.ap.gov.in/revenue-mandalss/",
+     "title": "Revenue Mandals (Tahsildar list) | District YSR(Kadapa), Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "mandals",
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://kadapa.ap.gov.in/revenue-division/",
+     "title": "Revenue Division | District YSR(Kadapa), Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions"
+     ]
+    },
+    {
+     "url": "https://kadapa.ap.gov.in/about-district/",
+     "title": "About District | District YSR(Kadapa), Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "divisions",
+      "mandals",
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://kadapa.ap.gov.in/public-utility-category/municipality/",
+     "title": "Municipalities | YSR Kadapa District, Government of Andhra Pradesh",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://pmay-urban.gov.in/list-ulb.pdf",
+     "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://web.archive.org/web/20210510190534/http:/dtcp.ap.gov.in/dtcpweb/ULBS.html",
+     "title": "DTCP Andhra Pradesh - List of Urban Local Bodies (archived May 2021)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "ulbs"
+     ]
+    },
+    {
+     "url": "https://newsmeter.in/regional/andhra-pradesh/andhra-creates-two-new-districts-five-revenue-divisions-check-details-760643",
+     "title": "Andhra creates two new districts, five revenue divisions; check details (NewsMeter, 31 Dec 2025)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    },
+    {
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece",
+     "title": "A.P. Cabinet clears district reorganisation, mandal realignment (The Hindu)",
+     "accessed": "2026-11-10",
+     "covers": [
+      "reorganisation"
+     ]
+    }
+   ],
+   "notes": "The official revenue-mandals page lists 40 mandals in 5 divisions, matching the about-district page (5 divisions, 40 mandals). It reflects the Dec 2025 changes: Rajampet division (Rajampet, Nandalur, Veeraballi, T. Sundupalli) moved from Annamayya to Kadapa, and Vontimitta and Sidhout stayed in Kadapa division. The Nov 2025 preliminary proposal to move them to Rajampet was dropped (NewsMeter, The Hindu). Spellings follow kadapa.ap.gov.in/revenue-mandals/. 'V.N. Palli' is written as 'Veerapunayunipalle', as on the site's second tahsildar page. 'SAKN' is kept as the site writes it; it is not expanded because the full name was not verified on an official page. Alternate official spellings include Khajipeta, Peddamudiam, Chapadu, Proddutur, T Sundupalli and Veeraballe. The site's revenue-division intro text still says '4 Revenue divisions' but its table lists 5. ULB types are uncertain for three towns. The district site lists Jammalamadugu, Kamalapuram and Yerraguntla as municipalities. The PMAY-U list and the 2021 DTCP list classify all three as nagar or town panchayats. Jammalamadugu's own listed address says 'Jammalamadugu Nagar Panchayat', and Kamalapuram's email is 'kamalapuram.np', so both are recorded as nagar-panchayat. Yerraguntla is kept as municipality per the district site, but PMAY-U and DTCP-2021 say NP, so its type should be re-checked against CDMA.",
+   "verified": true,
+   "verifiedAt": "2026-11-10"
+  }
+ ]
+}

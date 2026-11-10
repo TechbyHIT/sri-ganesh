@@ -1,0 +1,35 @@
+{
+  "name": "Srikakulam",
+  "slug": "srikakulam",
+  "headquarters": "Srikakulam",
+  "officialSite": "https://srikakulam.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Srikakulam",
+      "mandals": ["Srikakulam", "Gara", "Polaki", "Narasannapeta", "Amadalavalasa", "Sarubujjili", "Burja", "Ponduru", "Etcherla", "Laveru", "Ranasthalam", "G.Sigadam", "Jalumuru"]
+    },
+    {
+      "name": "Tekkali",
+      "mandals": ["Tekkali", "Kotabommali", "Santabommali", "Saravakota", "Pathapatnam", "Meliaputti", "Hiramandalam", "Kotturu", "L.N.Peta", "Nandigam"]
+    },
+    {
+      "name": "Palasa",
+      "mandals": ["Palasa", "Sompeta", "Kavity", "Kanchili", "Ichapuram", "Vajrapukotturu", "Mandasa"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Srikakulam", "type": "municipal-corporation" },
+    { "name": "Amadalavalasa", "type": "municipality" },
+    { "name": "Ichchapuram", "type": "municipality" },
+    { "name": "Palasa Kasibugga", "type": "municipality" }
+  ],
+  "sources": [
+    { "url": "https://srikakulam.ap.gov.in/mandals/", "title": "Mandals | Srikakulam District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://srikakulam.ap.gov.in/revenue-divisions/", "title": "Revenue Divisions | Srikakulam District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://egazette.servantsofknowledge.in/sources/andhra_extraordinary/?page=2&year=2025", "title": "Andhra Pradesh Extraordinary Gazette index 2025 (G.O.Ms.No.514, Revenue (Lands-IV), 30 Dec 2025: shifting of Nandigama mandal from Palasa to Tekkali revenue division)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "The official mandals page lists 30 mandals by division and already shows Nandigam under Tekkali division marked 'w.e.f 31/12/2025', consistent with G.O.Ms.No.514. The same page's introductory text still says '38 Mandals', which is stale pre-2022 text; the table has 30. The official site spells the mandal 'Nandigam' while the G.O. title uses 'Nandigama'; the site spelling is used. ULBs are taken from the MoHUA PMAY-U 2.0 ULB list because the CDMA site loads its ULB directory by JavaScript and could not be read; Palakonda and Rajam ULBs are listed there under Parvathipuram Manyam and Vizianagaram respectively and are excluded here.",
+  "verified": true
+}

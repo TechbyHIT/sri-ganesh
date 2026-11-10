@@ -1,0 +1,37 @@
+{
+  "name": "Dr. B. R. Ambedkar Konaseema",
+  "slug": "konaseema",
+  "headquarters": "Amalapuram",
+  "officialSite": "https://konaseema.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Amalapuram",
+      "mandals": ["Allavaram", "Amalapuram", "I. Polavaram", "Katrenikona", "Malikipuram", "Mamidikuduru", "Mummidivaram", "Razole", "Sakhinetipalle", "Uppalaguptam"]
+    },
+    {
+      "name": "Kothapeta",
+      "mandals": ["Ainavilli", "Alamuru", "Ambajipeta", "Atreyapuram", "Kothapeta", "P. Gannavaram", "Ravulapalem"]
+    },
+    {
+      "name": "Ramachandrapuram",
+      "mandals": ["Ramachandrapuram", "K. Gangavaram"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Amalapuram", "type": "municipality" },
+    { "name": "Ramachandrapuram", "type": "municipality" },
+    { "name": "Mummidivaram", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://konaseema.ap.gov.in/mandals/", "title": "MANDALS | Dr. B. R. Ambedkar Konaseema District (19 mandals, division-wise Tahsildar table)", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://konaseema.ap.gov.in/about-district/", "title": "About District | Dr. B. R. Ambedkar Konaseema District", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.951/", "title": "G.O.Ms.No.520, Revenue (Lands-IV), 30 Dec 2025 - Restructuring of East Godavari and Dr. B.R. Ambedkar Konaseema districts - Shifting of mandals - Final Notification (AP Gazette Extraordinary No. 951)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://eastgodavari.ap.gov.in/notice/restructuring-of-east-godavari-and-dr-b-r-ambedkar-konaseema-districts-shifting-of-mandals-from-one-district-to-another-district-final-notification/", "title": "East Godavari district notice - Restructuring of East Godavari and Dr. B.R. Ambedkar Konaseema districts - Final Notification", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://newsmeter.in/regional/andhra-pradesh/andhra-creates-two-new-districts-five-revenue-divisions-check-details-760643", "title": "Andhra creates two new districts, five revenue divisions; check details (NewsMeter, 31 Dec 2025)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.metroindia.net/news/articlenews/minister-succeeds-in-creating-revenue-division-33646", "title": "Minister succeeds in creating revenue division (Metro India, 31 Dec 2025) - Ramachandrapuram division retained with Ramachandrapuram and K Gangavaram mandals", "accessed": "2026-11-10", "covers": ["reorganisation", "divisions", "ulbs"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY 2.0 (MoHUA)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "Under G.O.Ms.No.520 dated 30 Dec 2025, Mandapeta, Rayavaram and Kapileswarapuram mandals moved from Ramachandrapuram division of this district to Rajamahendravaram division of East Godavari district, leaving 19 mandals. The district mandal page already lists the 19 remaining mandals in three divisions (Amalapuram 10, Kothapeta 7, Ramachandrapuram 2), and news reports confirm the Ramachandrapuram division was retained with only Ramachandrapuram and K. Gangavaram mandals. The district home page and about page are stale: they still say 22 mandals, 2 revenue divisions and 3 municipalities including Mandapeta. Mandapeta municipality now belongs to East Godavari and is excluded here; the PMAY 2.0 list also shows only Amalapuram, Ramachandrapuram and Mummidivaram under Konaseema. Mandal spellings follow the district mandal page.",
+  "verified": true
+}

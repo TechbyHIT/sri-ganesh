@@ -1,0 +1,38 @@
+{
+  "name": "Sri Sathya Sai",
+  "slug": "sri-sathya-sai",
+  "headquarters": "Puttaparthi",
+  "officialSite": "https://srisathyasai.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Madakasira",
+      "mandals": ["Madakasira", "Amarapuram", "Gudibanda", "Rolla", "Agali"]
+    },
+    {
+      "name": "Penukonda",
+      "mandals": ["Penukonda", "Roddam", "Parigi", "Gorantla", "Sommandepalli", "Hindupur", "Lepakshi", "Chilamuthur"]
+    }
+  ],
+  "unassignedMandals": ["Puttaparthi", "Bukkapatnam", "Kothacheruvu", "Nallamada", "Dharmavaram", "Bathalapalle", "Tadimarri", "Mudigubba", "Ramagiri", "Kanagapalli", "Chennekothapalli", "Talupula", "Nambulapulakunta", "Gandlapenta", "Kadiri", "Oubuladevaracheruvu", "Nallacheruvu", "Tanakal", "Amadagur"],
+  "urbanLocalBodies": [
+    { "name": "Dharmavaram", "type": "municipality" },
+    { "name": "Hindupur", "type": "municipality" },
+    { "name": "Kadiri", "type": "municipality" },
+    { "name": "Puttaparthi", "type": "municipality" },
+    { "name": "Madakasira", "type": "nagar-panchayat" },
+    { "name": "Penukonda", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://srisathyasai.ap.gov.in/mandal/", "title": "Mandal (Tahsildars contact details) | Sri Sathyasai District", "accessed": "2026-11-10", "covers": ["mandals"] },
+    { "url": "https://srisathyasai.ap.gov.in/revenue-divisions/", "title": "Revenue divisions | Sri Sathyasai District", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://srisathyasai.ap.gov.in/village-panchayats/", "title": "Village & Panchayats (division / mandal / GP) | Sri Sathyasai District - pre-2025 layout", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://srisathyasai.ap.gov.in/public-utility-category/municipality/", "title": "Municipalities | Sri Sathyasai District (pages 1-3)", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://web.archive.org/web/20210510190534/http:/dtcp.ap.gov.in/dtcpweb/ULBS.html", "title": "DTCP Andhra Pradesh - List of Urban Local Bodies (archived May 2021)", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.961/", "title": "AP Gazette Extraordinary No. 961: Re-structuring of Sri Sathya Sai District - formation of new revenue division Madakasira - Final Notification (G.O.Ms.No.530, Revenue (Lands-IV), 30 Dec 2025)", "accessed": "2026-11-10", "covers": ["reorganisation", "divisions"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/primacy-to-public-feedback-on-district-reorganisation-says-andhra-pradesh-chief-minister-chandrababu-naidu/article70443197.ece", "title": "Primacy to public feedback on district reorganisation (The Hindu, 27 Dec 2025)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.etvbharat.com/te/state/ap-government-notification-relesed-3-new-districts-and-5-revenue-divisions-andhra-pradesh-news-aps25112800543", "title": "Preliminary notification: 3 new districts, 5 revenue divisions (ETV Bharat, 28 Nov 2025)", "accessed": "2026-11-10", "covers": ["reorganisation", "divisions"] }
+  ],
+  "notes": "Not verified. The district now has 5 divisions per the official revenue-divisions page: Puttaparthi, Penukonda, Kadiri, Dharmavaram and Madakasira. However, no current official division-wise mandal list was found. The official mandal page lists 32 tahsildars (its text still says '29 Mandals'), and these are used as the mandal list. The official village-panchayats page is a stale 2022 layout: 3 divisions, 29 mandals, no Dharmavaram division, and Ramagiri, Kanagapalli and Chennekothapalli missing. Madakasira division (Madakasira, Gudibanda, Rolla, Amarapuram, Agali) is confirmed by G.O.Ms.530 (title only; body not readable), ETV Bharat and The Hindu, which say these five came from Penukonda division. Penukonda division is derived from the official 2022 page's Penukonda list minus those five mandals. That matches The Hindu (27 Dec 2025), which says Gorantla goes into Penukonda division in the final layout. The Hindu also says Amadagur was moved from Kadiri to Puttaparthi division. The other memberships of Puttaparthi, Kadiri and Dharmavaram divisions could not be confirmed from an official source, so 19 mandals are left unassigned. Unofficial Wikipedia mapping, not used: Dharmavaram = Bathalapalle, Chennekothapalle, Dharmavaram, Kanaganapalle, Mudigubba, Ramagiri, Tadimarri; Kadiri = Gandlapenta, Kadiri, Nallacheruvu, Nambulapulakunta, Talupula, Tanakal; Puttaparthi = Amadagur, Bukkapatnam, Kothacheruvu, Nallamada, Obuladevaracheruvu, Puttaparthi. Mandal spellings follow the official tahsildar page. Common alternates: Somandepalle, Chilamathur, Kanaganapalle, Chennekothapalle, Obuladevaracheruvu. The district site lists all six ULBs under 'Municipalities'. Madakasira and Penukonda are recorded as nagar panchayats because the PMAY-U list and DTCP-2021 both say NP, and Penukonda's listed email is 'mdksnagarapanchayat'. Puttaparthi was an NP in DTCP-2021 but is a municipality per PMAY-U and the district site ('Puttaparthy Municipality').",
+  "verified": false
+}

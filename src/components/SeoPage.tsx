@@ -5,9 +5,10 @@ import { InstallationGallery } from "@/components/InstallationGallery";
 import { SiteModules } from "@/components/SiteModules";
 import { QuotePanel } from "@/components/QuotePanel";
 import { CheckList, CtaBand, FactBar, FaqStatic, LinkCloud, PageHero, Panel } from "@/components/ui";
-import { getCity } from "@/data/cities";
+import { findService } from "@/data/all-services";
 import { galleryCards, viewSrc } from "@/data/gallery";
-import { getService } from "@/data/services";
+import { districtOfCity, getDistrict } from "@/data/geo";
+import { getPlace } from "@/data/places";
 import { coverage } from "@/data/stats";
 import { pageAt } from "@/seo/catalog";
 import type { PageDocument } from "@/seo/types";
@@ -20,13 +21,20 @@ export function SeoScreen({ path }: { path: string }) {
 }
 
 export function SeoPage({ page }: { page: PageDocument }) {
-  const service = page.params.service ? getService(page.params.service) : undefined;
-  const city = page.params.city ? getCity(page.params.city) : undefined;
+  const service = page.params.service ? findService(page.params.service) : undefined;
+  const city = page.params.city ? getPlace(page.params.city) : undefined;
+  const district = page.params.district ? getDistrict(page.params.district) : city ? districtOfCity(city) : undefined;
   const strip = galleryCards(`${page.path}:strip`, 3, page.params.service);
   const facts = [
-    service ? { label: "System", value: service.name } : { label: "Coverage", value: "Andhra Pradesh" },
-    city ? { label: "District", value: city.district } : { label: "Districts", value: String(coverage.districts) },
-    city ? { label: "Region", value: city.region } : { label: "Cities", value: String(coverage.cities) },
+    service
+      ? { label: "System", value: service.name }
+      : page.kind === "mandal" && district
+        ? { label: "Revenue division", value: district.divisions.find((division) => division.slug === district.mandals.find((mandal) => mandal.slug === page.params.mandal)?.division)?.name ?? "Not yet confirmed" }
+        : district && !city
+          ? { label: "Mandals", value: String(district.mandals.length) }
+          : { label: "Coverage", value: "Andhra Pradesh" },
+    district ? { label: "District", value: district.name } : city ? { label: "District", value: city.district } : { label: "Districts", value: String(coverage.districts) },
+    city ? { label: "Region", value: city.region } : district ? { label: "Region", value: district.region } : { label: "Cities", value: String(coverage.cities) },
     { label: "Photographs", value: String(coverage.photos) },
   ];
   return (
@@ -66,7 +74,11 @@ export function SeoPage({ page }: { page: PageDocument }) {
                 </p>
                 {city ? (
                   <p>
-                    {city.name} is in {city.district} district, {city.region}. Housing here is {city.housing}. {city.climate} {city.visitNote}
+                    {city.name} is in {district?.name ?? city.district} district, {city.region}. Housing here is {city.housing}. {city.climate} {city.visitNote}
+                  </p>
+                ) : district ? (
+                  <p>
+                    {district.name} district is in {district.region}, with {district.divisions.length} revenue divisions and {district.mandals.length} mandals in the current official list. Each mandal has its own directory entry, and visits are scheduled from the district hub.
                   </p>
                 ) : (
                   <p>
@@ -180,7 +192,7 @@ export function SeoPage({ page }: { page: PageDocument }) {
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cta-500">This page</p>
               <ul className="mt-3 space-y-2 text-sm leading-6 text-white/80">
                 {service ? <li>{service.group} · {service.name}</li> : <li>{coverage.services} safety systems</li>}
-                {city ? <li>{city.name}, {city.district}</li> : <li>All {coverage.districts} districts</li>}
+                {city ? <li>{city.name}, {district?.name ?? city.district}</li> : district ? <li>{district.name} district</li> : <li>All {coverage.districts} districts</li>}
                 <li>{coverage.areas} neighbourhood notes on the map</li>
                 {service ? <li><Link className="font-semibold text-cta-500" href={servicePath(service.slug)}>Full {service.name} page</Link></li> : null}
               </ul>

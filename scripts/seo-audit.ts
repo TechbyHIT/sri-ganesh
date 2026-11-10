@@ -1,7 +1,9 @@
 import { posts } from "../src/data/blog";
 import { pageAt } from "../src/seo/catalog";
 import { publishedRecords, registryByPath } from "../src/seo/indexable";
-import { absoluteLoc, urlsFor, urlset, xmlEscape } from "../src/seo/sitemaps";
+import { districtPath, geoDistricts, mandalPath } from "../src/data/geo";
+import { legacyRedirect } from "../src/seo/legacy";
+import { absoluteLoc, chunkName, chunkSize, sitemapFiles, urlsFor, urlset, xmlEscape } from "../src/seo/sitemaps";
 import { TEMPLATE_VERSION } from "../src/seo/types";
 import { readRegistry } from "../src/seo/registry";
 
@@ -73,6 +75,23 @@ if (publishedSample) {
   check("published url stays indexable", page?.index === true && page.status === "publish", publishedSample.path);
 }
 check("unknown path is not a page", pageAt("/services/not-a-real-service") === undefined, "draft returned a page");
+
+check("28 districts compiled", geoDistricts.length === 28, `${geoDistricts.length} districts`);
+const districtRecords = records.filter((record) => record.kind === "district");
+check("every district has a page", districtRecords.length === geoDistricts.length, `${districtRecords.length} district records`);
+const unverifiedPublished = geoDistricts.filter((district) => !district.verified && registryByPath().get(districtPath(district.slug))?.status === "publish");
+check("unverified districts held", unverifiedPublished.length === 0, unverifiedPublished.map((district) => district.slug).join(", "));
+const mandalRecords = records.filter((record) => record.kind === "mandal");
+check("every mandal has a page", mandalRecords.length === geoDistricts.reduce((sum, district) => sum + district.mandals.length, 0), `${mandalRecords.length} mandal records`);
+const sampleDistrict = geoDistricts.find((district) => district.mandals.length)!;
+const sampleMandal = pageAt(mandalPath(sampleDistrict.slug, sampleDistrict.mandals[0].slug));
+check("mandal page renders", Boolean(sampleMandal?.h1), mandalPath(sampleDistrict.slug, sampleDistrict.mandals[0].slug));
+if (sampleMandal && !sampleMandal.params.city) check("directory-only mandal is noindex", sampleMandal.index === false, sampleMandal.path);
+check("mandals in locations sitemap only when published", urlsFor("locations").filter((path) => registryByPath().get(path)?.kind === "mandal").every((path) => registryByPath().get(path)?.status === "publish"), "review mandal in sitemap");
+check("sitemap chunk names", chunkName("coverage", 0) === "coverage.xml" && chunkName("coverage", 1) === "coverage-2.xml", chunkName("coverage", 1));
+check("sitemap chunk size", sitemapFiles().every((entry) => entry.size <= chunkSize), "a sitemap file is over the chunk size");
+check("flat service alias redirects", legacyRedirect("/invisible-grills-in-visakhapatnam") === "/services/invisible-grills/visakhapatnam", String(legacyRedirect("/invisible-grills-in-visakhapatnam")));
+check("retired guide redirects", Boolean(legacyRedirect("/guides/invisible-grills-for-balcony")), "no redirect");
 
 if (failures.length) {
   console.error(failures.join("\n"));

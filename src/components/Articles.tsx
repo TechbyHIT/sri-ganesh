@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Area, City } from "@/data/cities";
 import { cities, districts } from "@/data/cities";
+import { districtByName, districtPath } from "@/data/geo";
 import type { Intent, Service } from "@/data/services";
 import { services } from "@/data/services";
 import { comboSlug } from "@/lib/pages";
@@ -317,15 +318,15 @@ export function DistrictList() {
   return (
     <div className="grid gap-2 sm:grid-cols-2">
       {districts.map((district) => {
-        const hub = cities.find(
-          (item) =>
-            item.name === district.hub ||
-            item.slug === district.hub.toLowerCase() ||
-            (district.hub === "Rajahmundry" && item.slug === "rajahmundry"),
-        );
+        const hub = cities.find((item) => item.name === district.hub || item.slug === district.hub.toLowerCase());
+        const official = districtByName(district.name);
         return (
           <p key={district.name} className="rounded-2xl bg-white px-4 py-3 text-sm ring-1 ring-brand-100">
-            <span className="font-semibold">{district.name}</span>
+            {official ? (
+              <Link href={districtPath(official.slug)} className="font-semibold text-brand-900 hover:text-brand-700">{district.name}</Link>
+            ) : (
+              <span className="font-semibold">{district.name}</span>
+            )}
             <span className="text-brand-800/70"> · hub </span>
             {hub ? (
               <Link href={`/locations/andhra-pradesh/${hub.slug}`} className="font-semibold text-brand-900">

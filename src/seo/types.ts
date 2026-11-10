@@ -13,7 +13,9 @@ export type PageKind =
   | "service-city"
   | "service-area"
   | "guide"
-  | "guide-city";
+  | "guide-city"
+  | "district"
+  | "mandal";
 
 export type PageStatus = "publish" | "review" | "exclude";
 
@@ -26,7 +28,7 @@ export type PageModule =
   | { type: "list"; title: string; items: string[] }
   | { type: "steps"; title: string; steps: { title: string; text: string }[] }
   | { type: "note"; title: string; text: string }
-  | { type: "links"; title: string; links: LinkItem[] }
+  | { type: "links"; title: string; links: LinkItem[]; keep?: boolean }
   | { type: "faqs"; title: string; items: FaqItem[] };
 
 export type PageParams = {
@@ -35,6 +37,8 @@ export type PageParams = {
   city?: string;
   area?: string;
   guide?: string;
+  district?: string;
+  mandal?: string;
 };
 
 export type PageDocument = {

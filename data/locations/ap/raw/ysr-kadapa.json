@@ -1,0 +1,53 @@
+{
+  "name": "YSR Kadapa",
+  "slug": "ysr-kadapa",
+  "headquarters": "Kadapa",
+  "officialSite": "https://kadapa.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Kadapa",
+      "mandals": ["Kadapa", "Chennur", "Kamalapuram", "Pendlimarri", "Vallur", "C.K. Dinne", "Vontimitta", "Sidhout", "Khajipet"]
+    },
+    {
+      "name": "Jammalamadugu",
+      "mandals": ["Jammalamadugu", "Kondapuram", "Yerraguntla", "Muddanur", "Mylavaram", "Rajupalem", "Proddatur", "Peddamudium", "Chapad", "Duvvur"]
+    },
+    {
+      "name": "Badvel",
+      "mandals": ["Badvel", "Mydukur", "Atloor", "B.Kodur", "B. Mattam", "SAKN", "Gopavaram", "Kalasapadu", "Porumamilla"]
+    },
+    {
+      "name": "Pulivendula",
+      "mandals": ["Chakrayapet", "Lingala", "Pulivendula", "Simhadripuram", "Thondur", "Vempalli", "Vemula", "Veerapunayunipalle"]
+    },
+    {
+      "name": "Rajampet",
+      "mandals": ["Tsundupalli", "Veeraballi", "Nandalur", "Rajampet"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Kadapa", "type": "municipal-corporation" },
+    { "name": "Badvel", "type": "municipality" },
+    { "name": "Mydukur", "type": "municipality" },
+    { "name": "Proddatur", "type": "municipality" },
+    { "name": "Pulivendula", "type": "municipality" },
+    { "name": "Rajampet", "type": "municipality" },
+    { "name": "Yerraguntla", "type": "municipality" },
+    { "name": "Jammalamadugu", "type": "nagar-panchayat" },
+    { "name": "Kamalapuram", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://kadapa.ap.gov.in/revenue-mandals/", "title": "Revenue Mandals | District YSR(Kadapa), Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://kadapa.ap.gov.in/revenue-mandalss/", "title": "Revenue Mandals (Tahsildar list) | District YSR(Kadapa), Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://kadapa.ap.gov.in/revenue-division/", "title": "Revenue Division | District YSR(Kadapa), Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://kadapa.ap.gov.in/about-district/", "title": "About District | District YSR(Kadapa), Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["divisions", "mandals", "ulbs"] },
+    { "url": "https://kadapa.ap.gov.in/public-utility-category/municipality/", "title": "Municipalities | YSR Kadapa District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://web.archive.org/web/20210510190534/http:/dtcp.ap.gov.in/dtcpweb/ULBS.html", "title": "DTCP Andhra Pradesh - List of Urban Local Bodies (archived May 2021)", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://newsmeter.in/regional/andhra-pradesh/andhra-creates-two-new-districts-five-revenue-divisions-check-details-760643", "title": "Andhra creates two new districts, five revenue divisions; check details (NewsMeter, 31 Dec 2025)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece", "title": "A.P. Cabinet clears district reorganisation, mandal realignment (The Hindu)", "accessed": "2026-11-10", "covers": ["reorganisation"] }
+  ],
+  "notes": "The official revenue-mandals page lists 40 mandals in 5 divisions, matching the about-district page (5 divisions, 40 mandals). It reflects the Dec 2025 changes: Rajampet division (Rajampet, Nandalur, Veeraballi, T. Sundupalli) moved from Annamayya to Kadapa, and Vontimitta and Sidhout stayed in Kadapa division. The Nov 2025 preliminary proposal to move them to Rajampet was dropped (NewsMeter, The Hindu). Spellings follow kadapa.ap.gov.in/revenue-mandals/. 'V.N. Palli' is written as 'Veerapunayunipalle', as on the site's second tahsildar page. 'SAKN' is kept as the site writes it; it is not expanded because the full name was not verified on an official page. Alternate official spellings include Khajipeta, Peddamudiam, Chapadu, Proddutur, T Sundupalli and Veeraballe. The site's revenue-division intro text still says '4 Revenue divisions' but its table lists 5. ULB types are uncertain for three towns. The district site lists Jammalamadugu, Kamalapuram and Yerraguntla as municipalities. The PMAY-U list and the 2021 DTCP list classify all three as nagar or town panchayats. Jammalamadugu's own listed address says 'Jammalamadugu Nagar Panchayat', and Kamalapuram's email is 'kamalapuram.np', so both are recorded as nagar-panchayat. Yerraguntla is kept as municipality per the district site, but PMAY-U and DTCP-2021 say NP, so its type should be re-checked against CDMA.",
+  "verified": true
+}

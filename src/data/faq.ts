@@ -1,7 +1,7 @@
 export const generalFaqs = [
   {
     q: "Which parts of Andhra Pradesh do you cover?",
-    a: "The whole state. Uttarandhra, Coastal Andhra and Rayalaseema are in scope, across all 26 districts. Visakhapatnam, Vijayawada, Kakinada, Rajamahendravaram, Guntur, Nellore, Tirupati and Kurnool are primary hubs. Smaller towns are measured from the nearest hub once we confirm the drive and a useful slot.",
+    a: "The whole state. Uttarandhra, Coastal Andhra and Rayalaseema are in scope, across all 28 districts. Visakhapatnam, Vijayawada, Kakinada, Rajamahendravaram, Guntur, Nellore, Tirupati and Kurnool are primary hubs. Smaller towns are measured from the nearest hub once we confirm the drive and a useful slot.",
   },
   {
     q: "Do you cover apartments, rented flats and independent houses?",

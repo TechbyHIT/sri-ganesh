@@ -41,7 +41,7 @@ export const steps = [
 ];
 
 export const reasons = [
-  { title: "Entire Andhra Pradesh", text: "Uttarandhra, Coastal Andhra and Rayalaseema, including all 26 districts from a named hub." },
+  { title: "Entire Andhra Pradesh", text: "Uttarandhra, Coastal Andhra and Rayalaseema, including all 28 districts from a named hub." },
   { title: "Measure before money", text: "The visit is free in the towns we serve. The quote follows the opening, not a package." },
   { title: "Grades written down", text: "SS304, SS316 and mesh type are stated. 'Premium' is not a specification." },
   { title: "Climate treated honestly", text: "Salt air on the Bay and UV in Rayalaseema change the spec. We say which one applies." },

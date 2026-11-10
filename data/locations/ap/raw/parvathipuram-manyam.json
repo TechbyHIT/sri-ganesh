@@ -1,0 +1,31 @@
+{
+  "name": "Parvathipuram Manyam",
+  "slug": "parvathipuram-manyam",
+  "headquarters": "Parvathipuram",
+  "officialSite": "https://parvathipurammanyam.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Parvathipuram",
+      "mandals": ["Komarada", "Parvathipuram", "Makkuva", "Seethanagaram", "Balijipeta", "Salur", "Pachipenta"]
+    },
+    {
+      "name": "Palakonda",
+      "mandals": ["Gummalakshmipuram", "Kurupam", "Jiyammavalasa", "Garugubilli", "Palakonda", "Seethampeta", "Bhamini", "Veeraghattam"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Parvathipuram", "type": "municipality" },
+    { "name": "Salur", "type": "municipality" },
+    { "name": "Palakonda", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://parvathipurammanyam.ap.gov.in/tehsil/", "title": "Divisions | Parvathipuram Manyam District Web Site", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://parvathipurammanyam.ap.gov.in/", "title": "Parvathipuram Manyam District (home page: 2 divisions, 15 mandals, 3 towns)", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://parvathipurammanyam.ap.gov.in/constituencies/", "title": "Constituencies | Parvathipuram Manyam District Web Site", "accessed": "2026-11-10", "covers": ["mandals"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece", "title": "A.P. Cabinet clears district reorganisation, mandal realignment - The Hindu", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "The district was unchanged in the December 2025 reorganisation (The Hindu). The official Divisions page (last updated 19.04.2022) lists 15 mandals in 2 divisions, matching the home page counts (updated 15.10.2026). The Divisions table spells 'Seetampeta', while the constituencies page and mandal maps use 'Seethampeta'; 'Seethampeta' is used here. The ULB list (2 municipalities and 1 nagar panchayat) comes from the MoHUA PMAY-U 2.0 list and matches the '3 Towns' on the district home page. The district Municipalities page timed out and could not be read.",
+  "verified": true
+}

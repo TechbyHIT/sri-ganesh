@@ -2,6 +2,9 @@ import type { Service } from "@/data/services";
 
 const topics: Record<string, string[]> = {
   "invisible-grills": ["balcony", "apartment", "window", "railing", "flat", "tower", "villa", "facade", "society", "sit-out", "cable", "french", "housing", "house", "home", "street"],
+  "balcony-invisible-grills": ["balcony", "apartment", "railing", "flat", "tower", "society", "sit-out", "facade", "high-rise"],
+  "openable-invisible-grills": ["window", "villa", "apartment", "duplex", "flat", "french", "upper floor"],
+  "window-safety-nets": ["window", "school", "hostel", "flat", "apartment", "stair", "house"],
   "safety-nets": ["balcony", "apartment", "terrace", "stair", "opening", "flat", "void", "school", "fall", "housing", "house"],
   "balcony-safety-nets": ["balcony", "apartment", "railing", "flat", "tower", "society", "sit-out", "housing", "house"],
   "children-safety-nets": ["child", "children", "balcony", "school", "stair", "family", "apartment", "toddler"],

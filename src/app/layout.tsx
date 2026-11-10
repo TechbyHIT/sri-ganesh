@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import { site } from "@/config/site";
-import { SiteChrome } from "@/components/SiteChrome";
-import { ServiceGrid } from "@/components/ServiceGrid";
-import { Footer } from "@/components/Footer";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -22,22 +19,42 @@ export const metadata: Metadata = {
     locale: "en_IN",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Invisible Grills & Safety Nets in Andhra Pradesh",
+    description: site.description,
+  },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
-  name: site.name,
-  description: site.description,
-  email: site.email,
-  areaServed: { "@type": "State", name: "Andhra Pradesh" },
-  address: {
-    "@type": "PostalAddress",
-    addressRegion: "Andhra Pradesh",
-    addressCountry: "IN",
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${site.url}/#organization`,
+    name: site.name,
+    url: site.url,
+    logo: `${site.url}/brand/logo-header.webp`,
+    email: site.email,
+    ...(site.phoneTel ? { contactPoint: { "@type": "ContactPoint", telephone: site.phoneTel, contactType: "customer service", areaServed: "IN-AP" } } : {}),
   },
-  url: site.url,
-};
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "@id": `${site.url}/#business`,
+    name: site.name,
+    description: site.description,
+    email: site.email,
+    ...(site.phoneTel ? { telephone: site.phoneTel } : {}),
+    areaServed: { "@type": "State", name: "Andhra Pradesh" },
+    address: {
+      "@type": "PostalAddress",
+      addressRegion: "Andhra Pradesh",
+      addressCountry: "IN",
+    },
+    parentOrganization: { "@id": `${site.url}/#organization` },
+    url: site.url,
+  },
+];
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -47,10 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2">
           Skip to content
         </a>
-        <SiteChrome />
-        <main id="content">{children}</main>
-        <ServiceGrid />
-        <Footer />
+        {children}
       </body>
     </html>
   );

@@ -1,0 +1,38 @@
+{
+  "name": "Tirupati",
+  "slug": "tirupati",
+  "headquarters": "Tirupati",
+  "officialSite": "https://tirupati.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Srikalahasthi",
+      "mandals": ["Srikalahasthi", "Thottambedu", "Renigunta", "Yerpedu", "Kumara Venkata Bhupala Puram", "Nagalapuram", "Pitchatur", "Narayanavanam", "Balayapalli", "Venkatagiri", "Dakkili"]
+    },
+    {
+      "name": "Sullurpet",
+      "mandals": ["Ozili", "Naidupeta", "Pellakur", "Doravarisatram", "Sullurpet", "Tada", "Buchi Naidu Kandriga", "Varadaiahpalem", "Satyavedu", "Vakadu", "Chittamur"]
+    },
+    {
+      "name": "Tirupati",
+      "mandals": ["Tirupati Urban", "Tirupati Rural", "Chandragiri", "Pakala", "Ramachandrapuram", "Vadamalapeta", "Puttur", "Yerravaripalem", "Chinnagottigallu", "Koduru", "Penagalur", "Chitvel", "Pullampeta", "Obulavaripalle"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Tirupati", "type": "municipal-corporation" },
+    { "name": "Srikalahasti", "type": "municipality" },
+    { "name": "Naidupeta", "type": "municipality" },
+    { "name": "Puttur", "type": "municipality" },
+    { "name": "Sullurupeta", "type": "municipality" },
+    { "name": "Venkatagiri", "type": "municipality" }
+  ],
+  "sources": [
+    { "url": "https://tirupati.ap.gov.in/mandals/", "title": "Mandals | TIRUPATI DISTRICT, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.956/", "title": "Restructuring of SPSR Nellore District and Tirupati District - Final Notification [G.O.Ms.No.525, Revenue (Lands-IV), 30 Dec 2025] (AP Gazette Extraordinary No. 956)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/tirupati-sheds-gudur-and-embraces-kodur-while-kadapa-gets-back-rajampeta/article70457470.ece", "title": "Tirupati sheds Gudur and embraces Kodur, while Kadapa gets back Rajampeta - The Hindu", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece", "title": "A.P. Cabinet clears district reorganisation, mandal realignment - The Hindu", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://apcmms.ap.gov.in/apiv1/public/web/ulbdetails/ulbprofiles", "title": "CDMA ULB profiles data (feeds https://cdma.ap.gov.in/district-web-directory/)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "The official mandals page (36 mandals, 3 divisions) already reflects the Dec 2025 changes: the Railway Kodur constituency mandals (Koduru, Penagalur, Chitvel, Pullampeta, Obulavaripalle) were added from Annamayya into Tirupati division; Gudur, Chillakur and Kota went back to SPSR Nellore; Vakadu and Chittamur now sit in Sullurpet division. This matches The Hindu (31 Dec 2025) and the SPSR Nellore official page. The page has no 'last updated' date, and /revenue-divisions/ returned 404, so the divisions come from the Divison column of the mandals table. Mandal and division spellings follow the official page (e.g. 'Srikalahasthi', 'Sullurpet'); ULB names follow CDMA ('Srikalahasti', 'Sullurupeta'). CDMA grades Srikalahasti as Grade I and Naidupeta, Puttur, Sullurupeta and Venkatagiri as Grade III. Koduru is not listed as a ULB by CDMA.",
+  "verified": true
+}

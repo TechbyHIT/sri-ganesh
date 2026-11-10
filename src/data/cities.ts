@@ -20,6 +20,8 @@ export type City = {
   visitNote: string;
   localities: string[];
   areas: Area[];
+  pagePath?: string;
+  photos?: { src: string; alt: string }[];
 };
 
 export const districts = [
@@ -27,11 +29,12 @@ export const districts = [
   { name: "Vizianagaram", hub: "Vizianagaram" },
   { name: "Parvathipuram Manyam", hub: "Vizianagaram" },
   { name: "Alluri Sitharama Raju", hub: "Narsipatnam" },
+  { name: "Polavaram", hub: "Rajamahendravaram" },
   { name: "Visakhapatnam", hub: "Visakhapatnam" },
   { name: "Anakapalli", hub: "Anakapalle" },
   { name: "Kakinada", hub: "Kakinada" },
   { name: "Dr. B.R. Ambedkar Konaseema", hub: "Amalapuram" },
-  { name: "East Godavari", hub: "Rajahmundry" },
+  { name: "East Godavari", hub: "Rajamahendravaram" },
   { name: "Eluru", hub: "Eluru" },
   { name: "West Godavari", hub: "Bhimavaram" },
   { name: "Krishna", hub: "Machilipatnam" },
@@ -40,12 +43,13 @@ export const districts = [
   { name: "Bapatla", hub: "Chirala" },
   { name: "Palnadu", hub: "Narasaraopet" },
   { name: "Prakasam", hub: "Ongole" },
-  { name: "SPSR Nellore", hub: "Nellore" },
+  { name: "Markapuram", hub: "Ongole" },
+  { name: "Sri Potti Sriramulu Nellore", hub: "Nellore" },
   { name: "Tirupati", hub: "Tirupati" },
   { name: "Chittoor", hub: "Chittoor" },
   { name: "Annamayya", hub: "Madanapalle" },
   { name: "YSR Kadapa", hub: "Kadapa" },
-  { name: "Anantapur", hub: "Anantapur" },
+  { name: "Ananthapuramu", hub: "Anantapur" },
   { name: "Sri Sathya Sai", hub: "Hindupur" },
   { name: "Kurnool", hub: "Kurnool" },
   { name: "Nandyal", hub: "Nandyal" },

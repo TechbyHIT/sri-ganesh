@@ -79,12 +79,6 @@ export const services: Service[] = [
     ],
     intents: [
       {
-        slug: "invisible-grills-for-balcony",
-        title: "Invisible Grills for Balconies",
-        angle:
-          "Balcony work is planned from parapet to slab, including the gap above a low railing and the turns around columns.",
-      },
-      {
         slug: "invisible-grills-for-windows",
         title: "Invisible Grills for Windows",
         angle:
@@ -115,6 +109,112 @@ export const services: Service[] = [
           "Cats and small dogs need tighter spacing than a general fall barrier. We confirm the pet and the gap before recommending cable or mesh.",
       },
     ],
+  },
+  {
+    slug: "balcony-invisible-grills",
+    name: "Balcony Invisible Grills",
+    group: "Protection",
+    summary:
+      "Stainless cable runs from the balcony railing or parapet to the slab, planned around columns, AC units and the door swing.",
+    lede:
+      "Balcony invisible grills close the band above the railing with vertical or horizontal stainless cables, so the balcony keeps its view and breeze but stops being an open drop. The work is planned from parapet to slab, including the side returns beside a column and the turn where a balcony becomes an L.",
+    problems: [
+      "Builder railings in many apartment towers stop around waist height, which leaves a climbable gap to the slab.",
+      "Families who use the balcony for plants, drying and sitting do not want a welded cage across the outlook.",
+      "Columns, AC outdoor units and drain pipes break a straight run and are where cheap installs leave gaps.",
+    ],
+    benefits: [
+      "The view and daylight stay part of the balcony.",
+      "Cable spacing is set for who uses the balcony — closer for toddlers and cats, wider for general fall protection.",
+      "Side returns and column turns are measured, so the barrier does not stop at the easy rectangle.",
+      "Cable grade, anchor type and line count are written into the quote.",
+    ],
+    where: [
+      "Apartment balconies above a low railing",
+      "L-shaped and corner balconies with a column",
+      "Sit-outs on villas and duplex upper floors",
+      "Balconies that share a wall with an AC outdoor unit",
+    ],
+    materials: [
+      "SS304 cable for sheltered and inland balconies",
+      "SS316 cable for sea-facing and ridge balconies on the Bay coast",
+      "Aluminium or stainless top and bottom channels where the slab or parapet cannot take direct anchors",
+      "Stainless turnbuckles and ferrules",
+    ],
+    priceFactors: [
+      "Balcony running length and railing-to-slab height",
+      "Number of cable lines and their spacing",
+      "SS304 versus SS316",
+      "Columns, returns and AC units that need extra terminations",
+      "Floor height, society permission and access",
+    ],
+    faqs: [
+      {
+        q: "Vertical or horizontal cables on a balcony?",
+        a: "Vertical lines are harder for a child to use as a ladder and are the usual recommendation where children live in the flat. Horizontal lines can suit a view-led balcony with no small children. We explain the trade-off on site rather than fixing one rule for every family.",
+      },
+      {
+        q: "Can I still dry clothes and keep plants on the balcony?",
+        a: "Yes. The cables sit in the opening above the railing, not across the floor. If you also want a ceiling cloth hanger, measure both at the same visit so the hanger, door and cable channel do not fight for the same space.",
+      },
+      {
+        q: "Does the apartment association need to approve it?",
+        a: "Many associations ask to see the anchor size and the elevation before work on the facade. We describe the fixing in writing so you can take it to the committee before the date is fixed.",
+      },
+    ],
+    intents: [],
+  },
+  {
+    slug: "openable-invisible-grills",
+    name: "Openable Invisible Grills",
+    group: "Protection",
+    summary:
+      "Invisible grill panels on a hinged or sliding frame that can be opened for cleaning, fire escape or moving furniture, and locked shut for everyday safety.",
+    lede:
+      "An openable invisible grill mounts the stainless cables in a frame that swings or slides, so a section of the opening can be cleared when it has to be — to clean glass, pass furniture, reach an AC unit or use a window as a way out — and locked back into place as a fall barrier. It is a different product from a fixed run and is quoted as one.",
+    problems: [
+      "A fixed grill across a window can block the only way to clean outside glass or service an AC unit.",
+      "Some families want an emergency opening on at least one window rather than a sealed cage.",
+      "Large furniture for upper floors is sometimes moved through a balcony opening.",
+    ],
+    benefits: [
+      "Daily use is the same as a fixed invisible grill: open view, cables under tension.",
+      "A section can be opened with a key or a lock that a small child cannot operate.",
+      "Frame material and lock type are named in the quote, not left as a package name.",
+      "A fixed run and an openable section can be combined on the same balcony.",
+    ],
+    where: [
+      "Bedroom and hall windows where a way out is wanted",
+      "Balconies that need an access panel for an AC unit or glass cleaning",
+      "Upper-floor openings used to move furniture",
+    ],
+    materials: [
+      "Aluminium or stainless steel frame sized to the reveal",
+      "SS304 or SS316 cable, chosen for exposure",
+      "Hinges or sliding track with a child-resistant lock",
+    ],
+    priceFactors: [
+      "Number and size of openable sections",
+      "Hinged versus sliding frame",
+      "Frame material and lock type",
+      "Cable grade and line count",
+      "Reveal depth and wall condition",
+    ],
+    faqs: [
+      {
+        q: "Is an openable grill as strong as a fixed one?",
+        a: "When it is closed and locked, the cable and frame are designed to act as a fall barrier. The weak point of any openable system is the lock and the hinge line, so those are specified in writing and shown to you at handover.",
+      },
+      {
+        q: "Who can open it?",
+        a: "The lock is chosen so an adult opens it deliberately and a small child cannot. Keep the key where adults can reach it quickly in an emergency.",
+      },
+      {
+        q: "Can only one window be openable?",
+        a: "Yes. A common plan is fixed invisible grills on most openings and one openable section on the window or balcony the family wants as a way out or an access point.",
+      },
+    ],
+    intents: [],
   },
   {
     slug: "safety-nets",
@@ -518,6 +618,58 @@ export const services: Service[] = [
         angle: "Each flight is measured on the rake so the panel does not wrinkle or gap at the turn.",
       },
     ],
+  },
+  {
+    slug: "window-safety-nets",
+    name: "Window Safety Nets",
+    group: "Protection",
+    summary:
+      "Fall-rated mesh fitted inside or outside a window reveal, for openings without a grill or with bars spaced too wide.",
+    lede:
+      "Window safety nets close a window opening with tensioned fall mesh, fixed to the reveal or the outer frame so shutters, sliding panes and curtains still work. They are for windows that open onto a drop — upper-floor bedrooms, staircase windows, French windows — where a child, a pet or an object could pass through.",
+    problems: [
+      "Sliding and French windows on upper floors often have no grill at all.",
+      "Old window bars can be spaced wide enough for a small child or a cat to pass.",
+      "Mosquito mesh is sometimes sold as protection when it cannot hold a fall.",
+    ],
+    benefits: [
+      "Light and air still pass through the opening.",
+      "The mesh is placed so the window can still be opened and cleaned.",
+      "Fall mesh and insect mesh are quoted as separate items when both are wanted.",
+      "Fixing points are chosen for the frame or masonry that is actually there.",
+    ],
+    where: [
+      "Upper-floor bedroom and hall windows",
+      "Sliding and French windows",
+      "Staircase and landing windows",
+      "Windows in schools and hostels",
+    ],
+    materials: [
+      "UV-stabilised HDPE or nylon fall mesh",
+      "Border rope and stainless hooks or a fixed channel",
+      "Finer aperture for cats and small pets",
+    ],
+    priceFactors: [
+      "Number of windows and their sizes",
+      "Inside-the-reveal versus outside-frame fixing",
+      "Mesh aperture and yarn",
+      "Floor height and outside access",
+    ],
+    faqs: [
+      {
+        q: "Will the net stop me opening the window?",
+        a: "It should not. The net is placed inside the reveal or on the outer frame depending on how the shutter or slider moves. That is decided at measurement, window by window.",
+      },
+      {
+        q: "Is a window safety net the same as a mosquito net?",
+        a: "No. A mosquito screen keeps insects out and is not built to hold a fall. A window safety net is a fall barrier with an open aperture. If you want both on the same window, they are two items on the quote.",
+      },
+      {
+        q: "Net or invisible grill for a window?",
+        a: "Cable suits a neat rectangle where the view matters most. Mesh suits small pets, irregular frames and windows where soft contact is preferred. We show both options on site when either would work.",
+      },
+    ],
+    intents: [],
   },
   {
     slug: "cloth-hangers",

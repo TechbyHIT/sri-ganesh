@@ -56,6 +56,24 @@ const essays: Record<string, { how: string; compare: string; climate: string; sp
     climate: "On the Bay — Visakhapatnam, Kakinada, Machilipatnam, Chirala, Nellore — salt and long humidity belong in the metal talk. In Rayalaseema the usual stress is heat and dust, so SS304 and a clean substrate matter more than marine cable. The Godavari and Krishna towns sit between those two stories.",
     spec: "Quotes name SS304 or SS316, the number of lines, turnbuckle type and how the wall will take the load. 'Premium stainless' without a grade is not a specification.",
   },
+  "balcony-invisible-grills": {
+    how: "Cables run between a top and bottom termination across the band above the railing, at a spacing agreed for the household. Each column, return and AC unit gets its own termination so the barrier follows the real balcony outline, not a drawing of a rectangle.",
+    compare: "Choose balcony cables when the outlook matters and the balcony is a clean straight or L run. Choose a balcony safety net when the shape is broken by pipes and ducts, when soft contact is preferred, or when pigeons are part of the brief — cables do not keep birds out.",
+    climate: "Sea-facing balconies on the Bay coast take salt, so SS316 is discussed there. Inland and sheltered balconies are usually specified in SS304. West-facing balconies in hot towns need a clean, sound parapet more than a premium cable.",
+    spec: "The quote names the cable grade, line count and spacing, whether channels or direct anchors are used, and how each column or return is terminated.",
+  },
+  "openable-invisible-grills": {
+    how: "Cables are tensioned inside a hinged or sliding frame rather than straight between wall anchors. The frame carries the load to the wall, and a lock holds the section shut. When it is opened, that part of the opening is clear.",
+    compare: "Choose an openable section only where access is genuinely needed — a way out, glass cleaning, an AC unit. Fixed invisible grills have fewer moving parts and are the simpler choice for every other opening.",
+    climate: "Hinges, tracks and locks are where coastal humidity shows first. Stainless or anodised parts are specified near the sea; inland, dust in the track is the usual maintenance item.",
+    spec: "The quote names frame material, hinge or track type, lock type, cable grade and how many sections open.",
+  },
+  "window-safety-nets": {
+    how: "Fall mesh is cut to the window, finished with a border rope and fixed to the reveal or outer frame on hooks or a channel. The position is chosen so the shutter, slider or casement can still move.",
+    compare: "Mesh suits pets, irregular frames and soft contact. Invisible cable suits clean rectangles where the view matters. Mosquito mesh is a separate insect screen and is never quoted as fall protection.",
+    climate: "Windows facing the afternoon sun need UV-stabilised yarn. Coastal windows need stainless hooks. Rain-facing windows need a fixing that does not trap water against the frame.",
+    spec: "Aperture, yarn, fixing position (inside or outside the reveal) and hook metal are written down for each window.",
+  },
   "safety-nets": {
     how: "A safety net is a tensioned mesh panel with a border rope, hooked around an opening so people, pets and objects are far less likely to pass through. Edges, corners and pipes are part of the measure. A net hooked only at four corners is a hammock, not a barrier.",
     compare: "Mesh suits wide, broken or soft-contact openings. Cable suits a neat view-led balcony. Mosquito screens are a different product with a different yarn. Building-covering nets for a work face are heavier still and quoted as site work.",

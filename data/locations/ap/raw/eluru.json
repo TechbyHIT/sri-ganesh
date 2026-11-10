@@ -1,0 +1,38 @@
+{
+  "name": "Eluru",
+  "slug": "eluru",
+  "headquarters": "Eluru",
+  "officialSite": "https://eluru.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Eluru",
+      "mandals": ["Denduluru", "Pedavegi", "Pedapadu", "Unguturu", "Bhimadole", "Nidamarru", "Kaikaluru", "Mandavalli", "Kalidindi", "Mudinepalle"]
+    },
+    {
+      "name": "Nuzvid",
+      "mandals": ["Nuziveedu", "Agiripalli", "Chatrai", "Musunuru", "Chintalapudi", "Lingapalem"]
+    },
+    {
+      "name": "Jangareddygudem",
+      "mandals": ["Kamavarapukota", "T. Narasapuram", "Jangareddygudem", "Polavaram", "Buttaigudem", "Jeelugumilli", "Koyyalagudem", "Kukunoor", "Velairpad"]
+    }
+  ],
+  "unassignedMandals": ["Eluru Rural", "Eluru Urban", "Dwaraka Tirumala"],
+  "urbanLocalBodies": [
+    { "name": "Eluru", "type": "municipal-corporation" },
+    { "name": "Nuzvid", "type": "municipality" },
+    { "name": "Jangareddygudem", "type": "municipality" },
+    { "name": "Chintalapudi", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://eluru.ap.gov.in/tehsil/", "title": "Revenue Division | Eluru District (division-wise mandal list)", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://eluru.ap.gov.in/subdivision-blocks/", "title": "Mandals | Eluru District (28 mandals)", "accessed": "2026-11-10", "covers": ["mandals"] },
+    { "url": "https://eluru.ap.gov.in/mandal-revenue-officers/", "title": "Mandal Revenue Officers | Eluru District", "accessed": "2026-11-10", "covers": ["mandals"] },
+    { "url": "https://eluru.ap.gov.in/history/", "title": "History | Eluru District (3 divisions; ULBs)", "accessed": "2026-11-10", "covers": ["divisions", "ulbs"] },
+    { "url": "https://www.dishadaily.com/andhrapradesh/west-godavari/elur-mandal-is-divided-into-two-eluru-rural-mandal-is-one-eluru-urban-mandal-is-the-second-one-222560", "title": "Eluru mandal divided into Eluru Rural and Eluru Urban - final notification (Disha Daily, 15 Jun 2023)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece", "title": "A.P. Cabinet clears district reorganisation, mandal realignment (The Hindu, 29 Dec 2025) - Eluru listed as unchanged", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY 2.0 (MoHUA)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "Eluru district was not changed by the Dec 2025 reorganisation (The Hindu). The official mandal and MRO pages list 28 mandals, but the official revenue division page is outdated and inconsistent with them: it still shows the single Eluru mandal (split into Eluru Rural and Eluru Urban by a June 2023 final notification), it lists Ganapavaram (a West Godavari mandal, not in Eluru's mandal list) under Eluru division, and it omits Dwaraka Tirumala. Ganapavaram has therefore been left out. Eluru Rural, Eluru Urban and Dwaraka Tirumala are confirmed mandals of the district but no official page maps them to a division, so they are in unassignedMandals; they are very likely in Eluru division (Eluru Rural and Urban were carved from Eluru mandal, and Wikipedia places Dwaraka Tirumala in Eluru division), which would give Eluru division 13 mandals. The division page spells the division 'Nuzivid'; the history page uses 'Nuzvid', which is used here. ULBs follow the history page and the PMAY 2.0 list. Note that Polavaram mandal stays in Eluru district; the new Polavaram district (HQ Rampachodavaram) was carved from Alluri Sitharama Raju.",
+  "verified": false
+}

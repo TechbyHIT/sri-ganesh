@@ -1,0 +1,36 @@
+{
+  "name": "Bapatla",
+  "slug": "bapatla",
+  "headquarters": "Bapatla",
+  "officialSite": "https://bapatla.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Bapatla",
+      "mandals": ["Bapatla", "Karlapalem", "Pittalavanipalem"]
+    },
+    {
+      "name": "Repalle",
+      "mandals": ["Tsundur", "Amruthalur", "Vemuru", "Kollur", "Bhattiprolu", "Cherukupalle", "Nizampatnam", "Nagaram", "Repalle"]
+    },
+    {
+      "name": "Chirala",
+      "mandals": ["Chirala", "Vetapalem", "Chinaganjam", "Inkollu", "Karamchedu"]
+    }
+  ],
+  "unassignedMandals": ["Martur", "Parchur", "Yeddanapudi"],
+  "urbanLocalBodies": [
+    { "name": "Bapatla", "type": "municipality" },
+    { "name": "Chirala", "type": "municipality" },
+    { "name": "Repalle", "type": "municipality" }
+  ],
+  "sources": [
+    { "url": "https://bapatla.ap.gov.in/tehsil/", "title": "Mandals | Bapatla District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://bapatla.ap.gov.in/revenue-divisions/", "title": "Revenue Divisions | Bapatla District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://timesofindia.indiatimes.com/city/vijayawada/andhra-pradesh-gets-76th-revenue-division-bapatlas-repalle-is-headquarters/articleshow/93491442.cms", "title": "Andhra Pradesh gets 76th revenue division, Bapatla's Repalle is headquarters - Times of India", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/prakasam-district-expanded-to-28-mandals-after-reorganisation-1927251", "title": "Prakasam District Expanded to 28 Mandals After Reorganisation - Deccan Chronicle", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/primacy-to-public-feedback-on-district-reorganisation-says-andhra-pradesh-chief-minister-chandrababu-naidu/article70443197.ece", "title": "Primacy to public feedback on district reorganisation - The Hindu", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://apcmms.ap.gov.in/apiv1/public/web/ulbdetails/ulbprofiles", "title": "CDMA ULB profiles data (feeds https://cdma.ap.gov.in/district-web-directory/)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "Mandal list (20) is from the official Bapatla site, which already excludes the five Addanki constituency mandals (Addanki, Ballikurava, Santhamaguluru, Janakavarampanguluru, Korisapadu) moved to Prakasam on 31 Dec 2025 (G.O.Ms.No.523). The official site's division mapping is stale: it shows only Bapatla and Chirala divisions and puts the Repalle/Vemuru mandals in Bapatla division, but Repalle revenue division was created in August 2022 from nine Bapatla-division mandals (Times of India); those nine are placed under Repalle here. Martur, Parchur and Yeddanapudi are listed under Chirala division on the official site but Wikipedia places them in Bapatla division; no official order or reliable news confirming either assignment was found, so they are left unassigned. The official 'Organisation Chart' and 'Village & Panchayats' pages still show the pre-2025 25-mandal layout. CDMA lists only three ULBs for Bapatla (Bapatla and Chirala Grade I, Repalle Grade II); Martur, Inkollu and Parchur nagar panchayats claimed on Wikipedia are not in the CDMA list and are omitted.",
+  "verified": false
+}

@@ -212,15 +212,26 @@ export function LinkCloud({ title, links }: { title: string; links: { href: stri
     <div>
       <h2 className="font-display text-2xl font-bold text-brand-900">{title}</h2>
       <div className="mt-4 flex flex-wrap gap-2">
-        {links.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className="rounded-full border border-brand-100 bg-white px-3 py-2 text-sm font-medium text-brand-800 transition hover:border-cta-500 hover:text-brand-950"
-          >
-            {link.label}
-          </Link>
-        ))}
+        {links.map((link) =>
+          link.href.startsWith("http") ? (
+            <a
+              key={link.href}
+              href={link.href}
+              rel="noopener"
+              className="rounded-full border border-brand-100 bg-white px-3 py-2 text-sm font-medium text-brand-800 transition hover:border-cta-500 hover:text-brand-950"
+            >
+              {link.label} ↗
+            </a>
+          ) : (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="rounded-full border border-brand-100 bg-white px-3 py-2 text-sm font-medium text-brand-800 transition hover:border-cta-500 hover:text-brand-950"
+            >
+              {link.label}
+            </Link>
+          ),
+        )}
       </div>
     </div>
   );

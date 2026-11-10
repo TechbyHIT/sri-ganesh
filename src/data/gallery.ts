@@ -26,8 +26,15 @@ function rank(seed: string, id: string) {
   return hash >>> 0;
 }
 
-export function photosForService(service?: string) {
-  if (!service) return galleryPhotos;
+const photoAliases: Record<string, string> = {
+  "balcony-invisible-grills": "invisible-grills",
+  "openable-invisible-grills": "invisible-grills",
+  "window-safety-nets": "children-safety-nets",
+};
+
+export function photosForService(requested?: string) {
+  if (!requested) return galleryPhotos;
+  const service = photoAliases[requested] ?? requested;
   const matched = galleryPhotos.filter((photo) => photo.services.includes(service) || photo.category === service);
   return matched.length >= 4 ? matched : galleryPhotos;
 }

@@ -1,0 +1,39 @@
+{
+  "name": "Palnadu",
+  "slug": "palnadu",
+  "headquarters": "Narasaraopet",
+  "officialSite": "https://palnadu.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Narasaraopet",
+      "mandals": ["Chilakaluripet", "Edlapadu", "Ipur", "Nadendla", "Narasaraopet", "Nuzendla", "Rompicherla", "Savalyapuram", "Vinukonda"]
+    },
+    {
+      "name": "Sattenapalli",
+      "mandals": ["Amaravathi", "Atchampet", "Bellamkonda", "Krosuru", "Muppalla", "Nekarikallu", "Pedakurapadu", "Rajupalem", "Sattenapalli"]
+    },
+    {
+      "name": "Gurazala",
+      "mandals": ["Bollapalli", "Dachepalli", "Durgi", "Gurazala", "Karempudi", "Machavaram", "Macherla", "Piduguralla", "Rentachintala", "Veldurthi"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Narasaraopet", "type": "municipality" },
+    { "name": "Chilakaluripet", "type": "municipality" },
+    { "name": "Macherla", "type": "municipality" },
+    { "name": "Piduguralla", "type": "municipality" },
+    { "name": "Sattenapalle", "type": "municipality" },
+    { "name": "Vinukonda", "type": "municipality" },
+    { "name": "Dachepalli", "type": "nagar-panchayat" },
+    { "name": "Gurazala", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://palnadu.ap.gov.in/subdivision-blocks/", "title": "Mandals | Palnadu District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://palnadu.ap.gov.in/tehsil/", "title": "Revenue Divisions | Palnadu District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece", "title": "A.P. Cabinet clears district reorganisation, mandal realignment - The Hindu", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://apcmms.ap.gov.in/apiv1/public/web/ulbdetails/ulbprofiles", "title": "CDMA ULB profiles data (feeds https://cdma.ap.gov.in/district-web-directory/)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "Palnadu is one of the nine districts left unchanged by the December 2025 reorganisation (The Hindu). The official site lists 3 divisions and 28 mandals. The official site places Bollapalli in Gurazala division, whereas Wikipedia places it in Narasaraopet division; the official site is followed. The official site spells the division 'Sattenapalli' while CDMA spells the municipality 'Sattenapalle'; each is kept as spelled by its source. CDMA grades Narasaraopet and Chilakaluripet as Grade I, Macherla, Piduguralla, Sattenapalle and Vinukonda as Grade II, and Dachepalli and Gurazala as NP (nagar panchayat).",
+  "verified": true
+}

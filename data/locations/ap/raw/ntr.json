@@ -1,0 +1,39 @@
+{
+  "name": "NTR",
+  "slug": "ntr",
+  "headquarters": "Vijayawada",
+  "officialSite": "https://ntr.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Vijayawada",
+      "mandals": ["Ibrahimpatnam", "Vijayawada Rural", "Vijayawada Central", "Vijayawada East", "Vijayawada North", "Vijayawada West"]
+    },
+    {
+      "name": "Nandigama",
+      "mandals": ["Chandarlapadu", "Jaggaiahpeta", "Kanchikacherla", "Nandigama", "Penuganchiprolu", "Vatsavai", "Veerullapadu"]
+    },
+    {
+      "name": "Tiruvuru",
+      "mandals": ["A Konduru", "Gampalagudem", "G Konduru", "Mylavaram", "Reddigudem", "Tiruvuru", "Vissannapeta"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Vijayawada", "type": "municipal-corporation" },
+    { "name": "Jaggaiahpet", "type": "municipality" },
+    { "name": "Nandigama", "type": "municipality" },
+    { "name": "Kondapalli", "type": "municipality" },
+    { "name": "Tiruvuru", "type": "municipality" }
+  ],
+  "sources": [
+    { "url": "https://ntr.ap.gov.in/mandals/", "title": "Mandals | NTR District (20 mandals with division)", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://ntr.ap.gov.in/district-profile/", "title": "District Profile | NTR District (20 mandals, 3 divisions, 4 municipalities, 1 corporation)", "accessed": "2026-11-10", "covers": ["mandals", "divisions", "ulbs"] },
+    { "url": "https://ntr.ap.gov.in/public-utility-category/municipality/", "title": "Municipalities | NTR District", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://ntr.ap.gov.in/public-utility/vijayawada-municipal-corporation/", "title": "Vijayawada Municipal Corporation | NTR District", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://ntr.ap.gov.in/public-utility/nandigama-municipality/", "title": "Nandigama Municipality | NTR District", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece", "title": "A.P. Cabinet clears district reorganisation, mandal realignment (The Hindu, 29 Dec 2025) - NTR listed as unchanged", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY 2.0 (MoHUA)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "NTR district was not changed by the Dec 2025 reorganisation (The Hindu). The mandal-to-division mapping comes from the official mandals page (6 + 7 + 7 = 20 mandals), consistent with the district profile. The /revenue-divisions/ URL returns 404 on this site. The district profile lists the four municipalities as Tiruvuru, Nandigama, Jaggayyapeta and Ibrahimpatnam; the municipality located in Ibrahimpatnam mandal is Kondapalli Municipality per the district utility page and PMAY 2.0, so 'Kondapalli' is used. The municipality is spelt 'Jaggaiahpet' on the district utility page and the mandal 'Jaggaiahpeta'. Tiruvuru is a municipality per the district profile but a town panchayat per the PMAY 2.0 list; the district classification is used.",
+  "verified": true
+}

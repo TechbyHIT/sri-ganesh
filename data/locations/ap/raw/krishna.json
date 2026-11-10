@@ -1,0 +1,39 @@
+{
+  "name": "Krishna",
+  "slug": "krishna",
+  "headquarters": "Machilipatnam",
+  "officialSite": "https://krishna.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Machilipatnam",
+      "mandals": ["Avanigadda", "Bantumilli", "Challapalli", "Ghantasala", "Guduru", "Koduru", "Kruthivennu", "Machilipatnam North", "Machilipatnam South", "Mopidevi", "Nagayalanka", "Pedana"]
+    },
+    {
+      "name": "Gudivada",
+      "mandals": ["Bapulapadu", "Gannavaram", "Gudivada", "Gudlavalleru", "Nandivada", "Pedaparupudi", "Unguturu"]
+    },
+    {
+      "name": "Vuyyuru",
+      "mandals": ["Kankipadu", "Movva", "Pamarru", "Pamidimukkala", "Penamaluru", "Thotlavalluru", "Vuyyuru"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Machilipatnam", "type": "municipal-corporation" },
+    { "name": "Gudivada", "type": "municipality" },
+    { "name": "Pedana", "type": "municipality" },
+    { "name": "Vuyyuru", "type": "municipality" },
+    { "name": "YSR Tadigadapa", "type": "municipality" }
+  ],
+  "sources": [
+    { "url": "https://krishna.ap.gov.in/about_district/administrative-setup/new_mandals/", "title": "MANDALS | Krishna District (division-wise mandals list, 26 mandals)", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://krishna.ap.gov.in/about_district/administrative-setup/new_revenue_divisions/", "title": "REVENUE DIVISIONS | Krishna District (Gudivada, Machilipatnam, Vuyyuru)", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://krishna.ap.gov.in/", "title": "Krishna District home page (26 mandals, 1 municipal corporation, 4 municipalities)", "accessed": "2026-11-10", "covers": ["mandals", "ulbs"] },
+    { "url": "https://krishna.ap.gov.in/about_district/", "title": "About District | Krishna District", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://krishna.ap.gov.in/public-utility-category/municipality/", "title": "Municipalities | Krishna District", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece", "title": "A.P. Cabinet clears district reorganisation, mandal realignment (The Hindu, 29 Dec 2025) - Krishna listed as unchanged", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY 2.0 (MoHUA)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "Krishna district was not changed by the Dec 2025 reorganisation (The Hindu). The current division-wise list comes from the 'new_mandals' page (12 + 7 + 7 = 26 mandals, matching the home page count of 26), which shows Machilipatnam mandal split into Machilipatnam North and Machilipatnam South. Other pages on the same site are stale and should be ignored: /mandals/ and /revenue-divisions/ show the pre-2022 undivided district (53 mandals, 4 divisions), and /revenue-land-administration/ has a mixed list that places Gannavaram, Bapulapadu and Unguturu under Vuyyuru and still includes Tiruvuru (now in NTR). The about page says 25 mandals and 3 municipalities, which predates the Machilipatnam split and the Tadigadapa municipality. Machilipatnam division is also called Bandar. Vuyyuru is a municipality per the district site but appears as a town panchayat in the PMAY 2.0 list; the district classification is used. The district site names the fifth ULB 'Y S R Tadigadapa' (Grade-1 municipality); a third-party 2026 election listing shows it as 'Tadigadapa', and any official rename was not verified. The district site labels Machilipatnam as a municipality, but PMAY 2.0 lists it as a municipal corporation, which is used here.",
+  "verified": true
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Sri Potti Sriramulu Nellore",
+  "slug": "nellore",
+  "headquarters": "Nellore",
+  "officialSite": "https://spsnellore.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Nellore",
+      "mandals": ["Nellore Urban", "Nellore Rural", "Indukurpet", "Thotapalli Gudur", "Muthukur", "Venkatachalam", "Podalakur", "Rapur", "Kovur", "Buchireddypalem", "Manubolu", "Sydapuram"]
+    },
+    {
+      "name": "Atmakur",
+      "mandals": ["Atmakur", "Kaluvoya", "Chejerla", "Ananthasagaram", "Anumasamudrampeta", "Sangam", "Seetharamapuram", "Udayagiri", "Marripadu"]
+    },
+    {
+      "name": "Kavali",
+      "mandals": ["Kavali", "Allur", "Kodavalur", "Vidavalur", "Vinjamur", "Dagadarthi", "Bogole", "Jaladanki", "Duttalur", "Varikuntapadu", "Kondapuram", "Kaligiri"]
+    },
+    {
+      "name": "Gudur",
+      "mandals": ["Gudur", "Chillakur", "Kota"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Nellore", "type": "municipal-corporation" },
+    { "name": "Kavali", "type": "municipality" },
+    { "name": "Gudur", "type": "municipality" },
+    { "name": "Atmakur", "type": "municipality" },
+    { "name": "Alluru", "type": "nagar-panchayat" },
+    { "name": "Buchireddypalem", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://spsnellore.ap.gov.in/mandals/", "title": "Mandals | SPSR Nellore District, Government of Andhra Pradesh (Division wise mandals - Tahsildars)", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.956/", "title": "Restructuring of SPSR Nellore District and Tirupati District - Final Notification [G.O.Ms.No.525, Revenue (Lands-IV), 30 Dec 2025] (AP Gazette Extraordinary No. 956)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/tirupati-sheds-gudur-and-embraces-kodur-while-kadapa-gets-back-rajampeta/article70457470.ece", "title": "Tirupati sheds Gudur and embraces Kodur, while Kadapa gets back Rajampeta - The Hindu", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/naidu-orders-certain-changes-in-reorganisation-of-districts-based-on-feedback-1926651", "title": "Naidu Orders Certain Changes In Reorganisation Of Districts Based On Feedback - Deccan Chronicle", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://apcmms.ap.gov.in/apiv1/public/web/ulbdetails/ulbprofiles", "title": "CDMA ULB profiles data (feeds https://cdma.ap.gov.in/district-web-directory/)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "The official site is spsnellore.ap.gov.in (nellore.ap.gov.in timed out). Its mandals page (last updated 07.04.2026) shows the current 36-mandal layout above two 'erstwhile' tables; only the current table is used. This matches the documented Dec 2025 changes (G.O.Ms.No.525 and related): the Kandukur division mandals moved to Prakasam; Varikuntapadu and Kondapuram moved to Kavali division; Gudur, Chillakur and Kota returned from Tirupati as a Gudur division; Rapur, Kaluvoya and Sydapuram (Saidapuram) stay in Nellore, which reverses the draft proposal to move them to Tirupati. Mandal spellings follow the official page (e.g. Sydapuram, Thotapalli Gudur). In the CDMA feed, 'ATMAKUR(NLR)' (Grade III) and 'GUDUR(Nellore)' (Grade I) are recorded here as Atmakur and Gudur; Kavali is Grade I; Alluru and Buchireddypalem are NP (nagar panchayat).",
+  "verified": true
+}

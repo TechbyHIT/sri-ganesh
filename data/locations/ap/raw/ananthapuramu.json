@@ -1,0 +1,42 @@
+{
+  "name": "Ananthapuramu",
+  "slug": "ananthapuramu",
+  "headquarters": "Anantapur",
+  "officialSite": "https://ananthapuramu.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Anantapuramu",
+      "mandals": ["Anantapur Urban", "Anantapur Rural", "Atmakur", "BK Samudram", "Garladinne", "Kudair", "Narpala", "Peddapappur", "Putluru", "Raptadu", "Singanamala", "Tadpatri", "Yadiki", "Yellanur"]
+    },
+    {
+      "name": "Guntakal",
+      "mandals": ["Gooty", "Guntakal", "Pamidi", "Peddavadugur", "Uravakonda", "Vajrakarur", "Vidapanakal"]
+    },
+    {
+      "name": "Kalyandurg",
+      "mandals": ["Beluguppa", "Bommanahal", "Brahmasamudram", "D.Hirehal", "Gummagatta", "Kalyandurg", "Kambadur", "Kanekal", "Kundurpi", "Rayadurg", "Settur"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Anantapuramu", "type": "municipal-corporation" },
+    { "name": "Gooty", "type": "municipality" },
+    { "name": "Guntakal", "type": "municipality" },
+    { "name": "Kalyandurg", "type": "municipality" },
+    { "name": "Rayadurg", "type": "municipality" },
+    { "name": "Tadipatri", "type": "municipality" },
+    { "name": "Pamidi", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://ananthapuramu.ap.gov.in/mandals/", "title": "Mandals | Ananthapuramu District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals"] },
+    { "url": "https://ananthapuramu.ap.gov.in/mandal/", "title": "Mandal | Ananthapuramu District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals"] },
+    { "url": "https://ananthapuramu.ap.gov.in/gram-panchayats/", "title": "Gram Panchayats (division / mandal / GP) | Ananthapuramu District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://ananthapuramu.ap.gov.in/divisions/", "title": "Divisions | Ananthapuramu District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://ananthapuramu.ap.gov.in/public-utility-category/municipality/", "title": "Municipalities | Ananthapuramu District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://web.archive.org/web/20210510190534/http:/dtcp.ap.gov.in/dtcpweb/ULBS.html", "title": "DTCP Andhra Pradesh - List of Urban Local Bodies (archived May 2021)", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://egazette.servantsofknowledge.in/sources/andhra/?page=2", "title": "AP Gazette index: Bifurcation of Anantapur mandal into Anantapur Urban and Anantapur Rural mandals - Final Notification (G.O.Ms.No.206, Revenue (Lands-IV), 8 May 2023)", "accessed": "2026-11-10", "covers": ["mandals", "reorganisation"] }
+  ],
+  "notes": "This district was unchanged in the Dec 2025 reorganisation, per the task brief; no Dec 2025 notification mentioning Ananthapuramu mandals was found. The official mandal pages list 32 mandals, though the /mandal/ page text says '31 Mandals'. Division mapping comes from the official gram-panchayats page, which uses 3 divisions: Ananthapuramu 13, Guntakal 7, Kalyandurg 11. Anantapur Urban has no gram panchayats, so it is absent from that page. It is placed in Anantapuramu division because G.O.Ms.206 (2023) created it by bifurcating Anantapur mandal of that division; the gazette body text was not readable, only the title. The official '/anantapur/' division page is stale (pre-2022): it places Gooty, Guntakal, Pamidi, Peddavadugur, Uravakonda, Vajrakarur and Vidapanakal in Anantapur division. It was not used. Mandal spellings follow /mandals/. Alternate official spellings: Ananthapuramu Rural, B.K.Samudram, Garladdine, Rapthadu, Tadipatri (mandal), Peddavadaguru, Bramhasamudram, Kambaduru, Kundupi, Rayadurgam, Setturu. Pamidi is labelled 'pamidi municipality' on the district site, but the PMAY-U list ('Town Panchayat') and DTCP-2021 ('N.P') both classify it as a nagar panchayat, which is used here.",
+  "verified": true
+}

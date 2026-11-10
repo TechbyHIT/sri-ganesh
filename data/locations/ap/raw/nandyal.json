@@ -1,0 +1,45 @@
+{
+  "name": "Nandyal",
+  "slug": "nandyal",
+  "headquarters": "Nandyal",
+  "officialSite": "https://nandyal.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Nandyal",
+      "mandals": ["Allagadda", "Chagalamari", "Dornipadu", "Gospadu", "Mahanandi", "Nandyal", "Rudravaram", "Sirvel", "Uyyalawada", "Panyam", "Gadivemula"]
+    },
+    {
+      "name": "Atmakur",
+      "mandals": ["Atmakur", "Bandiatmakur", "JupaduBunglow", "Kothapalli", "Midthur", "Nandikotkur", "Pagidyala", "Pamulapadu", "Srisailam", "Velgodu"]
+    },
+    {
+      "name": "Dhone",
+      "mandals": ["Betamcherla", "Dhone", "Peapully"]
+    },
+    {
+      "name": "Banaganapalli",
+      "mandals": ["Banaganapalli", "Koilkuntla", "Kolimigundla", "Owk", "Sanjamala"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Nandyal", "type": "municipality" },
+    { "name": "Allagadda", "type": "municipality" },
+    { "name": "Atmakur", "type": "municipality" },
+    { "name": "Dhone", "type": "municipality" },
+    { "name": "Nandikotkur", "type": "municipality" },
+    { "name": "Bethamcherla", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://nandyal.ap.gov.in/mandal/", "title": "Mandal | Nandyal District", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://nandyal.ap.gov.in/revenue-divisions/", "title": "Revenue Divisions | Nandyal District", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://nandyal.ap.gov.in/municipalities/", "title": "Municipalities | Nandyal District", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://nandyal.ap.gov.in/public-utility-category/municipality/", "title": "Municipalities (public utilities) | Nandyal District", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.963/", "title": "AP Gazette Extraordinary No. 963: Re-structuring of Nandyal District - formation of new revenue division Banaganapalli - Final Notification (G.O.Ms.No.532, Revenue (Lands-IV), 30 Dec 2025)", "accessed": "2026-11-10", "covers": ["reorganisation", "divisions"] },
+    { "url": "https://www.etvbharat.com/te/state/ap-government-notification-relesed-3-new-districts-and-5-revenue-divisions-andhra-pradesh-news-aps25112800543", "title": "Preliminary notification: 3 new districts, 5 revenue divisions (ETV Bharat, 28 Nov 2025)", "accessed": "2026-11-10", "covers": ["reorganisation", "divisions"] },
+    { "url": "https://prabhanews.com/banaganapalli-green-signal-for-revenue-division/", "title": "Banaganapalli revenue division gets green signal (Andhra Prabha, 27 Nov 2025)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "The official mandal page lists 29 mandals in 4 divisions, including the new Banaganapalli division (Banaganapalli, Koilkuntla, Kolimigundla, Owk, Sanjamala). That matches G.O.Ms.532 of 30 Dec 2025 (title verified) and the ETV Bharat table. Koilkuntla and Owk came from Dhone division, and Kolimigundla and Sanjamala from Nandyal division. Andhra Prabha reported a proposal to also add Betamcherla to Banaganapalli, but the official page keeps it in Dhone. The about-district and Telugu history pages are stale, saying 3 divisions and 27 or 29 mandals. Mandal spellings follow the official page as written, for example 'JupaduBunglow' and 'Bandiatmakur'. Other official pages also use Banaganapalle, Koilakuntla, Chagalamarri, Velugode, Kottapalle, Jupadu Banglow and Bandi Atmakur. ULBs follow the district municipalities page: 5 municipalities plus Bethamcherla Nagarapanchayat. The PMAY-U list also shows 'Srisailam, Municipality' (code 593976), which no district or state source confirms, so it is excluded. Nandyal has no municipal corporation.",
+  "verified": true
+}

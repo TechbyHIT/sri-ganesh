@@ -1,0 +1,35 @@
+{
+  "name": "Vizianagaram",
+  "slug": "vizianagaram",
+  "headquarters": "Vizianagaram",
+  "officialSite": "https://vizianagaram.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Vizianagaram",
+      "mandals": ["Vizianagaram", "Gantyada", "Pusapatirega", "Denkada", "Bhogapuram", "Srungavarapukota", "Jami", "Vepada", "Lakkavarapukota", "Kothavalasa", "Nellimarla"]
+    },
+    {
+      "name": "Cheepurupalli",
+      "mandals": ["Cheepurupalli", "Garividi", "Gurla", "Merakamudidam", "Rajam", "Vangara", "Regidi Amadalavalasa", "Santhakaviti"]
+    },
+    {
+      "name": "Bobbili",
+      "mandals": ["Bobbili", "Ramabhadrapuram", "Badangi", "Therlam", "Mentada", "Gajapathinagaram", "Dattirajeru", "Bondapalli"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Vizianagaram", "type": "municipal-corporation" },
+    { "name": "Bobbili", "type": "municipality" },
+    { "name": "Rajam", "type": "municipality" },
+    { "name": "Nellimarla", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://vizianagaram.ap.gov.in/divisions-and-mandals/", "title": "Divisions and Mandals | Vizianagaram District", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://vizianagaram.ap.gov.in/mandal-wise-villages/", "title": "Mandal wise Villages | Vizianagaram District", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece", "title": "A.P. Cabinet clears district reorganisation, mandal realignment - The Hindu", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "Vizianagaram was left unchanged by the December 2025 reorganisation (The Hindu), so the official division-wise list (3 divisions, 27 mandals) is current. The official 'Divisions and Mandals' table has typos: 'MERAKAMUDIAM' and 'REGIDLAMANDALAVALASA'. The spellings 'Merakamudidam' (from the official mandal-wise villages page) and 'Regidi Amadalavalasa' (the standard form of the name) are used instead; that villages page itself shows the truncated 'Regidiamadalavalas'. ULBs are taken from the MoHUA PMAY-U 2.0 ULB list. The district demography page still shows Census 2011 counts (2 municipalities, 2 nagar panchayats) from before Parvathipuram and Salur moved to Parvathipuram Manyam, so it was not used for ULBs. Rajam is listed as a municipality in PMAY-U 2.0; older DTCP lists show it as a nagar panchayat.",
+  "verified": true
+}

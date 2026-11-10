@@ -41,6 +41,10 @@ yarn-error.log*
 # generated URL registry (large; regenerate with npm run generate:urls)
 /reports/url-registry/
 
+# admin content store (edits, imports, uploads) and generated SQL seeds
+/data/store/
+/db/seed*.sql
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

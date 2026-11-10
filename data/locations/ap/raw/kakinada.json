@@ -1,0 +1,37 @@
+{
+  "name": "Kakinada",
+  "slug": "kakinada",
+  "headquarters": "Kakinada",
+  "officialSite": "https://kakinada.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Kakinada",
+      "mandals": ["Gollaprolu", "Pithapuram", "U.Kotapalli", "Kakinada Rural", "Kakinada Urban", "Karapa", "Pedapudi", "Kajuluru", "Thallarevu"]
+    },
+    {
+      "name": "Peddapuram",
+      "mandals": ["Kotananduru", "Tuni", "Thondangi", "Shankhavaram", "Prathipadu", "Yeleswaram", "Jaggampeta", "Kirlampudi", "Peddapuram", "Gandepalli", "Rowtulapudi", "Samalkota"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Kakinada", "type": "municipal-corporation" },
+    { "name": "Pithapuram", "type": "municipality" },
+    { "name": "Samalkot", "type": "municipality" },
+    { "name": "Peddapuram", "type": "municipality" },
+    { "name": "Tuni", "type": "municipality" },
+    { "name": "Gollaprolu", "type": "nagar-panchayat" },
+    { "name": "Yeleswaram", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://kakinada.ap.gov.in/mandal/", "title": "Mandal | Kakinada District", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://kakinada.ap.gov.in/revenue-divisions/", "title": "Revenue Divisions | Kakinada District", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://kakinada.ap.gov.in/", "title": "Kakinada District home page (21 mandals, 2 divisions, 1 corporation, 4 municipalities)", "accessed": "2026-11-10", "covers": ["mandals", "divisions", "ulbs"] },
+    { "url": "https://kakinada.ap.gov.in/about-district/", "title": "ABOUT DISTRICT | Kakinada District", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.949/", "title": "G.O.Ms.No.518, Revenue (Lands-IV), 30 Dec 2025 - Shifting of Samalkota mandal from Kakinada to Peddapuram revenue division - Final Notification (AP Gazette Extraordinary No. 949)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.thehansindia.com/andhra-pradesh/2-new-districts-created-in-state-total-rises-to-28-1035168", "title": "2 new districts created in state; total rises to 28 (The Hans India, 31 Dec 2025)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY 2.0 (MoHUA)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "The district mandal page already places Samalkota in Peddapuram division, consistent with G.O.Ms.No.518 dated 30 Dec 2025, giving Kakinada division 9 mandals and Peddapuram division 12 mandals (21 total, matching the home page). The mandal page writes Kakinada (R) and Kakinada (U); these are expanded to Kakinada Rural and Kakinada Urban here. The mandal is spelt Samalkota on the mandal page while the municipality is spelt Samalkot on the about page; both spellings are kept as the government site uses them. Gollaprolu and Yeleswaram are listed as Nagar Panchayats on the district site and as town panchayats in the PMAY 2.0 list; a third-party 2026 municipal election listing shows them as municipalities, which could not be confirmed from an official source, so the official nagar panchayat classification is kept.",
+  "verified": true
+}

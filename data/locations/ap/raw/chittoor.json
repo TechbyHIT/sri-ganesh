@@ -1,0 +1,43 @@
+{
+  "name": "Chittoor",
+  "slug": "chittoor",
+  "headquarters": "Chittoor",
+  "officialSite": "https://chittoor.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Chittoor",
+      "mandals": ["Chittoor Urban", "Chittoor Rural", "Gudipala", "Yadamarri", "Gangadharanellore", "Puthalapattu", "Penumuru", "Thavanampalle", "Irala", "Pulicherla", "Rompicherla", "Srirangarajapuram", "Vedurukuppam", "Bangarupalem"]
+    },
+    {
+      "name": "Nagari",
+      "mandals": ["Palasamudram", "Karvetinagar", "Nagari", "Nindra", "Vijayapuram"]
+    },
+    {
+      "name": "Palamaneru",
+      "mandals": ["Palamaner", "Gangavaram", "Peddapanjani", "Baireddipalle", "Venkatagiri Kota"]
+    },
+    {
+      "name": "Kuppam",
+      "mandals": ["Kuppam", "Santhipuram", "Gudupalle", "Ramakuppam"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Chittoor", "type": "municipal-corporation" },
+    { "name": "Kuppam", "type": "municipality" },
+    { "name": "Nagari", "type": "municipality" },
+    { "name": "Palamaner", "type": "municipality" }
+  ],
+  "sources": [
+    { "url": "https://chittoor.ap.gov.in/mandal/", "title": "Mandal | Chittoor District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://chittoor.ap.gov.in/revenue-division/", "title": "Revenue Division | Chittoor District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://chittoor.ap.gov.in/demography/", "title": "Demography | Chittoor District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals", "divisions", "ulbs"] },
+    { "url": "https://chittoor.ap.gov.in/public-utility-category/municipality/", "title": "Municipalities | Chittoor District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.958/", "title": "AP Gazette Extraordinary No. 958: Restructuring of Chittoor District - shifting of Bangarupalem mandal from Palamaneru to Chittoor revenue division - Final Notification (G.O.Ms.No.527, Revenue (Lands-IV), 30 Dec 2025)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/primacy-to-public-feedback-on-district-reorganisation-says-andhra-pradesh-chief-minister-chandrababu-naidu/article70443197.ece", "title": "Primacy to public feedback on district reorganisation (The Hindu, 27 Dec 2025)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.sakshi.com/telugu-news/annamayya/2665828", "title": "Madanapalle district headquarters from today (Sakshi, 31 Dec 2025)", "accessed": "2026-11-10", "covers": ["reorganisation"] }
+  ],
+  "notes": "The official mandal page lists 28 mandals in 4 divisions, matching the district demography page (4 divisions, 28 mandals, 1 corporation, 3 municipalities). It reflects the Dec 2025 changes: Bangarupalem is in Chittoor division (G.O.Ms.527), Punganur, Chowdepalle, Sodam and Somala have left for Annamayya, and Pulicherla and Rompicherla stay in Chittoor (Sakshi, The Hindu). Srirangarajapuram and Vedurukuppam are in Chittoor division on the official page, although 2022 news put them in Nagari; I could not find the notification that moved them, so the official page was followed. The gazette body text (mandal schedule) was not machine-readable; only its title was verified. The site spells the Nagari ULB as 'Nagiri Municipality'; 'Nagari' is used here as on the mandal page and PMAY-U list. The district 'Municipal Corporations' page still lists Tirupati Municipal Corporation, which is stale (Tirupati is in Tirupati district). Puttur municipality is in Tirupati district per PMAY-U and is not included.",
+  "verified": true
+}

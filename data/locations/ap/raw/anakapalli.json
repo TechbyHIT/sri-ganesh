@@ -1,0 +1,34 @@
+{
+  "name": "Anakapalli",
+  "slug": "anakapalli",
+  "headquarters": "Anakapalli",
+  "officialSite": "https://anakapalli.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Anakapalli",
+      "mandals": ["Anakapalli", "Butchiahpeta", "Kasimkota", "Chodavaram", "Devarapalli", "K.Kotapadu", "Munagapaka", "Parawada", "Sabbavaram", "Cheedikada"]
+    },
+    {
+      "name": "Narsipatnam",
+      "mandals": ["Madugula", "Golugonda", "Makavarapalem", "Narsipatnam", "Nathavaram", "Ravikamatham", "Rolugunta"]
+    },
+    {
+      "name": "Adduroad Junction",
+      "mandals": ["Yelamanchili", "Rambilli", "Atchuthapuram", "Nakkapalli", "Payakaraopeta", "Kotauratla", "S.Rayavaram"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Narsipatnam", "type": "municipality" },
+    { "name": "Yelamanchili", "type": "municipality" }
+  ],
+  "sources": [
+    { "url": "https://anakapalli.ap.gov.in/mandals/", "title": "Mandals | Anakapalli District", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://anakapalli.ap.gov.in/", "title": "Anakapalli District (home page: 24 mandals, 2 municipalities)", "accessed": "2026-11-10", "covers": ["mandals", "ulbs"] },
+    { "url": "https://egazette.servantsofknowledge.in/sources/andhra_extraordinary/?page=2&year=2025", "title": "Andhra Pradesh Extraordinary Gazette index 2025 (G.O.Ms.No.515, Revenue (Lands-IV), 30 Dec 2025: creation of new revenue division at Adduroad Junction)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://www.thehindu.com/todays-paper/tp-national/tp-andhrapradesh/gos-issued-on-merger-of-two-civic-bodies-10-panchayats/article4972926.ece", "title": "GOs issued on merger of two civic bodies, 10 panchayats - The Hindu", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "The official mandals page already shows the new Adduroad Junction division (marked 'NEW') with 7 mandals, consistent with G.O.Ms.No.515 (30 Dec 2025). The district now has 24 mandals in 3 divisions. The official site writes the names in upper case; they are converted to title case here. The division is spelled 'Adduroad Junction' as in the G.O. and site; the brief calls it 'Adda Road'. The MoHUA PMAY-U 2.0 list also shows an 'Anakapalle, Municipal Corporation' with a new code (802949). It is excluded because the official district site says Anakapalle municipality was merged into Greater Visakhapatnam Municipal Corporation (G.O.Ms.No.373), the home page shows only 2 municipalities, and no de-merger notification was found. Parts of Anakapalli district, including Anakapalli town, are governed by GVMC, which is recorded under Visakhapatnam.",
+  "verified": true
+}

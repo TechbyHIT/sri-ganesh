@@ -1,0 +1,28 @@
+{
+  "name": "Visakhapatnam",
+  "slug": "visakhapatnam",
+  "headquarters": "Visakhapatnam",
+  "officialSite": "https://visakhapatnam.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Bheemunipatnam",
+      "mandals": ["Anandapuram", "Bheemunipatnam", "Visakhapatnam (Rural)", "Seethammadhara", "Padmanabham"]
+    },
+    {
+      "name": "Visakhapatnam",
+      "mandals": ["Mulagada", "Maharanipeta", "Gopalpatnam", "Gajuwaka", "Pedagantyada", "Pendurthi"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Greater Visakhapatnam", "type": "municipal-corporation" }
+  ],
+  "sources": [
+    { "url": "https://visakhapatnam.ap.gov.in/mandals/", "title": "Mandals | Visakhapatnam District, Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://visakhapatnam.ap.gov.in/", "title": "Visakhapatnam District (home page: 11 mandals, 1 municipal corporation)", "accessed": "2026-11-10", "covers": ["mandals", "ulbs"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece", "title": "A.P. Cabinet clears district reorganisation, mandal realignment - The Hindu", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.thehindu.com/todays-paper/tp-national/tp-andhrapradesh/gos-issued-on-merger-of-two-civic-bodies-10-panchayats/article4972926.ece", "title": "GOs issued on merger of two civic bodies, 10 panchayats - The Hindu", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "Visakhapatnam was unchanged in the December 2025 reorganisation (The Hindu). The official mandals page lists 11 mandals in 2 divisions, in upper case; they are converted to title case here. 'VISAKHAPATNAM(R)' is written as 'Visakhapatnam (Rural)'. The only ULB is the Greater Visakhapatnam Municipal Corporation (GVMC), matching the home page's 'Municipal Corporations 1'. The MoHUA PMAY-U 2.0 list separately shows a 'Bheemunipatnam, Municipality' with a new code (802948). It is excluded because Bheemunipatnam municipality was abolished and merged into GVMC (G.O.Ms.No.374), and no de-merger notification was found.",
+  "verified": true
+}

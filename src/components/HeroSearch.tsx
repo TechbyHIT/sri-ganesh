@@ -17,7 +17,7 @@ export function HeroSearch({ id = "site-search", light = false, options }: { id?
       onSubmit={(event) => {
         event.preventDefault();
         if (matches[0]) router.push(matches[0].href);
-        else router.push(`/contact?need=${encodeURIComponent(query)}`);
+        else if (query.trim().length >= 2) router.push(`/locations/search?q=${encodeURIComponent(query.trim())}`);
       }}
     >
       <label className="sr-only" htmlFor={id}>
@@ -27,7 +27,7 @@ export function HeroSearch({ id = "site-search", light = false, options }: { id?
         id={id}
         value={query}
         onChange={(event) => setQuery(event.target.value)}
-        placeholder="Search services or Andhra Pradesh cities…"
+        placeholder="Search a service, district, mandal or town…"
         className={`h-12 w-full rounded-full px-5 text-sm text-brand-900 outline-none ring-2 ring-transparent placeholder:text-brand-800/40 focus:ring-cta-500 ${light ? "border border-brand-100 bg-brand-50" : "border-0 bg-white shadow-card"}`}
       />
       {matches.length > 0 ? (

@@ -299,7 +299,7 @@ export function HomePage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <SectionTitle eyebrow="Coverage" title="All 26 districts, with a named hub" text="If your town is not in the city list, it is still in Andhra Pradesh and still in scope. We confirm the slot from the hub beside it." />
+        <SectionTitle eyebrow="Coverage" title="All 28 districts, with a named hub" text="If your town is not in the city list, it is still in Andhra Pradesh and still in scope. We confirm the slot from the hub beside it." />
         <div className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {districts.map((district) => (
             <p key={district.name} className="rounded-2xl bg-white px-4 py-3 text-sm ring-1 ring-brand-100">

@@ -1,0 +1,36 @@
+{
+  "name": "East Godavari",
+  "slug": "east-godavari",
+  "headquarters": "Rajamahendravaram",
+  "officialSite": "https://eastgodavari.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Rajamahendravaram",
+      "mandals": ["Seethanagram", "Korukonda", "Gokavaram", "Rajanagaram", "Rajahmundry Rural", "Rajahmundry Urban", "Kadiam", "Rangampeta", "Anaparthi", "Biccavole", "Mandapeta", "Rayavaram", "Kapileswarapuram"]
+    },
+    {
+      "name": "Kovvur",
+      "mandals": ["Kovvur", "Chagallu", "Tallapudi", "Nidadavole", "Undrajavaram", "Peravali", "Devarapalle", "Gopalapuram", "Nallajerla"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Rajamahendravaram", "type": "municipal-corporation" },
+    { "name": "Mandapeta", "type": "municipality" },
+    { "name": "Kovvur", "type": "municipality" },
+    { "name": "Nidadavole", "type": "municipality" }
+  ],
+  "sources": [
+    { "url": "https://eastgodavari.ap.gov.in/mandals/", "title": "Mandals | District East Godavari (division-wise list, 22 mandals)", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://eastgodavari.ap.gov.in/about-district/", "title": "About District | District East Godavari (2 revenue divisions, 22 mandals after 3 mandals added from Konaseema)", "accessed": "2026-11-10", "covers": ["mandals", "divisions", "reorganisation"] },
+    { "url": "https://eastgodavari.ap.gov.in/", "title": "District East Godavari home page (2 divisions, 22 mandals, 3 municipalities)", "accessed": "2026-11-10", "covers": ["mandals", "divisions", "ulbs"] },
+    { "url": "https://eastgodavari.ap.gov.in/notice/restructuring-of-east-godavari-and-dr-b-r-ambedkar-konaseema-districts-shifting-of-mandals-from-one-district-to-another-district-final-notification/", "title": "Restructuring of East Godavari and Dr. B.R. Ambedkar Konaseema districts - Shifting of mandals - Final Notification", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.951/", "title": "G.O.Ms.No.520, Revenue (Lands-IV), 30 Dec 2025 (AP Gazette Extraordinary No. 951)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.thehansindia.com/andhra-pradesh/eg-to-see-geographic-change-with-addition-of-3-mandals-1027082", "title": "EG to see geographic change with addition of 3 mandals (The Hans India, 29 Nov 2025)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://eastgodavari.ap.gov.in/public-utility/rajamahendravaram-municipal-corporation/", "title": "Rajamahendravaram Municipal Corporation | District East Godavari", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://eastgodavari.ap.gov.in/public-utility/mandapeta-municipality/", "title": "MANDAPETA MUNICIPALITY | District East Godavari", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY 2.0 (MoHUA)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "The district mandal page already reflects G.O.Ms.No.520 dated 30 Dec 2025: Mandapeta, Rayavaram and Kapileswarapuram (moved from Konaseema) are listed under Rajamahendravaram division, giving 13 + 9 = 22 mandals, matching the about page and home page. Mandal names keep the site's spellings Rajahmundry Rural and Rajahmundry Urban, while the division and the corporation use Rajamahendravaram. The district's public-utility municipality listing is stale (it still shows ULBs of the undivided pre-2022 district such as Kakinada and Amalapuram), so ULBs were taken from the home page count of 3 municipalities plus the PMAY 2.0 district-wise list (Rajahmundry MC, Mandapeta, Kovvur, Nidadavole); Kovvur and Nidadavole also have official municipal sites at kovvur.cdma.ap.gov.in and nidadavole.cdma.ap.gov.in.",
+  "verified": true
+}

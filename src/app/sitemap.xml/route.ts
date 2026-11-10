@@ -1,10 +1,9 @@
-import { absoluteLoc, xmlEscape } from "@/seo/sitemaps";
+import { sitemapIndex } from "@/seo/sitemaps";
+
+export const dynamic = "force-dynamic";
 
 export function GET() {
-  const groups = ["core", "services", "locations", "coverage"];
-  const body = `<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${groups.map((group) => `  <sitemap><loc>${xmlEscape(absoluteLoc(`/sitemaps/${group}.xml`))}</loc></sitemap>`).join("\n")}
-</sitemapindex>`;
-  return new Response(body, { headers: { "Content-Type": "application/xml" } });
+  return new Response(sitemapIndex(), {
+    headers: { "Content-Type": "application/xml", "Cache-Control": "public, max-age=3600, s-maxage=3600" },
+  });
 }

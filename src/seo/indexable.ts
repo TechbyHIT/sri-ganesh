@@ -3,6 +3,10 @@ import { TEMPLATE_VERSION, type PageRecord } from "@/seo/types";
 
 let byPath: Map<string, PageRecord> | null = null;
 
+export function resetRegistryCache() {
+  byPath = null;
+}
+
 export function registryByPath() {
   if (byPath) return byPath;
   byPath = new Map();

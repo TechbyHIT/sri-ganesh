@@ -1,0 +1,38 @@
+{
+  "name": "Prakasam",
+  "slug": "prakasam",
+  "headquarters": "Ongole",
+  "officialSite": "https://prakasam.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Ongole",
+      "mandals": ["Chimakurthi", "Kothapatnam", "Maddipadu", "Naguluppalapadu", "Ongole Urban", "Tanguturu", "Santhanuthalapadu", "Kondapi", "Ongole Rural", "Singarayakonda", "Zarugumalli"]
+    },
+    {
+      "name": "Addanki",
+      "mandals": ["Darsi", "Donakonda", "Thallur", "Mundlamuru", "Santhamaguluru", "Kurichedu", "Ballikurava", "Addanki", "Janakavarampanguluru", "Korisapadu"]
+    },
+    {
+      "name": "Kandukuru",
+      "mandals": ["Marripudi", "Kandukuru", "Gudluru", "Ulavapadu", "Ponnaluru", "Voletivaripalem", "Lingasamudram"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Ongole", "type": "municipal-corporation" },
+    { "name": "Kandukur", "type": "municipality" },
+    { "name": "Addanki", "type": "nagar-panchayat" },
+    { "name": "Chimakurthy", "type": "nagar-panchayat" },
+    { "name": "Darsi", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://prakasam.ap.gov.in/tehsil/", "title": "DIVISION WISE MANDALS LIST | Prakasam District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://prakasam.ap.gov.in/subdivision-blocks/", "title": "Revenue Divisions | Prakasam District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://prakasam.ap.gov.in/", "title": "Prakasam District, Government of Andhra Pradesh (District at a Glance: Mandals 28)", "accessed": "2026-11-10", "covers": ["mandals"] },
+    { "url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/prakasam-district-expanded-to-28-mandals-after-reorganisation-1927251", "title": "Prakasam District Expanded to 28 Mandals After Reorganisation - Deccan Chronicle", "accessed": "2026-11-10", "covers": ["reorganisation", "divisions"] },
+    { "url": "https://www.sakshi.com/telugu-news/prakasam/2665601", "title": "స్వరూపం మారనున్న ఉమ్మడి జిల్లా.. - Sakshi (G.O.Ms.No.523/524)", "accessed": "2026-11-10", "covers": ["reorganisation", "divisions"] },
+    { "url": "https://apcmms.ap.gov.in/apiv1/public/web/ulbdetails/ulbprofiles", "title": "CDMA ULB profiles data (feeds https://cdma.ap.gov.in/district-web-directory/)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "Restructured on 31 Dec 2025 by G.O.Ms.No.523: western mandals went to the new Markapuram district; the Addanki constituency (from Bapatla) and Kandukur constituency (from SPSR Nellore) were added, along with Marripudi and Ponnaluru. The official division-wise list (28 mandals across Ongole 11, Addanki 10, Kandukuru 7) matches the Deccan Chronicle and Sakshi reports of the G.O. Official page spellings are used, with only internal spaces removed where the site splits a single name (site shows 'Kotha patnam', 'Maddi padu', 'Naguluppala padu', 'Santha Nuthalapadu', 'Singaraya konda', 'DonaKonda'). News reports spell some names differently (e.g. Jarugumalli, Tangutur, Tallur, J. Panguluru, Valetivaripalem); the official site's spellings are kept. CDMA grades Addanki, Chimakurthy and Darsi as NP (nagar panchayat), Kandukur as Grade II and Ongole as Corp; Wikipedia's grade table disagrees for Addanki/Chimakurthy/Darsi, and CDMA is followed.",
+  "verified": true
+}

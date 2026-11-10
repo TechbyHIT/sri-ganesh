@@ -1,0 +1,27 @@
+{
+  "name": "Polavaram",
+  "slug": "polavaram",
+  "headquarters": "Rampachodavaram",
+  "officialSite": "https://polavaram.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Rampachodavaram",
+      "mandals": ["Rampachodavaram", "Devipatnam", "Y. Ramavaram", "Gurtedu", "Addateegala", "Gangavaram", "Maredumilli", "Rajavommangi"]
+    },
+    {
+      "name": "Chinturu",
+      "mandals": ["Yetapaka", "Chinturu", "Kunavaram", "Vara Ramachandrapuram"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [],
+  "sources": [
+    { "url": "https://polavaram.ap.gov.in/about-district/administrative-setup/mandal-tahsil/", "title": "Mandal/Tahsil | Polavaram District, Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://polavaram.ap.gov.in/about-district/administrative-setup/revenue-divisions/", "title": "Revenue Divisions | Polavaram District, Andhra Pradesh", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/ap-issues-go-creating-polavaram-district-with-rampachodavaram-as-headquarters-1927331", "title": "AP Issues GO Creating Polavaram District With Rampachodavaram as Headquarters - Deccan Chronicle (G.O.Ms.No.517, 30 Dec 2025)", "accessed": "2026-11-10", "covers": ["reorganisation", "mandals", "divisions"] },
+    { "url": "https://www.scribd.com/document/935556507/Gazette-Copy-of-g-o-Ms-No-377-Bifurcation-of-y-Ramavaram-Mandal", "title": "AP Gazette Extraordinary No.693, 15 Oct 2025 - G.O.Ms.No.377: bifurcation of Y.Ramavaram mandal into Gurthedu and Y.Ramavaram mandals", "accessed": "2026-11-10", "covers": ["mandals", "reorganisation"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/two-new-districts-polavaram-and-markapuram-come-into-force/article70461053.ece", "title": "Two new districts, Polavaram and Markapuram, come into force - The Hindu", "accessed": "2026-11-10", "covers": ["reorganisation"] }
+  ],
+  "notes": "The official site lists 12 mandals (8 in Rampachodavaram division, 4 in Chinturu), which differs from the brief's figure of 11 mandals. The 12th is Gurtedu, carved out of Y. Ramavaram mandal by G.O.Ms.No.377 (15 Oct 2025). The Deccan Chronicle report on G.O.Ms.No.517 and G.O.Ms.No.403 (5 Jul 2026, sanctioning posts for the new Gurthedu mandal) both confirm it. The Hindu and New Indian Express gave 11, apparently counting before Gurtedu was operational. Spellings vary between 'Gurtedu' (official site), 'Gurthedu' (G.O.) and 'Gutheredu' (press); the official-site spelling is used. Rampachodavaram is the HQ. No municipality or nagar panchayat could be verified in the district: the official home page's 'Muncipality' field is blank and none appears in the PMAY-U 2.0 ULB list. The official home page still has placeholder text copied from another district.",
+  "verified": true
+}

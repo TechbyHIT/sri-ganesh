@@ -1,0 +1,33 @@
+{
+  "name": "Markapuram",
+  "slug": "markapuram",
+  "headquarters": "Markapuram",
+  "officialSite": "https://markapuram.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Markapuram",
+      "mandals": ["Giddalur", "Bestavaripeta", "Racherla", "Komarolu", "Cumbum", "Ardhaveedu", "Markapuram", "Tarlupadu", "Yerragondapalem", "Pullalacheruvu", "Tripuranthakam", "Dornala", "Peddaaraveedu", "Podili", "Konakanamitla"]
+    },
+    {
+      "name": "Kanigiri",
+      "mandals": ["Hanumanthunipadu", "Veligandla", "Kanigiri", "Pamur", "Pedacherlopalle", "Chandrasekharapuram"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Markapur", "type": "municipality" },
+    { "name": "Giddalur", "type": "nagar-panchayat" },
+    { "name": "Kanigiri", "type": "nagar-panchayat" },
+    { "name": "Podili", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://markapuram.ap.gov.in/mandals/", "title": "Mandals | Markapuram District, Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals"] },
+    { "url": "https://markapuram.ap.gov.in/revenue-divisions/", "title": "Revenue Divisons | Markapuram District, Andhra Pradesh", "accessed": "2026-11-10", "covers": ["divisions"] },
+    { "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.955/", "title": "Formation of new district Markapuram - Final Notification [G.O.Ms.No.524, Revenue (Lands-IV), 30 Dec 2025] (AP Gazette Extraordinary No. 955)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.sakshi.com/telugu-news/prakasam/2665601", "title": "స్వరూపం మారనున్న ఉమ్మడి జిల్లా.. - Sakshi, 31 Dec 2025", "accessed": "2026-11-10", "covers": ["divisions", "reorganisation"] },
+    { "url": "https://www.newindianexpress.com/states/andhra-pradesh/2025/Dec/31/two-new-districts-come-into-existence-in-andhra-pradesh", "title": "Two new districts come into existence in Andhra Pradesh - New Indian Express", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://apcmms.ap.gov.in/apiv1/public/web/ulbdetails/ulbprofiles", "title": "CDMA ULB profiles data (feeds https://cdma.ap.gov.in/district-web-directory/)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "New district formed 31 Dec 2025 under G.O.Ms.No.524. The official site (last updated 31.01.2026) lists the 21 mandals and the two divisions (Markapuram, Kanigiri) but does not show which mandal belongs to which division. The division mapping (Markapuram 15, Kanigiri 6) comes from Sakshi's 31 Dec 2025 report on the G.O., which notes Konakanamitla moved from Kanigiri to Markapuram division; Wikipedia agrees. The gazette text could not be extracted (scanned pages). The November 2025 draft (Hans India) had put Giddalur, Bestavaripeta, Racherla, Komarolu, Cumbum and Ardhaveedu in Kanigiri division; this was superseded by the final notification. Mandal spellings follow the official mandals page (e.g. Cumbum, not Kambham). The CDMA feed names the municipality 'Markapur' (Grade II), and lists Giddalur, Kanigiri and Podili as NP (nagar panchayat). verified=false only because the division-to-mandal mapping is not on an official page.",
+  "verified": false
+}

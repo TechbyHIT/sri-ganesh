@@ -1,0 +1,30 @@
+{
+  "name": "Guntur",
+  "slug": "guntur",
+  "headquarters": "Guntur",
+  "officialSite": "https://guntur.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Guntur",
+      "mandals": ["Guntur East", "Guntur West", "Medikonduru", "Pedakakani", "Pedanandipadu", "Phirangipuram", "Prathipadu", "Tadikonda", "Thullur", "Vatticherukuru"]
+    },
+    {
+      "name": "Tenali",
+      "mandals": ["Mangalagiri", "Tadepalle", "Duggirala", "Kollipara", "Chebrolu", "Kakumanu", "Ponnur", "Tenali"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Guntur", "type": "municipal-corporation" },
+    { "name": "Mangalagiri Tadepalli", "type": "municipal-corporation" },
+    { "name": "Tenali", "type": "municipality" },
+    { "name": "Ponnur", "type": "municipality" }
+  ],
+  "sources": [
+    { "url": "https://guntur.ap.gov.in/mandals/", "title": "Mandals | Guntur District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cabinet-clears-district-reorganisation-mandal-realignment/article70450525.ece", "title": "A.P. Cabinet clears district reorganisation, mandal realignment - The Hindu", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://apcmms.ap.gov.in/apiv1/public/web/ulbdetails/ulbprofiles", "title": "CDMA ULB profiles data (feeds https://cdma.ap.gov.in/district-web-directory/)", "accessed": "2026-11-10", "covers": ["ulbs"] }
+  ],
+  "notes": "Guntur is one of the nine districts left unchanged by the December 2025 reorganisation (The Hindu, Cabinet decision). The official mandals page shows 'Last Updated 27.04.2022' but this is consistent with no change. ULB names and grades come from the CDMA ULB profiles feed behind the CDMA district web directory (grade 'Corp' mapped to municipal-corporation; Special/Selection/I/II/III grades mapped to municipality). CDMA lists Tenali as Special grade and Ponnur as Grade II.",
+  "verified": true
+}

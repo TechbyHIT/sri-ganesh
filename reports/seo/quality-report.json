@@ -1,63 +1,56 @@
 {
-  "generatedAt": "2026-10-11T05:33:42.256Z",
+  "generatedAt": "2026-11-10T03:23:22.863Z",
   "templateVersion": 3,
-  "batchSize": 80,
   "counts": {
-    "publish": 22487,
-    "review": 40,
-    "exclude": 9914
+    "publish": 26411,
+    "review": 738,
+    "exclude": 11879
+  },
+  "byKind": {
+    "state": {
+      "publish": 1,
+      "review": 0
+    },
+    "service": {
+      "publish": 22,
+      "review": 0
+    },
+    "city": {
+      "publish": 96,
+      "review": 0
+    },
+    "area": {
+      "publish": 1365,
+      "review": 0
+    },
+    "district": {
+      "publish": 24,
+      "review": 4
+    },
+    "mandal": {
+      "publish": 0,
+      "review": 686
+    },
+    "service-city": {
+      "publish": 2112,
+      "review": 0
+    },
+    "service-area": {
+      "publish": 20266,
+      "review": 47
+    },
+    "guide": {
+      "publish": 29,
+      "review": 1
+    },
+    "guide-city": {
+      "publish": 2496,
+      "review": 0
+    }
   },
   "rejected": [
     {
-      "path": "/services/invisible-grills/visakhapatnam/gajuwaka",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
       "path": "/services/invisible-grills/visakhapatnam/rushikonda",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/visakhapatnam/pendurthi",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/visakhapatnam/simhachalam",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/visakhapatnam/sabbavaram",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/visakhapatnam/old-gajuwaka",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/visakhapatnam/narava",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/visakhapatnam/sontyam",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/visakhapatnam/aganampudi",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/visakhapatnam/thimmapuram",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/visakhapatnam/lankelapalem",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/visakhapatnam/pisinikada",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/narsipatnam/agency-approach",
       "reason": "No verified local overlap between this service and this neighbourhood"
     },
     {
@@ -65,15 +58,7 @@
       "reason": "No verified local overlap between this service and this neighbourhood"
     },
     {
-      "path": "/services/invisible-grills/srikakulam/srikakulam-school-ground",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
       "path": "/services/invisible-grills/kakinada/ramanayyapeta",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/kakinada/turangi",
       "reason": "No verified local overlap between this service and this neighbourhood"
     },
     {
@@ -89,26 +74,6 @@
       "reason": "No verified local overlap between this service and this neighbourhood"
     },
     {
-      "path": "/services/invisible-grills/eluru/sanivarapupeta",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/bhimavaram/juvvalapalem",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/bhimavaram/housing-board",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/bhimavaram/bhimavaram-housing-board-colony",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/bhimavaram/bhimavaram-rtc-complex-side",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
       "path": "/services/invisible-grills/bhimavaram/bhimavaram-school-ground",
       "reason": "No verified local overlap between this service and this neighbourhood"
     },
@@ -121,31 +86,7 @@
       "reason": "No verified local overlap between this service and this neighbourhood"
     },
     {
-      "path": "/services/invisible-grills/vijayawada/gollapudi",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/vijayawada/ibrahimpatnam-vij",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/vijayawada/nunna",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/vijayawada/siddhartha-nagar",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
       "path": "/services/invisible-grills/guntur/pattabhipuram",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/guntur/nallapadu",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
-      "path": "/services/invisible-grills/guntur/pedakakani",
       "reason": "No verified local overlap between this service and this neighbourhood"
     },
     {
@@ -157,352 +98,418 @@
       "reason": "No verified local overlap between this service and this neighbourhood"
     },
     {
-      "path": "/services/invisible-grills/chirala/chirala-temple-street",
-      "reason": "No verified local overlap between this service and this neighbourhood"
-    },
-    {
       "path": "/services/invisible-grills/chirala/chirala-school-ground",
       "reason": "No verified local overlap between this service and this neighbourhood"
     },
     {
-      "path": "/services/invisible-grills/nellore/vedayapalem",
+      "path": "/services/invisible-grills/tirupati/korlagunta",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/tirupati/tirupati-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/chittoor/chittoor-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/kadapa/kadapa-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/anantapur/anantapur-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/hindupur/hindupur-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/kurnool/kurnool-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/nandyal/nandyal-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/narasapuram/narasapuram-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/nuzvid/nuzvid-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/jangareddygudem/jangareddygudem-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/salur/salur-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/tekkali/tekkali-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/amaravati/amaravati-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/srikalahasti/srikalahasti-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/payakaraopeta/payakaraopeta-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/ramachandrapuram/ramachandrapuram-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/ravulapalem/ravulapalem-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/razole/razole-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/kovvur/kovvur-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/sattenapalle/sattenapalle-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/macherla/macherla-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/markapur/markapur-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/kandukur/kandukur-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/sullurpeta/sullurpeta-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/puttur/puttur-school-ground",
+      "reason": "No verified local overlap between this service and this neighbourhood"
+    },
+    {
+      "path": "/services/invisible-grills/palamaner/palamaner-school-ground",
       "reason": "No verified local overlap between this service and this neighbourhood"
     }
   ],
   "review": [
     {
-      "id": "service-area:invisible-grills:narsipatnam-town",
-      "path": "/services/invisible-grills/narsipatnam/narsipatnam-town",
-      "kind": "service-area",
+      "id": "mandal:alluri-sitharama-raju:ananthagiri",
+      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/ananthagiri",
+      "kind": "mandal",
       "status": "review",
       "index": false,
-      "version": 1,
-      "inputHash": "e8afc7a52dc22579",
-      "score": 68,
-      "title": "Invisible Grills in Narsipatnam town, Narsipatnam",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:invisible-grills:palasa-town",
-      "path": "/services/invisible-grills/palasa/palasa-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "517dcbc71b389622",
-      "score": 68,
-      "title": "Invisible Grills in Palasa town, Palasa",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:invisible-grills:paderu-town",
-      "path": "/services/invisible-grills/paderu/paderu-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "e991ac66e2e3d1ff",
-      "score": 68,
-      "title": "Invisible Grills in Paderu town, Paderu",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:safety-nets:narsipatnam-town",
-      "path": "/services/safety-nets/narsipatnam/narsipatnam-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "0acdbf60bc3ecdf0",
-      "score": 68,
-      "title": "Safety Nets in Narsipatnam town, Narsipatnam",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:safety-nets:palasa-town",
-      "path": "/services/safety-nets/palasa/palasa-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "b207b3eddeb6dd37",
-      "score": 68,
-      "title": "Safety Nets in Palasa town, Palasa",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:safety-nets:paderu-town",
-      "path": "/services/safety-nets/paderu/paderu-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "03d4939d9629b837",
-      "score": 68,
-      "title": "Safety Nets in Paderu town, Paderu",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:balcony-safety-nets:narsipatnam-town",
-      "path": "/services/balcony-safety-nets/narsipatnam/narsipatnam-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "bff794254328d462",
-      "score": 68,
-      "title": "Balcony Safety Nets in Narsipatnam town, Narsipatnam",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:balcony-safety-nets:palasa-town",
-      "path": "/services/balcony-safety-nets/palasa/palasa-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "80fc047a7ec4f552",
-      "score": 68,
-      "title": "Balcony Safety Nets in Palasa town, Palasa",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:balcony-safety-nets:paderu-town",
-      "path": "/services/balcony-safety-nets/paderu/paderu-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "1342f30a2c3df80a",
-      "score": 68,
-      "title": "Balcony Safety Nets in Paderu town, Paderu",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:children-safety-nets:narsipatnam-town",
-      "path": "/services/children-safety-nets/narsipatnam/narsipatnam-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "1a8401520c9ce8b2",
-      "score": 68,
-      "title": "Children Safety Nets in Narsipatnam town, Narsipatnam",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:children-safety-nets:palasa-town",
-      "path": "/services/children-safety-nets/palasa/palasa-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "1ed2ab199e7251d3",
-      "score": 68,
-      "title": "Children Safety Nets in Palasa town, Palasa",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:children-safety-nets:paderu-town",
-      "path": "/services/children-safety-nets/paderu/paderu-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "8a877481d4943df9",
-      "score": 68,
-      "title": "Children Safety Nets in Paderu town, Paderu",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:pet-safety-nets:narsipatnam-town",
-      "path": "/services/pet-safety-nets/narsipatnam/narsipatnam-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "b349f94a116492fd",
-      "score": 68,
-      "title": "Pet Safety Nets in Narsipatnam town, Narsipatnam",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:pet-safety-nets:palasa-town",
-      "path": "/services/pet-safety-nets/palasa/palasa-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "49f2394c7809cc05",
-      "score": 68,
-      "title": "Pet Safety Nets in Palasa town, Palasa",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:pet-safety-nets:paderu-town",
-      "path": "/services/pet-safety-nets/paderu/paderu-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "332821f3c492656f",
-      "score": 68,
-      "title": "Pet Safety Nets in Paderu town, Paderu",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:pigeon-nets:palasa-town",
-      "path": "/services/pigeon-nets/palasa/palasa-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "704556ad7b87a57a",
-      "score": 68,
-      "title": "Pigeon Nets in Palasa town, Palasa",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:pigeon-nets:paderu-town",
-      "path": "/services/pigeon-nets/paderu/paderu-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "a226cf0804cbcd22",
-      "score": 68,
-      "title": "Pigeon Nets in Paderu town, Paderu",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:bird-nets:paderu-town",
-      "path": "/services/bird-nets/paderu/paderu-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "bc437abbcf0f4b5c",
-      "score": 68,
-      "title": "Bird Nets in Paderu town, Paderu",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:duct-area-nets:paderu-town",
-      "path": "/services/duct-area-nets/paderu/paderu-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "f385f4e3968c820e",
-      "score": 68,
-      "title": "Duct Area Nets in Paderu town, Paderu",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    },
-    {
-      "id": "service-area:terrace-safety-nets:narsipatnam-town",
-      "path": "/services/terrace-safety-nets/narsipatnam/narsipatnam-town",
-      "kind": "service-area",
-      "status": "review",
-      "index": false,
-      "version": 1,
-      "inputHash": "7e175bba269f4fc8",
-      "score": 68,
-      "title": "Terrace Safety Nets in Narsipatnam town, Narsipatnam",
-      "reasons": [
-        "Keyword overuse"
-      ],
-      "updatedAt": "2026-10-11T05:33:42.256Z"
-    }
-  ],
-  "samples": [
-    {
-      "id": "service:invisible-grills",
-      "path": "/services/invisible-grills",
-      "status": "publish",
+      "version": 2,
+      "inputHash": "04ab7ee697fa86cb",
       "score": 88,
-      "title": "Invisible Grills in Andhra Pradesh",
-      "reasons": []
+      "title": "Invisible Grills & Safety Nets in Ananthagiri Mandal, Alluri Sitharama Raju",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
     },
     {
-      "id": "service-city:invisible-grills:visakhapatnam",
-      "path": "/services/invisible-grills/visakhapatnam",
-      "status": "publish",
+      "id": "mandal:alluri-sitharama-raju:araku-valley",
+      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/araku-valley",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "1a600b673a977bf8",
       "score": 88,
-      "title": "Invisible Grills in Visakhapatnam",
-      "reasons": []
+      "title": "Invisible Grills & Safety Nets in Araku Valley Mandal, Alluri Sitharama Raju",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
     },
     {
-      "id": "service-city:invisible-grills:kurnool",
-      "path": "/services/invisible-grills/kurnool",
-      "status": "publish",
+      "id": "mandal:alluri-sitharama-raju:dumbriguda",
+      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/dumbriguda",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "8607027f3006299f",
       "score": 88,
-      "title": "Invisible Grills in Kurnool",
-      "reasons": []
+      "title": "Invisible Grills & Safety Nets in Dumbriguda Mandal, Alluri Sitharama Raju",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
     },
     {
-      "id": "city:visakhapatnam",
-      "path": "/locations/andhra-pradesh/visakhapatnam",
-      "status": "publish",
+      "id": "mandal:alluri-sitharama-raju:hukumpeta",
+      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/hukumpeta",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "e8f11a5ff784be78",
       "score": 88,
-      "title": "Invisible Grills and Safety Nets in Visakhapatnam",
-      "reasons": []
+      "title": "Invisible Grills & Safety Nets in Hukumpeta Mandal, Alluri Sitharama Raju",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:alluri-sitharama-raju:munchingput",
+      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/munchingput",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "92b8aa1776ba9fe7",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in Munchingput Mandal, Alluri Sitharama Raju",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:alluri-sitharama-raju:pedabayalu",
+      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/pedabayalu",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "5ba95ae2abf974d8",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in Pedabayalu Mandal, Alluri Sitharama Raju",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:alluri-sitharama-raju:paderu",
+      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/paderu",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "e6109a03757fbe6d",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in Paderu Mandal, Alluri Sitharama Raju",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:alluri-sitharama-raju:g-madugula",
+      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/g-madugula",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "c492a313b404601d",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in G.Madugula Mandal, Alluri Sitharama Raju",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:alluri-sitharama-raju:chinthapalli",
+      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/chinthapalli",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "d9bf4e74996ea363",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in Chinthapalli Mandal, Alluri Sitharama Raju",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:alluri-sitharama-raju:g-k-veedhi",
+      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/g-k-veedhi",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "319fbc5a080edf0c",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in G.K.Veedhi Mandal, Alluri Sitharama Raju",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:alluri-sitharama-raju:koyyuru",
+      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/koyyuru",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "20b8a82f721b0404",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in Koyyuru Mandal, Alluri Sitharama Raju",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:anakapalli:anakapalli",
+      "path": "/locations/andhra-pradesh/districts/anakapalli/anakapalli",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "28678bd51b5c15ac",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in Anakapalli Mandal, Anakapalli",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:anakapalli:butchiahpeta",
+      "path": "/locations/andhra-pradesh/districts/anakapalli/butchiahpeta",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "6a38d9af2f274ebd",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in Butchiahpeta Mandal, Anakapalli",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:anakapalli:kasimkota",
+      "path": "/locations/andhra-pradesh/districts/anakapalli/kasimkota",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "41a6285ce45084b4",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in Kasimkota Mandal, Anakapalli",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:anakapalli:chodavaram",
+      "path": "/locations/andhra-pradesh/districts/anakapalli/chodavaram",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "d886a8a1d27b383a",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in Chodavaram Mandal, Anakapalli",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:anakapalli:devarapalli",
+      "path": "/locations/andhra-pradesh/districts/anakapalli/devarapalli",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "b2799cbbc2fd4ed6",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in Devarapalli Mandal, Anakapalli",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:anakapalli:k-kotapadu",
+      "path": "/locations/andhra-pradesh/districts/anakapalli/k-kotapadu",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "c3a416fc1b944796",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in K.Kotapadu Mandal, Anakapalli",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:anakapalli:munagapaka",
+      "path": "/locations/andhra-pradesh/districts/anakapalli/munagapaka",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "a92053c261bd168a",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in Munagapaka Mandal, Anakapalli",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:anakapalli:parawada",
+      "path": "/locations/andhra-pradesh/districts/anakapalli/parawada",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "2ac44b29999985a7",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in Parawada Mandal, Anakapalli",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
+    },
+    {
+      "id": "mandal:anakapalli:sabbavaram",
+      "path": "/locations/andhra-pradesh/districts/anakapalli/sabbavaram",
+      "kind": "mandal",
+      "status": "review",
+      "index": false,
+      "version": 2,
+      "inputHash": "91adb7c4656986d3",
+      "score": 88,
+      "title": "Invisible Grills & Safety Nets in Sabbavaram Mandal, Anakapalli",
+      "reasons": [
+        "Directory page: no local note has been written for this mandal yet"
+      ],
+      "updatedAt": "2026-11-10T03:23:22.863Z"
     }
   ]
 }

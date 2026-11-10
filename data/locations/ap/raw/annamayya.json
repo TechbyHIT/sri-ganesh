@@ -1,0 +1,38 @@
+{
+  "name": "Annamayya",
+  "slug": "annamayya",
+  "headquarters": "Madanapalle",
+  "officialSite": "https://annamayya.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Madanapalle",
+      "mandals": ["Madanapalle", "Nimmanapalle", "Ramasamudram", "Thamballapalle", "Mulakalacheruvu", "Peddamandyam", "Kurabalakota", "Peddathippasamudram", "B.Kothakota", "Chowdepalle", "Punganur"]
+    },
+    {
+      "name": "Pileru",
+      "mandals": ["Kalikiri", "Valmikipuram", "Pileru", "Gurramkonda", "Kalakada", "Kambhavaripalle", "Sodam", "Somala"]
+    },
+    {
+      "name": "Rayachoti",
+      "mandals": ["Rayachoti", "Sambepalli", "Chinnamandem", "Galiveedu", "Lakkireddypalli", "Ramapuram"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [
+    { "name": "Madanapalle", "type": "municipality" },
+    { "name": "Punganur", "type": "municipality" },
+    { "name": "Rayachoty", "type": "municipality" },
+    { "name": "B.Kothakota", "type": "nagar-panchayat" }
+  ],
+  "sources": [
+    { "url": "https://annamayya.ap.gov.in/revenue-mandals/", "title": "Revenue Mandals | Annamayya District, Government of Andhra Pradesh", "accessed": "2026-11-10", "covers": ["mandals", "divisions"] },
+    { "url": "https://annamayya.ap.gov.in/public-utility-category/municipality/", "title": "Municipalities | Annamayya District, Government of Andhra Pradesh (pages 1-2)", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://pmay-urban.gov.in/list-ulb.pdf", "title": "List of ULBs and UDAs covered under PMAY-U 2.0 (MoHUA, Government of India)", "accessed": "2026-11-10", "covers": ["ulbs"] },
+    { "url": "https://egazette.servantsofknowledge.in/details/in.gazette.andhra_extraordinary.2025-12-30.959/", "title": "AP Gazette Extraordinary No. 959: Re-structuring of Annamayya District - headquarters at Madanapalle and creation of new revenue division - Final Notification (G.O.Ms.No.528, Revenue (Lands-IV), 30 Dec 2025)", "accessed": "2026-11-10", "covers": ["reorganisation", "divisions"] },
+    { "url": "https://www.newindianexpress.com/states/andhra-pradesh/2025/Dec/31/two-new-districts-come-into-existence-in-andhra-pradesh", "title": "Two new districts come into existence in Andhra Pradesh (New Indian Express, 31 Dec 2025)", "accessed": "2026-11-10", "covers": ["reorganisation", "divisions"] },
+    { "url": "https://www.sakshi.com/telugu-news/annamayya/2665828", "title": "Madanapalle district headquarters from today (Sakshi, 31 Dec 2025)", "accessed": "2026-11-10", "covers": ["reorganisation", "mandals", "divisions", "ulbs"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/a-sense-of-joy-and-loss-grips-annamayya-district/article70460439.ece", "title": "A sense of joy and loss grips Annamayya district (The Hindu)", "accessed": "2026-11-10", "covers": ["reorganisation"] }
+  ],
+  "notes": "The official revenue-mandals page lists 25 mandals (Madanapalle 11, Pileru 8, Rayachoti 6), which matches G.O.Ms.528 as reported by NIE, Sakshi and The Hindu. The headquarters moved from Rayachoti to Madanapalle with effect from 31 Dec 2025. Rajampet division went to YSR Kadapa, and the Railway Kodur mandals went to Tirupati. The site writes 'B[dot]Kothakota', rendered here as 'B.Kothakota'. Sakshi calls the Madanapalle mandal 'Madanapalle Rural'; the official page says 'Madanapalle'. Sakshi writes 'K.V. Palli' for the mandal the site calls 'Kambhavaripalle'. The site lists all four ULBs under 'Municipalities', but B.Kothakota is a nagar panchayat per Sakshi, the PMAY-U list ('Town Panchayat') and the 2021 DTCP ULB list ('N.P'). The site spells 'Rayachoty' for the ULB and 'Rayachoti' for the mandal. Rajampet municipality is now in YSR Kadapa.",
+  "verified": true
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Alluri Sitharama Raju",
+  "slug": "alluri-sitharama-raju",
+  "headquarters": "Paderu",
+  "officialSite": "https://allurisitharamaraju.ap.gov.in/",
+  "revenueDivisions": [
+    {
+      "name": "Paderu",
+      "mandals": ["Ananthagiri", "Araku Valley", "Dumbriguda", "Hukumpeta", "Munchingput", "Pedabayalu", "Paderu", "G.Madugula", "Chinthapalli", "G.K.Veedhi", "Koyyuru"]
+    }
+  ],
+  "unassignedMandals": [],
+  "urbanLocalBodies": [],
+  "sources": [
+    { "url": "https://allurisitharamaraju.ap.gov.in/history/", "title": "History | Alluri Sitharamaraju District", "accessed": "2026-11-10", "covers": ["mandals", "reorganisation"] },
+    { "url": "https://allurisitharamaraju.ap.gov.in/", "title": "Alluri Sitharamaraju District (home page: 1 revenue division, 11 mandals, 0 municipalities)", "accessed": "2026-11-10", "covers": ["divisions", "mandals", "ulbs"] },
+    { "url": "https://allurisitharamaraju.ap.gov.in/mandals/", "title": "MANDALS | Alluri Sitharamaraju District", "accessed": "2026-11-10", "covers": ["mandals"] },
+    { "url": "https://egazette.servantsofknowledge.in/sources/andhra_extraordinary/?page=2&year=2025", "title": "Andhra Pradesh Extraordinary Gazette index 2025 (G.O.Ms.No.516, Revenue (Lands-IV), 30 Dec 2025: re-structuring of ASR district, HQ at Paderu)", "accessed": "2026-11-10", "covers": ["reorganisation"] },
+    { "url": "https://www.thehindu.com/news/national/andhra-pradesh/two-new-districts-polavaram-and-markapuram-come-into-force/article70461053.ece", "title": "Two new districts, Polavaram and Markapuram, come into force - The Hindu", "accessed": "2026-11-10", "covers": ["reorganisation"] }
+  ],
+  "notes": "After Polavaram district was carved out on 31 Dec 2025, the official site shows 11 mandals, 1 revenue division and 0 municipalities. The 11 mandal names come from the official history page, because the official mandals page states the count but has no table. The official site does not name the single division explicitly; it is recorded as Paderu (the pre-existing Paderu RDO, which is also the district HQ under G.O.Ms.No.516), and secondary sources agree. Official short forms are kept: Munchingput (also written Munchingiputtu), G.Madugula (Ganagaraju Madugula) and G.K.Veedhi (Gudem Kotha Veedhi). No urban local bodies exist; the home page shows Municipality 0.",
+  "verified": true
+}
