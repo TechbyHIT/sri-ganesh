@@ -44,8 +44,8 @@ Unknown paths call `notFound()`. The 404 document is `noindex` and links to loca
 
 Location rules on top of the quality gate (`policy()` in `src/seo/catalog.ts`):
 
-- District pages publish only when the district file is `verified` (divisions and mandals cross-checked against official sources). Bapatla, Eluru, Markapuram and Sri Sathya Sai are held until their division mapping is confirmed.
-- Mandal pages are directory pages (administrative facts, villages, nearest serviced pages, sources). Without admin-written local content they are always `review` / noindex, because 686 pages of facts plus a service list would be thin.
+- District pages for Bapatla, Eluru, Markapuram and Sri Sathya Sai are indexed, and the page says which part of the division mapping is still being confirmed. A mandal whose revenue division is not on an official list says so on the page instead of being left out.
+- Mandal pages are directory pages (administrative facts, the official village list, nearest serviced pages, sources). A mandal with that village list is indexed when the quality gate finds the page long enough and different from the others. A mandal with neither a village list nor admin-written local content stays `review` / noindex.
 - When an admin writes local content for a mandal (intro ≥ 45 words, visit note ≥ 12 words, housing, chosen services) and enables it, the mandal is promoted to a place: its mandal page becomes indexable-eligible and `/services/{service}/{place}` pages are generated for the chosen services. All of them still pass the quality gate and skeleton-collision check.
 - Admin page edits (title, description, H1, local note, FAQs, image) change the page `inputHash`; until the registry is regenerated the live assessment is used, so an edit cannot sneak an unapproved page into the index.
 

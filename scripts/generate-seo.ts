@@ -17,8 +17,13 @@ function assertRepresentative(catalog: Catalog) {
   if (vizag.skeleton === kurnool.skeleton) throw new Error("City pages collapsed to the same skeleton");
   const cricketArea = catalog.rejected.find((item) => item.path === "/services/cricket-nets/visakhapatnam/madhurawada");
   if (!cricketArea) throw new Error("Cricket nets in Madhurawada should be rejected for lack of local overlap");
-  const unwritten = catalog.pages.find((page) => page.kind === "mandal" && !page.params.city && page.status === "publish");
-  if (unwritten) throw new Error(`Mandal directory page without local content was published: ${unwritten.path}`);
+  const publishedBare = catalog.pages.find((page) =>
+    page.kind === "mandal" &&
+    !page.params.city &&
+    page.status === "publish" &&
+    !page.modules.some((module) => module.type === "list" && module.title.startsWith("Villages in")),
+  );
+  if (publishedBare) throw new Error(`Mandal directory page without a village list was published: ${publishedBare.path}`);
   const titles = new Set<string>();
   for (const page of catalog.pages.filter((item) => item.status === "publish")) {
     if (titles.has(page.title)) throw new Error(`Duplicate title: ${page.title}`);

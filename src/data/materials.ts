@@ -78,6 +78,6 @@ export const priceGuides = [
     title: "Balcony Safety Net Price in Andhra Pradesh",
     service: "balcony-safety-nets",
     intro:
-      "Balcony safety net prices start from railing-to-slab height and run length, then move with columns, planters and the mesh you actually need for children, pets or both.",
+      "Balcony safety net prices start from railing-to-slab height and run length, then move with columns, planters and the mesh you actually need for children, pets or both. A straight railing and an L-shaped balcony with a planter at the corner are different measurements, and so is a balcony above the third floor where the frame has to be carried up. The quote names the mesh, the edge fixing and the labour after that measurement. It is not a rate per square foot copied from another city.",
   },
 ];

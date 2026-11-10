@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-10T03:23:22.863Z",
+  "generatedAt": "2026-11-10T03:40:05.241Z",
   "templateVersion": 3,
   "counts": {
-    "publish": 26411,
-    "review": 738,
+    "publish": 27149,
+    "review": 0,
     "exclude": 11879
   },
   "byKind": {
@@ -24,24 +24,24 @@
       "review": 0
     },
     "district": {
-      "publish": 24,
-      "review": 4
+      "publish": 28,
+      "review": 0
     },
     "mandal": {
-      "publish": 0,
-      "review": 686
+      "publish": 686,
+      "review": 0
     },
     "service-city": {
       "publish": 2112,
       "review": 0
     },
     "service-area": {
-      "publish": 20266,
-      "review": 47
+      "publish": 20313,
+      "review": 0
     },
     "guide": {
-      "publish": 29,
-      "review": 1
+      "publish": 30,
+      "review": 0
     },
     "guide-city": {
       "publish": 2496,
@@ -210,306 +210,5 @@
       "reason": "No verified local overlap between this service and this neighbourhood"
     }
   ],
-  "review": [
-    {
-      "id": "mandal:alluri-sitharama-raju:ananthagiri",
-      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/ananthagiri",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "04ab7ee697fa86cb",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Ananthagiri Mandal, Alluri Sitharama Raju",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:alluri-sitharama-raju:araku-valley",
-      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/araku-valley",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "1a600b673a977bf8",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Araku Valley Mandal, Alluri Sitharama Raju",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:alluri-sitharama-raju:dumbriguda",
-      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/dumbriguda",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "8607027f3006299f",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Dumbriguda Mandal, Alluri Sitharama Raju",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:alluri-sitharama-raju:hukumpeta",
-      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/hukumpeta",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "e8f11a5ff784be78",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Hukumpeta Mandal, Alluri Sitharama Raju",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:alluri-sitharama-raju:munchingput",
-      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/munchingput",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "92b8aa1776ba9fe7",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Munchingput Mandal, Alluri Sitharama Raju",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:alluri-sitharama-raju:pedabayalu",
-      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/pedabayalu",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "5ba95ae2abf974d8",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Pedabayalu Mandal, Alluri Sitharama Raju",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:alluri-sitharama-raju:paderu",
-      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/paderu",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "e6109a03757fbe6d",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Paderu Mandal, Alluri Sitharama Raju",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:alluri-sitharama-raju:g-madugula",
-      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/g-madugula",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "c492a313b404601d",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in G.Madugula Mandal, Alluri Sitharama Raju",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:alluri-sitharama-raju:chinthapalli",
-      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/chinthapalli",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "d9bf4e74996ea363",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Chinthapalli Mandal, Alluri Sitharama Raju",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:alluri-sitharama-raju:g-k-veedhi",
-      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/g-k-veedhi",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "319fbc5a080edf0c",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in G.K.Veedhi Mandal, Alluri Sitharama Raju",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:alluri-sitharama-raju:koyyuru",
-      "path": "/locations/andhra-pradesh/districts/alluri-sitharama-raju/koyyuru",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "20b8a82f721b0404",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Koyyuru Mandal, Alluri Sitharama Raju",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:anakapalli:anakapalli",
-      "path": "/locations/andhra-pradesh/districts/anakapalli/anakapalli",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "28678bd51b5c15ac",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Anakapalli Mandal, Anakapalli",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:anakapalli:butchiahpeta",
-      "path": "/locations/andhra-pradesh/districts/anakapalli/butchiahpeta",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "6a38d9af2f274ebd",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Butchiahpeta Mandal, Anakapalli",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:anakapalli:kasimkota",
-      "path": "/locations/andhra-pradesh/districts/anakapalli/kasimkota",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "41a6285ce45084b4",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Kasimkota Mandal, Anakapalli",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:anakapalli:chodavaram",
-      "path": "/locations/andhra-pradesh/districts/anakapalli/chodavaram",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "d886a8a1d27b383a",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Chodavaram Mandal, Anakapalli",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:anakapalli:devarapalli",
-      "path": "/locations/andhra-pradesh/districts/anakapalli/devarapalli",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "b2799cbbc2fd4ed6",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Devarapalli Mandal, Anakapalli",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:anakapalli:k-kotapadu",
-      "path": "/locations/andhra-pradesh/districts/anakapalli/k-kotapadu",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "c3a416fc1b944796",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in K.Kotapadu Mandal, Anakapalli",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:anakapalli:munagapaka",
-      "path": "/locations/andhra-pradesh/districts/anakapalli/munagapaka",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "a92053c261bd168a",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Munagapaka Mandal, Anakapalli",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:anakapalli:parawada",
-      "path": "/locations/andhra-pradesh/districts/anakapalli/parawada",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "2ac44b29999985a7",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Parawada Mandal, Anakapalli",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    },
-    {
-      "id": "mandal:anakapalli:sabbavaram",
-      "path": "/locations/andhra-pradesh/districts/anakapalli/sabbavaram",
-      "kind": "mandal",
-      "status": "review",
-      "index": false,
-      "version": 2,
-      "inputHash": "91adb7c4656986d3",
-      "score": 88,
-      "title": "Invisible Grills & Safety Nets in Sabbavaram Mandal, Anakapalli",
-      "reasons": [
-        "Directory page: no local note has been written for this mandal yet"
-      ],
-      "updatedAt": "2026-11-10T03:23:22.863Z"
-    }
-  ]
+  "review": []
 }

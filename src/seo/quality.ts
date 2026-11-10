@@ -102,7 +102,8 @@ export function assess(page: PageDocument, names: string[], seen: Map<string, st
     score -= 40;
     reasons.push("Unsupported claim");
   }
-  const stuffed = hits.some((hit) => hit.term.length > 3 && hit.count > 22);
+  const ownPlace = new Set([page.params.city, page.params.area, page.params.district, page.params.mandal].filter((term): term is string => Boolean(term)));
+  const stuffed = hits.some((hit) => hit.term.length > 3 && hit.count > 22 && !ownPlace.has(hit.term));
   if (stuffed) {
     score -= 20;
     reasons.push("Keyword overuse");

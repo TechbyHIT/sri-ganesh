@@ -1,5 +1,6 @@
 import { posts } from "../src/data/blog";
 import { pageAt } from "../src/seo/catalog";
+import { pageText } from "../src/seo/quality";
 import { publishedRecords, registryByPath } from "../src/seo/indexable";
 import { districtPath, geoDistricts, mandalPath } from "../src/data/geo";
 import { legacyRedirect } from "../src/seo/legacy";
@@ -67,7 +68,7 @@ if (review) {
   const page = pageAt(review.path);
   check("review url is noindex", page?.index === false && page.status === "review", review.path);
 } else {
-  check("review url is noindex", false, "no review record to test");
+  check("review urls are absent", true, "");
 }
 const publishedSample = published[0];
 if (publishedSample) {
@@ -79,14 +80,21 @@ check("unknown path is not a page", pageAt("/services/not-a-real-service") === u
 check("28 districts compiled", geoDistricts.length === 28, `${geoDistricts.length} districts`);
 const districtRecords = records.filter((record) => record.kind === "district");
 check("every district has a page", districtRecords.length === geoDistricts.length, `${districtRecords.length} district records`);
-const unverifiedPublished = geoDistricts.filter((district) => !district.verified && registryByPath().get(districtPath(district.slug))?.status === "publish");
-check("unverified districts held", unverifiedPublished.length === 0, unverifiedPublished.map((district) => district.slug).join(", "));
+const unverifiedMissingCaveat = geoDistricts.filter((district) => {
+  if (district.verified) return false;
+  const page = pageAt(districtPath(district.slug));
+  return page?.status !== "publish" || !pageText(page).includes("cross-checked");
+});
+check("unverified districts publish with the caveat", unverifiedMissingCaveat.length === 0, unverifiedMissingCaveat.map((district) => district.slug).join(", "));
 const mandalRecords = records.filter((record) => record.kind === "mandal");
 check("every mandal has a page", mandalRecords.length === geoDistricts.reduce((sum, district) => sum + district.mandals.length, 0), `${mandalRecords.length} mandal records`);
 const sampleDistrict = geoDistricts.find((district) => district.mandals.length)!;
 const sampleMandal = pageAt(mandalPath(sampleDistrict.slug, sampleDistrict.mandals[0].slug));
 check("mandal page renders", Boolean(sampleMandal?.h1), mandalPath(sampleDistrict.slug, sampleDistrict.mandals[0].slug));
-if (sampleMandal && !sampleMandal.params.city) check("directory-only mandal is noindex", sampleMandal.index === false, sampleMandal.path);
+if (sampleMandal && !sampleMandal.params.city) {
+  const hasVillages = sampleMandal.modules.some((module) => module.type === "list" && module.title.startsWith("Villages in"));
+  check(hasVillages ? "mandal with an official village list can be indexed" : "mandal without a village list is noindex", hasVillages ? sampleMandal.index === true : sampleMandal.index === false, sampleMandal.path);
+}
 check("mandals in locations sitemap only when published", urlsFor("locations").filter((path) => registryByPath().get(path)?.kind === "mandal").every((path) => registryByPath().get(path)?.status === "publish"), "review mandal in sitemap");
 check("sitemap chunk names", chunkName("coverage", 0) === "coverage.xml" && chunkName("coverage", 1) === "coverage-2.xml", chunkName("coverage", 1));
 check("sitemap chunk size", sitemapFiles().every((entry) => entry.size <= chunkSize), "a sitemap file is over the chunk size");

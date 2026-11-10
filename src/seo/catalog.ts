@@ -183,16 +183,11 @@ export function applyEdit(page: PageDocument, edit: PageEdit | undefined) {
 
 function policy(page: PageDocument) {
   if (page.kind === "mandal" && !page.params.city) {
-    page.status = "review";
-    page.index = false;
-    page.reasons = [...page.reasons, "Directory page: no local note has been written for this mandal yet"];
-  }
-  if (page.kind === "district" || page.kind === "mandal") {
-    const district = getDistrict(page.params.district ?? "");
-    if (district && !district.verified && page.status === "publish") {
+    const listed = page.modules.some((module) => module.type === "list" && module.title.startsWith("Villages in"));
+    if (!listed) {
       page.status = "review";
       page.index = false;
-      page.reasons = [...page.reasons, "District data not yet fully verified against the December 2025 notifications"];
+      page.reasons = [...page.reasons, "Directory page: no official village list and no local note for this mandal yet"];
     }
   }
   return page;
