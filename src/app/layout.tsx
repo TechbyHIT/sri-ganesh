@@ -79,6 +79,16 @@ const jsonLd = [
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en-IN">
+      <head>
+        {process.env.NODE_ENV === "development" ? (
+          <script
+            id="ignore-cursor-browser-attrs"
+            dangerouslySetInnerHTML={{
+              __html: `(function(){var skip="data-cursor-ref";var desc=Object.getOwnPropertyDescriptor(Element.prototype,"attributes");if(!desc||!desc.get)return;function visible(map){var items=[];for(var i=0;i<map.length;i++)if(map[i].name!==skip)items.push(map[i]);return items;}Object.defineProperty(Element.prototype,"attributes",{configurable:true,enumerable:desc.enumerable,get:function(){var map=desc.get.call(this);return new Proxy(map,{get:function(target,prop,receiver){if(prop==="length")return visible(target).length;if(String(prop).charAt(0)>="0"&&String(prop).charAt(0)<="9")return visible(target)[Number(prop)];if(prop==="item")return function(index){return visible(target)[index]||null};var value=Reflect.get(target,prop,receiver);return typeof value==="function"?value.bind(target):value;}});}});var getAttribute=Element.prototype.getAttribute;Element.prototype.getAttribute=function(name){if(name===skip)return null;return getAttribute.call(this,name);};})();`,
+            }}
+          />
+        ) : null}
+      </head>
       <body id="top" className={`${inter.variable} ${poppins.variable} font-sans antialiased`}>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2">

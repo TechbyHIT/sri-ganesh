@@ -118,7 +118,7 @@ export function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 text-xs text-white/50 sm:flex-row sm:justify-between sm:px-6">
-          <p>© {new Date().getFullYear()} Sri Ganesha Home Safety Solutions. Serving entire Andhra Pradesh.</p>
+          <p suppressHydrationWarning>© {new Date().getFullYear()} Sri Ganesha Home Safety Solutions. Serving entire Andhra Pradesh.</p>
           <p>Grades and prices are confirmed in a written quote after measurement.</p>
         </div>
       </div>
