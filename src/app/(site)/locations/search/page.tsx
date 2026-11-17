@@ -4,14 +4,14 @@ import { LocationSearchForm } from "@/components/LocationSearchForm";
 import { PageHero } from "@/components/ui";
 import { heroImage } from "@/data/gallery";
 import { searchKinds, searchLocations, type SearchKind } from "@/lib/search";
-import { absoluteUrl } from "@/seo/urls";
+import { staticMetadata } from "@/seo/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = staticMetadata({
   title: "Search Andhra Pradesh service areas",
   description: "Find your district, mandal, town, village or colony and see how invisible grills and safety nets are scheduled there.",
-  alternates: { canonical: absoluteUrl("/locations/search") },
-  robots: { index: false, follow: true },
-};
+  path: "/locations/search",
+  index: false,
+});
 
 const perPage = 40;
 
@@ -43,6 +43,7 @@ export default async function LocationSearchPage({ searchParams }: { searchParam
         title="Find your place in Andhra Pradesh"
         text="Search all 28 districts, their revenue divisions and mandals, towns with a municipality, our city and neighbourhood pages, and any villages or colonies on record."
         image={heroImage("location-search", "balcony-safety-nets")}
+        imageAlt="Balcony safety net in an Andhra Pradesh home"
         crumbs={[{ href: "/", label: "Home" }, { href: "/locations", label: "Locations" }, { label: "Search" }]}
       />
       <div className="mx-auto max-w-4xl space-y-6 px-4 py-10 sm:px-6">

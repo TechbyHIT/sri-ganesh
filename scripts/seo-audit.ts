@@ -1,6 +1,7 @@
 import { posts } from "../src/data/blog";
 import { pageAt } from "../src/seo/catalog";
-import { pageText } from "../src/seo/quality";
+import { commercialChecklist, pageText } from "../src/seo/quality";
+import { blockedModifierPages } from "../src/seo/brief";
 import { publishedRecords, registryByPath } from "../src/seo/indexable";
 import { districtPath, geoDistricts, mandalPath } from "../src/data/geo";
 import { legacyRedirect } from "../src/seo/legacy";
@@ -57,6 +58,8 @@ for (const group of groups) {
   check(`${group} escaped sample`, !xml.includes("&amp;amp;") && xml.includes("<loc>"), "loc missing");
 }
 check("sitemap groups do not repeat URLs", overlap === 0, `${overlap} URLs appear in more than one group`);
+const missingFromSitemap = published.filter((record) => !seen.has(record.path));
+check("every published page is in a sitemap", missingFromSitemap.length === 0, `${missingFromSitemap.length} published pages missing, first ${missingFromSitemap[0]?.path ?? ""}`);
 
 const escaped = xmlEscape(`https://example.com/a&b`);
 check("xml escape", escaped === "https://example.com/a&amp;b", escaped);
@@ -96,8 +99,35 @@ if (sampleMandal && !sampleMandal.params.city) {
   check(hasVillages ? "mandal with an official village list can be indexed" : "mandal without a village list is noindex", hasVillages ? sampleMandal.index === true : sampleMandal.index === false, sampleMandal.path);
 }
 check("mandals in locations sitemap only when published", urlsFor("locations").filter((path) => registryByPath().get(path)?.kind === "mandal").every((path) => registryByPath().get(path)?.status === "publish"), "review mandal in sitemap");
+const villageRecords = records.filter((record) => record.kind === "village");
+check("official villages have pages", villageRecords.length >= 17_000, `${villageRecords.length} village records`);
+const sampleVillage = villageRecords.find((record) => record.status === "publish");
+check("a village page is indexable", Boolean(sampleVillage && pageAt(sampleVillage.path)?.index), sampleVillage?.path ?? "none");
 check("sitemap chunk names", chunkName("coverage", 0) === "coverage.xml" && chunkName("coverage", 1) === "coverage-2.xml", chunkName("coverage", 1));
 check("sitemap chunk size", sitemapFiles().every((entry) => entry.size <= chunkSize), "a sitemap file is over the chunk size");
+const sampleServiceCity = pageAt("/services/invisible-grills/vijayawada");
+const cityCheck = sampleServiceCity ? commercialChecklist(sampleServiceCity) : undefined;
+check(
+  "service-city landing sections",
+  Boolean(cityCheck?.hasIntro && cityCheck.hasBenefits && cityCheck.hasMaterials && cityCheck.hasInstall && cityCheck.hasQuote && cityCheck.faqCount >= 6),
+  JSON.stringify(cityCheck),
+);
+check(
+  "service-city schema",
+  Boolean(cityCheck && cityCheck.types.includes("BreadcrumbList") && cityCheck.types.includes("Service") && cityCheck.types.includes("WebPage") && !cityCheck.hasBlockedMarkup && !cityCheck.hasInventedPrice),
+  cityCheck?.types.join(",") ?? "missing",
+);
+const sampleArea = published.find((record) => record.kind === "service-area" && record.status === "publish");
+const areaPage = sampleArea ? pageAt(sampleArea.path) : undefined;
+const areaCheck = areaPage ? commercialChecklist(areaPage) : undefined;
+const areaLinksParent = Boolean(areaPage?.modules.some((module) => module.type === "links" && module.links.some((link) => link.href === `/services/${areaPage.params.service}/${areaPage.params.city}`)));
+check(
+  "service-area keeps the local note and points at the city page",
+  Boolean(areaCheck?.hasIntro && areaCheck.hasQuote && areaCheck.faqCount >= 2 && !areaCheck.hasBlockedMarkup && !areaCheck.hasInventedPrice && areaLinksParent),
+  sampleArea?.path ?? "none",
+);
+const modifierPath = published.find((record) => blockedModifierPages.some((word) => record.path.split("/").some((part) => part === word || part.startsWith(`${word}-`))));
+check("no best, cheap, or near-me urls", !modifierPath, modifierPath?.path ?? "");
 check("flat service alias redirects", legacyRedirect("/invisible-grills-in-visakhapatnam") === "/services/invisible-grills/visakhapatnam", String(legacyRedirect("/invisible-grills-in-visakhapatnam")));
 check("retired guide redirects", Boolean(legacyRedirect("/guides/invisible-grills-for-balcony")), "no redirect");
 

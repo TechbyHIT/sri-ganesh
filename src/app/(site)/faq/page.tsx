@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { absoluteUrl } from "@/seo/urls";
+import { staticMetadata } from "@/seo/metadata";
 import { InstallationGallery } from "@/components/InstallationGallery";
 import { SiteModules } from "@/components/SiteModules";
 import { generalFaqs } from "@/data/faq";
@@ -8,12 +8,12 @@ import { services } from "@/data/services";
 import Link from "next/link";
 import { FaqStatic, GoldLink, PageHero, Panel } from "@/components/ui";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = staticMetadata({
   title: "Frequently asked questions",
   description:
-    "Coverage, pricing, invisible grills versus safety nets, pigeon control and installation timing for Andhra Pradesh.",
-  alternates: { canonical: absoluteUrl("/faq") },
-};
+    "Coverage, pricing, invisible grills versus safety nets, pigeon control and installation timing for homes across Andhra Pradesh.",
+  path: "/faq",
+});
 
 export default function FaqPage() {
   const serviceFaqs = services.flatMap((service) =>
@@ -26,6 +26,7 @@ export default function FaqPage() {
         title="Questions from Andhra Pradesh homes"
         text="Coverage is the whole state. Prices follow a measurement. Ratings are published only when a customer actually gives one."
         image={heroImage("faq", "children-safety-nets")}
+        imageAlt="Child safety net on a balcony of the kind discussed in these questions"
         crumbs={[{ href: "/", label: "Home" }, { label: "FAQ" }]}
         actions={<GoldLink href="/contact">Book a measurement</GoldLink>}
       />

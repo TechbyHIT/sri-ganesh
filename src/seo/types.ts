@@ -1,4 +1,4 @@
-export const TEMPLATE_VERSION = 3;
+export const TEMPLATE_VERSION = 4;
 
 export const STATE = {
   slug: "andhra-pradesh",
@@ -15,7 +15,8 @@ export type PageKind =
   | "guide"
   | "guide-city"
   | "district"
-  | "mandal";
+  | "mandal"
+  | "village";
 
 export type PageStatus = "publish" | "review" | "exclude";
 
@@ -39,6 +40,7 @@ export type PageParams = {
   guide?: string;
   district?: string;
   mandal?: string;
+  village?: string;
 };
 
 export type PageDocument = {

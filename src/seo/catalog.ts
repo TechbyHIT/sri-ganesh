@@ -18,7 +18,8 @@ import {
   composeState,
   hash,
 } from "./compose";
-import { composeDistrict, composeMandal } from "./compose-geo";
+import type { Locality } from "@/data/geo-types";
+import { composeDistrict, composeMandal, composeVillage } from "./compose-geo";
 import { publishedRecords, recordAt, registryByPath, resetRegistryCache } from "./indexable";
 import { assess, dropUnpublishedLinks } from "./quality";
 import { readOverrides } from "./registry";
@@ -45,11 +46,30 @@ function syncCaches() {
   resetSeoCaches();
 }
 
+let villageCache: Map<string, Locality[]> | null = null;
+
+function villagesIn(district: string, mandal: string) {
+  if (!villageCache) {
+    const grouped = new Map<string, Locality[]>();
+    for (const row of allLocalities()) {
+      if (row.kind !== "village") continue;
+      const key = `${row.district}/${row.mandal}`;
+      const list = grouped.get(key) ?? [];
+      if (!list.some((item) => item.slug === row.slug)) list.push(row);
+      grouped.set(key, list);
+    }
+    for (const list of grouped.values()) list.sort((a, b) => a.name.localeCompare(b.name, "en"));
+    villageCache = grouped;
+  }
+  return villageCache.get(`${district}/${mandal}`) ?? [];
+}
+
 export function resetSeoCaches() {
   cache = null;
   rendered.clear();
   namesCache = null;
   indexablePaths = null;
+  villageCache = null;
   resetRegistryCache();
 }
 
@@ -125,6 +145,12 @@ function draftFor(path: string): PageDocument | undefined {
     if (parts[2] === "districts") {
       if (parts.length === 4) return districtDraft(parts[3], pool);
       if (parts.length === 5) return mandalDraft(parts[3], parts[4], pool);
+      if (parts.length === 6) {
+        const rows = villagesIn(parts[3], parts[4]);
+        const index = rows.findIndex((row) => row.slug === parts[5]);
+        const found = index >= 0 ? getMandal(parts[3], parts[4]) : undefined;
+        return found ? composeVillage(found.district, found.mandal, rows[index], index, rows) : undefined;
+      }
       return undefined;
     }
     const city = getCity(parts[2] ?? "");
@@ -253,7 +279,11 @@ function buildCatalog(): Catalog {
   }
   for (const district of geoDistricts) {
     drafts.push(districtDraft(district.slug, pool)!);
-    for (const mandal of district.mandals) drafts.push(mandalDraft(district.slug, mandal.slug, pool)!);
+    for (const mandal of district.mandals) {
+      drafts.push(mandalDraft(district.slug, mandal.slug, pool)!);
+      const rows = villagesIn(district.slug, mandal.slug);
+      rows.forEach((village, index) => drafts.push(composeVillage(district, mandal, village, index, rows)));
+    }
   }
   for (const service of pool) {
     for (const city of places) {

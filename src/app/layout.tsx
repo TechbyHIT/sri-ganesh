@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import { site } from "@/config/site";
+import { heroImage } from "@/data/gallery";
+import { absoluteUrl } from "@/seo/urls";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -10,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
     default: "Invisible Grills & Safety Nets in Andhra Pradesh | Sri Ganesha",
-    template: "%s | Sri Ganesha Home Safety",
+    template: "%s | Sri Ganesha",
   },
   description: site.description,
   openGraph: {
@@ -18,11 +20,15 @@ export const metadata: Metadata = {
     description: site.description,
     locale: "en_IN",
     type: "website",
+    siteName: site.name,
+    url: site.url,
+    images: [{ url: absoluteUrl(heroImage("site-share", "invisible-grills")), alt: "Invisible grills and safety nets in Andhra Pradesh" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Invisible Grills & Safety Nets in Andhra Pradesh",
     description: site.description,
+    images: [absoluteUrl(heroImage("site-share", "invisible-grills"))],
   },
 };
 
@@ -54,11 +60,25 @@ const jsonLd = [
     parentOrganization: { "@id": `${site.url}/#organization` },
     url: site.url,
   },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${site.url}/#website`,
+    name: site.name,
+    url: site.url,
+    inLanguage: "en-IN",
+    publisher: { "@id": `${site.url}/#organization` },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${site.url}/locations/search?q={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
+  },
 ];
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en-IN">
       <body id="top" className={`${inter.variable} ${poppins.variable} font-sans antialiased`}>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2">

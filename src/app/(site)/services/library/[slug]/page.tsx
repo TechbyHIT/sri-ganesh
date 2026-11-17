@@ -8,7 +8,7 @@ import { cities } from "@/data/cities";
 import { galleryCards, heroImage } from "@/data/gallery";
 import { getLibraryItem, libraryGroupFor, libraryItems } from "@/data/library";
 import { getService } from "@/data/services";
-import { absoluteUrl } from "@/seo/urls";
+import { staticMetadata } from "@/seo/metadata";
 
 type Params = { slug: string };
 
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { slug } = await params;
   const item = getLibraryItem(slug);
   if (!item) return {};
-  return { title: item.title, description: item.summary, alternates: { canonical: absoluteUrl(`/services/library/${slug}`) } };
+  return staticMetadata({ title: item.title, description: item.summary, path: `/services/library/${slug}`, image: heroImage(`library:${slug}`, item.photo) });
 }
 
 export default async function LibraryDetailPage({ params }: { params: Promise<Params> }) {
@@ -43,6 +43,7 @@ export default async function LibraryDetailPage({ params }: { params: Promise<Pa
         title={item.title}
         text={item.summary}
         image={photo}
+        imageAlt={item.title}
         crumbs={[
           { href: "/", label: "Home" },
           { href: "/services", label: "Services" },

@@ -6,6 +6,7 @@ import {
   hubCityOf,
   mandalPath,
   mandalsOf,
+  villagePath,
   ulbLabel,
   ulbsForMandal,
 } from "@/data/geo";
@@ -199,6 +200,13 @@ export function composeMandal(
       title: `Villages in ${mandal.name} mandal on our records`,
       items: [shown.join(", ") + (villages.length > shown.length ? ` and ${villages.length - shown.length} more` : "")],
     });
+    const linked = new Map<string, string>();
+    for (const row of localities) if (row.kind === "village" && !linked.has(row.slug)) linked.set(row.slug, row.name);
+    modules.push({
+      type: "links",
+      title: `Village pages in ${mandal.name}`,
+      links: [...linked.entries()].sort((a, b) => a[1].localeCompare(b[1], "en")).map(([slug, name]) => ({ href: villagePath(district.slug, mandal.slug, slug), label: name })),
+    });
   }
   if (colonies.length || content?.localities.length) {
     modules.push({ type: "list", title: "Colonies and localities", items: [...new Set([...(content?.localities ?? []), ...colonies])] });
@@ -246,6 +254,93 @@ export function composeMandal(
     params: { state: STATE.slug, district: district.slug, mandal: mandal.slug, ...(place ? { city: place.slug } : {}) },
     quote: { city: `${name}, ${district.name}` },
     inputHash: hash({ kind: "mandal", district: district.slug, mandal, content: content ?? null, localities: localities.length, town: town?.slug }),
+    modules,
+  });
+}
+
+export function composeVillage(district: GeoDistrict, mandal: GeoMandal, village: Locality, index: number, villages: Locality[]) {
+  const division = divisionOf(district, mandal);
+  const hub = hubCityOf(district);
+  const before = villages.slice(Math.max(0, index - 4), index).map((row) => row.name);
+  const after = villages.slice(index + 1, index + 5).map((row) => row.name);
+  const nearby = [...before, ...after];
+  const where = `${village.name} is revenue village ${index + 1} of ${villages.length} in ${mandal.name} mandal${division ? `, ${division.name} revenue division` : ""}, ${district.name} district, ${district.region}.`;
+  const listedNext = nearby.length ? `The villages recorded next to it on that list are ${joinNames(nearby)}.` : "It is the only revenue village recorded for this mandal.";
+  const visit = hub
+    ? `Measurement visits for ${district.name} are planned with ${hub.name}. ${hub.visitNote} ${hub.climate} ${hub.materialHint}`
+    : `Measurement visits are planned from ${district.headquarters}.`;
+  const modules: PageModule[] = [
+    {
+      type: "prose",
+      title: `${village.name} on the service map`,
+      paragraphs: [
+        `${where} The village and its mandal come from the Local Government Directory, the national registry of revenue villages.`,
+        `${listedNext} A visit is booked for the village you name, not for the mandal as a whole.`,
+        visit,
+        `For ${village.name}, send the village name, one photo of the opening, and whether the fitting is a balcony, a window, a stair or a terrace. The quote names the material, the edge fixing and the labour after that opening is measured. No branch office is claimed in ${village.name}.`,
+      ],
+    },
+    {
+      type: "list",
+      title: "Where this village sits",
+      items: [
+        `Village: ${village.name}`,
+        `Mandal: ${mandal.name}`,
+        division ? `Revenue division: ${division.name}` : "Revenue division: being confirmed against the latest notification",
+        `District: ${district.name}`,
+        `Position on the official list: ${index + 1} of ${villages.length}`,
+        `District headquarters: ${district.headquarters}`,
+      ],
+    },
+    ...(nearby.length ? [{ type: "list" as const, title: "Villages recorded next to this one", items: nearby }] : []),
+    {
+      type: "faqs",
+      title: "Questions",
+      items: [
+        { q: `Do you install invisible grills and safety nets in ${village.name}?`, a: `Yes. ${village.name} is in ${mandal.name} mandal, ${district.name} district, which is in scope. ${hub ? hub.visitNote : ""}`.trim() },
+        { q: "What should the measurement photo show?", a: "One full photo of the opening, including the edges the frame would fix to. The village name tells us which day's route it belongs on." },
+        { q: `Do you have an office in ${village.name}?`, a: `No. Visits are scheduled from ${hub?.name ?? district.headquarters}, and the date is confirmed after we know the village and the opening.` },
+      ],
+    },
+    {
+      type: "links",
+      title: "Nearby village pages",
+      links: [...villages.slice(Math.max(0, index - 4), index), ...villages.slice(index + 1, index + 5)].map((row) => ({
+        href: villagePath(district.slug, mandal.slug, row.slug),
+        label: row.name,
+      })),
+    },
+    {
+      type: "links",
+      title: "Parent pages",
+      keep: true,
+      links: [
+        { href: mandalPath(district.slug, mandal.slug), label: `${mandal.name} mandal` },
+        { href: districtPath(district.slug), label: `${district.name} district` },
+        ...(hub ? [{ href: placeHref(hub), label: `${hub.name} (district hub)` }] : []),
+      ],
+    },
+    sourceLinks(district),
+  ];
+  return base({
+    id: `village:${village.id}`,
+    kind: "village",
+    path: villagePath(district.slug, mandal.slug, village.slug),
+    title: `${village.name} village, ${mandal.name}, ${district.name}`,
+    description: `${where} Free measurement booked from ${hub?.name ?? district.headquarters}, with the quote written after the opening is measured.`,
+    h1: `Invisible grills and safety nets in ${village.name}`,
+    eyebrow: `${mandal.name} mandal · ${district.name}`,
+    hero: `${where} ${listedNext}`,
+    ...shot(`village:${village.id}`, "invisible-grills"),
+    breadcrumb: crumb(
+      { href: statePath(), label: STATE.name },
+      { href: districtPath(district.slug), label: district.name },
+      { href: mandalPath(district.slug, mandal.slug), label: `${mandal.name} mandal` },
+      { label: village.name },
+    ),
+    params: { state: STATE.slug, district: district.slug, mandal: mandal.slug, village: village.slug },
+    quote: { city: `${village.name}, ${mandal.name}` },
+    inputHash: hash({ kind: "village", id: village.id, index, total: villages.length, nearby: nearby }),
     modules,
   });
 }

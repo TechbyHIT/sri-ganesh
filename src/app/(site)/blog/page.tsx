@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { absoluteUrl } from "@/seo/urls";
+import { staticMetadata } from "@/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import { InstallationGallery } from "@/components/InstallationGallery";
@@ -8,12 +8,12 @@ import { posts } from "@/data/blog";
 import { cardImage, galleryCards, heroImage } from "@/data/gallery";
 import { GoldLink, PageHero } from "@/components/ui";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = staticMetadata({
   title: "Guides for Andhra Pradesh balconies",
   description:
     "Original notes on child safety, pigeon control, invisible grills versus nets, pricing and coastal versus Rayalaseema materials.",
-  alternates: { canonical: absoluteUrl("/blog") },
-};
+  path: "/blog",
+});
 
 export default function BlogPage() {
   return (
@@ -23,6 +23,7 @@ export default function BlogPage() {
         title="Notes for homeowners"
         text="Written for Andhra Pradesh conditions: Bay humidity, delta mosquitoes, and Rayalaseema sun. No recycled city pages dressed up as articles."
         image={heroImage("blog", "invisible-grills")}
+        imageAlt="Invisible grill on an Andhra Pradesh balcony"
         crumbs={[{ href: "/", label: "Home" }, { label: "Blog" }]}
         actions={<GoldLink href="/contact">Ask about your opening</GoldLink>}
       />
@@ -30,7 +31,7 @@ export default function BlogPage() {
         {posts.map((post) => (
           <article key={post.slug} className="overflow-hidden rounded-[1.75rem] bg-white shadow-sm ring-1 ring-brand-100">
             <Link href={`/blog/${post.slug}`} className="relative block h-48">
-              <Image src={cardImage(`blog-card:${post.slug}`, "invisible-grills")} alt="" fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
+              <Image src={cardImage(`blog-card:${post.slug}`, "invisible-grills")} alt={post.title} fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
             </Link>
             <div className="p-6">
               <p className="text-xs font-semibold uppercase tracking-wide text-cta-600">{post.kicker}</p>

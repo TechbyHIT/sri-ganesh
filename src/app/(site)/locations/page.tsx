@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { absoluteUrl } from "@/seo/urls";
+import { staticMetadata } from "@/seo/metadata";
 import { InstallationGallery } from "@/components/InstallationGallery";
 import { SiteModules } from "@/components/SiteModules";
 import { DistrictList } from "@/components/Articles";
@@ -8,12 +8,12 @@ import { galleryCards, heroImage } from "@/data/gallery";
 import { CardLink, GhostLink, GoldLink, PageHero } from "@/components/ui";
 import { LocationSearchForm } from "@/components/LocationSearchForm";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = staticMetadata({
   title: "Invisible Grills and Safety Nets across Andhra Pradesh",
   description:
     "City-by-city measurement for invisible grills, safety nets, pigeon nets and cloth hangers in all 28 districts of Andhra Pradesh.",
-  alternates: { canonical: absoluteUrl("/locations") },
-};
+  path: "/locations",
+});
 
 export default function LocationsPage() {
   return (
@@ -24,6 +24,7 @@ export default function LocationsPage() {
         highlight="Uttarandhra, coast and Rayalaseema"
         text="Primary city pages cover the main residential centres. Every district still has a named hub, and towns off the list are booked once travel and a useful slot are confirmed."
         image={heroImage("locations-index", "balcony-safety-nets")}
+        imageAlt="Balcony safety net in an Andhra Pradesh residential area"
         crumbs={[{ href: "/", label: "Home" }, { label: "Locations" }]}
         actions={
           <>

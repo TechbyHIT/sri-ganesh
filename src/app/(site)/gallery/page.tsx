@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { absoluteUrl } from "@/seo/urls";
+import { staticMetadata } from "@/seo/metadata";
 import { InstallationGallery } from "@/components/InstallationGallery";
 import { SiteModules } from "@/components/SiteModules";
 import { allGalleryCards, heroImage } from "@/data/gallery";
 import { GoldLink, PageHero } from "@/components/ui";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = staticMetadata({
   title: "Installation gallery",
   description:
     "Invisible grills, balcony safety nets, duct nets, cloth hangers, bird spikes and sports nets photographed from Sri Ganesha work across Andhra Pradesh.",
-  alternates: { canonical: absoluteUrl("/gallery") },
-};
+  path: "/gallery",
+});
 
 export default function GalleryPage() {
   const hero = heroImage("gallery-hero", "invisible-grills");
@@ -22,6 +22,7 @@ export default function GalleryPage() {
         highlight="across Andhra Pradesh"
         text="Invisible grills, balcony and children nets, pigeon and duct work, cloth hangers and sports nets — arranged the way homeowners actually look through a gallery: one photograph at a time, by category."
         image={hero}
+        imageAlt="Installation photographs of invisible grills and safety nets"
         crumbs={[{ href: "/", label: "Home" }, { label: "Gallery" }]}
         actions={<GoldLink href="/contact?need=photo">Send a photo of your opening</GoldLink>}
       />

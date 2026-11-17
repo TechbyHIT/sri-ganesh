@@ -144,6 +144,24 @@ export function assess(page: PageDocument, names: string[], seen: Map<string, st
   return page;
 }
 
+export function commercialChecklist(page: PageDocument) {
+  const titles = page.modules.flatMap((module) => ("title" in module && module.title ? [module.title] : []));
+  const faqs = page.modules.find((module) => module.type === "faqs");
+  const types = page.jsonLd.map((block) => String(block["@type"]));
+  const markup = JSON.stringify(page.jsonLd);
+  return {
+    hasIntro: titles.some((title) => title === "Introduction" || title === "This neighbourhood"),
+    hasBenefits: titles.includes("Benefits"),
+    hasMaterials: titles.some((title) => title.startsWith("Materials")),
+    hasInstall: titles.includes("Installation"),
+    hasQuote: titles.some((title) => title.startsWith("Request a quotation")),
+    faqCount: faqs && faqs.type === "faqs" ? faqs.items.length : 0,
+    types,
+    hasBlockedMarkup: /FAQPage|AggregateRating|Review/.test(markup),
+    hasInventedPrice: /₹\s?\d|\brs\.?\s?\d{3,}/i.test(pageText(page)),
+  };
+}
+
 export function dropUnpublishedLinks(page: PageDocument, indexable: Set<string>) {
   const always = new Set(["/", "/services", "/locations", "/contact", "/faq", "/blog", "/about", "/gallery"]);
   page.modules = page.modules

@@ -6,16 +6,18 @@ Date: 10 November 2026. Built on the existing Next.js site; no working page, URL
 
 | | Count |
 | --- | --- |
-| Generated SEO pages | 27,149 |
-| Published (indexable, in sitemaps) | 27,149 |
+| Generated SEO pages | 47,113 |
+| Published (indexable, in sitemaps) | 47,113 |
 | Held for review (200, noindex) | 0 |
+| Revenue village pages | 17,808 |
+| City pages | 140 (96 written towns plus 44 official urban bodies that had no page) |
 | Rejected by the quality gate (not served) | 11,879 |
-| Sitemap URLs | 26,452 in 4 groups, split at 40,000 per file |
+| Sitemap URLs | 47,154 in 4 groups, split at 40,000 per file |
 | Districts / revenue divisions / mandals / ULBs | 28 / 79 / 686 / 124 |
 | Revenue villages (official, LGD) | 17,808 across all 686 mandals |
 | Services | 22 (all 17 in the brief, plus 5 that already existed) |
 
-Published pages by type: state 1, service 22, city 96, area 1,365, district 28, mandal 686, service-city 2,112, service-area 20,313, guide 30, guide-city 2,496. Nothing is held for review. The 11,879 rejected combinations are still not served.
+Published pages by type: state 1, service 22, city 140, area 1,365, district 28, mandal 686, village 17,808, service-city 3,080, service-area 20,313, guide 30, guide-city 3,640. Nothing is held for review. The 11,879 rejected combinations are still not served.
 
 Checks run: `tsc` clean, `npm run seo:audit` 41/41, `npm run build` (5,733 pages prerendered, the rest on demand), production-server HTTP checks of every new route, redirect, robots, sitemap and admin endpoint, desktop and mobile screenshots, and an end-to-end admin test (write mandal content → regenerate → 23 new pages indexable and in the sitemaps). `db/schema.sql` and the exported seed were loaded into PostgreSQL (PGlite) without errors.
 
@@ -47,7 +49,8 @@ Checks run: `tsc` clean, `npm run seo:audit` 41/41, `npm run build` (5,733 pages
 
 - **Modifier pages from the reference site were not copied.** saidurgainvisiblegrills.in publishes many near-identical pages per keyword and city (cheap, best, near me, price in …). Google's spam policies classify that pattern as doorway pages, and it risks a site-wide demotion. Instead, each intent has one page per place, and every page must pass the uniqueness gate.
 - **Mandal pages are indexed from the official village list.** Each of the 686 mandals has its own Local Government Directory villages, so the page is not a city-name swap. A mandal with no village list and no admin-written note stays noindex. Service pages for a mandal are still created only after someone writes a real local note in the admin. Copy-pasted text stays noindex.
-- **Villages are listed, not given their own pages.** 17,808 revenue villages come from the Government of India Local Government Directory (lgdirectory.gov.in), which already reflects the December 2025 reorganisation. Each row cites its mandal's LGD source URL; see `data/locations/ap/sources/villages-report.md`. A spot check against the live LGD service matched exactly. Villages appear on their mandal page and in location search. They do not get standalone pages: about 18,000 pages that differ only by village name would be doorway pages. 149 LGD rows that share a name with another village in the same mandal were skipped, because they cannot be told apart without an LGD code. Add more villages with `npm run locations:import -- file.csv --kind=village` or the admin import; `.gov.in` and `.nic.in` sources are marked verified.
+- **One page per official revenue village, not per service.** 17,808 revenue villages come from the Government of India Local Government Directory (lgdirectory.gov.in), which already reflects the December 2025 reorganisation. Each row cites its mandal's LGD source URL; see `data/locations/ap/sources/villages-report.md`. A spot check against the live LGD service matched exactly. Each village has one page, linked from its mandal. A service page is not created per village. 149 LGD rows that share a name with another village in the same mandal were skipped, because they cannot be told apart without an LGD code.
+- **Every urban local body is a city page, except five that already are.** Andhra Pradesh has 124 urban local bodies. 96 already had a written city page. Yellamanchili, Anantapur, Greater Visakhapatnam, Palasa-Kasibugga and Mangalagiri-Tadepalli are the same towns under another official name, so they stay on the existing page. The other 44 are in `src/data/ulb-towns.ts` (regenerate with `npx tsx scripts/build-ulb-towns.ts`). Each page names the official body type, the LGD village count for that mandal when the mandal name matches, and the district hub's climate note. These towns do not get invented neighbourhood pages.
 - **No addresses, ratings, reviews, projects or prices in schema**, because none are published. FAQ rich-result markup is not emitted, since Google only shows it for government and health sites.
 - **No database at runtime.** The site runs from versioned JSON plus the admin store, which keeps hosting on Hostinger simple. The 16-table PostgreSQL schema and `npm run db:export` are there for reporting or a later move to a database-backed admin.
 

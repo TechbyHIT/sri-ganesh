@@ -97,6 +97,10 @@ export function mandalPath(district: string, mandal: string) {
   return `/locations/andhra-pradesh/districts/${district}/${mandal}`;
 }
 
+export function villagePath(district: string, mandal: string, village: string) {
+  return `/locations/andhra-pradesh/districts/${district}/${mandal}/${village}`;
+}
+
 export const ulbLabel = {
   "municipal-corporation": "Municipal corporation",
   municipality: "Municipality",

@@ -5,13 +5,13 @@ import type { Area, City } from "@/data/cities";
 import { districts } from "@/data/cities";
 import { districtByName, districtPath } from "@/data/geo";
 import {
-  popularSearchPhrases,
   wikiAreaModules,
   wikiCityModules,
   wikiCompareList,
   wikiServiceModules,
 } from "@/data/encyclopedia";
-import { steps } from "@/data/materials";
+import { commercialFaqs, enquiryNote, fittingSteps, materialCaveat, mergeFaqs } from "./brief";
+import { firstSentence, metaDescription } from "./metadata";
 import type { Intent, Service } from "@/data/services";
 import { serviceFamily, topicOverlap } from "./topics";
 import { STATE, TEMPLATE_VERSION, type LinkItem, type PageDocument, type PageModule } from "./types";
@@ -68,11 +68,13 @@ export function crumb(...items: LinkItem[]): LinkItem[] {
 
 export function base(partial: Omit<PageDocument, "status" | "index" | "score" | "reasons" | "skeleton" | "keywordHits" | "canonical" | "ogTitle" | "ogDescription" | "jsonLd"> & { jsonLd?: PageDocument["jsonLd"] }): PageDocument {
   const canonical = absoluteUrl(partial.path);
+  const description = metaDescription(partial.description);
   const document: PageDocument = {
     ...partial,
+    description,
     canonical,
     ogTitle: partial.title,
-    ogDescription: partial.description,
+    ogDescription: description,
     jsonLd: partial.jsonLd ?? [],
     reasons: [],
     status: "publish",
@@ -97,19 +99,39 @@ function structuredData(page: Pick<PageDocument, "path" | "title" | "description
       item: absoluteUrl(item.href ?? page.path),
     })),
   };
+  const webPage = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: page.title,
+    description: page.description,
+    url: canonical,
+    isPartOf: { "@type": "WebSite", name: site.name, url: site.url },
+    about: { "@id": `${site.url}/#organization` },
+  };
+  if (!page.quote.service) return [crumbs, webPage];
   const service = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: page.h1,
+    serviceType: page.quote.service,
     description: page.description,
     url: canonical,
-    ...(page.quote.service ? { serviceType: page.quote.service } : {}),
-    provider: { "@type": "Organization", name: site.name, url: site.url },
+    provider: { "@id": `${site.url}/#organization` },
     areaServed: page.quote.city
       ? { "@type": "Place", name: `${page.quote.city}, Andhra Pradesh` }
       : { "@type": "State", name: "Andhra Pradesh" },
   };
-  return [crumbs, service];
+  return [crumbs, service, webPage];
+}
+
+function hubServiceLinks(service: Service, allCities: City[]): LinkItem[] {
+  const wanted = new Set(districts.map((district) => district.hub.toLowerCase()));
+  const seen = new Set<string>();
+  return allCities.flatMap((city) => {
+    if (!wanted.has(city.name.toLowerCase()) || seen.has(city.slug)) return [];
+    seen.add(city.slug);
+    return [{ href: serviceCityPath(service.slug, city.slug), label: `${service.name} in ${city.name}` }];
+  });
 }
 
 function neighbors(city: City, regionCities: City[]) {
@@ -128,7 +150,7 @@ export function composeService(service: Service, allCities: City[]): PageDocumen
     kind: "service",
     path: servicePath(service.slug),
     title: `${service.name} in Andhra Pradesh`,
-    description: `${service.summary} Measured across Andhra Pradesh, with cable or mesh grade named in a written quote. Book a free site visit.`,
+    description: `${service.name} in Andhra Pradesh. ${firstSentence(service.summary)} Free measurement and a written quote.`,
     h1: `${service.name} in Andhra Pradesh`,
     eyebrow: service.group,
     hero: service.lede,
@@ -138,20 +160,28 @@ export function composeService(service: Service, allCities: City[]): PageDocumen
     quote: { service: service.name },
     inputHash: hash({ kind: "service", service: service.slug, lede: service.lede, v: 2 }),
     modules: [
-      { type: "prose", paragraphs: [service.lede, "Uttarandhra, Coastal Andhra and Rayalaseema do not share one specification. Salt air, delta humidity and inland sun change the metal or the mesh. The page for your city carries that local note. This page explains the system itself."] },
+      { type: "prose", title: "Introduction", paragraphs: [service.lede, "Uttarandhra, Coastal Andhra and Rayalaseema do not share one specification. Salt air, delta humidity and inland sun change the metal or the mesh. The page for your city carries that local note. This page explains the system itself."] },
       ...wikiServiceModules(service),
-      { type: "list", title: "What a proper fit changes", items: service.benefits },
+      { type: "list", title: "Benefits", items: service.benefits },
       { type: "list", title: "Where it is used", items: service.where },
-      { type: "list", title: "Materials we will name", items: service.materials },
       wikiCompareList(service),
       { type: "list", title: "What changes the quote", items: service.priceFactors },
-      { type: "steps", title: "How the work runs", steps },
-      { type: "list", title: "People also look for", items: popularSearchPhrases(service) },
-      { type: "faqs", title: "Questions", items: service.faqs },
+      { type: "list", title: "Materials and what is not confirmed", items: [materialCaveat(service), ...service.materials] },
+      { type: "steps", title: "Installation", steps: fittingSteps() },
+      { type: "note", title: "Request a quotation", text: enquiryNote("Andhra Pradesh") },
+      { type: "faqs", title: "Questions", items: mergeFaqs(service.faqs, commercialFaqs(service, "Andhra Pradesh", "Measurement is scheduled from the district hub.", service.materials[0] ?? service.summary)) },
       {
         type: "links",
-        title: `${service.name} in Andhra Pradesh cities`,
-        links: allCities.map((city) => ({ href: serviceCityPath(service.slug, city.slug), label: `${service.name} in ${city.name}` })),
+        title: "District pages",
+        links: districts.flatMap((district) => {
+          const official = districtByName(district.name);
+          return official ? [{ href: districtPath(official.slug), label: `${official.name} district` }] : [];
+        }),
+      },
+      {
+        type: "links",
+        title: "Hub towns for this service",
+        links: hubServiceLinks(service, allCities),
       },
       {
         type: "links",
@@ -215,7 +245,7 @@ export function composeCity(city: City, regionCities: City[], services: Service[
     kind: "city",
     path: cityPath(city.slug),
     title: `Invisible Grills and Safety Nets in ${city.name}`,
-    description: `${city.climate} Free measurement in ${city.name}, ${city.district} district, with the material grade written in the quote.`,
+    description: `${city.name}, ${city.district}. ${firstSentence(city.climate)} Free measurement, with the grade written in the quote.`,
     h1: `Invisible grills and safety nets in ${city.name}`,
     eyebrow: `${city.region} · ${city.district}`,
     hero: city.intro,
@@ -302,7 +332,7 @@ export function composeServiceCity(service: Service, city: City, regionCities: C
     kind: "service-city",
     path: serviceCityPath(service.slug, city.slug),
     title: `${service.name} in ${city.name}`,
-    description: `${service.summary} In ${city.name}, ${city.climate.charAt(0).toLowerCase()}${city.climate.slice(1)} Book a free measurement.`,
+    description: `${service.name} in ${city.name}. ${firstSentence(city.climate)} Free measurement, then a written quote.`,
     h1: `${service.name} in ${city.name}`,
     eyebrow: `${city.region} · ${city.district}`,
     hero: `${city.intro} ${service.summary}`,
@@ -316,40 +346,49 @@ export function composeServiceCity(service: Service, city: City, regionCities: C
     quote: { service: service.name, city: city.name },
     inputHash: hash({ kind: "service-city", service: service.slug, city: city.slug, intro: city.intro, family }),
     modules: [
-      { type: "prose", title: "The opening, in this city", paragraphs: [service.lede, localLead, `Housing we are asked to fit here: ${city.housing}. ${city.materialHint}`] },
+      { type: "prose", title: "Introduction", paragraphs: [service.lede, localLead, city.intro] },
       ...wikiServiceModules(service),
-      { type: "prose", title: `Local housing in ${city.name}`, paragraphs: [city.intro, city.climate] },
-      { type: "list", title: "Why people book this", items: service.problems },
-      { type: "list", title: "What the installation is for", items: service.benefits },
-      { type: "list", title: "Options named in the quote", items: [...service.materials, city.materialHint] },
-      { type: "list", title: "Applications", items: service.where },
-      {
-        type: "steps",
-        title: "Installation in practice",
-        steps: steps.map((step, index) => index === 1 ? { ...step, text: city.visitNote } : step),
-      },
-      { type: "list", title: `Cost factors in ${city.name}`, items: service.priceFactors },
-      { type: "note", title: "No statewide rate", text: `A single price for ${service.name} would ignore this opening. ${service.priceFactors[0]} is the usual first line. The figure is written after measurement.` },
-      { type: "list", title: `Localities in and around ${city.name}`, items: city.localities },
-      { type: "list", title: "Related searches", items: popularSearchPhrases(service, city) },
+      { type: "list", title: "Who usually asks", items: service.problems },
+      { type: "list", title: "Benefits", items: service.benefits },
+      { type: "list", title: "Where this is used", items: service.where },
+      { type: "list", title: "Materials and what is not confirmed", items: [materialCaveat(service, city.materialHint), ...service.materials] },
+      { type: "prose", title: "This place", paragraphs: [`Housing we are asked to fit: ${city.housing}. ${city.climate} ${city.visitNote}`] },
+      { type: "steps", title: "Installation", steps: fittingSteps(city.visitNote) },
+      { type: "list", title: "What changes the quotation", items: service.priceFactors },
+      { type: "note", title: "Request a quotation", text: enquiryNote(city.name) },
+      { type: "list", title: "Localities people name", items: city.localities },
       {
         type: "faqs",
-        title: "Questions",
-        items: [
-          { q: `Do you measure ${service.name.toLowerCase()} in ${city.name}?`, a: `${city.visitNote} ${service.name} is quoted only after that opening is seen.` },
-          { q: `What should the specification say in ${city.name}?`, a: city.materialHint },
-          ...service.faqs,
-        ],
+        title: "Questions before you book",
+        items: mergeFaqs(
+          [
+            { q: `Do you measure ${service.name.toLowerCase()} in ${city.name}?`, a: `${city.visitNote} ${service.name} is quoted only after that opening is seen.` },
+            ...service.faqs,
+          ],
+          commercialFaqs(service, city.name, city.visitNote, city.materialHint),
+        ),
       },
       {
         type: "links",
-        title: "Related services here",
-        links: related.filter((item) => item.slug !== service.slug).slice(0, 12).map((item) => ({
+        title: "Related services",
+        links: related.filter((item) => item.slug !== service.slug && item.group === service.group).slice(0, 6).map((item) => ({
           href: serviceCityPath(item.slug, city.slug),
           label: `${item.name} in ${city.name}`,
         })),
       },
-      { type: "links", title: "Nearby city pages", links: neighbors(city, regionCities) },
+      {
+        type: "links",
+        title: "This place in the directory",
+        links: [
+          { href: placeHref(city), label: city.name },
+          { href: servicePath(service.slug), label: `${service.name} in Andhra Pradesh` },
+          ...(() => {
+            const official = districtByName(city.district);
+            return official ? [{ href: districtPath(official.slug), label: `${official.name} district` }] : [];
+          })(),
+        ],
+      },
+      { type: "links", title: "Nearby towns", links: neighbors(city, regionCities) },
       city.areas.length
         ? {
             type: "links",
@@ -368,7 +407,7 @@ export function composeServiceArea(service: Service, city: City, area: Area): Pa
     kind: "service-area",
     path: serviceAreaPath(service.slug, city.slug, area.slug),
     title: `${service.name} in ${area.name}, ${city.name}`,
-    description: `${area.detail} ${service.name} in ${area.name} is measured with the ${city.name} visit, not priced from a statewide chart.`,
+    description: `${service.name} in ${area.name}, ${city.name}. ${firstSentence(area.detail)}`,
     h1: `${service.name} in ${area.name}`,
     eyebrow: `${area.name} · ${city.name}`,
     hero: area.detail,
@@ -382,15 +421,23 @@ export function composeServiceArea(service: Service, city: City, area: Area): Pa
     quote: { service: service.name, city: `${area.name}, ${city.name}` },
     inputHash: hash({ kind: "service-area", service: service.slug, area: area.slug, detail: area.detail }),
     modules: [
-      { type: "prose", paragraphs: [area.detail, frames[city.region][family], `${service.lede} In ${area.name} the city-level note still applies: ${city.materialHint}`] },
+      {
+        type: "prose",
+        title: "This neighbourhood",
+        paragraphs: [
+          area.detail,
+          frames[city.region][family],
+          `${service.name} materials, benefits, and the installation steps are written on the ${city.name} page. This page only adds what is specific to ${area.name}.`,
+        ],
+      },
       ...wikiAreaModules(city, area, service),
-      { type: "list", title: "Specification", items: service.materials },
-      { type: "list", title: "Quote factors", items: service.priceFactors.slice(0, 4) },
+      { type: "note", title: "Request a quotation", text: `${enquiryNote(`${area.name}, ${city.name}`)} ${city.materialHint}` },
       {
         type: "faqs",
-        title: "Questions",
+        title: "Questions before you book",
         items: [
           { q: `Can ${service.name.toLowerCase()} be fitted in ${area.name}?`, a: `${area.detail} ${city.visitNote}` },
+          { q: `What should the specification say for ${area.name}?`, a: city.materialHint },
           ...service.faqs.slice(0, 2),
         ],
       },
@@ -440,7 +487,7 @@ export function composeIntentCity(service: Service, intent: Intent, city: City):
     kind: "guide-city",
     path: guideCityPath(intent.slug, city.slug),
     title: `${intent.title} in ${city.name}`,
-    description: `${intent.angle} In ${city.name}, ${city.climate.charAt(0).toLowerCase()}${city.climate.slice(1)} Book a free measurement.`,
+    description: `${intent.title} in ${city.name}. ${firstSentence(city.climate)} Free measurement, then a written quote.`,
     h1: `${intent.title} in ${city.name}`,
     eyebrow: `${service.name} · ${city.name}`,
     hero: `${intent.angle} ${city.intro}`,
@@ -460,14 +507,14 @@ export function composeIntentCity(service: Service, intent: Intent, city: City):
       ...wikiServiceModules(service),
       { type: "list", title: "What this use-case changes", items: service.benefits },
       { type: "list", title: "Typical openings", items: service.where },
-      { type: "note", title: "How the visit is scheduled", text: city.visitNote },
+      { type: "note", title: "Request a quotation", text: enquiryNote(city.name) },
       {
         type: "faqs",
-        title: "Questions",
+        title: "Questions before you book",
         items: [
           { q: `Do you fit ${intent.title.toLowerCase()} in ${city.name}?`, a: `${city.visitNote} The brief is confirmed on site against the opening, not against a statewide package.` },
-          { q: `What should the specification say here?`, a: city.materialHint },
-          ...service.faqs.slice(0, 2),
+          { q: "What should the specification say here?", a: city.materialHint },
+          ...service.faqs.slice(0, 4),
         ],
       },
       {

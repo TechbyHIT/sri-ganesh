@@ -6,7 +6,7 @@ import { SiteModules } from "@/components/SiteModules";
 import { getPost, posts } from "@/data/blog";
 import { galleryCards, heroImage } from "@/data/gallery";
 import { PageHero, Panel } from "@/components/ui";
-import { absoluteUrl } from "@/seo/urls";
+import { staticMetadata } from "@/seo/metadata";
 
 type Params = { slug: string };
 
@@ -20,7 +20,7 @@ export function generateMetadata({ params }: { params: Promise<Params> }): Promi
   return params.then(({ slug }) => {
     const post = getPost(slug);
     if (!post) return {};
-    return { title: post.title, description: post.description, alternates: { canonical: absoluteUrl(`/blog/${slug}`) } };
+    return staticMetadata({ title: post.title, description: post.description, path: `/blog/${slug}`, image: heroImage(`blog:${slug}`, "invisible-grills") });
   });
 }
 
@@ -35,6 +35,7 @@ export default async function PostPage({ params }: { params: Promise<Params> }) 
         title={post.title}
         text={post.description}
         image={heroImage(`blog:${post.slug}`, "invisible-grills")}
+        imageAlt={post.title}
         crumbs={[{ href: "/", label: "Home" }, { href: "/blog", label: "Blog" }, { label: post.title }]}
       />
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[minmax(0,1fr)_280px]">

@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { absoluteUrl } from "@/seo/urls";
+import { staticMetadata } from "@/seo/metadata";
 import { InstallationGallery } from "@/components/InstallationGallery";
 import { SiteModules } from "@/components/SiteModules";
 import { galleryCards, heroImage } from "@/data/gallery";
 import { CheckList, GhostLink, GoldLink, PageHero, Panel } from "@/components/ui";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = staticMetadata({
   title: "About Sri Ganesha Home Safety Solutions",
   description:
     "A measurement-led installer of invisible grills, safety nets, pigeon protection, cloth hangers and sports nets for the whole of Andhra Pradesh.",
-  alternates: { canonical: absoluteUrl("/about") },
-};
+  path: "/about",
+});
 
 const points = [
   "We serve the entire state, not a single coastal pocket.",
@@ -29,6 +29,7 @@ export default function AboutPage() {
         highlight="for Andhra Pradesh homes"
         text="Sri Ganesha Home Safety Solutions measures invisible grills, safety nets, cloth hangers, sports nets and bird spikes for balconies, windows, ducts and grounds across Andhra Pradesh."
         image={heroImage("about", "invisible-grills")}
+        imageAlt="Invisible grill and safety net work measured for Andhra Pradesh homes"
         crumbs={[{ href: "/", label: "Home" }, { label: "About" }]}
         actions={
           <>

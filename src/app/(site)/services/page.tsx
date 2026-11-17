@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { absoluteUrl } from "@/seo/urls";
+import { staticMetadata } from "@/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import { InstallationGallery } from "@/components/InstallationGallery";
@@ -9,12 +9,12 @@ import { libraryGroups } from "@/data/library";
 import { serviceGroups, services } from "@/data/services";
 import { GoldLink, PageHero } from "@/components/ui";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = staticMetadata({
   title: "Safety net and invisible grill service library",
   description:
     "Compare pigeon nets, invisible grill types, and sports nets, then open the Andhra Pradesh service page that matches the opening.",
-  alternates: { canonical: absoluteUrl("/services") },
-};
+  path: "/services",
+});
 
 export default function ServicesPage() {
   return (
@@ -24,6 +24,7 @@ export default function ServicesPage() {
         title="Safety nets and invisible grills, compared by opening"
         text="Start with the job: bird control, a cable grill, or a practice net. Each group lists the variants we measure, without selling one mesh under every name."
         image={heroImage("services-index", "invisible-grills")}
+        imageAlt="Invisible grills compared with safety nets for Andhra Pradesh openings"
         crumbs={[{ href: "/", label: "Home" }, { label: "Services" }]}
         actions={<GoldLink href="/contact?need=photo">Get a photo estimate</GoldLink>}
       />
@@ -74,7 +75,7 @@ export default function ServicesPage() {
                 .map((service) => (
                   <article key={service.slug} className="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-brand-100">
                     <div className="relative h-40">
-                      <Image src={cardImage(`service-index:${service.slug}`, service.slug)} alt="" fill className="object-cover" sizes="33vw" />
+                      <Image src={cardImage(`service-index:${service.slug}`, service.slug)} alt={service.name} fill className="object-cover" sizes="33vw" />
                     </div>
                     <div className="p-5">
                       <p className="text-xs font-semibold uppercase tracking-wide text-cta-600">{service.group}</p>

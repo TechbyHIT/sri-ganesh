@@ -7,8 +7,8 @@ import { regions } from "@/data/cities";
 import { allServices } from "@/data/all-services";
 import { heroImage } from "@/data/gallery";
 import { citiesInDistrict, districtPath, geo, geoDistricts, geoTotals, hubCityOf, mandalPath, mandalsOf } from "@/data/geo";
-import { cityPath, servicePath } from "@/seo/urls";
-import { absoluteUrl } from "@/seo/urls";
+import { staticMetadata } from "@/seo/metadata";
+import { absoluteUrl, cityPath, servicePath } from "@/seo/urls";
 
 export function generateStaticParams() {
   return [{ state: "andhra-pradesh" }];
@@ -16,11 +16,11 @@ export function generateStaticParams() {
 
 export const dynamicParams = true;
 
-export const metadata: Metadata = {
-  title: "Andhra Pradesh Service Areas: All 28 Districts and Mandals",
+export const metadata: Metadata = staticMetadata({
+  title: "All 28 Andhra Pradesh districts and mandals",
   description: `Invisible grills and safety nets across all ${geoTotals.districts} districts, ${geoTotals.divisions} revenue divisions and ${geoTotals.mandals} mandals of Andhra Pradesh, with the hub each visit is booked from.`,
-  alternates: { canonical: absoluteUrl("/locations/andhra-pradesh/districts") },
-};
+  path: "/locations/andhra-pradesh/districts",
+});
 
 export default async function DistrictDirectory({ params }: { params: Promise<{ state: string }> }) {
   const { state } = await params;
@@ -45,6 +45,7 @@ export default async function DistrictDirectory({ params }: { params: Promise<{ 
         highlight={`${geoTotals.districts} districts · ${geoTotals.divisions} revenue divisions · ${geoTotals.mandals} mandals`}
         text="Pick your district, then your revenue division and mandal. Each district names the hub we book visits from, and links to the town pages where we have written a local specification."
         image={heroImage("district-directory", "invisible-grills")}
+        imageAlt="Invisible grills for homes across Andhra Pradesh districts"
         crumbs={[{ href: "/", label: "Home" }, { href: "/locations", label: "Locations" }, { href: "/locations/andhra-pradesh", label: "Andhra Pradesh" }, { label: "Districts" }]}
       />
       <div className="mx-auto max-w-6xl space-y-12 px-4 py-12 sm:px-6">

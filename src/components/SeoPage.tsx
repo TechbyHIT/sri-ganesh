@@ -12,7 +12,7 @@ import { getPlace } from "@/data/places";
 import { coverage } from "@/data/stats";
 import { pageAt } from "@/seo/catalog";
 import type { PageDocument } from "@/seo/types";
-import { areaPath, servicePath } from "@/seo/urls";
+import { servicePath } from "@/seo/urls";
 
 export function SeoScreen({ path }: { path: string }) {
   const page = pageAt(path);
@@ -28,7 +28,9 @@ export function SeoPage({ page }: { page: PageDocument }) {
   const facts = [
     service
       ? { label: "System", value: service.name }
-      : page.kind === "mandal" && district
+      : page.kind === "village" && district
+        ? { label: "Mandal", value: district.mandals.find((mandal) => mandal.slug === page.params.mandal)?.name ?? "Mandal" }
+        : page.kind === "mandal" && district
         ? { label: "Revenue division", value: district.divisions.find((division) => division.slug === district.mandals.find((mandal) => mandal.slug === page.params.mandal)?.division)?.name ?? "Not yet confirmed" }
         : district && !city
           ? { label: "Mandals", value: String(district.mandals.length) }
@@ -42,7 +44,7 @@ export function SeoPage({ page }: { page: PageDocument }) {
       {page.jsonLd.map((block) => (
         <script key={String(block["@type"])} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(block) }} />
       ))}
-      <PageHero eyebrow={page.eyebrow} title={page.h1} text={page.hero} image={viewSrc(page.image)} crumbs={page.breadcrumb.map((item) => ({ href: item.href, label: item.label }))} />
+      <PageHero eyebrow={page.eyebrow} title={page.h1} text={page.hero} image={viewSrc(page.image)} imageAlt={page.imageAlt} crumbs={page.breadcrumb.map((item) => ({ href: item.href, label: item.label }))} />
       <FactBar items={facts} />
       <div className="bg-brand-50">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px]">
@@ -67,25 +69,6 @@ export function SeoPage({ page }: { page: PageDocument }) {
                     </div>
                   </figure>
                 ))}
-              </div>
-              <div className="mt-5 space-y-4 text-base leading-8 text-brand-800/85">
-                <p>
-                  Sri Ganesha publishes {coverage.services} systems across {coverage.cities} Andhra cities, {coverage.areas} neighbourhoods and all {coverage.districts} districts. {coverage.photos} installation photographs sit with those pages so the opening — cable, mesh, duct, hanger or sports net — is visible before a visit is booked.
-                </p>
-                {city ? (
-                  <p>
-                    {city.name} is in {district?.name ?? city.district} district, {city.region}. Housing here is {city.housing}. {city.climate} {city.visitNote}
-                  </p>
-                ) : district ? (
-                  <p>
-                    {district.name} district is in {district.region}, with {district.divisions.length} revenue divisions and {district.mandals.length} mandals in the current official list. Each mandal has its own directory entry, and visits are scheduled from the district hub.
-                  </p>
-                ) : (
-                  <p>
-                    A city page carries the climate and the visit rota. A neighbourhood page adds the street. A service page names the system. The written grade still follows a measurement of the opening you have.
-                  </p>
-                )}
-                {service ? <p>{service.lede}</p> : null}
               </div>
             </Panel>
             {page.modules.map((module, index) => {
@@ -139,52 +122,6 @@ export function SeoPage({ page }: { page: PageDocument }) {
               }
               return <LinkCloud key={`${module.title}-${index}`} title={module.title} links={module.links.flatMap((link) => (link.href ? [{ href: link.href, label: link.label }] : []))} />;
             })}
-            {service ? (
-              <div className="grid gap-4 md:grid-cols-2">
-                <Panel eyebrow="Openings" title="Where this system is considered">
-                  <CheckList items={service.where} />
-                </Panel>
-                <Panel eyebrow="Estimate" title="What moves the written figure">
-                  <CheckList items={service.priceFactors} />
-                </Panel>
-              </div>
-            ) : null}
-            {service ? (
-              <Panel eyebrow="Specification" title="Materials we are willing to name">
-                <CheckList items={service.materials} />
-                <p className="mt-4 text-sm leading-7 text-brand-800/75">
-                  Problems this system is meant to answer: {service.problems.join(" ")} The visit confirms whether this is the right system for the opening, or whether a neighbouring service fits better.
-                </p>
-              </Panel>
-            ) : null}
-            {city ? (
-              <Panel eyebrow={city.region} title={`How ${city.name} changes the specification`}>
-                <p className="text-base leading-8 text-brand-800/85">{city.materialHint}</p>
-                <p className="mt-3 text-sm leading-7 text-brand-800/75">{city.intro}</p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {city.areas.slice(0, 8).map((area) => (
-                    <Link key={area.slug} href={areaPath(city.slug, area.slug)} className="rounded-full bg-brand-50 px-3 py-2 text-sm font-medium text-brand-900 ring-1 ring-brand-100 hover:ring-cta-500">
-                      {area.name}
-                    </Link>
-                  ))}
-                </div>
-              </Panel>
-            ) : null}
-            <Panel eyebrow="Visit" title="Measurement first, then a written quote">
-              <ol className="grid gap-3 sm:grid-cols-3">
-                {[
-                  ["Photograph the opening", "One full frame, plus closer photos of the top and side surfaces that can take a hook or an anchor."],
-                  ["We measure on site", "Width, height, returns, the wall or slab, and who actually uses the space — children, pets, birds, or play."],
-                  ["The quote names the work", "System, grade, access, and what is included. A price that skips the opening is not treated as final."],
-                ].map(([title, text], index) => (
-                  <li key={title} className="rounded-3xl bg-brand-50 p-4">
-                    <p className="font-display text-2xl font-extrabold text-cta-500">0{index + 1}</p>
-                    <h3 className="mt-2 font-semibold text-brand-900">{title}</h3>
-                    <p className="mt-2 text-sm leading-6 text-brand-800/75">{text}</p>
-                  </li>
-                ))}
-              </ol>
-            </Panel>
           </div>
           <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
             <QuotePanel service={page.quote.service} city={page.quote.city} />

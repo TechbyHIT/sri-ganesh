@@ -25,7 +25,7 @@ const staticPaths = [
 
 const kindsByGroup: Record<Exclude<SitemapGroup, "core">, PageKind[]> = {
   services: ["service"],
-  locations: ["state", "district", "mandal", "city", "area"],
+  locations: ["state", "district", "mandal", "village", "city", "area"],
   coverage: ["service-city", "service-area", "guide-city"],
 };
 

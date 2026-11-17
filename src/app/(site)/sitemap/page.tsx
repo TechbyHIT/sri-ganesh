@@ -3,40 +3,38 @@ import Link from "next/link";
 import { SiteModules } from "@/components/SiteModules";
 import { PageHero } from "@/components/ui";
 import { publishedRecords } from "@/seo/indexable";
-import { absoluteUrl } from "@/seo/urls";
+import { sitemapFiles } from "@/seo/sitemaps";
+import { staticMetadata } from "@/seo/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = staticMetadata({
   title: "Sitemap",
-  description: "Indexable pages for Sri Ganesha Home Safety Solutions. Review-only URLs are omitted.",
-  alternates: { canonical: absoluteUrl("/sitemap") },
-  robots: { index: true, follow: true },
-};
+  description: "Indexable services, districts, cities and guides for Sri Ganesha Home Safety Solutions across Andhra Pradesh. Review-only URLs are omitted.",
+  path: "/sitemap",
+});
 
-const listed = new Set(["service", "state", "city", "guide"]);
+const listed = new Set(["service", "state", "district", "city", "guide"]);
 
 export default function SitemapPage() {
   const records = publishedRecords();
-  const counts = records.reduce<Record<string, number>>((acc, record) => {
-    acc[record.kind] = (acc[record.kind] ?? 0) + 1;
-    return acc;
-  }, {});
+  const files = sitemapFiles();
+  const xmlCount = files.reduce((sum, file) => sum + file.size, 0);
   const visible = records.filter((record) => listed.has(record.kind));
-  const groups = ["service", "state", "city", "guide"] as const;
+  const groups = ["service", "state", "district", "city", "guide"] as const;
   return (
     <>
       <PageHero
         eyebrow="Index"
         title="HTML sitemap"
-        text="Services, cities, and guides are linked here. Neighbourhood and service-combination URLs that passed the quality gate are listed in the XML sitemap, not repeated as one enormous page."
+        text="Services, districts, cities, and guides are linked here. Villages, neighbourhoods, and service combinations are listed in the XML sitemaps."
         crumbs={[{ href: "/", label: "Home" }, { label: "Sitemap" }]}
       />
       <div className="mx-auto max-w-6xl space-y-10 px-4 py-12 sm:px-6">
         <p className="text-sm leading-7 text-brand-800/80">
-          {records.length} published URLs are in the XML index.{" "}
+          {xmlCount.toLocaleString("en-IN")} URLs are in the XML sitemaps.{" "}
           <a className="font-semibold text-brand-900 underline" href="/sitemap.xml">
             Open sitemap.xml
           </a>
-          . Counts: {Object.entries(counts).map(([kind, count]) => `${kind} ${count}`).join(", ") || "registry empty"}.
+          . {files.map((file) => `${file.name} ${file.size.toLocaleString("en-IN")}`).join(", ")}.
         </p>
         {groups.map((kind) => {
           const items = visible.filter((record) => record.kind === kind);

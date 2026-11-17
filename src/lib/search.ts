@@ -1,6 +1,6 @@
 import { cities } from "@/data/cities";
 import { allServices } from "@/data/all-services";
-import { districtPath, geoDistricts, mandalPath, ulbLabel } from "@/data/geo";
+import { districtPath, geoDistricts, mandalPath, ulbLabel, villagePath } from "@/data/geo";
 import { promotedPlaces } from "@/data/places";
 import { allLocalities } from "@/lib/store";
 import { areaPath, cityPath, servicePath } from "@/seo/urls";
@@ -70,7 +70,7 @@ export function searchLocations(raw: string, kind: SearchKind | "all" = "all") {
       kind: row.kind === "village" ? "village" : "locality",
       label: row.name,
       detail: `${mandal.name} mandal, ${district.name}`,
-      href: mandalPath(district.slug, mandal.slug),
+      href: row.kind === "village" ? villagePath(district.slug, mandal.slug, row.slug) : mandalPath(district.slug, mandal.slug),
     });
   }
   const seen = new Set<string>();

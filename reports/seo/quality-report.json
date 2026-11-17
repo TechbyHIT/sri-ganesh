@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-10T03:40:05.241Z",
-  "templateVersion": 3,
+  "generatedAt": "2026-11-17T08:36:57.198Z",
+  "templateVersion": 4,
   "counts": {
-    "publish": 27149,
+    "publish": 47113,
     "review": 0,
     "exclude": 11879
   },
@@ -16,7 +16,7 @@
       "review": 0
     },
     "city": {
-      "publish": 96,
+      "publish": 140,
       "review": 0
     },
     "area": {
@@ -31,8 +31,12 @@
       "publish": 686,
       "review": 0
     },
+    "village": {
+      "publish": 17808,
+      "review": 0
+    },
     "service-city": {
-      "publish": 2112,
+      "publish": 3080,
       "review": 0
     },
     "service-area": {
@@ -44,7 +48,7 @@
       "review": 0
     },
     "guide-city": {
-      "publish": 2496,
+      "publish": 3640,
       "review": 0
     }
   },

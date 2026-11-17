@@ -19,6 +19,7 @@ Preferred URLs are lowercase, hyphenated, and have no trailing slash. Next.js is
 | District directory | `/locations/andhra-pradesh/districts` |
 | District | `/locations/andhra-pradesh/districts/{district}` |
 | Mandal | `/locations/andhra-pradesh/districts/{district}/{mandal}` |
+| Revenue village | `/locations/andhra-pradesh/districts/{district}/{mandal}/{village}` |
 | Service in a mandal with local content | `/services/{service}/{place}` (same shape as a city) |
 | Location search (noindex) | `/locations/search?q=&kind=` |
 | Guide | `/guides/{slug}` |
@@ -34,7 +35,7 @@ Unknown paths call `notFound()`. The 404 document is `noindex` and links to loca
 
 ## Indexing
 
-`data/seo/registry.json` is the index source for programmatic pages when its `templateVersion` matches `TEMPLATE_VERSION` in `src/seo/types.ts` (currently 3).
+`data/seo/registry.json` is the index source for programmatic pages when its `templateVersion` matches `TEMPLATE_VERSION` in `src/seo/types.ts` (currently 4).
 
 - `publish` and `index: true` — eligible for the XML sitemap and `index, follow`.
 - `review` — HTTP 200, `noindex, follow`, omitted from sitemaps, banner shown on the page.
@@ -51,7 +52,11 @@ Location rules on top of the quality gate (`policy()` in `src/seo/catalog.ts`):
 
 Static pages (home, services index, library items, locations index, gallery, about, blog index, posts, FAQ, contact, HTML sitemap) are indexable and are not registry records. They are listed in the core sitemap.
 
-Quality scoring in `src/seo/quality.ts` rejects unsupported claims (`5000+`, `10+ years`, cheapest, number one, guaranteed to stop, `#1`), thin bodies, weak metadata, keyword piles, and service-area pages whose text collapses to an existing page once place names are removed. The score is an internal gate, not a ranking factor.
+Quality scoring in `src/seo/quality.ts` rejects unsupported claims (`5000+`, `10+ years`, cheapest, number one, guaranteed to stop, `#1`), thin bodies, weak metadata, keyword piles, and service-area pages whose text collapses to an existing page once place names are removed. The score is an internal gate, not a ranking factor and not proof that a page deserves to rank.
+
+## Keyword mapping
+
+One primary keyword per page: `{Service} in {Place}` on a service-location page, or the service name on the statewide service page. Installation, quotation, apartment, and house phrases stay on that same page. Price stays on the statewide price guide, which does not print a rupee rate. `best`, `cheap`, `cheapest`, `affordable`, and `near-me` are not URLs. A service page links to district pages and hub towns, not to every city. Related-service links stay inside the same service group. A village has one page. It does not get a copy of every service.
 
 ## Sitemaps and robots
 
@@ -59,7 +64,7 @@ Quality scoring in `src/seo/quality.ts` rejects unsupported claims (`5000+`, `10
 
 - `core` — static pages, blog posts, library items, published guides
 - `services` — published service pages
-- `locations` — published state, district, mandal, city, and area pages
+- `locations` — published state, district, mandal, village, city, and area pages
 - `coverage` — published service-city, service-area, and guide-city pages
 
 Each URL is in one group. Groups are split into files of 40,000 URLs (`/sitemaps/coverage.xml`, `/sitemaps/coverage-2.xml`, …), so the 50,000 limit holds at any scale. `lastmod` is the registry `updatedAt` date. Static URLs with no registry row omit `lastmod` rather than using the clock. Locations are absolute and XML-escaped.
@@ -70,9 +75,9 @@ The HTML sitemap at `/sitemap` lists published services, the state page, cities,
 
 ## Metadata and schema
 
-Programmatic pages use `metadataFor()` → `pageAt()`. Titles, descriptions, canonicals, robots, and Open Graph images come from the composed page. The root layout title template is `%s | Sri Ganesha Home Safety`. The home page does not set its own title, so it keeps the layout default and does not double the brand.
+Programmatic pages use `metadataFor()` → `pageAt()`. Titles, descriptions, canonicals, robots, and Open Graph images come from the composed page. The root layout title template is `%s | Sri Ganesha`. The home page sets an absolute title so the brand is not added twice. Meta descriptions are kept to 155 characters. Each indexable page sets its own canonical, robots, Open Graph and Twitter card.
 
-JSON-LD on programmatic pages is built in `compose.ts` / `compose-geo.ts` from the page’s own breadcrumb and content: `BreadcrumbList` everywhere, and `Service` (with `serviceType`, provider and `areaServed` set to the page’s place or the state) on service pages. The layout adds an `Organization` (logo, email, phone contact point when configured) and one `HomeAndConstructionBusiness` with Andhra Pradesh as the served area. There is no street address, geo point, rating, review or price, because none is published. FAQ rich-result markup is not emitted: Google limits FAQ rich results to authoritative government and health sites, so the markup would not be eligible.
+JSON-LD on programmatic pages is built in `compose.ts` from the page’s own breadcrumb and content: `BreadcrumbList` and `WebPage` on every composed page, and `Service` only when the page names a service. The layout adds an `Organization` (logo, email, phone contact point when configured) and one `HomeAndConstructionBusiness` with Andhra Pradesh as the served area. There is no street address, geo point, rating, review or price, because none is published. FAQ rich-result markup is not emitted: Google limits FAQ rich results to authoritative government and health sites, so the markup would not be eligible.
 
 Open Graph uses an absolute image URL, `og:locale` `en_IN`, and a `summary_large_image` Twitter card.
 

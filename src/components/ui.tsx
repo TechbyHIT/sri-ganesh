@@ -130,6 +130,7 @@ export function PageHero({
   text,
   crumbs,
   image,
+  imageAlt,
   actions,
 }: {
   eyebrow: string;
@@ -138,12 +139,13 @@ export function PageHero({
   text: string;
   crumbs: { href?: string; label: string }[];
   image?: string;
+  imageAlt?: string;
   actions?: React.ReactNode;
 }) {
   return (
     <section className="relative overflow-hidden bg-brand-950 text-white">
       {image ? (
-        <img src={image} alt="" decoding="async" fetchPriority="low" className="absolute inset-0 h-full w-full object-cover opacity-25" />
+        <img src={image} alt={imageAlt ?? ""} decoding="async" fetchPriority="low" className="absolute inset-0 h-full w-full object-cover opacity-25" />
       ) : null}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(212,175,55,0.18),transparent_36%),linear-gradient(120deg,#061224_0%,#0A1D37_55%,#123056_100%)]" />
       <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">

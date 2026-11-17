@@ -1,18 +1,17 @@
 import type { Metadata } from "next";
-import { absoluteUrl } from "@/seo/urls";
 import { site } from "@/config/site";
+import { staticMetadata } from "@/seo/metadata";
 import { InstallationGallery } from "@/components/InstallationGallery";
 import { SiteModules } from "@/components/SiteModules";
 import { QuotePanel } from "@/components/QuotePanel";
 import { galleryCards, heroImage } from "@/data/gallery";
 import { GoldLink, PageHero, Panel } from "@/components/ui";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = staticMetadata({
   title: "Request a free site visit",
-  description:
-    "Book a measurement for invisible grills, safety nets, pigeon nets, cloth hangers or sports nets anywhere in Andhra Pradesh.",
-  alternates: { canonical: absoluteUrl("/contact") },
-};
+  description: `Book a measurement for invisible grills, safety nets, pigeon nets, cloth hangers or sports nets anywhere in Andhra Pradesh. Call ${site.phoneDisplay}.`,
+  path: "/contact",
+});
 
 type Search = { service?: string; city?: string; need?: string };
 
@@ -29,6 +28,7 @@ export default async function ContactPage({ searchParams }: { searchParams: Prom
             : "Share the town, the opening and the service you have in mind. We confirm Andhra Pradesh coverage and arrange a measurement before any price is treated as final."
         }
         image={heroImage("contact", "balcony-safety-nets")}
+        imageAlt="Balcony safety net opening of the kind measured before a written quote"
         crumbs={[{ href: "/", label: "Home" }, { label: "Contact" }]}
         actions={<GoldLink href="#visit-form">Go to the form</GoldLink>}
       />

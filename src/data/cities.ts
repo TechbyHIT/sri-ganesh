@@ -1,6 +1,7 @@
 import { extraCities } from "./extra-cities";
 import { moreTowns } from "./more-towns";
 import { attachAreas } from "./neighbourhoods";
+import { ulbTowns } from "./ulb-towns";
 
 export type Area = {
   slug: string;
@@ -534,7 +535,9 @@ const citySeeds: City[] = [
   },
 ];
 
-export const cities: City[] = attachAreas([...citySeeds, ...extraCities, ...moreTowns]);
+export const sourceCities: City[] = [...citySeeds, ...extraCities, ...moreTowns];
+
+export const cities: City[] = [...attachAreas(sourceCities), ...ulbTowns];
 
 export const regions = ["Uttarandhra", "Coastal Andhra", "Rayalaseema"] as const;
 
